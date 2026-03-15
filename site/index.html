@@ -256,7 +256,7 @@ canvas#canvas {
 <div id="sidebar">
   <div>
     <h1>AI Exposure of the US Job Market</h1>
-    <div class="subtitle">342 occupations &middot; color = AI exposure<br>Data from <a href="https://www.bls.gov/ooh/">BLS</a>, scored by Gemini Flash<br><a href="https://github.com/karpathy/jobs">GitHub</a></div>
+    <div class="subtitle">342 occupations &middot; <span id="colorMetricLabel">color = AI exposure</span><br>Data from <a href="https://www.bls.gov/ooh/">BLS</a>, scored by Gemini Flash<br><a href="https://github.com/karpathy/jobs">GitHub</a></div>
   </div>
 
   <div class="view-toggle">
@@ -303,9 +303,9 @@ canvas#canvas {
   </div>
 
   <div class="gradient-legend">
-    <span>Low</span>
+    <span id="legendMinLabel">Low</span>
     <canvas id="gradientLegend" width="80" height="8"></canvas>
-    <span>High</span>
+    <span id="legendMaxLabel">High</span>
   </div>
 </div>
 
@@ -345,10 +345,12 @@ function exposureColorCSS(score, alpha) {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
+const OUTLOOK_CLAMP_PCT = 12;
+
 function outlookColorCSS(outlook, alpha) {
   if (outlook == null) return `rgba(128,128,128,${alpha})`;
   // Clamp to +/-12% for good saturation without overdoing it
-  const t = Math.max(0, Math.min(1, (outlook + 12) / 24));
+  const t = Math.max(0, Math.min(1, (outlook + OUTLOOK_CLAMP_PCT) / (OUTLOOK_CLAMP_PCT * 2)));
   let r, g, b;
   if (t < 0.5) {
     const s = t / 0.5;
@@ -459,6 +461,7 @@ function setView(view) {
   currentView = view;
   document.querySelectorAll(".view-toggle button").forEach(b => b.classList.remove("active"));
   document.querySelector(`.view-toggle button[onclick="setView('${view}')"]`).classList.add("active");
+  updateColorLegendUI();
   hovered = null;
   hideTooltip();
   resize();
@@ -970,21 +973,43 @@ function resize() {
 function drawGradientLegend() {
   const c = document.getElementById("gradientLegend");
   const gctx = c.getContext("2d");
-  for (let x = 0; x < 80; x++) {
-    const score = (x / 79) * 10;
-    gctx.fillStyle = exposureColorCSS(score, 1);
-    gctx.fillRect(x, 0, 1, 8);
+  const width = c.width;
+  const height = c.height;
+  const denom = Math.max(1, width - 1);
+  gctx.clearRect(0, 0, width, height);
+  for (let x = 0; x < width; x++) {
+    if (currentView === "treemap") {
+      const score = (x / denom) * 10;
+      gctx.fillStyle = exposureColorCSS(score, 1);
+    } else {
+      const outlook = (x / denom) * (OUTLOOK_CLAMP_PCT * 2) - OUTLOOK_CLAMP_PCT;
+      gctx.fillStyle = outlookColorCSS(outlook, 1);
+    }
+    gctx.fillRect(x, 0, 1, height);
   }
 }
 
+function updateColorLegendUI() {
+  const isTreemap = currentView === "treemap";
+  document.getElementById("colorMetricLabel").textContent =
+    isTreemap ? "color = AI exposure" : "color = BLS outlook";
+  document.getElementById("legendMinLabel").textContent =
+    isTreemap ? "Low" : "Declining";
+  document.getElementById("legendMaxLabel").textContent =
+    isTreemap ? "High" : "Growing";
+  drawGradientLegend();
+}
+
 // ── Load ───────────────────────────────────────────────────────────────
+
+updateColorLegendUI();
 
 fetch("data.json")
   .then(r => r.json())
   .then(d => {
     data = d;
     computeStats();
-    drawGradientLegend();
+    updateColorLegendUI();
     resize();
   });
 
