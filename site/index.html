@@ -163,11 +163,11 @@ body {
   text-align: right;
 }
 
-.view-toggle {
+.view-toggle, .metric-toggle {
   display: flex;
   gap: 4px;
 }
-.view-toggle button {
+.view-toggle button, .metric-toggle button {
   flex: 1;
   padding: 5px 0;
   font-size: 10px;
@@ -179,13 +179,17 @@ body {
   cursor: pointer;
   transition: all 0.15s;
 }
-.view-toggle button.active {
+.view-toggle button.active, .metric-toggle button.active {
   background: rgba(255,255,255,0.08);
   color: var(--fg);
   border-color: rgba(255,255,255,0.2);
 }
-.view-toggle button:hover:not(.active) {
+.view-toggle button:hover:not(.active), .metric-toggle button:hover:not(.active) {
   background: rgba(255,255,255,0.04);
+}
+
+.stat-section.hidden {
+  display: none;
 }
 
 .gradient-legend {
@@ -259,9 +263,18 @@ canvas#canvas {
     <div class="subtitle">342 occupations &middot; color = AI exposure<br>Data from <a href="https://www.bls.gov/ooh/">BLS</a>, scored by Gemini Flash<br><a href="https://github.com/karpathy/jobs">GitHub</a></div>
   </div>
 
-  <div class="view-toggle">
+  <div class="view-toggle" id="viewToggle">
     <button class="active" onclick="setView('treemap')">Treemap</button>
     <button onclick="setView('scatter')">Exposure vs Outlook</button>
+  </div>
+
+  <div class="stat-section" id="treemapMetricSection">
+    <h3>Treemap area</h3>
+    <div class="metric-toggle" id="treemapMetricToggle">
+      <button class="active" onclick="setTreemapMetric('wages')">Total wages</button>
+      <button onclick="setTreemapMetric('jobs')">Jobs</button>
+    </div>
+    <div class="stat-label" id="treemapMetricDesc">area = total wage value (median pay * jobs)</div>
   </div>
 
   <div class="stat-section">
@@ -447,6 +460,7 @@ let data = [];
 let rects = [];
 let hovered = null;
 let currentView = "treemap";
+let treemapMetric = "wages";
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -455,10 +469,56 @@ let dpr = window.devicePixelRatio || 1;
 const MARGIN = 12;
 const GAP = 1.5;
 
+function getTreemapValue(d) {
+  if (treemapMetric === "jobs") {
+    if (d.jobs != null && d.jobs > 0) return d.jobs;
+    return 1;
+  }
+  const wageValue = getTotalWageValue(d);
+  if (wageValue != null && wageValue > 0) return wageValue;
+  if (d.jobs != null && d.jobs > 0) return d.jobs;
+  return 1;
+}
+
+function getTotalWageValue(d) {
+  if (d.pay == null || d.jobs == null) return null;
+  return d.pay * d.jobs;
+}
+
+function getTreemapMetricInfo(d) {
+  if (treemapMetric === "jobs") {
+    return d.jobs != null ? formatNumber(d.jobs) + " jobs" : "";
+  }
+  const wageValue = getTotalWageValue(d);
+  if (wageValue != null && wageValue > 0) return formatCurrencyCompact(wageValue);
+  if (d.jobs != null && d.jobs > 0) return formatNumber(d.jobs) + " jobs";
+  return "";
+}
+
+function updateTreemapMetricUI() {
+  const isTreemap = currentView === "treemap";
+  document.getElementById("treemapMetricSection").classList.toggle("hidden", !isTreemap);
+  document.querySelectorAll("#treemapMetricToggle button").forEach(b => b.classList.remove("active"));
+  document.querySelector(`#treemapMetricToggle button[onclick="setTreemapMetric('${treemapMetric}')"]`).classList.add("active");
+  document.getElementById("treemapMetricDesc").textContent = treemapMetric === "wages"
+    ? "area = total wage value (median pay * jobs)"
+    : "area = total jobs";
+}
+
+function setTreemapMetric(metric) {
+  if (metric === treemapMetric) return;
+  treemapMetric = metric;
+  hovered = null;
+  hideTooltip();
+  updateTreemapMetricUI();
+  if (currentView === "treemap") resize();
+}
+
 function setView(view) {
   currentView = view;
-  document.querySelectorAll(".view-toggle button").forEach(b => b.classList.remove("active"));
-  document.querySelector(`.view-toggle button[onclick="setView('${view}')"]`).classList.add("active");
+  document.querySelectorAll("#viewToggle button").forEach(b => b.classList.remove("active"));
+  document.querySelector(`#viewToggle button[onclick="setView('${view}')"]`).classList.add("active");
+  updateTreemapMetricUI();
   hovered = null;
   hideTooltip();
   resize();
@@ -488,8 +548,8 @@ function layout() {
 
   const categories = Object.keys(byCategory).map(cat => ({
     cat,
-    items: byCategory[cat].sort((a, b) => (b.jobs || 0) - (a.jobs || 0)),
-    value: byCategory[cat].reduce((s, d) => s + (d.jobs || 1), 0),
+    items: byCategory[cat].sort((a, b) => getTreemapValue(b) - getTreemapValue(a)),
+    value: byCategory[cat].reduce((s, d) => s + getTreemapValue(d), 0),
   })).sort((a, b) => b.value - a.value);
 
   const catRects = squarify(categories, tx, ty, tw, th);
@@ -497,7 +557,7 @@ function layout() {
   rects = [];
   for (const cr of catRects) {
     const innerGap = GAP;
-    const items = cr.items.map(d => ({ ...d, value: d.jobs || 1 }));
+    const items = cr.items.map(d => ({ ...d, value: getTreemapValue(d) }));
     const innerRects = squarify(items,
       cr.rx + innerGap, cr.ry + innerGap,
       cr.rw - innerGap * 2, cr.rh - innerGap * 2
@@ -551,8 +611,9 @@ function draw() {
       ctx.fillText(r.title, rx + 5, ry + 4);
 
       if (rh > 34 && rw > 60) {
+        const metricInfo = getTreemapMetricInfo(r);
         const info = (r.exposure != null ? r.exposure + "/10" : "") +
-                     (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+                     (metricInfo ? " \u00b7 " + metricInfo : "");
         ctx.font = `400 ${Math.max(8, fontSize - 2)}px -apple-system, system-ui, sans-serif`;
         ctx.fillStyle = "rgba(255,255,255,0.5)";
         ctx.fillText(info, rx + 5, ry + 4 + fontSize + 2);
@@ -588,6 +649,15 @@ function formatPay(n) {
   return "$" + n.toLocaleString();
 }
 
+function formatCurrencyCompact(n) {
+  if (n == null) return "\u2014";
+  if (n >= 1e12) return "$" + (n / 1e12).toFixed(1) + "T";
+  if (n >= 1e9) return "$" + (n / 1e9).toFixed(1) + "B";
+  if (n >= 1e6) return "$" + (n / 1e6).toFixed(1) + "M";
+  if (n >= 1e3) return "$" + Math.round(n / 1e3) + "K";
+  return "$" + Math.round(n).toLocaleString();
+}
+
 function showTooltip(d, mx, my) {
   const tt = document.getElementById("tooltip");
 
@@ -607,6 +677,7 @@ function showTooltip(d, mx, my) {
 
   tt.querySelector(".tt-stats").innerHTML = `
     <span class="label">Median pay</span><span class="value">${formatPay(d.pay)}</span>
+    <span class="label">Total wage value</span><span class="value">${formatCurrencyCompact(getTotalWageValue(d))}</span>
     <span class="label">Jobs (2024)</span><span class="value">${formatNumber(d.jobs)}</span>
     <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>
@@ -978,6 +1049,8 @@ function drawGradientLegend() {
 }
 
 // ── Load ───────────────────────────────────────────────────────────────
+
+updateTreemapMetricUI();
 
 fetch("data.json")
   .then(r => r.json())
