@@ -422,10 +422,12 @@ def main():
     # Sort by employment (largest first) for better treemap layout
     data.sort(key=lambda d: -(d["jobs"] or 0))
 
-    # Write site/data.json
+    # Write data.json to both site/ (for local dev) and repo root (for GitHub Pages)
     os.makedirs("site", exist_ok=True)
-    with open("site/data.json", "w") as f:
-        json.dump(data, f)
+    json_payload = json.dumps(data)
+    for path in ["site/data.json", "data.json"]:
+        with open(path, "w") as f:
+            f.write(json_payload)
 
     # Summary stats
     total_jobs = sum(d["jobs"] for d in data if d["jobs"])
@@ -434,7 +436,7 @@ def main():
     with_exposure = sum(1 for d in data if d["exposure"] is not None)
     total_wages = sum(d["jobs"] * d["pay"] for d in data if d["jobs"] and d["pay"])
 
-    print(f"\nWrote {len(data)} occupations to site/data.json")
+    print(f"\nWrote {len(data)} occupations to site/data.json and data.json")
     print(f"Total employment: {total_jobs:,} ({total_jobs / 1e6:.1f}M)")
     print(f"With pay data: {with_pay}/{len(data)} (JSA: {pay_source_counts['jsa']}, ABS: {pay_source_counts['abs']}, estimated: {pay_source_counts['estimated']})")
     print(f"With outlook: {with_outlook}/{len(data)}")
