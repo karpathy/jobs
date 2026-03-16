@@ -6,6 +6,7 @@ Data sources:
 - JSA Occupation profiles (Table_4: full-time earnings detail)
 - JSA Occupation profiles (Table_8: education attainment)
 - JSA Employment projections (Table_6: 4-digit occupation growth)
+- ABS Employee Earnings and Hours (DO011: average weekly earnings by 4-digit occupation)
 
 Usage:
     python build_real_data.py
@@ -19,6 +20,7 @@ import openpyxl
 
 PROFILES_PATH = "data/Occupation profiles data - November 2025 (Revised).xlsx"
 PROJECTIONS_PATH = "data/employment_projections_-_may_2025_to_may_2035.xlsx"
+ABS_EARNINGS_PATH = "data/All data cubes/63060DO011_202505.xlsx"
 
 
 def parse_profiles_table1(wb):
@@ -152,6 +154,39 @@ def parse_projections(wb):
             "growth_10yr_pct": change_10yr_pct * 100 if isinstance(change_10yr_pct, (int, float)) else None,
         }
     return result
+
+
+def parse_abs_earnings(path):
+    """Parse ABS DO011 Table_1 for average weekly earnings by 4-digit ANZSCO (Persons)."""
+    wb = openpyxl.load_workbook(path, read_only=True)
+    ws = wb["Table_1"]
+    result = {}
+    for row in ws.iter_rows(min_row=6, values_only=True):
+        cell0 = str(row[0]).strip() if row[0] else ""
+        m = re.match(r'^(\d{4})\s', cell0)
+        if not m:
+            continue
+        code = int(m.group(1))
+        persons_weekly = row[3]  # Persons average weekly total cash earnings
+        if persons_weekly and isinstance(persons_weekly, (int, float)):
+            result[code] = persons_weekly
+    wb.close()
+    return result
+
+
+# Ratio of JSA full-time median weekly earnings to ABS all-employee average weekly
+# earnings, by ANZSCO major group. Computed from 296 occupations where both sources
+# report data. Used to convert ABS averages to estimated full-time median equivalents.
+ABS_TO_FT_MEDIAN_RATIO = {
+    "1": 0.96,  # Managers (mostly full-time, ratio ~1)
+    "2": 1.08,  # Professionals
+    "3": 1.08,  # Technicians & Trades
+    "4": 1.38,  # Community & Personal Service (many part-time)
+    "5": 1.10,  # Clerical & Admin
+    "6": 1.12,  # Sales
+    "7": 0.99,  # Machinery Operators & Drivers
+    "8": 1.13,  # Labourers
+}
 
 
 def estimate_pay_by_skill(skill_level, code):
@@ -292,6 +327,10 @@ def main():
     proj_wb.close()
     print(f"  Table_6: {len(projections)} occupations (non-NFD)")
 
+    print("Loading ABS Employee Earnings (DO011)...")
+    abs_earnings = parse_abs_earnings(ABS_EARNINGS_PATH)
+    print(f"  DO011: {len(abs_earnings)} occupations with weekly earnings")
+
     # Load existing scores if available
     scores_by_slug = {}
     if os.path.exists("scores.json"):
@@ -302,6 +341,7 @@ def main():
 
     # Build data for all 4-digit occupations found in the profiles
     data = []
+    pay_source_counts = {"jsa": 0, "abs": 0, "estimated": 0}
     all_codes = sorted(set(table1.keys()) | set(occ_by_code.keys()))
 
     for code in all_codes:
@@ -330,14 +370,24 @@ def main():
         if not employed:
             employed = 1000  # minimum fallback
 
-        # Pay: prefer Table_4 full-time weekly, fall back to Table_1 weekly
+        # Pay: prefer JSA Table_4 full-time weekly, fall back to Table_1 weekly,
+        # then ABS DO011 (adjusted by major-group ratio), then skill-level estimate
         weekly = t4.get("median_ft_weekly") or t1.get("median_weekly_earnings")
         if weekly and isinstance(weekly, (int, float)):
             annual_pay = int(weekly * 52)
+            pay_source_counts["jsa"] += 1
+        elif code in abs_earnings:
+            # Convert ABS all-employee average to approximate full-time median.
+            # Floor at A$46K (national minimum wage ~$24.10/hr × 38hr × 52wk).
+            major = str(code)[0]
+            ratio = ABS_TO_FT_MEDIAN_RATIO.get(major, 1.09)
+            annual_pay = max(46_000, int(abs_earnings[code] * ratio * 52))
+            pay_source_counts["abs"] += 1
         else:
-            # Estimate based on skill level from projections
+            # Last resort: estimate based on skill level from projections
             skill = proj.get("skill_level")
             annual_pay = estimate_pay_by_skill(skill, code)
+            pay_source_counts["estimated"] += 1
 
         # Education
         education = determine_education(t8)
@@ -386,7 +436,7 @@ def main():
 
     print(f"\nWrote {len(data)} occupations to site/data.json")
     print(f"Total employment: {total_jobs:,} ({total_jobs / 1e6:.1f}M)")
-    print(f"With pay data: {with_pay}/{len(data)}")
+    print(f"With pay data: {with_pay}/{len(data)} (JSA: {pay_source_counts['jsa']}, ABS: {pay_source_counts['abs']}, estimated: {pay_source_counts['estimated']})")
     print(f"With outlook: {with_outlook}/{len(data)}")
     print(f"With AI exposure: {with_exposure}/{len(data)}")
     if total_wages:
