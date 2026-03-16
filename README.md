@@ -28,7 +28,7 @@ All data is from official Australian government publications:
 
 - **[JSA Occupation Profiles (Nov 2025)](https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles)** — Employment levels, median weekly earnings, demographics, education attainment for 358 ANZSCO 4-digit occupations
 - **[JSA Employment Projections (May 2025–2035)](https://www.jobsandskills.gov.au/data/employment-projections)** — 5 and 10 year growth projections by occupation (Victoria University modelling)
-- **[ABS Employee Earnings and Hours (May 2025)](https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/employee-earnings-and-hours-australia/latest-release)** — Detailed earnings data cubes
+- **[ABS Employee Earnings and Hours (May 2025)](https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/employee-earnings-and-hours-australia/latest-release)** — Average weekly earnings by 4-digit occupation (DO011), used as fallback for 36 occupations missing JSA earnings
 
 The raw Excel files are in `data/`.
 
@@ -98,7 +98,7 @@ The Australian visualisation looks noticeably more optimistic than the US versio
 - **The projections do not account for AI**: The JSA/Victoria University model projects employment based on historical trends, demographics, and industry structure. It does not currently reflect the potential labour market impact of generative AI adoption.
 - **Currency**: AUD pay figures are not directly comparable to USD. At current exchange rates (~0.65 USD/AUD), an Australian median of A$92K is roughly US$60K.
 - **Education system**: Australia uses the Australian Qualifications Framework (AQF) — Certificate I–IV, Diploma, Bachelor degree, etc. — rather than US degree classifications (Associate's, Bachelor's, Master's). The education groups are not directly comparable.
-- **Coverage**: 296 of 361 occupations have real earnings data from JSA; the remaining 65 (mostly farmers, defence, niche trades) are estimated from ANZSCO skill levels.
+- **Coverage**: 332 of 361 occupations have real earnings data (296 from JSA, 36 from ABS Employee Earnings). The remaining 29 (mostly farmers, defence, niche trades) are estimated from ANZSCO skill levels. All 361 have AI exposure scores — 332 via LLM, 29 scored manually using the same rubric.
 
 ## Notes on Australian data
 
