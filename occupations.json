@@ -21,11 +21,46 @@
     "anzsco_code": "1113"
   },
   {
-    "title": "Advertising and Sales Managers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1311-advertising-and-sales-managers",
+    "title": "Aquaculture Farmers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1211-aquaculture-farmers",
     "category": "managers",
-    "slug": "1311-advertising-and-sales-managers",
+    "slug": "1211-aquaculture-farmers",
+    "anzsco_code": "1211"
+  },
+  {
+    "title": "Crop Farmers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1212-crop-farmers",
+    "category": "managers",
+    "slug": "1212-crop-farmers",
+    "anzsco_code": "1212"
+  },
+  {
+    "title": "Livestock Farmers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1213-livestock-farmers",
+    "category": "managers",
+    "slug": "1213-livestock-farmers",
+    "anzsco_code": "1213"
+  },
+  {
+    "title": "Mixed Crop and Livestock Farmers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1214-mixed-crop-and-livestock-farmers",
+    "category": "managers",
+    "slug": "1214-mixed-crop-and-livestock-farmers",
+    "anzsco_code": "1214"
+  },
+  {
+    "title": "Advertising and Public Relations Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1311-advertising-and-public-relations-managers",
+    "category": "managers",
+    "slug": "1311-advertising-and-public-relations-managers",
     "anzsco_code": "1311"
+  },
+  {
+    "title": "Sales and Marketing Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1312-sales-and-marketing-managers",
+    "category": "managers",
+    "slug": "1312-sales-and-marketing-managers",
+    "anzsco_code": "1312"
   },
   {
     "title": "Corporate Services Managers",
@@ -77,11 +112,32 @@
     "anzsco_code": "1332"
   },
   {
-    "title": "ICT Managers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1351-ict-managers",
+    "title": "Importers Exporters and Wholesalers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1333-importers-exporters-and-wholesalers",
     "category": "managers",
-    "slug": "1351-ict-managers",
-    "anzsco_code": "1351"
+    "slug": "1333-importers-exporters-and-wholesalers",
+    "anzsco_code": "1333"
+  },
+  {
+    "title": "Manufacturers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1334-manufacturers",
+    "category": "managers",
+    "slug": "1334-manufacturers",
+    "anzsco_code": "1334"
+  },
+  {
+    "title": "Production Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1335-production-managers",
+    "category": "managers",
+    "slug": "1335-production-managers",
+    "anzsco_code": "1335"
+  },
+  {
+    "title": "Supply and Distribution Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1336-supply-and-distribution-managers",
+    "category": "managers",
+    "slug": "1336-supply-and-distribution-managers",
+    "anzsco_code": "1336"
   },
   {
     "title": "Child Care Centre Managers",
@@ -99,17 +155,45 @@
   },
   {
     "title": "School Principals",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1344-school-principals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1343-school-principals",
     "category": "managers",
-    "slug": "1344-school-principals",
+    "slug": "1343-school-principals",
+    "anzsco_code": "1343"
+  },
+  {
+    "title": "Other Education Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1344-other-education-managers",
+    "category": "managers",
+    "slug": "1344-other-education-managers",
     "anzsco_code": "1344"
   },
   {
-    "title": "Importers, Exporters and Wholesalers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1392-importers-exporters-and-wholesalers",
+    "title": "ICT Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1351-ict-managers",
     "category": "managers",
-    "slug": "1392-importers-exporters-and-wholesalers",
+    "slug": "1351-ict-managers",
+    "anzsco_code": "1351"
+  },
+  {
+    "title": "Commissioned Officers (Management)",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1391-commissioned-officers-management",
+    "category": "managers",
+    "slug": "1391-commissioned-officers-management",
+    "anzsco_code": "1391"
+  },
+  {
+    "title": "Senior Non-commissioned Defence Force Members",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1392-senior-non-commissioned-defence-force-members",
+    "category": "managers",
+    "slug": "1392-senior-non-commissioned-defence-force-members",
     "anzsco_code": "1392"
+  },
+  {
+    "title": "Other Specialist Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1399-other-specialist-managers",
+    "category": "managers",
+    "slug": "1399-other-specialist-managers",
+    "anzsco_code": "1399"
   },
   {
     "title": "Cafe and Restaurant Managers",
@@ -119,10 +203,24 @@
     "anzsco_code": "1411"
   },
   {
-    "title": "Hotel and Motel Managers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1414-hotel-and-motel-managers",
+    "title": "Caravan Park and Camping Ground Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1412-caravan-park-and-camping-ground-managers",
     "category": "managers",
-    "slug": "1414-hotel-and-motel-managers",
+    "slug": "1412-caravan-park-and-camping-ground-managers",
+    "anzsco_code": "1412"
+  },
+  {
+    "title": "Hotel and Motel Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1413-hotel-and-motel-managers",
+    "category": "managers",
+    "slug": "1413-hotel-and-motel-managers",
+    "anzsco_code": "1413"
+  },
+  {
+    "title": "Licensed Club Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1414-licensed-club-managers",
+    "category": "managers",
+    "slug": "1414-licensed-club-managers",
     "anzsco_code": "1414"
   },
   {
@@ -133,11 +231,95 @@
     "anzsco_code": "1421"
   },
   {
-    "title": "Farmers and Farm Managers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1211-aquaculture-farmers",
+    "title": "Amusement Fitness and Sports Centre Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1491-amusement-fitness-and-sports-centre-managers",
     "category": "managers",
-    "slug": "1211-aquaculture-farmers",
-    "anzsco_code": "1211"
+    "slug": "1491-amusement-fitness-and-sports-centre-managers",
+    "anzsco_code": "1491"
+  },
+  {
+    "title": "Call or Contact Centre and Customer Service Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1492-call-or-contact-centre-and-customer-service-managers",
+    "category": "managers",
+    "slug": "1492-call-or-contact-centre-and-customer-service-managers",
+    "anzsco_code": "1492"
+  },
+  {
+    "title": "Conference and Event Organisers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1493-conference-and-event-organisers",
+    "category": "managers",
+    "slug": "1493-conference-and-event-organisers",
+    "anzsco_code": "1493"
+  },
+  {
+    "title": "Transport Services Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1494-transport-services-managers",
+    "category": "managers",
+    "slug": "1494-transport-services-managers",
+    "anzsco_code": "1494"
+  },
+  {
+    "title": "Other Hospitality Retail and Service Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1499-other-hospitality-retail-and-service-managers",
+    "category": "managers",
+    "slug": "1499-other-hospitality-retail-and-service-managers",
+    "anzsco_code": "1499"
+  },
+  {
+    "title": "Actors Dancers and Other Entertainers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2111-actors-dancers-and-other-entertainers",
+    "category": "professionals",
+    "slug": "2111-actors-dancers-and-other-entertainers",
+    "anzsco_code": "2111"
+  },
+  {
+    "title": "Music Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2112-music-professionals",
+    "category": "professionals",
+    "slug": "2112-music-professionals",
+    "anzsco_code": "2112"
+  },
+  {
+    "title": "Photographers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2113-photographers",
+    "category": "professionals",
+    "slug": "2113-photographers",
+    "anzsco_code": "2113"
+  },
+  {
+    "title": "Visual Arts and Crafts Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2114-visual-arts-and-crafts-professionals",
+    "category": "professionals",
+    "slug": "2114-visual-arts-and-crafts-professionals",
+    "anzsco_code": "2114"
+  },
+  {
+    "title": "Artistic Directors and Media Producers and Presenters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2121-artistic-directors-and-media-producers-and-presenters",
+    "category": "professionals",
+    "slug": "2121-artistic-directors-and-media-producers-and-presenters",
+    "anzsco_code": "2121"
+  },
+  {
+    "title": "Authors and Book and Script Editors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2122-authors-and-book-and-script-editors",
+    "category": "professionals",
+    "slug": "2122-authors-and-book-and-script-editors",
+    "anzsco_code": "2122"
+  },
+  {
+    "title": "Film Television Radio and Stage Directors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2123-film-television-radio-and-stage-directors",
+    "category": "professionals",
+    "slug": "2123-film-television-radio-and-stage-directors",
+    "anzsco_code": "2123"
+  },
+  {
+    "title": "Journalists and Other Writers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2124-journalists-and-other-writers",
+    "category": "professionals",
+    "slug": "2124-journalists-and-other-writers",
+    "anzsco_code": "2124"
   },
   {
     "title": "Accountants",
@@ -147,7 +329,7 @@
     "anzsco_code": "2211"
   },
   {
-    "title": "Auditors and Company Secretaries",
+    "title": "Auditors Company Secretaries and Corporate Treasurers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2212-auditors-company-secretaries-and-corporate-treasurers",
     "category": "professionals",
     "slug": "2212-auditors-company-secretaries-and-corporate-treasurers",
@@ -168,11 +350,487 @@
     "anzsco_code": "2222"
   },
   {
+    "title": "Financial Investment Advisers and Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2223-financial-investment-advisers-and-managers",
+    "category": "professionals",
+    "slug": "2223-financial-investment-advisers-and-managers",
+    "anzsco_code": "2223"
+  },
+  {
     "title": "Human Resource Professionals",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2231-human-resource-professionals",
     "category": "professionals",
     "slug": "2231-human-resource-professionals",
     "anzsco_code": "2231"
+  },
+  {
+    "title": "ICT Trainers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2232-ict-trainers",
+    "category": "professionals",
+    "slug": "2232-ict-trainers",
+    "anzsco_code": "2232"
+  },
+  {
+    "title": "Training and Development Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2233-training-and-development-professionals",
+    "category": "professionals",
+    "slug": "2233-training-and-development-professionals",
+    "anzsco_code": "2233"
+  },
+  {
+    "title": "Actuaries Mathematicians and Statisticians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2241-actuaries-mathematicians-and-statisticians",
+    "category": "professionals",
+    "slug": "2241-actuaries-mathematicians-and-statisticians",
+    "anzsco_code": "2241"
+  },
+  {
+    "title": "Archivists Curators and Records Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2242-archivists-curators-and-records-managers",
+    "category": "professionals",
+    "slug": "2242-archivists-curators-and-records-managers",
+    "anzsco_code": "2242"
+  },
+  {
+    "title": "Economists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2243-economists",
+    "category": "professionals",
+    "slug": "2243-economists",
+    "anzsco_code": "2243"
+  },
+  {
+    "title": "Intelligence and Policy Analysts",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2244-intelligence-and-policy-analysts",
+    "category": "professionals",
+    "slug": "2244-intelligence-and-policy-analysts",
+    "anzsco_code": "2244"
+  },
+  {
+    "title": "Land Economists and Valuers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2245-land-economists-and-valuers",
+    "category": "professionals",
+    "slug": "2245-land-economists-and-valuers",
+    "anzsco_code": "2245"
+  },
+  {
+    "title": "Librarians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2246-librarians",
+    "category": "professionals",
+    "slug": "2246-librarians",
+    "anzsco_code": "2246"
+  },
+  {
+    "title": "Management and Organisation Analysts",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2247-management-and-organisation-analysts",
+    "category": "professionals",
+    "slug": "2247-management-and-organisation-analysts",
+    "anzsco_code": "2247"
+  },
+  {
+    "title": "Advertising and Marketing Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2251-advertising-and-marketing-professionals",
+    "category": "professionals",
+    "slug": "2251-advertising-and-marketing-professionals",
+    "anzsco_code": "2251"
+  },
+  {
+    "title": "ICT Sales Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2252-ict-sales-professionals",
+    "category": "professionals",
+    "slug": "2252-ict-sales-professionals",
+    "anzsco_code": "2252"
+  },
+  {
+    "title": "Public Relations Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2253-public-relations-professionals",
+    "category": "professionals",
+    "slug": "2253-public-relations-professionals",
+    "anzsco_code": "2253"
+  },
+  {
+    "title": "Technical Sales Representatives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2254-technical-sales-representatives",
+    "category": "professionals",
+    "slug": "2254-technical-sales-representatives",
+    "anzsco_code": "2254"
+  },
+  {
+    "title": "Air Transport Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2311-air-transport-professionals",
+    "category": "professionals",
+    "slug": "2311-air-transport-professionals",
+    "anzsco_code": "2311"
+  },
+  {
+    "title": "Marine Transport Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2312-marine-transport-professionals",
+    "category": "professionals",
+    "slug": "2312-marine-transport-professionals",
+    "anzsco_code": "2312"
+  },
+  {
+    "title": "Architects and Landscape Architects",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2321-architects-and-landscape-architects",
+    "category": "professionals",
+    "slug": "2321-architects-and-landscape-architects",
+    "anzsco_code": "2321"
+  },
+  {
+    "title": "Cartographers and Surveyors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2322-cartographers-and-surveyors",
+    "category": "professionals",
+    "slug": "2322-cartographers-and-surveyors",
+    "anzsco_code": "2322"
+  },
+  {
+    "title": "Fashion Industrial and Jewellery Designers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2323-fashion-industrial-and-jewellery-designers",
+    "category": "professionals",
+    "slug": "2323-fashion-industrial-and-jewellery-designers",
+    "anzsco_code": "2323"
+  },
+  {
+    "title": "Graphic and Web Designers and Illustrators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2324-graphic-and-web-designers-and-illustrators",
+    "category": "professionals",
+    "slug": "2324-graphic-and-web-designers-and-illustrators",
+    "anzsco_code": "2324"
+  },
+  {
+    "title": "Interior Designers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2325-interior-designers",
+    "category": "professionals",
+    "slug": "2325-interior-designers",
+    "anzsco_code": "2325"
+  },
+  {
+    "title": "Urban and Regional Planners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2326-urban-and-regional-planners",
+    "category": "professionals",
+    "slug": "2326-urban-and-regional-planners",
+    "anzsco_code": "2326"
+  },
+  {
+    "title": "Chemical and Materials Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2331-chemical-and-materials-engineers",
+    "category": "professionals",
+    "slug": "2331-chemical-and-materials-engineers",
+    "anzsco_code": "2331"
+  },
+  {
+    "title": "Civil Engineering Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2332-civil-engineering-professionals",
+    "category": "professionals",
+    "slug": "2332-civil-engineering-professionals",
+    "anzsco_code": "2332"
+  },
+  {
+    "title": "Electrical Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2333-electrical-engineers",
+    "category": "professionals",
+    "slug": "2333-electrical-engineers",
+    "anzsco_code": "2333"
+  },
+  {
+    "title": "Electronics Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2334-electronics-engineers",
+    "category": "professionals",
+    "slug": "2334-electronics-engineers",
+    "anzsco_code": "2334"
+  },
+  {
+    "title": "Industrial Mechanical and Production Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2335-industrial-mechanical-and-production-engineers",
+    "category": "professionals",
+    "slug": "2335-industrial-mechanical-and-production-engineers",
+    "anzsco_code": "2335"
+  },
+  {
+    "title": "Mining Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2336-mining-engineers",
+    "category": "professionals",
+    "slug": "2336-mining-engineers",
+    "anzsco_code": "2336"
+  },
+  {
+    "title": "Other Engineering Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2339-other-engineering-professionals",
+    "category": "professionals",
+    "slug": "2339-other-engineering-professionals",
+    "anzsco_code": "2339"
+  },
+  {
+    "title": "Agricultural and Forestry Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2341-agricultural-and-forestry-scientists",
+    "category": "professionals",
+    "slug": "2341-agricultural-and-forestry-scientists",
+    "anzsco_code": "2341"
+  },
+  {
+    "title": "Chemists and Food and Wine Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2342-chemists-and-food-and-wine-scientists",
+    "category": "professionals",
+    "slug": "2342-chemists-and-food-and-wine-scientists",
+    "anzsco_code": "2342"
+  },
+  {
+    "title": "Environmental Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2343-environmental-scientists",
+    "category": "professionals",
+    "slug": "2343-environmental-scientists",
+    "anzsco_code": "2343"
+  },
+  {
+    "title": "Geologists Geophysicists and Hydrogeologists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2344-geologists-geophysicists-and-hydrogeologists",
+    "category": "professionals",
+    "slug": "2344-geologists-geophysicists-and-hydrogeologists",
+    "anzsco_code": "2344"
+  },
+  {
+    "title": "Life Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2345-life-scientists",
+    "category": "professionals",
+    "slug": "2345-life-scientists",
+    "anzsco_code": "2345"
+  },
+  {
+    "title": "Medical Laboratory Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2346-medical-laboratory-scientists",
+    "category": "professionals",
+    "slug": "2346-medical-laboratory-scientists",
+    "anzsco_code": "2346"
+  },
+  {
+    "title": "Other Natural and Physical Science Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2349-other-natural-and-physical-science-professionals",
+    "category": "professionals",
+    "slug": "2349-other-natural-and-physical-science-professionals",
+    "anzsco_code": "2349"
+  },
+  {
+    "title": "Early Childhood Pre-primary School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2411-early-childhood-pre-primary-school-teachers",
+    "category": "professionals",
+    "slug": "2411-early-childhood-pre-primary-school-teachers",
+    "anzsco_code": "2411"
+  },
+  {
+    "title": "Primary School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2412-primary-school-teachers",
+    "category": "professionals",
+    "slug": "2412-primary-school-teachers",
+    "anzsco_code": "2412"
+  },
+  {
+    "title": "Middle School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2413-middle-school-teachers",
+    "category": "professionals",
+    "slug": "2413-middle-school-teachers",
+    "anzsco_code": "2413"
+  },
+  {
+    "title": "Secondary School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2414-secondary-school-teachers",
+    "category": "professionals",
+    "slug": "2414-secondary-school-teachers",
+    "anzsco_code": "2414"
+  },
+  {
+    "title": "Special Education Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2415-special-education-teachers",
+    "category": "professionals",
+    "slug": "2415-special-education-teachers",
+    "anzsco_code": "2415"
+  },
+  {
+    "title": "University Lecturers and Tutors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2421-university-lecturers-and-tutors",
+    "category": "professionals",
+    "slug": "2421-university-lecturers-and-tutors",
+    "anzsco_code": "2421"
+  },
+  {
+    "title": "Vocational Education Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2422-vocational-education-teachers",
+    "category": "professionals",
+    "slug": "2422-vocational-education-teachers",
+    "anzsco_code": "2422"
+  },
+  {
+    "title": "Education Advisers and Reviewers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2491-education-advisers-and-reviewers",
+    "category": "professionals",
+    "slug": "2491-education-advisers-and-reviewers",
+    "anzsco_code": "2491"
+  },
+  {
+    "title": "Private Tutors and Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2492-private-tutors-and-teachers",
+    "category": "professionals",
+    "slug": "2492-private-tutors-and-teachers",
+    "anzsco_code": "2492"
+  },
+  {
+    "title": "Dietitians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2511-dietitians",
+    "category": "professionals",
+    "slug": "2511-dietitians",
+    "anzsco_code": "2511"
+  },
+  {
+    "title": "Medical Imaging Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2512-medical-imaging-professionals",
+    "category": "professionals",
+    "slug": "2512-medical-imaging-professionals",
+    "anzsco_code": "2512"
+  },
+  {
+    "title": "Occupational and Environmental Health Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2513-occupational-and-environmental-health-professionals",
+    "category": "professionals",
+    "slug": "2513-occupational-and-environmental-health-professionals",
+    "anzsco_code": "2513"
+  },
+  {
+    "title": "Optometrists and Orthoptists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2514-optometrists-and-orthoptists",
+    "category": "professionals",
+    "slug": "2514-optometrists-and-orthoptists",
+    "anzsco_code": "2514"
+  },
+  {
+    "title": "Pharmacists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2515-pharmacists",
+    "category": "professionals",
+    "slug": "2515-pharmacists",
+    "anzsco_code": "2515"
+  },
+  {
+    "title": "Other Health Diagnostic and Promotion Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2519-other-health-diagnostic-and-promotion-professionals",
+    "category": "professionals",
+    "slug": "2519-other-health-diagnostic-and-promotion-professionals",
+    "anzsco_code": "2519"
+  },
+  {
+    "title": "Chiropractors and Osteopaths",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2521-chiropractors-and-osteopaths",
+    "category": "professionals",
+    "slug": "2521-chiropractors-and-osteopaths",
+    "anzsco_code": "2521"
+  },
+  {
+    "title": "Complementary Health Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2522-complementary-health-therapists",
+    "category": "professionals",
+    "slug": "2522-complementary-health-therapists",
+    "anzsco_code": "2522"
+  },
+  {
+    "title": "Dental Practitioners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2523-dental-practitioners",
+    "category": "professionals",
+    "slug": "2523-dental-practitioners",
+    "anzsco_code": "2523"
+  },
+  {
+    "title": "Occupational Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2524-occupational-therapists",
+    "category": "professionals",
+    "slug": "2524-occupational-therapists",
+    "anzsco_code": "2524"
+  },
+  {
+    "title": "Physiotherapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2525-physiotherapists",
+    "category": "professionals",
+    "slug": "2525-physiotherapists",
+    "anzsco_code": "2525"
+  },
+  {
+    "title": "Podiatrists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2526-podiatrists",
+    "category": "professionals",
+    "slug": "2526-podiatrists",
+    "anzsco_code": "2526"
+  },
+  {
+    "title": "Audiologists and Speech Pathologists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2527-audiologists-and-speech-pathologists",
+    "category": "professionals",
+    "slug": "2527-audiologists-and-speech-pathologists",
+    "anzsco_code": "2527"
+  },
+  {
+    "title": "Generalist Medical Practitioners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2531-generalist-medical-practitioners",
+    "category": "professionals",
+    "slug": "2531-generalist-medical-practitioners",
+    "anzsco_code": "2531"
+  },
+  {
+    "title": "Anaesthetists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2532-anaesthetists",
+    "category": "professionals",
+    "slug": "2532-anaesthetists",
+    "anzsco_code": "2532"
+  },
+  {
+    "title": "Specialist Physicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2533-specialist-physicians",
+    "category": "professionals",
+    "slug": "2533-specialist-physicians",
+    "anzsco_code": "2533"
+  },
+  {
+    "title": "Psychiatrists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2534-psychiatrists",
+    "category": "professionals",
+    "slug": "2534-psychiatrists",
+    "anzsco_code": "2534"
+  },
+  {
+    "title": "Surgeons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2535-surgeons",
+    "category": "professionals",
+    "slug": "2535-surgeons",
+    "anzsco_code": "2535"
+  },
+  {
+    "title": "Other Medical Practitioners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2539-other-medical-practitioners",
+    "category": "professionals",
+    "slug": "2539-other-medical-practitioners",
+    "anzsco_code": "2539"
+  },
+  {
+    "title": "Midwives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2541-midwives",
+    "category": "professionals",
+    "slug": "2541-midwives",
+    "anzsco_code": "2541"
+  },
+  {
+    "title": "Nurse Educators and Researchers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2542-nurse-educators-and-researchers",
+    "category": "professionals",
+    "slug": "2542-nurse-educators-and-researchers",
+    "anzsco_code": "2542"
+  },
+  {
+    "title": "Nurse Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2543-nurse-managers",
+    "category": "professionals",
+    "slug": "2543-nurse-managers",
+    "anzsco_code": "2543"
+  },
+  {
+    "title": "Registered Nurses",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2544-registered-nurses",
+    "category": "professionals",
+    "slug": "2544-registered-nurses",
+    "anzsco_code": "2544"
   },
   {
     "title": "ICT Business and Systems Analysts",
@@ -203,7 +861,7 @@
     "anzsco_code": "2621"
   },
   {
-    "title": "ICT Network and Support Professionals",
+    "title": "Computer Network Professionals",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2631-computer-network-professionals",
     "category": "professionals",
     "slug": "2631-computer-network-professionals",
@@ -217,123 +875,11 @@
     "anzsco_code": "2632"
   },
   {
-    "title": "Architects and Landscape Architects",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2321-architects-and-landscape-architects",
+    "title": "Telecommunications Engineering Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2633-telecommunications-engineering-professionals",
     "category": "professionals",
-    "slug": "2321-architects-and-landscape-architects",
-    "anzsco_code": "2321"
-  },
-  {
-    "title": "Surveyors and Spatial Scientists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2322-surveyors-and-spatial-scientists",
-    "category": "professionals",
-    "slug": "2322-surveyors-and-spatial-scientists",
-    "anzsco_code": "2322"
-  },
-  {
-    "title": "Chemical and Materials Engineers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2331-chemical-and-materials-engineers",
-    "category": "professionals",
-    "slug": "2331-chemical-and-materials-engineers",
-    "anzsco_code": "2331"
-  },
-  {
-    "title": "Civil Engineering Professionals",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2332-civil-engineering-professionals",
-    "category": "professionals",
-    "slug": "2332-civil-engineering-professionals",
-    "anzsco_code": "2332"
-  },
-  {
-    "title": "Electrical Engineers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2333-electrical-engineers",
-    "category": "professionals",
-    "slug": "2333-electrical-engineers",
-    "anzsco_code": "2333"
-  },
-  {
-    "title": "Mechanical Engineers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2335-industrial-mechanical-and-production-engineers",
-    "category": "professionals",
-    "slug": "2335-industrial-mechanical-and-production-engineers",
-    "anzsco_code": "2335"
-  },
-  {
-    "title": "Mining Engineers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2336-mining-engineers",
-    "category": "professionals",
-    "slug": "2336-mining-engineers",
-    "anzsco_code": "2336"
-  },
-  {
-    "title": "Medical Practitioners",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2531-generalist-medical-practitioners",
-    "category": "professionals",
-    "slug": "2531-generalist-medical-practitioners",
-    "anzsco_code": "2531"
-  },
-  {
-    "title": "Specialist Physicians",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2534-psychiatrists",
-    "category": "professionals",
-    "slug": "2534-psychiatrists",
-    "anzsco_code": "2534"
-  },
-  {
-    "title": "Surgeons",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2535-surgeons",
-    "category": "professionals",
-    "slug": "2535-surgeons",
-    "anzsco_code": "2535"
-  },
-  {
-    "title": "Midwives",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2541-midwives",
-    "category": "professionals",
-    "slug": "2541-midwives",
-    "anzsco_code": "2541"
-  },
-  {
-    "title": "Registered Nurses",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2544-registered-nurses",
-    "category": "professionals",
-    "slug": "2544-registered-nurses",
-    "anzsco_code": "2544"
-  },
-  {
-    "title": "Dentists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2523-dentists",
-    "category": "professionals",
-    "slug": "2523-dentists",
-    "anzsco_code": "2523"
-  },
-  {
-    "title": "Pharmacists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2515-pharmacists",
-    "category": "professionals",
-    "slug": "2515-pharmacists",
-    "anzsco_code": "2515"
-  },
-  {
-    "title": "Physiotherapists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2525-physiotherapists",
-    "category": "professionals",
-    "slug": "2525-physiotherapists",
-    "anzsco_code": "2525"
-  },
-  {
-    "title": "Psychologists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2723-psychologists",
-    "category": "professionals",
-    "slug": "2723-psychologists",
-    "anzsco_code": "2723"
-  },
-  {
-    "title": "Veterinarians",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2347-veterinarians",
-    "category": "professionals",
-    "slug": "2347-veterinarians",
-    "anzsco_code": "2347"
+    "slug": "2633-telecommunications-engineering-professionals",
+    "anzsco_code": "2633"
   },
   {
     "title": "Barristers",
@@ -343,6 +889,13 @@
     "anzsco_code": "2711"
   },
   {
+    "title": "Judicial and Other Legal Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2712-judicial-and-other-legal-professionals",
+    "category": "professionals",
+    "slug": "2712-judicial-and-other-legal-professionals",
+    "anzsco_code": "2712"
+  },
+  {
     "title": "Solicitors",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2713-solicitors",
     "category": "professionals",
@@ -350,60 +903,32 @@
     "anzsco_code": "2713"
   },
   {
-    "title": "Economists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2244-economists",
+    "title": "Counsellors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2721-counsellors",
     "category": "professionals",
-    "slug": "2244-economists",
-    "anzsco_code": "2244"
+    "slug": "2721-counsellors",
+    "anzsco_code": "2721"
   },
   {
-    "title": "Actuaries, Mathematicians and Statisticians",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2241-actuaries-mathematicians-and-statisticians",
+    "title": "Ministers of Religion",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2722-ministers-of-religion",
     "category": "professionals",
-    "slug": "2241-actuaries-mathematicians-and-statisticians",
-    "anzsco_code": "2241"
+    "slug": "2722-ministers-of-religion",
+    "anzsco_code": "2722"
   },
   {
-    "title": "School Teachers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2411-early-childhood-pre-primary-school-teachers",
+    "title": "Psychologists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2723-psychologists",
     "category": "professionals",
-    "slug": "2411-early-childhood-pre-primary-school-teachers",
-    "anzsco_code": "2411"
+    "slug": "2723-psychologists",
+    "anzsco_code": "2723"
   },
   {
-    "title": "Primary School Teachers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2412-primary-school-teachers",
+    "title": "Social Professionals nec",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2724-social-professionals-nec",
     "category": "professionals",
-    "slug": "2412-primary-school-teachers",
-    "anzsco_code": "2412"
-  },
-  {
-    "title": "Secondary School Teachers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2414-secondary-school-teachers",
-    "category": "professionals",
-    "slug": "2414-secondary-school-teachers",
-    "anzsco_code": "2414"
-  },
-  {
-    "title": "University Lecturers and Tutors",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2421-university-lecturers-and-tutors",
-    "category": "professionals",
-    "slug": "2421-university-lecturers-and-tutors",
-    "anzsco_code": "2421"
-  },
-  {
-    "title": "Journalists and Other Writers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2124-journalists-and-other-writers",
-    "category": "professionals",
-    "slug": "2124-journalists-and-other-writers",
-    "anzsco_code": "2124"
-  },
-  {
-    "title": "Graphic and Web Designers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2322-graphic-and-web-designers-and-illustrators",
-    "category": "professionals",
-    "slug": "2322-graphic-and-web-designers-and-illustrators",
-    "anzsco_code": "2322"
+    "slug": "2724-social-professionals-nec",
+    "anzsco_code": "2724"
   },
   {
     "title": "Social Workers",
@@ -413,102 +938,11 @@
     "anzsco_code": "2725"
   },
   {
-    "title": "Welfare, Recreation and Community Arts Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2726-welfare-recreation-and-community-arts-workers",
-    "category": "professionals",
-    "slug": "2726-welfare-recreation-and-community-arts-workers",
-    "anzsco_code": "2726"
-  },
-  {
-    "title": "Electricians",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3411-electricians",
+    "title": "Agricultural Agritech and Aquaculture Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3111-agricultural-agritech-and-aquaculture-technicians",
     "category": "technicians-and-trades-workers",
-    "slug": "3411-electricians",
-    "anzsco_code": "3411"
-  },
-  {
-    "title": "Plumbers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3341-plumbers",
-    "category": "technicians-and-trades-workers",
-    "slug": "3341-plumbers",
-    "anzsco_code": "3341"
-  },
-  {
-    "title": "Carpenters and Joiners",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3312-carpenters-and-joiners",
-    "category": "technicians-and-trades-workers",
-    "slug": "3312-carpenters-and-joiners",
-    "anzsco_code": "3312"
-  },
-  {
-    "title": "Bricklayers and Stonemasons",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3311-bricklayers-and-stonemasons",
-    "category": "technicians-and-trades-workers",
-    "slug": "3311-bricklayers-and-stonemasons",
-    "anzsco_code": "3311"
-  },
-  {
-    "title": "Painting Trades Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3322-painting-trades-workers",
-    "category": "technicians-and-trades-workers",
-    "slug": "3322-painting-trades-workers",
-    "anzsco_code": "3322"
-  },
-  {
-    "title": "Motor Mechanics",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3212-motor-mechanics",
-    "category": "technicians-and-trades-workers",
-    "slug": "3212-motor-mechanics",
-    "anzsco_code": "3212"
-  },
-  {
-    "title": "Metal Fitters and Machinists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3232-metal-fitters-and-machinists",
-    "category": "technicians-and-trades-workers",
-    "slug": "3232-metal-fitters-and-machinists",
-    "anzsco_code": "3232"
-  },
-  {
-    "title": "Chefs",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3513-chefs",
-    "category": "technicians-and-trades-workers",
-    "slug": "3513-chefs",
-    "anzsco_code": "3513"
-  },
-  {
-    "title": "Bakers and Pastrycooks",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3511-bakers-and-pastrycooks",
-    "category": "technicians-and-trades-workers",
-    "slug": "3511-bakers-and-pastrycooks",
-    "anzsco_code": "3511"
-  },
-  {
-    "title": "Hairdressers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3911-hairdressers",
-    "category": "technicians-and-trades-workers",
-    "slug": "3911-hairdressers",
-    "anzsco_code": "3911"
-  },
-  {
-    "title": "Gardeners",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3622-gardeners",
-    "category": "technicians-and-trades-workers",
-    "slug": "3622-gardeners",
-    "anzsco_code": "3622"
-  },
-  {
-    "title": "Telecommunications Trades Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3423-telecommunications-trades-workers",
-    "category": "technicians-and-trades-workers",
-    "slug": "3423-telecommunications-trades-workers",
-    "anzsco_code": "3423"
-  },
-  {
-    "title": "ICT Support Technicians",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3131-ict-support-technicians",
-    "category": "technicians-and-trades-workers",
-    "slug": "3131-ict-support-technicians",
-    "anzsco_code": "3131"
+    "slug": "3111-agricultural-agritech-and-aquaculture-technicians",
+    "anzsco_code": "3111"
   },
   {
     "title": "Medical Technicians",
@@ -518,18 +952,410 @@
     "anzsco_code": "3112"
   },
   {
-    "title": "Veterinary Nurses",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3613-veterinary-nurses",
+    "title": "Primary Products Assurance and Inspection Officers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3113-primary-products-assurance-and-inspection-officers",
     "category": "technicians-and-trades-workers",
-    "slug": "3613-veterinary-nurses",
-    "anzsco_code": "3613"
+    "slug": "3113-primary-products-assurance-and-inspection-officers",
+    "anzsco_code": "3113"
   },
   {
-    "title": "Dental Hygienists, Technicians and Therapists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3113-dental-hygienists-technicians-and-therapists",
+    "title": "Science Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3114-science-technicians",
     "category": "technicians-and-trades-workers",
-    "slug": "3113-dental-hygienists-technicians-and-therapists",
-    "anzsco_code": "3113"
+    "slug": "3114-science-technicians",
+    "anzsco_code": "3114"
+  },
+  {
+    "title": "Other Science Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3119-other-science-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3119-other-science-technicians",
+    "anzsco_code": "3119"
+  },
+  {
+    "title": "Architectural Building and Surveying Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3121-architectural-building-and-surveying-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3121-architectural-building-and-surveying-technicians",
+    "anzsco_code": "3121"
+  },
+  {
+    "title": "Civil Engineering Draftspersons and Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3122-civil-engineering-draftspersons-and-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3122-civil-engineering-draftspersons-and-technicians",
+    "anzsco_code": "3122"
+  },
+  {
+    "title": "Electrical Engineering Draftspersons and Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3123-electrical-engineering-draftspersons-and-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3123-electrical-engineering-draftspersons-and-technicians",
+    "anzsco_code": "3123"
+  },
+  {
+    "title": "Electronic Engineering Draftspersons and Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3124-electronic-engineering-draftspersons-and-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3124-electronic-engineering-draftspersons-and-technicians",
+    "anzsco_code": "3124"
+  },
+  {
+    "title": "Mechanical Engineering Draftspersons and Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3125-mechanical-engineering-draftspersons-and-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3125-mechanical-engineering-draftspersons-and-technicians",
+    "anzsco_code": "3125"
+  },
+  {
+    "title": "Other Building and Engineering Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3129-other-building-and-engineering-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3129-other-building-and-engineering-technicians",
+    "anzsco_code": "3129"
+  },
+  {
+    "title": "ICT Support Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3131-ict-support-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3131-ict-support-technicians",
+    "anzsco_code": "3131"
+  },
+  {
+    "title": "Telecommunications Technical Specialists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3132-telecommunications-technical-specialists",
+    "category": "technicians-and-trades-workers",
+    "slug": "3132-telecommunications-technical-specialists",
+    "anzsco_code": "3132"
+  },
+  {
+    "title": "Automotive Electricians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3211-automotive-electricians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3211-automotive-electricians",
+    "anzsco_code": "3211"
+  },
+  {
+    "title": "Motor Mechanics",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3212-motor-mechanics",
+    "category": "technicians-and-trades-workers",
+    "slug": "3212-motor-mechanics",
+    "anzsco_code": "3212"
+  },
+  {
+    "title": "Metal Casting Forging and Finishing Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3221-metal-casting-forging-and-finishing-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3221-metal-casting-forging-and-finishing-trades-workers",
+    "anzsco_code": "3221"
+  },
+  {
+    "title": "Sheetmetal Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3222-sheetmetal-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3222-sheetmetal-trades-workers",
+    "anzsco_code": "3222"
+  },
+  {
+    "title": "Structural Steel and Welding Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3223-structural-steel-and-welding-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3223-structural-steel-and-welding-trades-workers",
+    "anzsco_code": "3223"
+  },
+  {
+    "title": "Aircraft Maintenance Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3231-aircraft-maintenance-engineers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3231-aircraft-maintenance-engineers",
+    "anzsco_code": "3231"
+  },
+  {
+    "title": "Metal Fitters and Machinists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3232-metal-fitters-and-machinists",
+    "category": "technicians-and-trades-workers",
+    "slug": "3232-metal-fitters-and-machinists",
+    "anzsco_code": "3232"
+  },
+  {
+    "title": "Precision Metal Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3233-precision-metal-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3233-precision-metal-trades-workers",
+    "anzsco_code": "3233"
+  },
+  {
+    "title": "Toolmakers and Engineering Patternmakers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3234-toolmakers-and-engineering-patternmakers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3234-toolmakers-and-engineering-patternmakers",
+    "anzsco_code": "3234"
+  },
+  {
+    "title": "Bricklayers and Stonemasons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3311-bricklayers-and-stonemasons",
+    "category": "technicians-and-trades-workers",
+    "slug": "3311-bricklayers-and-stonemasons",
+    "anzsco_code": "3311"
+  },
+  {
+    "title": "Carpenters and Joiners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3312-carpenters-and-joiners",
+    "category": "technicians-and-trades-workers",
+    "slug": "3312-carpenters-and-joiners",
+    "anzsco_code": "3312"
+  },
+  {
+    "title": "Floor Finishers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3321-floor-finishers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3321-floor-finishers",
+    "anzsco_code": "3321"
+  },
+  {
+    "title": "Painting Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3322-painting-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3322-painting-trades-workers",
+    "anzsco_code": "3322"
+  },
+  {
+    "title": "Glaziers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3331-glaziers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3331-glaziers",
+    "anzsco_code": "3331"
+  },
+  {
+    "title": "Plasterers and Renderers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3332-plasterers-and-renderers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3332-plasterers-and-renderers",
+    "anzsco_code": "3332"
+  },
+  {
+    "title": "Roof Tilers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3333-roof-tilers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3333-roof-tilers",
+    "anzsco_code": "3333"
+  },
+  {
+    "title": "Wall and Floor Tilers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3334-wall-and-floor-tilers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3334-wall-and-floor-tilers",
+    "anzsco_code": "3334"
+  },
+  {
+    "title": "Plumbers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3341-plumbers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3341-plumbers",
+    "anzsco_code": "3341"
+  },
+  {
+    "title": "Electricians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3411-electricians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3411-electricians",
+    "anzsco_code": "3411"
+  },
+  {
+    "title": "Airconditioning and Refrigeration Mechanics",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3421-airconditioning-and-refrigeration-mechanics",
+    "category": "technicians-and-trades-workers",
+    "slug": "3421-airconditioning-and-refrigeration-mechanics",
+    "anzsco_code": "3421"
+  },
+  {
+    "title": "Electrical Distribution Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3422-electrical-distribution-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3422-electrical-distribution-trades-workers",
+    "anzsco_code": "3422"
+  },
+  {
+    "title": "Electronics Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3423-electronics-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3423-electronics-trades-workers",
+    "anzsco_code": "3423"
+  },
+  {
+    "title": "Telecommunications Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3424-telecommunications-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3424-telecommunications-trades-workers",
+    "anzsco_code": "3424"
+  },
+  {
+    "title": "Bakers and Pastrycooks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3511-bakers-and-pastrycooks",
+    "category": "technicians-and-trades-workers",
+    "slug": "3511-bakers-and-pastrycooks",
+    "anzsco_code": "3511"
+  },
+  {
+    "title": "Butchers and Smallgoods Makers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3512-butchers-and-smallgoods-makers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3512-butchers-and-smallgoods-makers",
+    "anzsco_code": "3512"
+  },
+  {
+    "title": "Chefs",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3513-chefs",
+    "category": "technicians-and-trades-workers",
+    "slug": "3513-chefs",
+    "anzsco_code": "3513"
+  },
+  {
+    "title": "Cooks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3514-cooks",
+    "category": "technicians-and-trades-workers",
+    "slug": "3514-cooks",
+    "anzsco_code": "3514"
+  },
+  {
+    "title": "Animal Attendants and Trainers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3611-animal-attendants-and-trainers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3611-animal-attendants-and-trainers",
+    "anzsco_code": "3611"
+  },
+  {
+    "title": "Shearers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3612-shearers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3612-shearers",
+    "anzsco_code": "3612"
+  },
+  {
+    "title": "Florists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3621-florists",
+    "category": "technicians-and-trades-workers",
+    "slug": "3621-florists",
+    "anzsco_code": "3621"
+  },
+  {
+    "title": "Gardeners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3622-gardeners",
+    "category": "technicians-and-trades-workers",
+    "slug": "3622-gardeners",
+    "anzsco_code": "3622"
+  },
+  {
+    "title": "Greenkeepers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3623-greenkeepers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3623-greenkeepers",
+    "anzsco_code": "3623"
+  },
+  {
+    "title": "Hairdressers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3911-hairdressers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3911-hairdressers",
+    "anzsco_code": "3911"
+  },
+  {
+    "title": "Printing Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3921-printing-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3921-printing-trades-workers",
+    "anzsco_code": "3921"
+  },
+  {
+    "title": "Canvas and Leather Goods Makers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3931-canvas-and-leather-goods-makers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3931-canvas-and-leather-goods-makers",
+    "anzsco_code": "3931"
+  },
+  {
+    "title": "Cabinetmakers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3941-cabinetmakers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3941-cabinetmakers",
+    "anzsco_code": "3941"
+  },
+  {
+    "title": "Wood Machinists and Other Wood Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3942-wood-machinists-and-other-wood-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3942-wood-machinists-and-other-wood-trades-workers",
+    "anzsco_code": "3942"
+  },
+  {
+    "title": "Boat Builders and Shipwrights",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3991-boat-builders-and-shipwrights",
+    "category": "technicians-and-trades-workers",
+    "slug": "3991-boat-builders-and-shipwrights",
+    "anzsco_code": "3991"
+  },
+  {
+    "title": "Chemical Gas Petroleum and Power Generation Plant Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3992-chemical-gas-petroleum-and-power-generation-plant-operators",
+    "category": "technicians-and-trades-workers",
+    "slug": "3992-chemical-gas-petroleum-and-power-generation-plant-operators",
+    "anzsco_code": "3992"
+  },
+  {
+    "title": "Gallery Library and Museum Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3993-gallery-library-and-museum-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3993-gallery-library-and-museum-technicians",
+    "anzsco_code": "3993"
+  },
+  {
+    "title": "Jewellers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3994-jewellers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3994-jewellers",
+    "anzsco_code": "3994"
+  },
+  {
+    "title": "Performing Arts Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3995-performing-arts-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3995-performing-arts-technicians",
+    "anzsco_code": "3995"
+  },
+  {
+    "title": "Sign Writers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3996-sign-writers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3996-sign-writers",
+    "anzsco_code": "3996"
+  },
+  {
+    "title": "Other Miscellaneous Technicians and Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3999-other-miscellaneous-technicians-and-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3999-other-miscellaneous-technicians-and-trades-workers",
+    "anzsco_code": "3999"
+  },
+  {
+    "title": "Ambulance Officers and Paramedics",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4111-ambulance-officers-and-paramedics",
+    "category": "community-and-personal-service-workers",
+    "slug": "4111-ambulance-officers-and-paramedics",
+    "anzsco_code": "4111"
+  },
+  {
+    "title": "Dental Hygienists Technicians and Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4112-dental-hygienists-technicians-and-therapists",
+    "category": "community-and-personal-service-workers",
+    "slug": "4112-dental-hygienists-technicians-and-therapists",
+    "anzsco_code": "4112"
+  },
+  {
+    "title": "Diversional Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4113-diversional-therapists",
+    "category": "community-and-personal-service-workers",
+    "slug": "4113-diversional-therapists",
+    "anzsco_code": "4113"
   },
   {
     "title": "Enrolled and Mothercraft Nurses",
@@ -539,11 +1365,25 @@
     "anzsco_code": "4114"
   },
   {
-    "title": "Aged and Disabled Carers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4231-aged-and-disabled-carers",
+    "title": "Indigenous Health Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4115-indigenous-health-workers",
     "category": "community-and-personal-service-workers",
-    "slug": "4231-aged-and-disabled-carers",
-    "anzsco_code": "4231"
+    "slug": "4115-indigenous-health-workers",
+    "anzsco_code": "4115"
+  },
+  {
+    "title": "Massage Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4116-massage-therapists",
+    "category": "community-and-personal-service-workers",
+    "slug": "4116-massage-therapists",
+    "anzsco_code": "4116"
+  },
+  {
+    "title": "Welfare Support Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4117-welfare-support-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4117-welfare-support-workers",
+    "anzsco_code": "4117"
   },
   {
     "title": "Child Carers",
@@ -560,6 +1400,20 @@
     "anzsco_code": "4221"
   },
   {
+    "title": "Aged and Disabled Carers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4231-aged-and-disabled-carers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4231-aged-and-disabled-carers",
+    "anzsco_code": "4231"
+  },
+  {
+    "title": "Dental Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4232-dental-assistants",
+    "category": "community-and-personal-service-workers",
+    "slug": "4232-dental-assistants",
+    "anzsco_code": "4232"
+  },
+  {
     "title": "Nursing Support and Personal Care Workers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4233-nursing-support-and-personal-care-workers",
     "category": "community-and-personal-service-workers",
@@ -567,18 +1421,67 @@
     "anzsco_code": "4233"
   },
   {
-    "title": "Personal Care Consultants",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4516-personal-care-consultants",
+    "title": "Special Care Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4234-special-care-workers",
     "category": "community-and-personal-service-workers",
-    "slug": "4516-personal-care-consultants",
-    "anzsco_code": "4516"
+    "slug": "4234-special-care-workers",
+    "anzsco_code": "4234"
   },
   {
-    "title": "Fitness Instructors",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4523-fitness-instructors",
+    "title": "Bar Attendants and Baristas",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4311-bar-attendants-and-baristas",
     "category": "community-and-personal-service-workers",
-    "slug": "4523-fitness-instructors",
-    "anzsco_code": "4523"
+    "slug": "4311-bar-attendants-and-baristas",
+    "anzsco_code": "4311"
+  },
+  {
+    "title": "Cafe Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4312-cafe-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4312-cafe-workers",
+    "anzsco_code": "4312"
+  },
+  {
+    "title": "Gaming Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4313-gaming-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4313-gaming-workers",
+    "anzsco_code": "4313"
+  },
+  {
+    "title": "Hotel Service Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4314-hotel-service-managers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4314-hotel-service-managers",
+    "anzsco_code": "4314"
+  },
+  {
+    "title": "Waiters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4315-waiters",
+    "category": "community-and-personal-service-workers",
+    "slug": "4315-waiters",
+    "anzsco_code": "4315"
+  },
+  {
+    "title": "Other Hospitality Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4319-other-hospitality-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4319-other-hospitality-workers",
+    "anzsco_code": "4319"
+  },
+  {
+    "title": "Defence Force Members Other Ranks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4411-defence-force-members-other-ranks",
+    "category": "community-and-personal-service-workers",
+    "slug": "4411-defence-force-members-other-ranks",
+    "anzsco_code": "4411"
+  },
+  {
+    "title": "Fire and Emergency Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4412-fire-and-emergency-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4412-fire-and-emergency-workers",
+    "anzsco_code": "4412"
   },
   {
     "title": "Police",
@@ -586,13 +1489,6 @@
     "category": "community-and-personal-service-workers",
     "slug": "4413-police",
     "anzsco_code": "4413"
-  },
-  {
-    "title": "Fire and Emergency Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4411-fire-and-emergency-workers",
-    "category": "community-and-personal-service-workers",
-    "slug": "4411-fire-and-emergency-workers",
-    "anzsco_code": "4411"
   },
   {
     "title": "Prison Officers",
@@ -609,18 +1505,123 @@
     "anzsco_code": "4422"
   },
   {
-    "title": "Waiters",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4315-waiters",
+    "title": "Beauty Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4511-beauty-therapists",
     "category": "community-and-personal-service-workers",
-    "slug": "4315-waiters",
-    "anzsco_code": "4315"
+    "slug": "4511-beauty-therapists",
+    "anzsco_code": "4511"
   },
   {
-    "title": "Bar Attendants and Baristas",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4311-bar-attendants-and-baristas",
+    "title": "Driving Instructors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4512-driving-instructors",
     "category": "community-and-personal-service-workers",
-    "slug": "4311-bar-attendants-and-baristas",
-    "anzsco_code": "4311"
+    "slug": "4512-driving-instructors",
+    "anzsco_code": "4512"
+  },
+  {
+    "title": "Funeral Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4513-funeral-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4513-funeral-workers",
+    "anzsco_code": "4513"
+  },
+  {
+    "title": "Gallery Museum and Tour Guides",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4514-gallery-museum-and-tour-guides",
+    "category": "community-and-personal-service-workers",
+    "slug": "4514-gallery-museum-and-tour-guides",
+    "anzsco_code": "4514"
+  },
+  {
+    "title": "Personal Care Consultants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4515-personal-care-consultants",
+    "category": "community-and-personal-service-workers",
+    "slug": "4515-personal-care-consultants",
+    "anzsco_code": "4515"
+  },
+  {
+    "title": "Tourism and Travel Advisers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4516-tourism-and-travel-advisers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4516-tourism-and-travel-advisers",
+    "anzsco_code": "4516"
+  },
+  {
+    "title": "Travel Attendants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4517-travel-attendants",
+    "category": "community-and-personal-service-workers",
+    "slug": "4517-travel-attendants",
+    "anzsco_code": "4517"
+  },
+  {
+    "title": "Other Personal Service Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4518-other-personal-service-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4518-other-personal-service-workers",
+    "anzsco_code": "4518"
+  },
+  {
+    "title": "Fitness Instructors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4521-fitness-instructors",
+    "category": "community-and-personal-service-workers",
+    "slug": "4521-fitness-instructors",
+    "anzsco_code": "4521"
+  },
+  {
+    "title": "Outdoor Adventure Guides",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4522-outdoor-adventure-guides",
+    "category": "community-and-personal-service-workers",
+    "slug": "4522-outdoor-adventure-guides",
+    "anzsco_code": "4522"
+  },
+  {
+    "title": "Sports Coaches Instructors and Officials",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4523-sports-coaches-instructors-and-officials",
+    "category": "community-and-personal-service-workers",
+    "slug": "4523-sports-coaches-instructors-and-officials",
+    "anzsco_code": "4523"
+  },
+  {
+    "title": "Sportspersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4524-sportspersons",
+    "category": "community-and-personal-service-workers",
+    "slug": "4524-sportspersons",
+    "anzsco_code": "4524"
+  },
+  {
+    "title": "Contract Program and Project Administrators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5111-contract-program-and-project-administrators",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5111-contract-program-and-project-administrators",
+    "anzsco_code": "5111"
+  },
+  {
+    "title": "Office Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5121-office-managers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5121-office-managers",
+    "anzsco_code": "5121"
+  },
+  {
+    "title": "Practice Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5122-practice-managers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5122-practice-managers",
+    "anzsco_code": "5122"
+  },
+  {
+    "title": "Personal Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5211-personal-assistants",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5211-personal-assistants",
+    "anzsco_code": "5211"
+  },
+  {
+    "title": "Secretaries",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5212-secretaries",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5212-secretaries",
+    "anzsco_code": "5212"
   },
   {
     "title": "General Clerks",
@@ -630,7 +1631,28 @@
     "anzsco_code": "5311"
   },
   {
-    "title": "Accounting Clerks and Bookkeepers",
+    "title": "Keyboard Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5321-keyboard-operators",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5321-keyboard-operators",
+    "anzsco_code": "5321"
+  },
+  {
+    "title": "Call or Contact Centre Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5411-call-or-contact-centre-workers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5411-call-or-contact-centre-workers",
+    "anzsco_code": "5411"
+  },
+  {
+    "title": "Receptionists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5421-receptionists",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5421-receptionists",
+    "anzsco_code": "5421"
+  },
+  {
+    "title": "Accounting Clerks",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5511-accounting-clerks",
     "category": "clerical-and-administrative-workers",
     "slug": "5511-accounting-clerks",
@@ -651,6 +1673,13 @@
     "anzsco_code": "5513"
   },
   {
+    "title": "Purchasing and Supply Logistics Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5514-purchasing-and-supply-logistics-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5514-purchasing-and-supply-logistics-clerks",
+    "anzsco_code": "5514"
+  },
+  {
     "title": "Bank Workers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5521-bank-workers",
     "category": "clerical-and-administrative-workers",
@@ -658,46 +1687,151 @@
     "anzsco_code": "5521"
   },
   {
-    "title": "Receptionists",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5421-receptionists",
+    "title": "Credit and Loans Officers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5522-credit-and-loans-officers",
     "category": "clerical-and-administrative-workers",
-    "slug": "5421-receptionists",
-    "anzsco_code": "5421"
-  },
-  {
-    "title": "Personal Assistants and Secretaries",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5212-personal-assistants",
-    "category": "clerical-and-administrative-workers",
-    "slug": "5212-personal-assistants",
-    "anzsco_code": "5212"
-  },
-  {
-    "title": "Office Managers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5121-office-managers",
-    "category": "clerical-and-administrative-workers",
-    "slug": "5121-office-managers",
-    "anzsco_code": "5121"
-  },
-  {
-    "title": "Data Entry Operators",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5321-keyboard-operators",
-    "category": "clerical-and-administrative-workers",
-    "slug": "5321-keyboard-operators",
-    "anzsco_code": "5321"
-  },
-  {
-    "title": "Insurance, Money Market and Statistical Clerks",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5522-insurance-money-market-and-statistical-clerks",
-    "category": "clerical-and-administrative-workers",
-    "slug": "5522-insurance-money-market-and-statistical-clerks",
+    "slug": "5522-credit-and-loans-officers",
     "anzsco_code": "5522"
   },
   {
-    "title": "Sales Assistants (General)",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6211-sales-assistants-general",
+    "title": "Insurance Money Market and Statistical Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5523-insurance-money-market-and-statistical-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5523-insurance-money-market-and-statistical-clerks",
+    "anzsco_code": "5523"
+  },
+  {
+    "title": "Betting Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5611-betting-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5611-betting-clerks",
+    "anzsco_code": "5611"
+  },
+  {
+    "title": "Couriers and Postal Deliverers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5612-couriers-and-postal-deliverers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5612-couriers-and-postal-deliverers",
+    "anzsco_code": "5612"
+  },
+  {
+    "title": "Filing and Registry Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5613-filing-and-registry-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5613-filing-and-registry-clerks",
+    "anzsco_code": "5613"
+  },
+  {
+    "title": "Mail Sorters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5614-mail-sorters",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5614-mail-sorters",
+    "anzsco_code": "5614"
+  },
+  {
+    "title": "Survey Interviewers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5615-survey-interviewers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5615-survey-interviewers",
+    "anzsco_code": "5615"
+  },
+  {
+    "title": "Switchboard Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5616-switchboard-operators",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5616-switchboard-operators",
+    "anzsco_code": "5616"
+  },
+  {
+    "title": "Purchasing and Supply Logistics Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5911-purchasing-and-supply-logistics-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5911-purchasing-and-supply-logistics-clerks",
+    "anzsco_code": "5911"
+  },
+  {
+    "title": "Transport and Despatch Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5912-transport-and-despatch-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5912-transport-and-despatch-clerks",
+    "anzsco_code": "5912"
+  },
+  {
+    "title": "Conveyancers and Legal Executives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5991-conveyancers-and-legal-executives",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5991-conveyancers-and-legal-executives",
+    "anzsco_code": "5991"
+  },
+  {
+    "title": "Court and Legal Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5992-court-and-legal-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5992-court-and-legal-clerks",
+    "anzsco_code": "5992"
+  },
+  {
+    "title": "Debt Collectors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5993-debt-collectors",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5993-debt-collectors",
+    "anzsco_code": "5993"
+  },
+  {
+    "title": "Human Resource Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5994-human-resource-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5994-human-resource-clerks",
+    "anzsco_code": "5994"
+  },
+  {
+    "title": "Inspectors and Regulatory Officers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5995-inspectors-and-regulatory-officers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5995-inspectors-and-regulatory-officers",
+    "anzsco_code": "5995"
+  },
+  {
+    "title": "Insurance Investigators Loss Adjusters and Risk Surveyors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5996-insurance-investigators-loss-adjusters-and-risk-surveyors",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5996-insurance-investigators-loss-adjusters-and-risk-surveyors",
+    "anzsco_code": "5996"
+  },
+  {
+    "title": "Library Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5997-library-assistants",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5997-library-assistants",
+    "anzsco_code": "5997"
+  },
+  {
+    "title": "Other Miscellaneous Clerical and Administrative Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5999-other-miscellaneous-clerical-and-administrative-workers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5999-other-miscellaneous-clerical-and-administrative-workers",
+    "anzsco_code": "5999"
+  },
+  {
+    "title": "Auctioneers and Stock and Station Agents",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6111-auctioneers-and-stock-and-station-agents",
     "category": "sales-workers",
-    "slug": "6211-sales-assistants-general",
-    "anzsco_code": "6211"
+    "slug": "6111-auctioneers-and-stock-and-station-agents",
+    "anzsco_code": "6111"
+  },
+  {
+    "title": "Insurance Agents",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6112-insurance-agents",
+    "category": "sales-workers",
+    "slug": "6112-insurance-agents",
+    "anzsco_code": "6112"
+  },
+  {
+    "title": "Sales Representatives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6113-sales-representatives",
+    "category": "sales-workers",
+    "slug": "6113-sales-representatives",
+    "anzsco_code": "6113"
   },
   {
     "title": "Real Estate Sales Agents",
@@ -707,11 +1841,46 @@
     "anzsco_code": "6121"
   },
   {
-    "title": "Insurance Agents and Sales Representatives",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6112-insurance-agents",
+    "title": "Sales Assistants General",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6211-sales-assistants-general",
     "category": "sales-workers",
-    "slug": "6112-insurance-agents",
-    "anzsco_code": "6112"
+    "slug": "6211-sales-assistants-general",
+    "anzsco_code": "6211"
+  },
+  {
+    "title": "ICT Sales Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6212-ict-sales-assistants",
+    "category": "sales-workers",
+    "slug": "6212-ict-sales-assistants",
+    "anzsco_code": "6212"
+  },
+  {
+    "title": "Motor Vehicle and Vehicle Parts Salespersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6213-motor-vehicle-and-vehicle-parts-salespersons",
+    "category": "sales-workers",
+    "slug": "6213-motor-vehicle-and-vehicle-parts-salespersons",
+    "anzsco_code": "6213"
+  },
+  {
+    "title": "Pharmacy Sales Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6214-pharmacy-sales-assistants",
+    "category": "sales-workers",
+    "slug": "6214-pharmacy-sales-assistants",
+    "anzsco_code": "6214"
+  },
+  {
+    "title": "Retail Supervisors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6215-retail-supervisors",
+    "category": "sales-workers",
+    "slug": "6215-retail-supervisors",
+    "anzsco_code": "6215"
+  },
+  {
+    "title": "Other Sales Assistants and Salespersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6219-other-sales-assistants-and-salespersons",
+    "category": "sales-workers",
+    "slug": "6219-other-sales-assistants-and-salespersons",
+    "anzsco_code": "6219"
   },
   {
     "title": "Checkout Operators and Office Cashiers",
@@ -721,6 +1890,20 @@
     "anzsco_code": "6311"
   },
   {
+    "title": "Models and Sales Demonstrators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6391-models-and-sales-demonstrators",
+    "category": "sales-workers",
+    "slug": "6391-models-and-sales-demonstrators",
+    "anzsco_code": "6391"
+  },
+  {
+    "title": "Retail and Wool Buyers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6392-retail-and-wool-buyers",
+    "category": "sales-workers",
+    "slug": "6392-retail-and-wool-buyers",
+    "anzsco_code": "6392"
+  },
+  {
     "title": "Telemarketers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6393-telemarketers",
     "category": "sales-workers",
@@ -728,11 +1911,116 @@
     "anzsco_code": "6393"
   },
   {
-    "title": "Truck Drivers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7331-truck-drivers",
+    "title": "Ticket Salespersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6394-ticket-salespersons",
+    "category": "sales-workers",
+    "slug": "6394-ticket-salespersons",
+    "anzsco_code": "6394"
+  },
+  {
+    "title": "Other Sales Support Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6399-other-sales-support-workers",
+    "category": "sales-workers",
+    "slug": "6399-other-sales-support-workers",
+    "anzsco_code": "6399"
+  },
+  {
+    "title": "Clay Concrete Glass and Stone Processing Machine Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7111-clay-concrete-glass-and-stone-processing-machine-operators",
     "category": "machinery-operators-and-drivers",
-    "slug": "7331-truck-drivers",
-    "anzsco_code": "7331"
+    "slug": "7111-clay-concrete-glass-and-stone-processing-machine-operators",
+    "anzsco_code": "7111"
+  },
+  {
+    "title": "Industrial Spraypainters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7112-industrial-spraypainters",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7112-industrial-spraypainters",
+    "anzsco_code": "7112"
+  },
+  {
+    "title": "Paper and Wood Processing Machine Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7113-paper-and-wood-processing-machine-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7113-paper-and-wood-processing-machine-operators",
+    "anzsco_code": "7113"
+  },
+  {
+    "title": "Photographic Developers and Printers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7114-photographic-developers-and-printers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7114-photographic-developers-and-printers",
+    "anzsco_code": "7114"
+  },
+  {
+    "title": "Plastics and Rubber Production Machine Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7115-plastics-and-rubber-production-machine-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7115-plastics-and-rubber-production-machine-operators",
+    "anzsco_code": "7115"
+  },
+  {
+    "title": "Sewing Machinists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7116-sewing-machinists",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7116-sewing-machinists",
+    "anzsco_code": "7116"
+  },
+  {
+    "title": "Other Machine Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7119-other-machine-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7119-other-machine-operators",
+    "anzsco_code": "7119"
+  },
+  {
+    "title": "Crane Hoist and Lift Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7121-crane-hoist-and-lift-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7121-crane-hoist-and-lift-operators",
+    "anzsco_code": "7121"
+  },
+  {
+    "title": "Other Stationary Plant Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7129-other-stationary-plant-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7129-other-stationary-plant-operators",
+    "anzsco_code": "7129"
+  },
+  {
+    "title": "Agricultural Forestry and Horticultural Plant Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7211-agricultural-forestry-and-horticultural-plant-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7211-agricultural-forestry-and-horticultural-plant-operators",
+    "anzsco_code": "7211"
+  },
+  {
+    "title": "Earthmoving Plant Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7212-earthmoving-plant-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7212-earthmoving-plant-operators",
+    "anzsco_code": "7212"
+  },
+  {
+    "title": "Forklift Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7213-forklift-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7213-forklift-drivers",
+    "anzsco_code": "7213"
+  },
+  {
+    "title": "Other Mobile Plant Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7219-other-mobile-plant-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7219-other-mobile-plant-operators",
+    "anzsco_code": "7219"
+  },
+  {
+    "title": "Automobile Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7311-automobile-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7311-automobile-drivers",
+    "anzsco_code": "7311"
   },
   {
     "title": "Bus and Coach Drivers",
@@ -743,100 +2031,296 @@
   },
   {
     "title": "Train and Tram Drivers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7321-train-and-tram-drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7313-train-and-tram-drivers",
     "category": "machinery-operators-and-drivers",
-    "slug": "7321-train-and-tram-drivers",
-    "anzsco_code": "7321"
+    "slug": "7313-train-and-tram-drivers",
+    "anzsco_code": "7313"
   },
   {
     "title": "Delivery Drivers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7311-delivery-drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7321-delivery-drivers",
     "category": "machinery-operators-and-drivers",
-    "slug": "7311-delivery-drivers",
-    "anzsco_code": "7311"
+    "slug": "7321-delivery-drivers",
+    "anzsco_code": "7321"
   },
   {
-    "title": "Machine Operators",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7112-stationary-plant-operators",
+    "title": "Truck Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7331-truck-drivers",
     "category": "machinery-operators-and-drivers",
-    "slug": "7112-stationary-plant-operators",
-    "anzsco_code": "7112"
-  },
-  {
-    "title": "Forklift Drivers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7213-forklift-drivers",
-    "category": "machinery-operators-and-drivers",
-    "slug": "7213-forklift-drivers",
-    "anzsco_code": "7213"
-  },
-  {
-    "title": "Crane, Hoist and Lift Operators",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7212-crane-hoist-and-lift-operators",
-    "category": "machinery-operators-and-drivers",
-    "slug": "7212-crane-hoist-and-lift-operators",
-    "anzsco_code": "7212"
+    "slug": "7331-truck-drivers",
+    "anzsco_code": "7331"
   },
   {
     "title": "Storepersons",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7419-other-miscellaneous-labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7411-storepersons",
     "category": "machinery-operators-and-drivers",
-    "slug": "7419-other-miscellaneous-labourers",
-    "anzsco_code": "7419"
+    "slug": "7411-storepersons",
+    "anzsco_code": "7411"
   },
   {
-    "title": "Cleaners and Laundry Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8112-cleaners-and-laundry-workers",
+    "title": "Car Detailers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8111-car-detailers",
     "category": "labourers",
-    "slug": "8112-cleaners-and-laundry-workers",
+    "slug": "8111-car-detailers",
+    "anzsco_code": "8111"
+  },
+  {
+    "title": "Commercial Cleaners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8112-commercial-cleaners",
+    "category": "labourers",
+    "slug": "8112-commercial-cleaners",
     "anzsco_code": "8112"
   },
   {
-    "title": "Construction and Mining Labourers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8212-construction-and-mining-labourers",
+    "title": "Domestic Cleaners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8113-domestic-cleaners",
     "category": "labourers",
-    "slug": "8212-construction-and-mining-labourers",
+    "slug": "8113-domestic-cleaners",
+    "anzsco_code": "8113"
+  },
+  {
+    "title": "House Cleaners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8114-house-cleaners",
+    "category": "labourers",
+    "slug": "8114-house-cleaners",
+    "anzsco_code": "8114"
+  },
+  {
+    "title": "Laundry Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8115-laundry-workers",
+    "category": "labourers",
+    "slug": "8115-laundry-workers",
+    "anzsco_code": "8115"
+  },
+  {
+    "title": "Other Cleaners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8116-other-cleaners",
+    "category": "labourers",
+    "slug": "8116-other-cleaners",
+    "anzsco_code": "8116"
+  },
+  {
+    "title": "Building and Plumbing Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8211-building-and-plumbing-labourers",
+    "category": "labourers",
+    "slug": "8211-building-and-plumbing-labourers",
+    "anzsco_code": "8211"
+  },
+  {
+    "title": "Concreters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8212-concreters",
+    "category": "labourers",
+    "slug": "8212-concreters",
     "anzsco_code": "8212"
   },
   {
-    "title": "Farm, Forestry and Garden Workers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8411-farm-forestry-and-garden-workers",
+    "title": "Fencers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8213-fencers",
     "category": "labourers",
-    "slug": "8411-farm-forestry-and-garden-workers",
-    "anzsco_code": "8411"
+    "slug": "8213-fencers",
+    "anzsco_code": "8213"
   },
   {
-    "title": "Food Process Workers",
+    "title": "Insulation and Home Improvement Installers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8214-insulation-and-home-improvement-installers",
+    "category": "labourers",
+    "slug": "8214-insulation-and-home-improvement-installers",
+    "anzsco_code": "8214"
+  },
+  {
+    "title": "Paving and Surfacing Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8215-paving-and-surfacing-labourers",
+    "category": "labourers",
+    "slug": "8215-paving-and-surfacing-labourers",
+    "anzsco_code": "8215"
+  },
+  {
+    "title": "Railway Track Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8216-railway-track-workers",
+    "category": "labourers",
+    "slug": "8216-railway-track-workers",
+    "anzsco_code": "8216"
+  },
+  {
+    "title": "Structural Steel Construction Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8217-structural-steel-construction-workers",
+    "category": "labourers",
+    "slug": "8217-structural-steel-construction-workers",
+    "anzsco_code": "8217"
+  },
+  {
+    "title": "Other Construction and Mining Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8219-other-construction-and-mining-labourers",
+    "category": "labourers",
+    "slug": "8219-other-construction-and-mining-labourers",
+    "anzsco_code": "8219"
+  },
+  {
+    "title": "Food and Drink Factory Workers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8311-food-and-drink-factory-workers",
     "category": "labourers",
     "slug": "8311-food-and-drink-factory-workers",
     "anzsco_code": "8311"
   },
   {
-    "title": "Packers and Product Assemblers",
+    "title": "Meat Boners and Slicers and Slaughterers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8312-meat-boners-and-slicers-and-slaughterers",
+    "category": "labourers",
+    "slug": "8312-meat-boners-and-slicers-and-slaughterers",
+    "anzsco_code": "8312"
+  },
+  {
+    "title": "Meat Poultry and Seafood Process Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8313-meat-poultry-and-seafood-process-workers",
+    "category": "labourers",
+    "slug": "8313-meat-poultry-and-seafood-process-workers",
+    "anzsco_code": "8313"
+  },
+  {
+    "title": "Metal Engineering Process Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8391-metal-engineering-process-workers",
+    "category": "labourers",
+    "slug": "8391-metal-engineering-process-workers",
+    "anzsco_code": "8391"
+  },
+  {
+    "title": "Plastics and Rubber Factory Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8392-plastics-and-rubber-factory-workers",
+    "category": "labourers",
+    "slug": "8392-plastics-and-rubber-factory-workers",
+    "anzsco_code": "8392"
+  },
+  {
+    "title": "Product Assemblers",
     "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8393-product-assemblers",
     "category": "labourers",
     "slug": "8393-product-assemblers",
     "anzsco_code": "8393"
   },
   {
-    "title": "Kitchen Hands",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8511-kitchenhands",
+    "title": "Product Quality Controllers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8394-product-quality-controllers",
     "category": "labourers",
-    "slug": "8511-kitchenhands",
+    "slug": "8394-product-quality-controllers",
+    "anzsco_code": "8394"
+  },
+  {
+    "title": "Other Factory Process Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8399-other-factory-process-workers",
+    "category": "labourers",
+    "slug": "8399-other-factory-process-workers",
+    "anzsco_code": "8399"
+  },
+  {
+    "title": "Farm Forestry and Garden Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8411-farm-forestry-and-garden-workers",
+    "category": "labourers",
+    "slug": "8411-farm-forestry-and-garden-workers",
+    "anzsco_code": "8411"
+  },
+  {
+    "title": "Garden and Nursery Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8412-garden-and-nursery-labourers",
+    "category": "labourers",
+    "slug": "8412-garden-and-nursery-labourers",
+    "anzsco_code": "8412"
+  },
+  {
+    "title": "Forestry and Logging Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8413-forestry-and-logging-workers",
+    "category": "labourers",
+    "slug": "8413-forestry-and-logging-workers",
+    "anzsco_code": "8413"
+  },
+  {
+    "title": "Fast Food Cooks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8511-fast-food-cooks",
+    "category": "labourers",
+    "slug": "8511-fast-food-cooks",
     "anzsco_code": "8511"
   },
   {
-    "title": "Freight Handlers and Shelf Fillers",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8414-freight-handlers-and-shelf-fillers",
+    "title": "Food Trades Assistants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8512-food-trades-assistants",
     "category": "labourers",
-    "slug": "8414-freight-handlers-and-shelf-fillers",
-    "anzsco_code": "8414"
+    "slug": "8512-food-trades-assistants",
+    "anzsco_code": "8512"
+  },
+  {
+    "title": "Kitchenhands",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8513-kitchenhands",
+    "category": "labourers",
+    "slug": "8513-kitchenhands",
+    "anzsco_code": "8513"
+  },
+  {
+    "title": "Freight Handlers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8911-freight-handlers",
+    "category": "labourers",
+    "slug": "8911-freight-handlers",
+    "anzsco_code": "8911"
+  },
+  {
+    "title": "Shelf Fillers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8912-shelf-fillers",
+    "category": "labourers",
+    "slug": "8912-shelf-fillers",
+    "anzsco_code": "8912"
+  },
+  {
+    "title": "Caretakers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8991-caretakers",
+    "category": "labourers",
+    "slug": "8991-caretakers",
+    "anzsco_code": "8991"
+  },
+  {
+    "title": "Deck and Fishing Hands",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8992-deck-and-fishing-hands",
+    "category": "labourers",
+    "slug": "8992-deck-and-fishing-hands",
+    "anzsco_code": "8992"
   },
   {
     "title": "Handypersons",
-    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8211-handypersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8993-handypersons",
     "category": "labourers",
-    "slug": "8211-handypersons",
-    "anzsco_code": "8211"
+    "slug": "8993-handypersons",
+    "anzsco_code": "8993"
+  },
+  {
+    "title": "Motor Vehicle Parts and Accessories Fitters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8994-motor-vehicle-parts-and-accessories-fitters",
+    "category": "labourers",
+    "slug": "8994-motor-vehicle-parts-and-accessories-fitters",
+    "anzsco_code": "8994"
+  },
+  {
+    "title": "Printing Assistants and Table Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8995-printing-assistants-and-table-workers",
+    "category": "labourers",
+    "slug": "8995-printing-assistants-and-table-workers",
+    "anzsco_code": "8995"
+  },
+  {
+    "title": "Recycling and Rubbish Collectors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8996-recycling-and-rubbish-collectors",
+    "category": "labourers",
+    "slug": "8996-recycling-and-rubbish-collectors",
+    "anzsco_code": "8996"
+  },
+  {
+    "title": "Vending Machine Attendants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8997-vending-machine-attendants",
+    "category": "labourers",
+    "slug": "8997-vending-machine-attendants",
+    "anzsco_code": "8997"
+  },
+  {
+    "title": "Other Miscellaneous Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8999-other-miscellaneous-labourers",
+    "category": "labourers",
+    "slug": "8999-other-miscellaneous-labourers",
+    "anzsco_code": "8999"
   }
 ]
