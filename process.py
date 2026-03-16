@@ -2,7 +2,7 @@
 Process scraped HTML files into Markdown.
 
 Reads from html/<slug>.html, writes to pages/<slug>.md.
-Reuses parse_detail.parse_ooh_page() which is already tested.
+Adapted for Jobs and Skills Australia occupation profiles.
 
 Usage:
     uv run python process.py              # process all HTML files
@@ -12,7 +12,7 @@ Usage:
 import argparse
 import json
 import os
-from parse_detail import parse_ooh_page
+from parse_detail import parse_jsa_page
 
 
 def main():
@@ -43,7 +43,7 @@ def main():
             skipped += 1
             continue
 
-        md = parse_ooh_page(html_path)
+        md = parse_jsa_page(html_path)
         with open(md_path, "w") as f:
             f.write(md)
         processed += 1

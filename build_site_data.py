@@ -4,6 +4,8 @@ Build a compact JSON for the website by merging CSV stats with AI exposure score
 Reads occupations.csv (for stats) and scores.json (for AI exposure).
 Writes site/data.json.
 
+Adapted for Australian occupation data from Jobs and Skills Australia.
+
 Usage:
     uv run python build_site_data.py
 """
@@ -28,15 +30,31 @@ def main():
     for row in rows:
         slug = row["slug"]
         score = scores.get(slug, {})
+
+        # Pay: use annual (derived from weekly * 52) or direct annual
+        pay = int(row["median_pay_annual"]) if row.get("median_pay_annual") else None
+
+        # Jobs: employment level
+        jobs = int(row["employment_level"]) if row.get("employment_level") else None
+
+        # Outlook: use future growth or recent growth
+        outlook_str = row.get("future_growth_5yr_pct") or row.get("employment_growth_pct") or ""
+        outlook = None
+        if outlook_str:
+            try:
+                outlook = round(float(outlook_str))
+            except ValueError:
+                pass
+
         data.append({
             "title": row["title"],
             "slug": slug,
             "category": row["category"],
-            "pay": int(row["median_pay_annual"]) if row["median_pay_annual"] else None,
-            "jobs": int(row["num_jobs_2024"]) if row["num_jobs_2024"] else None,
-            "outlook": int(row["outlook_pct"]) if row["outlook_pct"] else None,
-            "outlook_desc": row["outlook_desc"],
-            "education": row["entry_education"],
+            "pay": pay,
+            "jobs": jobs,
+            "outlook": outlook,
+            "outlook_desc": row.get("employment_growth_desc", ""),
+            "education": row.get("education_level", ""),
             "exposure": score.get("exposure"),
             "exposure_rationale": score.get("rationale"),
             "url": row.get("url", ""),

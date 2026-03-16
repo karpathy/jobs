@@ -1,2054 +1,842 @@
 [
   {
-    "title": "Accountants and auditors",
-    "url": "https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm",
-    "category": "business-and-financial",
-    "slug": "accountants-and-auditors"
+    "title": "Chief Executives and Managing Directors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1111-chief-executives-and-managing-directors",
+    "category": "managers",
+    "slug": "1111-chief-executives-and-managing-directors",
+    "anzsco_code": "1111"
   },
   {
-    "title": "Actors",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/actors.htm",
-    "category": "entertainment-and-sports",
-    "slug": "actors"
+    "title": "General Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1112-general-managers",
+    "category": "managers",
+    "slug": "1112-general-managers",
+    "anzsco_code": "1112"
   },
   {
-    "title": "Actuaries",
-    "url": "https://www.bls.gov/ooh/math/actuaries.htm",
-    "category": "math",
-    "slug": "actuaries"
+    "title": "Legislators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1113-legislators",
+    "category": "managers",
+    "slug": "1113-legislators",
+    "anzsco_code": "1113"
   },
   {
-    "title": "Administrative services and facilities managers",
-    "url": "https://www.bls.gov/ooh/management/administrative-services-managers.htm",
-    "category": "management",
-    "slug": "administrative-services-managers"
+    "title": "Advertising and Sales Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1311-advertising-and-sales-managers",
+    "category": "managers",
+    "slug": "1311-advertising-and-sales-managers",
+    "anzsco_code": "1311"
   },
   {
-    "title": "Adult basic and secondary education and ESL teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/adult-literacy-and-ged-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "adult-literacy-and-ged-teachers"
+    "title": "Corporate Services Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1321-corporate-services-managers",
+    "category": "managers",
+    "slug": "1321-corporate-services-managers",
+    "anzsco_code": "1321"
   },
   {
-    "title": "Advertising sales agents",
-    "url": "https://www.bls.gov/ooh/sales/advertising-sales-agents.htm",
-    "category": "sales",
-    "slug": "advertising-sales-agents"
+    "title": "Finance Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1322-finance-managers",
+    "category": "managers",
+    "slug": "1322-finance-managers",
+    "anzsco_code": "1322"
   },
   {
-    "title": "Advertising, promotions, and marketing managers",
-    "url": "https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm",
-    "category": "management",
-    "slug": "advertising-promotions-and-marketing-managers"
+    "title": "Human Resource Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1323-human-resource-managers",
+    "category": "managers",
+    "slug": "1323-human-resource-managers",
+    "anzsco_code": "1323"
   },
   {
-    "title": "Aerospace engineering and operations technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineering-and-operations-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "aerospace-engineering-and-operations-technicians"
+    "title": "Policy and Planning Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1324-policy-and-planning-managers",
+    "category": "managers",
+    "slug": "1324-policy-and-planning-managers",
+    "anzsco_code": "1324"
   },
   {
-    "title": "Aerospace engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "aerospace-engineers"
+    "title": "Research and Development Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1325-research-and-development-managers",
+    "category": "managers",
+    "slug": "1325-research-and-development-managers",
+    "anzsco_code": "1325"
   },
   {
-    "title": "Agricultural and food science technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-science-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "agricultural-and-food-science-technicians"
+    "title": "Construction Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1331-construction-managers",
+    "category": "managers",
+    "slug": "1331-construction-managers",
+    "anzsco_code": "1331"
   },
   {
-    "title": "Agricultural and food scientists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/agricultural-and-food-scientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "agricultural-and-food-scientists"
+    "title": "Engineering Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1332-engineering-managers",
+    "category": "managers",
+    "slug": "1332-engineering-managers",
+    "anzsco_code": "1332"
   },
   {
-    "title": "Agricultural engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/agricultural-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "agricultural-engineers"
+    "title": "ICT Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1351-ict-managers",
+    "category": "managers",
+    "slug": "1351-ict-managers",
+    "anzsco_code": "1351"
   },
   {
-    "title": "Agricultural workers",
-    "url": "https://www.bls.gov/ooh/farming-fishing-and-forestry/agricultural-workers.htm",
-    "category": "farming-fishing-and-forestry",
-    "slug": "agricultural-workers"
+    "title": "Child Care Centre Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1341-child-care-centre-managers",
+    "category": "managers",
+    "slug": "1341-child-care-centre-managers",
+    "anzsco_code": "1341"
   },
   {
-    "title": "Air traffic controllers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/air-traffic-controllers.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "air-traffic-controllers"
+    "title": "Health and Welfare Services Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1342-health-and-welfare-services-managers",
+    "category": "managers",
+    "slug": "1342-health-and-welfare-services-managers",
+    "anzsco_code": "1342"
   },
   {
-    "title": "Aircraft and avionics equipment mechanics and technicians",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/aircraft-and-avionics-equipment-mechanics-and-technicians.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "aircraft-and-avionics-equipment-mechanics-and-technicians"
+    "title": "School Principals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1344-school-principals",
+    "category": "managers",
+    "slug": "1344-school-principals",
+    "anzsco_code": "1344"
   },
   {
-    "title": "Airline and commercial pilots",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "airline-and-commercial-pilots"
+    "title": "Importers, Exporters and Wholesalers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1392-importers-exporters-and-wholesalers",
+    "category": "managers",
+    "slug": "1392-importers-exporters-and-wholesalers",
+    "anzsco_code": "1392"
   },
   {
-    "title": "Animal care and service workers",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/animal-care-and-service-workers.htm",
-    "category": "personal-care-and-service",
-    "slug": "animal-care-and-service-workers"
+    "title": "Cafe and Restaurant Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1411-cafe-and-restaurant-managers",
+    "category": "managers",
+    "slug": "1411-cafe-and-restaurant-managers",
+    "anzsco_code": "1411"
   },
   {
-    "title": "Announcers and DJs",
-    "url": "https://www.bls.gov/ooh/media-and-communication/announcers.htm",
-    "category": "media-and-communication",
-    "slug": "announcers"
+    "title": "Hotel and Motel Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1414-hotel-and-motel-managers",
+    "category": "managers",
+    "slug": "1414-hotel-and-motel-managers",
+    "anzsco_code": "1414"
   },
   {
-    "title": "Anthropologists and archeologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/anthropologists-and-archeologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "anthropologists-and-archeologists"
+    "title": "Retail Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1421-retail-managers",
+    "category": "managers",
+    "slug": "1421-retail-managers",
+    "anzsco_code": "1421"
   },
   {
-    "title": "Arbitrators, mediators, and conciliators",
-    "url": "https://www.bls.gov/ooh/legal/arbitrators-mediators-and-conciliators.htm",
-    "category": "legal",
-    "slug": "arbitrators-mediators-and-conciliators"
+    "title": "Farmers and Farm Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/1211-aquaculture-farmers",
+    "category": "managers",
+    "slug": "1211-aquaculture-farmers",
+    "anzsco_code": "1211"
   },
   {
-    "title": "Architects",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/architects.htm",
-    "category": "architecture-and-engineering",
-    "slug": "architects"
+    "title": "Accountants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2211-accountants",
+    "category": "professionals",
+    "slug": "2211-accountants",
+    "anzsco_code": "2211"
   },
   {
-    "title": "Architectural and engineering managers",
-    "url": "https://www.bls.gov/ooh/management/architectural-and-engineering-managers.htm",
-    "category": "management",
-    "slug": "architectural-and-engineering-managers"
+    "title": "Auditors and Company Secretaries",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2212-auditors-company-secretaries-and-corporate-treasurers",
+    "category": "professionals",
+    "slug": "2212-auditors-company-secretaries-and-corporate-treasurers",
+    "anzsco_code": "2212"
   },
   {
-    "title": "Archivists, curators, and museum workers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/curators-museum-technicians-and-conservators.htm",
-    "category": "education-training-and-library",
-    "slug": "curators-museum-technicians-and-conservators"
+    "title": "Financial Brokers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2221-financial-brokers",
+    "category": "professionals",
+    "slug": "2221-financial-brokers",
+    "anzsco_code": "2221"
   },
   {
-    "title": "Art directors",
-    "url": "https://www.bls.gov/ooh/arts-and-design/art-directors.htm",
-    "category": "arts-and-design",
-    "slug": "art-directors"
+    "title": "Financial Dealers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2222-financial-dealers",
+    "category": "professionals",
+    "slug": "2222-financial-dealers",
+    "anzsco_code": "2222"
   },
   {
-    "title": "Assemblers and fabricators",
-    "url": "https://www.bls.gov/ooh/production/assemblers-and-fabricators.htm",
-    "category": "production",
-    "slug": "assemblers-and-fabricators"
+    "title": "Human Resource Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2231-human-resource-professionals",
+    "category": "professionals",
+    "slug": "2231-human-resource-professionals",
+    "anzsco_code": "2231"
   },
   {
-    "title": "Athletes and sports competitors",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/athletes-and-sports-competitors.htm",
-    "category": "entertainment-and-sports",
-    "slug": "athletes-and-sports-competitors"
+    "title": "ICT Business and Systems Analysts",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2611-ict-business-and-systems-analysts",
+    "category": "professionals",
+    "slug": "2611-ict-business-and-systems-analysts",
+    "anzsco_code": "2611"
   },
   {
-    "title": "Athletic trainers",
-    "url": "https://www.bls.gov/ooh/healthcare/athletic-trainers.htm",
-    "category": "healthcare",
-    "slug": "athletic-trainers"
+    "title": "Multimedia Specialists and Web Developers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2612-multimedia-specialists-and-web-developers",
+    "category": "professionals",
+    "slug": "2612-multimedia-specialists-and-web-developers",
+    "anzsco_code": "2612"
   },
   {
-    "title": "Atmospheric scientists, including meteorologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/atmospheric-scientists-including-meteorologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "atmospheric-scientists-including-meteorologists"
+    "title": "Software and Applications Programmers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2613-software-and-applications-programmers",
+    "category": "professionals",
+    "slug": "2613-software-and-applications-programmers",
+    "anzsco_code": "2613"
   },
   {
-    "title": "Audiologists",
-    "url": "https://www.bls.gov/ooh/healthcare/audiologists.htm",
-    "category": "healthcare",
-    "slug": "audiologists"
+    "title": "Database and Systems Administrators and ICT Security Specialists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2621-database-and-systems-administrators-and-ict-security-specialists",
+    "category": "professionals",
+    "slug": "2621-database-and-systems-administrators-and-ict-security-specialists",
+    "anzsco_code": "2621"
   },
   {
-    "title": "Automotive body and glass repairers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-body-and-glass-repairers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "automotive-body-and-glass-repairers"
+    "title": "ICT Network and Support Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2631-computer-network-professionals",
+    "category": "professionals",
+    "slug": "2631-computer-network-professionals",
+    "anzsco_code": "2631"
   },
   {
-    "title": "Automotive service technicians and mechanics",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/automotive-service-technicians-and-mechanics.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "automotive-service-technicians-and-mechanics"
+    "title": "ICT Support and Test Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2632-ict-support-and-test-engineers",
+    "category": "professionals",
+    "slug": "2632-ict-support-and-test-engineers",
+    "anzsco_code": "2632"
   },
   {
-    "title": "Bakers",
-    "url": "https://www.bls.gov/ooh/production/bakers.htm",
-    "category": "production",
-    "slug": "bakers"
+    "title": "Architects and Landscape Architects",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2321-architects-and-landscape-architects",
+    "category": "professionals",
+    "slug": "2321-architects-and-landscape-architects",
+    "anzsco_code": "2321"
   },
   {
-    "title": "Barbers, hairstylists, and cosmetologists",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/barbers-hairstylists-and-cosmetologists.htm",
-    "category": "personal-care-and-service",
-    "slug": "barbers-hairstylists-and-cosmetologists"
+    "title": "Surveyors and Spatial Scientists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2322-surveyors-and-spatial-scientists",
+    "category": "professionals",
+    "slug": "2322-surveyors-and-spatial-scientists",
+    "anzsco_code": "2322"
   },
   {
-    "title": "Bartenders",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/bartenders.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "bartenders"
+    "title": "Chemical and Materials Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2331-chemical-and-materials-engineers",
+    "category": "professionals",
+    "slug": "2331-chemical-and-materials-engineers",
+    "anzsco_code": "2331"
   },
   {
-    "title": "Bill and account collectors",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/bill-and-account-collectors.htm",
-    "category": "office-and-administrative-support",
-    "slug": "bill-and-account-collectors"
+    "title": "Civil Engineering Professionals",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2332-civil-engineering-professionals",
+    "category": "professionals",
+    "slug": "2332-civil-engineering-professionals",
+    "anzsco_code": "2332"
   },
   {
-    "title": "Biochemists and biophysicists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/biochemists-and-biophysicists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "biochemists-and-biophysicists"
+    "title": "Electrical Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2333-electrical-engineers",
+    "category": "professionals",
+    "slug": "2333-electrical-engineers",
+    "anzsco_code": "2333"
   },
   {
-    "title": "Bioengineers and biomedical engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/biomedical-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "biomedical-engineers"
+    "title": "Mechanical Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2335-industrial-mechanical-and-production-engineers",
+    "category": "professionals",
+    "slug": "2335-industrial-mechanical-and-production-engineers",
+    "anzsco_code": "2335"
   },
   {
-    "title": "Biological technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/biological-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "biological-technicians"
+    "title": "Mining Engineers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2336-mining-engineers",
+    "category": "professionals",
+    "slug": "2336-mining-engineers",
+    "anzsco_code": "2336"
   },
   {
-    "title": "Boilermakers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/boilermakers.htm",
-    "category": "construction-and-extraction",
-    "slug": "boilermakers"
+    "title": "Medical Practitioners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2531-generalist-medical-practitioners",
+    "category": "professionals",
+    "slug": "2531-generalist-medical-practitioners",
+    "anzsco_code": "2531"
   },
   {
-    "title": "Bookkeeping, accounting, and auditing clerks",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm",
-    "category": "office-and-administrative-support",
-    "slug": "bookkeeping-accounting-and-auditing-clerks"
+    "title": "Specialist Physicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2534-psychiatrists",
+    "category": "professionals",
+    "slug": "2534-psychiatrists",
+    "anzsco_code": "2534"
   },
   {
-    "title": "Broadcast, sound, and video technicians",
-    "url": "https://www.bls.gov/ooh/media-and-communication/broadcast-and-sound-engineering-technicians.htm",
-    "category": "media-and-communication",
-    "slug": "broadcast-and-sound-engineering-technicians"
+    "title": "Surgeons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2535-surgeons",
+    "category": "professionals",
+    "slug": "2535-surgeons",
+    "anzsco_code": "2535"
   },
   {
-    "title": "Budget analysts",
-    "url": "https://www.bls.gov/ooh/business-and-financial/budget-analysts.htm",
-    "category": "business-and-financial",
-    "slug": "budget-analysts"
+    "title": "Midwives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2541-midwives",
+    "category": "professionals",
+    "slug": "2541-midwives",
+    "anzsco_code": "2541"
   },
   {
-    "title": "Bus drivers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/bus-drivers.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "bus-drivers"
-  },
-  {
-    "title": "Butchers",
-    "url": "https://www.bls.gov/ooh/production/butchers-and-meat-cutters.htm",
-    "category": "production",
-    "slug": "butchers-and-meat-cutters"
-  },
-  {
-    "title": "Calibration technologists and technicians",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/calibration-technologists-and-technicians.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "calibration-technologists-and-technicians"
-  },
-  {
-    "title": "Cardiovascular technologists and technicians",
-    "url": "https://www.bls.gov/ooh/healthcare/cardiovascular-technologists-and-technicians.htm",
-    "category": "healthcare",
-    "slug": "cardiovascular-technologists-and-technicians"
-  },
-  {
-    "title": "Career and technical education teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/career-and-technical-education-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "career-and-technical-education-teachers"
-  },
-  {
-    "title": "Carpenters",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/carpenters.htm",
-    "category": "construction-and-extraction",
-    "slug": "carpenters"
-  },
-  {
-    "title": "Cartographers and photogrammetrists",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/cartographers-and-photogrammetrists.htm",
-    "category": "architecture-and-engineering",
-    "slug": "cartographers-and-photogrammetrists"
-  },
-  {
-    "title": "Cashiers",
-    "url": "https://www.bls.gov/ooh/sales/cashiers.htm",
-    "category": "sales",
-    "slug": "cashiers"
-  },
-  {
-    "title": "Chefs and head cooks",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/chefs-and-head-cooks.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "chefs-and-head-cooks"
-  },
-  {
-    "title": "Chemical engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/chemical-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "chemical-engineers"
-  },
-  {
-    "title": "Chemical technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/chemical-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "chemical-technicians"
-  },
-  {
-    "title": "Chemists and materials scientists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/chemists-and-materials-scientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "chemists-and-materials-scientists"
-  },
-  {
-    "title": "Childcare workers",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/childcare-workers.htm",
-    "category": "personal-care-and-service",
-    "slug": "childcare-workers"
-  },
-  {
-    "title": "Chiropractors",
-    "url": "https://www.bls.gov/ooh/healthcare/chiropractors.htm",
-    "category": "healthcare",
-    "slug": "chiropractors"
-  },
-  {
-    "title": "Civil engineering technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/civil-engineering-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "civil-engineering-technicians"
-  },
-  {
-    "title": "Civil engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/civil-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "civil-engineers"
-  },
-  {
-    "title": "Claims adjusters, appraisers, examiners, and investigators",
-    "url": "https://www.bls.gov/ooh/business-and-financial/claims-adjusters-appraisers-examiners-and-investigators.htm",
-    "category": "business-and-financial",
-    "slug": "claims-adjusters-appraisers-examiners-and-investigators"
-  },
-  {
-    "title": "Clinical laboratory technologists and technicians",
-    "url": "https://www.bls.gov/ooh/healthcare/clinical-laboratory-technologists-and-technicians.htm",
-    "category": "healthcare",
-    "slug": "clinical-laboratory-technologists-and-technicians"
-  },
-  {
-    "title": "Coaches and scouts",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/coaches-and-scouts.htm",
-    "category": "entertainment-and-sports",
-    "slug": "coaches-and-scouts"
-  },
-  {
-    "title": "Community health workers",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/community-health-workers.htm",
-    "category": "community-and-social-service",
-    "slug": "community-health-workers"
-  },
-  {
-    "title": "Compensation and benefits managers",
-    "url": "https://www.bls.gov/ooh/management/compensation-and-benefits-managers.htm",
-    "category": "management",
-    "slug": "compensation-and-benefits-managers"
-  },
-  {
-    "title": "Compensation, benefits, and job analysis specialists",
-    "url": "https://www.bls.gov/ooh/business-and-financial/compensation-benefits-and-job-analysis-specialists.htm",
-    "category": "business-and-financial",
-    "slug": "compensation-benefits-and-job-analysis-specialists"
-  },
-  {
-    "title": "Compliance officers",
-    "url": "https://www.bls.gov/ooh/business-and-financial/compliance-officers.htm",
-    "category": "business-and-financial",
-    "slug": "compliance-officers"
-  },
-  {
-    "title": "Computer and information research scientists",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm",
-    "category": "computer-and-information-technology",
-    "slug": "computer-and-information-research-scientists"
-  },
-  {
-    "title": "Computer and information systems managers",
-    "url": "https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm",
-    "category": "management",
-    "slug": "computer-and-information-systems-managers"
-  },
-  {
-    "title": "Computer hardware engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "computer-hardware-engineers"
-  },
-  {
-    "title": "Computer network architects",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm",
-    "category": "computer-and-information-technology",
-    "slug": "computer-network-architects"
-  },
-  {
-    "title": "Computer programmers",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm",
-    "category": "computer-and-information-technology",
-    "slug": "computer-programmers"
-  },
-  {
-    "title": "Computer support specialists",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm",
-    "category": "computer-and-information-technology",
-    "slug": "computer-support-specialists"
-  },
-  {
-    "title": "Computer systems analysts",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm",
-    "category": "computer-and-information-technology",
-    "slug": "computer-systems-analysts"
-  },
-  {
-    "title": "Concierges",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/concierges.htm",
-    "category": "personal-care-and-service",
-    "slug": "concierges"
-  },
-  {
-    "title": "Conservation scientists and foresters",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "conservation-scientists"
-  },
-  {
-    "title": "Construction and building inspectors",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/construction-and-building-inspectors.htm",
-    "category": "construction-and-extraction",
-    "slug": "construction-and-building-inspectors"
-  },
-  {
-    "title": "Construction equipment operators",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/construction-equipment-operators.htm",
-    "category": "construction-and-extraction",
-    "slug": "construction-equipment-operators"
-  },
-  {
-    "title": "Construction laborers and helpers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm",
-    "category": "construction-and-extraction",
-    "slug": "construction-laborers-and-helpers"
-  },
-  {
-    "title": "Construction managers",
-    "url": "https://www.bls.gov/ooh/management/construction-managers.htm",
-    "category": "management",
-    "slug": "construction-managers"
-  },
-  {
-    "title": "Cooks",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "cooks"
-  },
-  {
-    "title": "Correctional officers and bailiffs",
-    "url": "https://www.bls.gov/ooh/protective-service/correctional-officers.htm",
-    "category": "protective-service",
-    "slug": "correctional-officers"
-  },
-  {
-    "title": "Cost estimators",
-    "url": "https://www.bls.gov/ooh/business-and-financial/cost-estimators.htm",
-    "category": "business-and-financial",
-    "slug": "cost-estimators"
-  },
-  {
-    "title": "Court reporters and simultaneous captioners",
-    "url": "https://www.bls.gov/ooh/legal/court-reporters.htm",
-    "category": "legal",
-    "slug": "court-reporters"
-  },
-  {
-    "title": "Craft and fine artists",
-    "url": "https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm",
-    "category": "arts-and-design",
-    "slug": "craft-and-fine-artists"
-  },
-  {
-    "title": "Credit counselors",
-    "url": "https://www.bls.gov/ooh/business-and-financial/credit-counselors.htm",
-    "category": "business-and-financial",
-    "slug": "credit-counselors"
-  },
-  {
-    "title": "Customer service representatives",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm",
-    "category": "office-and-administrative-support",
-    "slug": "customer-service-representatives"
-  },
-  {
-    "title": "Dancers and choreographers",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/dancers-and-choreographers.htm",
-    "category": "entertainment-and-sports",
-    "slug": "dancers-and-choreographers"
-  },
-  {
-    "title": "Data scientists",
-    "url": "https://www.bls.gov/ooh/math/data-scientists.htm",
-    "category": "math",
-    "slug": "data-scientists"
-  },
-  {
-    "title": "Database administrators and architects",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm",
-    "category": "computer-and-information-technology",
-    "slug": "database-administrators"
-  },
-  {
-    "title": "Delivery truck drivers and driver/sales workers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/delivery-truck-drivers-and-driver-sales-workers.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "delivery-truck-drivers-and-driver-sales-workers"
-  },
-  {
-    "title": "Dental and ophthalmic laboratory technicians and medical appliance technicians",
-    "url": "https://www.bls.gov/ooh/production/dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians.htm",
-    "category": "production",
-    "slug": "dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians"
-  },
-  {
-    "title": "Dental assistants",
-    "url": "https://www.bls.gov/ooh/healthcare/dental-assistants.htm",
-    "category": "healthcare",
-    "slug": "dental-assistants"
-  },
-  {
-    "title": "Dental hygienists",
-    "url": "https://www.bls.gov/ooh/healthcare/dental-hygienists.htm",
-    "category": "healthcare",
-    "slug": "dental-hygienists"
+    "title": "Registered Nurses",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2544-registered-nurses",
+    "category": "professionals",
+    "slug": "2544-registered-nurses",
+    "anzsco_code": "2544"
   },
   {
     "title": "Dentists",
-    "url": "https://www.bls.gov/ooh/healthcare/dentists.htm",
-    "category": "healthcare",
-    "slug": "dentists"
-  },
-  {
-    "title": "Desktop publishers",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/desktop-publishers.htm",
-    "category": "office-and-administrative-support",
-    "slug": "desktop-publishers"
-  },
-  {
-    "title": "Diagnostic medical sonographers",
-    "url": "https://www.bls.gov/ooh/healthcare/diagnostic-medical-sonographers.htm",
-    "category": "healthcare",
-    "slug": "diagnostic-medical-sonographers"
-  },
-  {
-    "title": "Diesel service technicians and mechanics",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/diesel-service-technicians-and-mechanics.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "diesel-service-technicians-and-mechanics"
-  },
-  {
-    "title": "Dietitians and nutritionists",
-    "url": "https://www.bls.gov/ooh/healthcare/dietitians-and-nutritionists.htm",
-    "category": "healthcare",
-    "slug": "dietitians-and-nutritionists"
-  },
-  {
-    "title": "Drafters",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm",
-    "category": "architecture-and-engineering",
-    "slug": "drafters"
-  },
-  {
-    "title": "Drywall installers, ceiling tile installers, and tapers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/drywall-and-ceiling-tile-installers-and-tapers.htm",
-    "category": "construction-and-extraction",
-    "slug": "drywall-and-ceiling-tile-installers-and-tapers"
-  },
-  {
-    "title": "Economists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/economists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "economists"
-  },
-  {
-    "title": "Editors",
-    "url": "https://www.bls.gov/ooh/media-and-communication/editors.htm",
-    "category": "media-and-communication",
-    "slug": "editors"
-  },
-  {
-    "title": "Electrical and electronic engineering technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineering-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "electrical-and-electronics-engineering-technicians"
-  },
-  {
-    "title": "Electrical and electronics engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "electrical-and-electronics-engineers"
-  },
-  {
-    "title": "Electrical and electronics installers and repairers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/electrical-and-electronics-installers-and-repairers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "electrical-and-electronics-installers-and-repairers"
-  },
-  {
-    "title": "Electrical power-line installers and repairers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/line-installers-and-repairers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "line-installers-and-repairers"
-  },
-  {
-    "title": "Electricians",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
-    "category": "construction-and-extraction",
-    "slug": "electricians"
-  },
-  {
-    "title": "Electro-mechanical and mechatronics technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/electro-mechanical-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "electro-mechanical-technicians"
-  },
-  {
-    "title": "Elementary, middle, and high school principals",
-    "url": "https://www.bls.gov/ooh/management/elementary-middle-and-high-school-principals.htm",
-    "category": "management",
-    "slug": "elementary-middle-and-high-school-principals"
-  },
-  {
-    "title": "Elevator and escalator installers and repairers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/elevator-installers-and-repairers.htm",
-    "category": "construction-and-extraction",
-    "slug": "elevator-installers-and-repairers"
-  },
-  {
-    "title": "Emergency management directors",
-    "url": "https://www.bls.gov/ooh/management/emergency-management-directors.htm",
-    "category": "management",
-    "slug": "emergency-management-directors"
-  },
-  {
-    "title": "EMTs and paramedics",
-    "url": "https://www.bls.gov/ooh/healthcare/emts-and-paramedics.htm",
-    "category": "healthcare",
-    "slug": "emts-and-paramedics"
-  },
-  {
-    "title": "Entertainment and recreation managers",
-    "url": "https://www.bls.gov/ooh/management/entertainment-and-recreation-managers.htm",
-    "category": "management",
-    "slug": "entertainment-and-recreation-managers"
-  },
-  {
-    "title": "Environmental engineering technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineering-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "environmental-engineering-technicians"
-  },
-  {
-    "title": "Environmental engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/environmental-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "environmental-engineers"
-  },
-  {
-    "title": "Environmental science and protection technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/environmental-science-and-protection-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "environmental-science-and-protection-technicians"
-  },
-  {
-    "title": "Environmental scientists and specialists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/environmental-scientists-and-specialists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "environmental-scientists-and-specialists"
-  },
-  {
-    "title": "Epidemiologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/epidemiologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "epidemiologists"
-  },
-  {
-    "title": "Exercise physiologists",
-    "url": "https://www.bls.gov/ooh/healthcare/exercise-physiologists.htm",
-    "category": "healthcare",
-    "slug": "exercise-physiologists"
-  },
-  {
-    "title": "Farmers, ranchers, and other agricultural managers",
-    "url": "https://www.bls.gov/ooh/management/farmers-ranchers-and-other-agricultural-managers.htm",
-    "category": "management",
-    "slug": "farmers-ranchers-and-other-agricultural-managers"
-  },
-  {
-    "title": "Fashion designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/fashion-designers.htm",
-    "category": "arts-and-design",
-    "slug": "fashion-designers"
-  },
-  {
-    "title": "Film and video editors and camera operators",
-    "url": "https://www.bls.gov/ooh/media-and-communication/film-and-video-editors-and-camera-operators.htm",
-    "category": "media-and-communication",
-    "slug": "film-and-video-editors-and-camera-operators"
-  },
-  {
-    "title": "Financial analysts",
-    "url": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm",
-    "category": "business-and-financial",
-    "slug": "financial-analysts"
-  },
-  {
-    "title": "Financial clerks",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm",
-    "category": "office-and-administrative-support",
-    "slug": "financial-clerks"
-  },
-  {
-    "title": "Financial examiners",
-    "url": "https://www.bls.gov/ooh/business-and-financial/financial-examiners.htm",
-    "category": "business-and-financial",
-    "slug": "financial-examiners"
-  },
-  {
-    "title": "Financial managers",
-    "url": "https://www.bls.gov/ooh/management/financial-managers.htm",
-    "category": "management",
-    "slug": "financial-managers"
-  },
-  {
-    "title": "Fire inspectors",
-    "url": "https://www.bls.gov/ooh/protective-service/fire-inspectors-and-investigators.htm",
-    "category": "protective-service",
-    "slug": "fire-inspectors-and-investigators"
-  },
-  {
-    "title": "Firefighters",
-    "url": "https://www.bls.gov/ooh/protective-service/firefighters.htm",
-    "category": "protective-service",
-    "slug": "firefighters"
-  },
-  {
-    "title": "Fishing and hunting workers",
-    "url": "https://www.bls.gov/ooh/farming-fishing-and-forestry/fishers-and-related-fishing-workers.htm",
-    "category": "farming-fishing-and-forestry",
-    "slug": "fishers-and-related-fishing-workers"
-  },
-  {
-    "title": "Fitness trainers and instructors",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/fitness-trainers-and-instructors.htm",
-    "category": "personal-care-and-service",
-    "slug": "fitness-trainers-and-instructors"
-  },
-  {
-    "title": "Flight attendants",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/flight-attendants.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "flight-attendants"
-  },
-  {
-    "title": "Flooring installers and tile and stone setters",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/tile-and-marble-setters.htm",
-    "category": "construction-and-extraction",
-    "slug": "tile-and-marble-setters"
-  },
-  {
-    "title": "Floral designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/floral-designers.htm",
-    "category": "arts-and-design",
-    "slug": "floral-designers"
-  },
-  {
-    "title": "Food and beverage serving and related workers",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/food-and-beverage-serving-and-related-workers.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "food-and-beverage-serving-and-related-workers"
-  },
-  {
-    "title": "Food preparation workers",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/food-preparation-workers.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "food-preparation-workers"
-  },
-  {
-    "title": "Food processing equipment workers",
-    "url": "https://www.bls.gov/ooh/production/food-and-tobacco-processing-workers.htm",
-    "category": "production",
-    "slug": "food-and-tobacco-processing-workers"
-  },
-  {
-    "title": "Food service managers",
-    "url": "https://www.bls.gov/ooh/management/food-service-managers.htm",
-    "category": "management",
-    "slug": "food-service-managers"
-  },
-  {
-    "title": "Forensic science technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/forensic-science-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "forensic-science-technicians"
-  },
-  {
-    "title": "Forest and conservation workers",
-    "url": "https://www.bls.gov/ooh/farming-fishing-and-forestry/forest-and-conservation-workers.htm",
-    "category": "farming-fishing-and-forestry",
-    "slug": "forest-and-conservation-workers"
-  },
-  {
-    "title": "Fundraisers",
-    "url": "https://www.bls.gov/ooh/business-and-financial/fundraisers.htm",
-    "category": "business-and-financial",
-    "slug": "fundraisers"
-  },
-  {
-    "title": "Funeral service workers",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/funeral-service-occupations.htm",
-    "category": "personal-care-and-service",
-    "slug": "funeral-service-occupations"
-  },
-  {
-    "title": "Gambling services workers",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/gaming-services-occupations.htm",
-    "category": "personal-care-and-service",
-    "slug": "gaming-services-occupations"
-  },
-  {
-    "title": "General maintenance and repair workers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/general-maintenance-and-repair-workers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "general-maintenance-and-repair-workers"
-  },
-  {
-    "title": "General office clerks",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/general-office-clerks.htm",
-    "category": "office-and-administrative-support",
-    "slug": "general-office-clerks"
-  },
-  {
-    "title": "Genetic counselors",
-    "url": "https://www.bls.gov/ooh/healthcare/genetic-counselors.htm",
-    "category": "healthcare",
-    "slug": "genetic-counselors"
-  },
-  {
-    "title": "Geographers",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/geographers.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "geographers"
-  },
-  {
-    "title": "Geological and hydrologic technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/geological-and-petroleum-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "geological-and-petroleum-technicians"
-  },
-  {
-    "title": "Geoscientists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/geoscientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "geoscientists"
-  },
-  {
-    "title": "Glaziers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/glaziers.htm",
-    "category": "construction-and-extraction",
-    "slug": "glaziers"
-  },
-  {
-    "title": "Graphic designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm",
-    "category": "arts-and-design",
-    "slug": "graphic-designers"
-  },
-  {
-    "title": "Grounds maintenance workers",
-    "url": "https://www.bls.gov/ooh/building-and-grounds-cleaning/grounds-maintenance-workers.htm",
-    "category": "building-and-grounds-cleaning",
-    "slug": "grounds-maintenance-workers"
-  },
-  {
-    "title": "Hand laborers and material movers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/hand-laborers-and-material-movers.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "hand-laborers-and-material-movers"
-  },
-  {
-    "title": "Hazardous materials removal workers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/hazardous-materials-removal-workers.htm",
-    "category": "construction-and-extraction",
-    "slug": "hazardous-materials-removal-workers"
-  },
-  {
-    "title": "Health and safety engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/health-and-safety-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "health-and-safety-engineers"
-  },
-  {
-    "title": "Health education specialists",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/health-educators.htm",
-    "category": "community-and-social-service",
-    "slug": "health-educators"
-  },
-  {
-    "title": "Health information technologists and medical registrars",
-    "url": "https://www.bls.gov/ooh/healthcare/health-information-technologists-and-medical-registrars.htm",
-    "category": "healthcare",
-    "slug": "health-information-technologists-and-medical-registrars"
-  },
-  {
-    "title": "Heating, air conditioning, and refrigeration mechanics and installers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/heating-air-conditioning-and-refrigeration-mechanics-and-installers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "heating-air-conditioning-and-refrigeration-mechanics-and-installers"
-  },
-  {
-    "title": "Heavy and tractor-trailer truck drivers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/heavy-and-tractor-trailer-truck-drivers.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "heavy-and-tractor-trailer-truck-drivers"
-  },
-  {
-    "title": "Heavy vehicle and mobile equipment service technicians",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/heavy-vehicle-and-mobile-equipment-service-technicians.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "heavy-vehicle-and-mobile-equipment-service-technicians"
-  },
-  {
-    "title": "High school teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "high-school-teachers"
-  },
-  {
-    "title": "Historians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/historians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "historians"
-  },
-  {
-    "title": "Home health and personal care aides",
-    "url": "https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm",
-    "category": "healthcare",
-    "slug": "home-health-aides-and-personal-care-aides"
-  },
-  {
-    "title": "Human resources managers",
-    "url": "https://www.bls.gov/ooh/management/human-resources-managers.htm",
-    "category": "management",
-    "slug": "human-resources-managers"
-  },
-  {
-    "title": "Human resources specialists",
-    "url": "https://www.bls.gov/ooh/business-and-financial/human-resources-specialists.htm",
-    "category": "business-and-financial",
-    "slug": "human-resources-specialists"
-  },
-  {
-    "title": "Hydrologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/hydrologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "hydrologists"
-  },
-  {
-    "title": "Industrial designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/industrial-designers.htm",
-    "category": "arts-and-design",
-    "slug": "industrial-designers"
-  },
-  {
-    "title": "Industrial engineering technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineering-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "industrial-engineering-technicians"
-  },
-  {
-    "title": "Industrial engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "industrial-engineers"
-  },
-  {
-    "title": "Industrial machinery mechanics, machinery maintenance workers, and millwrights",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/industrial-machinery-mechanics-and-maintenance-workers-and-millwrights.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights"
-  },
-  {
-    "title": "Industrial production managers",
-    "url": "https://www.bls.gov/ooh/management/industrial-production-managers.htm",
-    "category": "management",
-    "slug": "industrial-production-managers"
-  },
-  {
-    "title": "Information clerks",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/information-clerks.htm",
-    "category": "office-and-administrative-support",
-    "slug": "information-clerks"
-  },
-  {
-    "title": "Information security analysts",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
-    "category": "computer-and-information-technology",
-    "slug": "information-security-analysts"
-  },
-  {
-    "title": "Instructional coordinators",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/instructional-coordinators.htm",
-    "category": "education-training-and-library",
-    "slug": "instructional-coordinators"
-  },
-  {
-    "title": "Insulation workers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/insulation-workers.htm",
-    "category": "construction-and-extraction",
-    "slug": "insulation-workers"
-  },
-  {
-    "title": "Insurance sales agents",
-    "url": "https://www.bls.gov/ooh/sales/insurance-sales-agents.htm",
-    "category": "sales",
-    "slug": "insurance-sales-agents"
-  },
-  {
-    "title": "Insurance underwriters",
-    "url": "https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm",
-    "category": "business-and-financial",
-    "slug": "insurance-underwriters"
-  },
-  {
-    "title": "Interior designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/interior-designers.htm",
-    "category": "arts-and-design",
-    "slug": "interior-designers"
-  },
-  {
-    "title": "Interpreters and translators",
-    "url": "https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm",
-    "category": "media-and-communication",
-    "slug": "interpreters-and-translators"
-  },
-  {
-    "title": "Ironworkers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/structural-iron-and-steel-workers.htm",
-    "category": "construction-and-extraction",
-    "slug": "structural-iron-and-steel-workers"
-  },
-  {
-    "title": "Janitors and building cleaners",
-    "url": "https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm",
-    "category": "building-and-grounds-cleaning",
-    "slug": "janitors-and-building-cleaners"
-  },
-  {
-    "title": "Jewelers and precious stone and metal workers",
-    "url": "https://www.bls.gov/ooh/production/jewelers-and-precious-stone-and-metal-workers.htm",
-    "category": "production",
-    "slug": "jewelers-and-precious-stone-and-metal-workers"
-  },
-  {
-    "title": "Judges and hearing officers",
-    "url": "https://www.bls.gov/ooh/legal/judges-and-hearing-officers.htm",
-    "category": "legal",
-    "slug": "judges-and-hearing-officers"
-  },
-  {
-    "title": "Kindergarten and elementary school teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/kindergarten-and-elementary-school-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "kindergarten-and-elementary-school-teachers"
-  },
-  {
-    "title": "Labor relations specialists",
-    "url": "https://www.bls.gov/ooh/business-and-financial/labor-relations-specialists.htm",
-    "category": "business-and-financial",
-    "slug": "labor-relations-specialists"
-  },
-  {
-    "title": "Landscape architects",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/landscape-architects.htm",
-    "category": "architecture-and-engineering",
-    "slug": "landscape-architects"
-  },
-  {
-    "title": "Lawyers",
-    "url": "https://www.bls.gov/ooh/legal/lawyers.htm",
-    "category": "legal",
-    "slug": "lawyers"
-  },
-  {
-    "title": "Librarians and library media specialists",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/librarians.htm",
-    "category": "education-training-and-library",
-    "slug": "librarians"
-  },
-  {
-    "title": "Library technicians and assistants",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/library-technicians-and-assistants.htm",
-    "category": "education-training-and-library",
-    "slug": "library-technicians-and-assistants"
-  },
-  {
-    "title": "Licensed practical and licensed vocational nurses",
-    "url": "https://www.bls.gov/ooh/healthcare/licensed-practical-and-licensed-vocational-nurses.htm",
-    "category": "healthcare",
-    "slug": "licensed-practical-and-licensed-vocational-nurses"
-  },
-  {
-    "title": "Loan officers",
-    "url": "https://www.bls.gov/ooh/business-and-financial/loan-officers.htm",
-    "category": "business-and-financial",
-    "slug": "loan-officers"
-  },
-  {
-    "title": "Lodging managers",
-    "url": "https://www.bls.gov/ooh/management/lodging-managers.htm",
-    "category": "management",
-    "slug": "lodging-managers"
-  },
-  {
-    "title": "Logging workers",
-    "url": "https://www.bls.gov/ooh/farming-fishing-and-forestry/logging-workers.htm",
-    "category": "farming-fishing-and-forestry",
-    "slug": "logging-workers"
-  },
-  {
-    "title": "Logisticians",
-    "url": "https://www.bls.gov/ooh/business-and-financial/logisticians.htm",
-    "category": "business-and-financial",
-    "slug": "logisticians"
-  },
-  {
-    "title": "Machinists and tool and die makers",
-    "url": "https://www.bls.gov/ooh/production/machinists-and-tool-and-die-makers.htm",
-    "category": "production",
-    "slug": "machinists-and-tool-and-die-makers"
-  },
-  {
-    "title": "Management analysts",
-    "url": "https://www.bls.gov/ooh/business-and-financial/management-analysts.htm",
-    "category": "business-and-financial",
-    "slug": "management-analysts"
-  },
-  {
-    "title": "Manicurists and pedicurists",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/manicurists-and-pedicurists.htm",
-    "category": "personal-care-and-service",
-    "slug": "manicurists-and-pedicurists"
-  },
-  {
-    "title": "Marine engineers and naval architects",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/marine-engineers-and-naval-architects.htm",
-    "category": "architecture-and-engineering",
-    "slug": "marine-engineers-and-naval-architects"
-  },
-  {
-    "title": "Market research analysts",
-    "url": "https://www.bls.gov/ooh/business-and-financial/market-research-analysts.htm",
-    "category": "business-and-financial",
-    "slug": "market-research-analysts"
-  },
-  {
-    "title": "Marriage and family therapists",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/marriage-and-family-therapists.htm",
-    "category": "community-and-social-service",
-    "slug": "marriage-and-family-therapists"
-  },
-  {
-    "title": "Masonry workers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/brickmasons-blockmasons-and-stonemasons.htm",
-    "category": "construction-and-extraction",
-    "slug": "brickmasons-blockmasons-and-stonemasons"
-  },
-  {
-    "title": "Massage therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/massage-therapists.htm",
-    "category": "healthcare",
-    "slug": "massage-therapists"
-  },
-  {
-    "title": "Material moving machine operators",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/material-moving-machine-operators.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "material-moving-machine-operators"
-  },
-  {
-    "title": "Material recording clerks",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/material-recording-clerks.htm",
-    "category": "office-and-administrative-support",
-    "slug": "material-recording-clerks"
-  },
-  {
-    "title": "Materials engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/materials-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "materials-engineers"
-  },
-  {
-    "title": "Mathematicians and statisticians",
-    "url": "https://www.bls.gov/ooh/math/mathematicians-and-statisticians.htm",
-    "category": "math",
-    "slug": "mathematicians-and-statisticians"
-  },
-  {
-    "title": "Mechanical engineering technologists and technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineering-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "mechanical-engineering-technicians"
-  },
-  {
-    "title": "Mechanical engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/mechanical-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "mechanical-engineers"
-  },
-  {
-    "title": "Medical and health services managers",
-    "url": "https://www.bls.gov/ooh/management/medical-and-health-services-managers.htm",
-    "category": "management",
-    "slug": "medical-and-health-services-managers"
-  },
-  {
-    "title": "Medical assistants",
-    "url": "https://www.bls.gov/ooh/healthcare/medical-assistants.htm",
-    "category": "healthcare",
-    "slug": "medical-assistants"
-  },
-  {
-    "title": "Medical dosimetrists",
-    "url": "https://www.bls.gov/ooh/healthcare/medical-dosimetrists.htm",
-    "category": "healthcare",
-    "slug": "medical-dosimetrists"
-  },
-  {
-    "title": "Medical equipment repairers",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/medical-equipment-repairers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "medical-equipment-repairers"
-  },
-  {
-    "title": "Medical records specialists",
-    "url": "https://www.bls.gov/ooh/healthcare/medical-records-and-health-information-technicians.htm",
-    "category": "healthcare",
-    "slug": "medical-records-and-health-information-technicians"
-  },
-  {
-    "title": "Medical scientists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/medical-scientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "medical-scientists"
-  },
-  {
-    "title": "Medical transcriptionists",
-    "url": "https://www.bls.gov/ooh/healthcare/medical-transcriptionists.htm",
-    "category": "healthcare",
-    "slug": "medical-transcriptionists"
-  },
-  {
-    "title": "Meeting, convention, and event planners",
-    "url": "https://www.bls.gov/ooh/business-and-financial/meeting-convention-and-event-planners.htm",
-    "category": "business-and-financial",
-    "slug": "meeting-convention-and-event-planners"
-  },
-  {
-    "title": "Metal and plastic machine workers",
-    "url": "https://www.bls.gov/ooh/production/metal-and-plastic-machine-workers.htm",
-    "category": "production",
-    "slug": "metal-and-plastic-machine-workers"
-  },
-  {
-    "title": "Microbiologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/microbiologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "microbiologists"
-  },
-  {
-    "title": "Middle school teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/middle-school-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "middle-school-teachers"
-  },
-  {
-    "title": "Military careers",
-    "url": "https://www.bls.gov/ooh/military/military-careers.htm",
-    "category": "military",
-    "slug": "military-careers"
-  },
-  {
-    "title": "Mining and geological engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/mining-and-geological-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "mining-and-geological-engineers"
-  },
-  {
-    "title": "Models",
-    "url": "https://www.bls.gov/ooh/sales/models.htm",
-    "category": "sales",
-    "slug": "models"
-  },
-  {
-    "title": "Music directors and composers",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/music-directors-and-composers.htm",
-    "category": "entertainment-and-sports",
-    "slug": "music-directors-and-composers"
-  },
-  {
-    "title": "Musicians and singers",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/musicians-and-singers.htm",
-    "category": "entertainment-and-sports",
-    "slug": "musicians-and-singers"
-  },
-  {
-    "title": "Natural sciences managers",
-    "url": "https://www.bls.gov/ooh/management/natural-sciences-managers.htm",
-    "category": "management",
-    "slug": "natural-sciences-managers"
-  },
-  {
-    "title": "Network and computer systems administrators",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm",
-    "category": "computer-and-information-technology",
-    "slug": "network-and-computer-systems-administrators"
-  },
-  {
-    "title": "News analysts, reporters, and journalists",
-    "url": "https://www.bls.gov/ooh/media-and-communication/reporters-correspondents-and-broadcast-news-analysts.htm",
-    "category": "media-and-communication",
-    "slug": "reporters-correspondents-and-broadcast-news-analysts"
-  },
-  {
-    "title": "Nuclear engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/nuclear-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "nuclear-engineers"
-  },
-  {
-    "title": "Nuclear medicine technologists",
-    "url": "https://www.bls.gov/ooh/healthcare/nuclear-medicine-technologists.htm",
-    "category": "healthcare",
-    "slug": "nuclear-medicine-technologists"
-  },
-  {
-    "title": "Nuclear technicians",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/nuclear-technicians.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "nuclear-technicians"
-  },
-  {
-    "title": "Nurse anesthetists, nurse midwives, and nurse practitioners",
-    "url": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
-    "category": "healthcare",
-    "slug": "nurse-anesthetists-nurse-midwives-and-nurse-practitioners"
-  },
-  {
-    "title": "Nursing assistants and orderlies",
-    "url": "https://www.bls.gov/ooh/healthcare/nursing-assistants.htm",
-    "category": "healthcare",
-    "slug": "nursing-assistants"
-  },
-  {
-    "title": "Occupational health and safety specialists and technicians",
-    "url": "https://www.bls.gov/ooh/healthcare/occupational-health-and-safety-specialists-and-technicians.htm",
-    "category": "healthcare",
-    "slug": "occupational-health-and-safety-specialists-and-technicians"
-  },
-  {
-    "title": "Occupational therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/occupational-therapists.htm",
-    "category": "healthcare",
-    "slug": "occupational-therapists"
-  },
-  {
-    "title": "Occupational therapy assistants and aides",
-    "url": "https://www.bls.gov/ooh/healthcare/occupational-therapy-assistants-and-aides.htm",
-    "category": "healthcare",
-    "slug": "occupational-therapy-assistants-and-aides"
-  },
-  {
-    "title": "Oil and gas workers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/oil-and-gas-workers.htm",
-    "category": "construction-and-extraction",
-    "slug": "oil-and-gas-workers"
-  },
-  {
-    "title": "Operations research analysts",
-    "url": "https://www.bls.gov/ooh/math/operations-research-analysts.htm",
-    "category": "math",
-    "slug": "operations-research-analysts"
-  },
-  {
-    "title": "Opticians",
-    "url": "https://www.bls.gov/ooh/healthcare/opticians-dispensing.htm",
-    "category": "healthcare",
-    "slug": "opticians-dispensing"
-  },
-  {
-    "title": "Optometrists",
-    "url": "https://www.bls.gov/ooh/healthcare/optometrists.htm",
-    "category": "healthcare",
-    "slug": "optometrists"
-  },
-  {
-    "title": "Orthotists and prosthetists",
-    "url": "https://www.bls.gov/ooh/healthcare/orthotists-and-prosthetists.htm",
-    "category": "healthcare",
-    "slug": "orthotists-and-prosthetists"
-  },
-  {
-    "title": "Painters, construction and maintenance",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/painters-construction-and-maintenance.htm",
-    "category": "construction-and-extraction",
-    "slug": "painters-construction-and-maintenance"
-  },
-  {
-    "title": "Painting and coating workers",
-    "url": "https://www.bls.gov/ooh/production/painting-and-coating-workers.htm",
-    "category": "production",
-    "slug": "painting-and-coating-workers"
-  },
-  {
-    "title": "Paralegals and legal assistants",
-    "url": "https://www.bls.gov/ooh/legal/paralegals-and-legal-assistants.htm",
-    "category": "legal",
-    "slug": "paralegals-and-legal-assistants"
-  },
-  {
-    "title": "Personal financial advisors",
-    "url": "https://www.bls.gov/ooh/business-and-financial/personal-financial-advisors.htm",
-    "category": "business-and-financial",
-    "slug": "personal-financial-advisors"
-  },
-  {
-    "title": "Pest control workers",
-    "url": "https://www.bls.gov/ooh/building-and-grounds-cleaning/pest-control-workers.htm",
-    "category": "building-and-grounds-cleaning",
-    "slug": "pest-control-workers"
-  },
-  {
-    "title": "Petroleum engineers",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
-    "category": "architecture-and-engineering",
-    "slug": "petroleum-engineers"
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2523-dentists",
+    "category": "professionals",
+    "slug": "2523-dentists",
+    "anzsco_code": "2523"
   },
   {
     "title": "Pharmacists",
-    "url": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
-    "category": "healthcare",
-    "slug": "pharmacists"
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2515-pharmacists",
+    "category": "professionals",
+    "slug": "2515-pharmacists",
+    "anzsco_code": "2515"
   },
   {
-    "title": "Pharmacy technicians",
-    "url": "https://www.bls.gov/ooh/healthcare/pharmacy-technicians.htm",
-    "category": "healthcare",
-    "slug": "pharmacy-technicians"
-  },
-  {
-    "title": "Phlebotomists",
-    "url": "https://www.bls.gov/ooh/healthcare/phlebotomists.htm",
-    "category": "healthcare",
-    "slug": "phlebotomists"
-  },
-  {
-    "title": "Photographers",
-    "url": "https://www.bls.gov/ooh/media-and-communication/photographers.htm",
-    "category": "media-and-communication",
-    "slug": "photographers"
-  },
-  {
-    "title": "Physical therapist assistants and aides",
-    "url": "https://www.bls.gov/ooh/healthcare/physical-therapist-assistants-and-aides.htm",
-    "category": "healthcare",
-    "slug": "physical-therapist-assistants-and-aides"
-  },
-  {
-    "title": "Physical therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/physical-therapists.htm",
-    "category": "healthcare",
-    "slug": "physical-therapists"
-  },
-  {
-    "title": "Physician assistants",
-    "url": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
-    "category": "healthcare",
-    "slug": "physician-assistants"
-  },
-  {
-    "title": "Physicians and surgeons",
-    "url": "https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm",
-    "category": "healthcare",
-    "slug": "physicians-and-surgeons"
-  },
-  {
-    "title": "Physicists and astronomers",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/physicists-and-astronomers.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "physicists-and-astronomers"
-  },
-  {
-    "title": "Plumbers, pipefitters, and steamfitters",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm",
-    "category": "construction-and-extraction",
-    "slug": "plumbers-pipefitters-and-steamfitters"
-  },
-  {
-    "title": "Podiatrists",
-    "url": "https://www.bls.gov/ooh/healthcare/podiatrists.htm",
-    "category": "healthcare",
-    "slug": "podiatrists"
-  },
-  {
-    "title": "Police and detectives",
-    "url": "https://www.bls.gov/ooh/protective-service/police-and-detectives.htm",
-    "category": "protective-service",
-    "slug": "police-and-detectives"
-  },
-  {
-    "title": "Political scientists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/political-scientists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "political-scientists"
-  },
-  {
-    "title": "Postal service workers",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/postal-service-workers.htm",
-    "category": "office-and-administrative-support",
-    "slug": "postal-service-workers"
-  },
-  {
-    "title": "Postsecondary education administrators",
-    "url": "https://www.bls.gov/ooh/management/postsecondary-education-administrators.htm",
-    "category": "management",
-    "slug": "postsecondary-education-administrators"
-  },
-  {
-    "title": "Postsecondary teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/postsecondary-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "postsecondary-teachers"
-  },
-  {
-    "title": "Power plant operators, distributors, and dispatchers",
-    "url": "https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm",
-    "category": "production",
-    "slug": "power-plant-operators-distributors-and-dispatchers"
-  },
-  {
-    "title": "Preschool and childcare center directors",
-    "url": "https://www.bls.gov/ooh/management/preschool-and-childcare-center-directors.htm",
-    "category": "management",
-    "slug": "preschool-and-childcare-center-directors"
-  },
-  {
-    "title": "Preschool teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/preschool-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "preschool-teachers"
-  },
-  {
-    "title": "Private detectives and investigators",
-    "url": "https://www.bls.gov/ooh/protective-service/private-detectives-and-investigators.htm",
-    "category": "protective-service",
-    "slug": "private-detectives-and-investigators"
-  },
-  {
-    "title": "Probation officers and correctional treatment specialists",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/probation-officers-and-correctional-treatment-specialists.htm",
-    "category": "community-and-social-service",
-    "slug": "probation-officers-and-correctional-treatment-specialists"
-  },
-  {
-    "title": "Producers and directors",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/producers-and-directors.htm",
-    "category": "entertainment-and-sports",
-    "slug": "producers-and-directors"
-  },
-  {
-    "title": "Project management specialists",
-    "url": "https://www.bls.gov/ooh/business-and-financial/project-management-specialists.htm",
-    "category": "business-and-financial",
-    "slug": "project-management-specialists"
-  },
-  {
-    "title": "Property appraisers and assessors",
-    "url": "https://www.bls.gov/ooh/business-and-financial/appraisers-and-assessors-of-real-estate.htm",
-    "category": "business-and-financial",
-    "slug": "appraisers-and-assessors-of-real-estate"
-  },
-  {
-    "title": "Property, real estate, and community association managers",
-    "url": "https://www.bls.gov/ooh/management/property-real-estate-and-community-association-managers.htm",
-    "category": "management",
-    "slug": "property-real-estate-and-community-association-managers"
-  },
-  {
-    "title": "Psychiatric technicians and aides",
-    "url": "https://www.bls.gov/ooh/healthcare/psychiatric-technicians-and-aides.htm",
-    "category": "healthcare",
-    "slug": "psychiatric-technicians-and-aides"
+    "title": "Physiotherapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2525-physiotherapists",
+    "category": "professionals",
+    "slug": "2525-physiotherapists",
+    "anzsco_code": "2525"
   },
   {
     "title": "Psychologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/psychologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "psychologists"
-  },
-  {
-    "title": "Public relations and fundraising managers",
-    "url": "https://www.bls.gov/ooh/management/public-relations-managers.htm",
-    "category": "management",
-    "slug": "public-relations-managers"
-  },
-  {
-    "title": "Public relations specialists",
-    "url": "https://www.bls.gov/ooh/media-and-communication/public-relations-specialists.htm",
-    "category": "media-and-communication",
-    "slug": "public-relations-specialists"
-  },
-  {
-    "title": "Public safety telecommunicators",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/police-fire-and-ambulance-dispatchers.htm",
-    "category": "office-and-administrative-support",
-    "slug": "police-fire-and-ambulance-dispatchers"
-  },
-  {
-    "title": "Purchasing managers, buyers, and purchasing agents",
-    "url": "https://www.bls.gov/ooh/business-and-financial/purchasing-managers-buyers-and-purchasing-agents.htm",
-    "category": "business-and-financial",
-    "slug": "purchasing-managers-buyers-and-purchasing-agents"
-  },
-  {
-    "title": "Quality control inspectors",
-    "url": "https://www.bls.gov/ooh/production/quality-control-inspectors.htm",
-    "category": "production",
-    "slug": "quality-control-inspectors"
-  },
-  {
-    "title": "Radiation therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/radiation-therapists.htm",
-    "category": "healthcare",
-    "slug": "radiation-therapists"
-  },
-  {
-    "title": "Radiologic and MRI technologists",
-    "url": "https://www.bls.gov/ooh/healthcare/radiologic-technologists.htm",
-    "category": "healthcare",
-    "slug": "radiologic-technologists"
-  },
-  {
-    "title": "Railroad workers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/railroad-occupations.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "railroad-occupations"
-  },
-  {
-    "title": "Real estate brokers and sales agents",
-    "url": "https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm",
-    "category": "sales",
-    "slug": "real-estate-brokers-and-sales-agents"
-  },
-  {
-    "title": "Receptionists",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/receptionists.htm",
-    "category": "office-and-administrative-support",
-    "slug": "receptionists"
-  },
-  {
-    "title": "Recreation workers",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/recreation-workers.htm",
-    "category": "personal-care-and-service",
-    "slug": "recreation-workers"
-  },
-  {
-    "title": "Recreational therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/recreational-therapists.htm",
-    "category": "healthcare",
-    "slug": "recreational-therapists"
-  },
-  {
-    "title": "Registered nurses",
-    "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
-    "category": "healthcare",
-    "slug": "registered-nurses"
-  },
-  {
-    "title": "Rehabilitation counselors",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/rehabilitation-counselors.htm",
-    "category": "community-and-social-service",
-    "slug": "rehabilitation-counselors"
-  },
-  {
-    "title": "Respiratory therapists",
-    "url": "https://www.bls.gov/ooh/healthcare/respiratory-therapists.htm",
-    "category": "healthcare",
-    "slug": "respiratory-therapists"
-  },
-  {
-    "title": "Retail sales workers",
-    "url": "https://www.bls.gov/ooh/sales/retail-sales-workers.htm",
-    "category": "sales",
-    "slug": "retail-sales-workers"
-  },
-  {
-    "title": "Roofers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/roofers.htm",
-    "category": "construction-and-extraction",
-    "slug": "roofers"
-  },
-  {
-    "title": "Sales engineers",
-    "url": "https://www.bls.gov/ooh/sales/sales-engineers.htm",
-    "category": "sales",
-    "slug": "sales-engineers"
-  },
-  {
-    "title": "Sales managers",
-    "url": "https://www.bls.gov/ooh/management/sales-managers.htm",
-    "category": "management",
-    "slug": "sales-managers"
-  },
-  {
-    "title": "School and career counselors and advisors",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/school-and-career-counselors.htm",
-    "category": "community-and-social-service",
-    "slug": "school-and-career-counselors"
-  },
-  {
-    "title": "Secretaries and administrative assistants",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm",
-    "category": "office-and-administrative-support",
-    "slug": "secretaries-and-administrative-assistants"
-  },
-  {
-    "title": "Securities, commodities, and financial services sales agents",
-    "url": "https://www.bls.gov/ooh/sales/securities-commodities-and-financial-services-sales-agents.htm",
-    "category": "sales",
-    "slug": "securities-commodities-and-financial-services-sales-agents"
-  },
-  {
-    "title": "Security guards and gambling surveillance officers",
-    "url": "https://www.bls.gov/ooh/protective-service/security-guards.htm",
-    "category": "protective-service",
-    "slug": "security-guards"
-  },
-  {
-    "title": "Semiconductor processing technicians",
-    "url": "https://www.bls.gov/ooh/production/semiconductor-processing-technicians.htm",
-    "category": "production",
-    "slug": "semiconductor-processing-technicians"
-  },
-  {
-    "title": "Set and exhibit designers",
-    "url": "https://www.bls.gov/ooh/arts-and-design/set-and-exhibit-designers.htm",
-    "category": "arts-and-design",
-    "slug": "set-and-exhibit-designers"
-  },
-  {
-    "title": "Sheet metal workers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/sheet-metal-workers.htm",
-    "category": "construction-and-extraction",
-    "slug": "sheet-metal-workers"
-  },
-  {
-    "title": "Skincare specialists",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/skincare-specialists.htm",
-    "category": "personal-care-and-service",
-    "slug": "skincare-specialists"
-  },
-  {
-    "title": "Small engine mechanics",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/small-engine-mechanics.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "small-engine-mechanics"
-  },
-  {
-    "title": "Social and community service managers",
-    "url": "https://www.bls.gov/ooh/management/social-and-community-service-managers.htm",
-    "category": "management",
-    "slug": "social-and-community-service-managers"
-  },
-  {
-    "title": "Social and human service assistants",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/social-and-human-service-assistants.htm",
-    "category": "community-and-social-service",
-    "slug": "social-and-human-service-assistants"
-  },
-  {
-    "title": "Social workers",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/social-workers.htm",
-    "category": "community-and-social-service",
-    "slug": "social-workers"
-  },
-  {
-    "title": "Sociologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/sociologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "sociologists"
-  },
-  {
-    "title": "Software developers, quality assurance analysts, and testers",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
-    "category": "computer-and-information-technology",
-    "slug": "software-developers"
-  },
-  {
-    "title": "Solar photovoltaic installers",
-    "url": "https://www.bls.gov/ooh/construction-and-extraction/solar-photovoltaic-installers.htm",
-    "category": "construction-and-extraction",
-    "slug": "solar-photovoltaic-installers"
-  },
-  {
-    "title": "Special education teachers",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/special-education-teachers.htm",
-    "category": "education-training-and-library",
-    "slug": "special-education-teachers"
-  },
-  {
-    "title": "Special effects artists and animators",
-    "url": "https://www.bls.gov/ooh/arts-and-design/multimedia-artists-and-animators.htm",
-    "category": "arts-and-design",
-    "slug": "multimedia-artists-and-animators"
-  },
-  {
-    "title": "Speech-language pathologists",
-    "url": "https://www.bls.gov/ooh/healthcare/speech-language-pathologists.htm",
-    "category": "healthcare",
-    "slug": "speech-language-pathologists"
-  },
-  {
-    "title": "Stationary engineers and boiler operators",
-    "url": "https://www.bls.gov/ooh/production/stationary-engineers-and-boiler-operators.htm",
-    "category": "production",
-    "slug": "stationary-engineers-and-boiler-operators"
-  },
-  {
-    "title": "Substance abuse, behavioral disorder, and mental health counselors",
-    "url": "https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm",
-    "category": "community-and-social-service",
-    "slug": "substance-abuse-behavioral-disorder-and-mental-health-counselors"
-  },
-  {
-    "title": "Surgical assistants and technologists",
-    "url": "https://www.bls.gov/ooh/healthcare/surgical-technologists.htm",
-    "category": "healthcare",
-    "slug": "surgical-technologists"
-  },
-  {
-    "title": "Survey researchers",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/survey-researchers.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "survey-researchers"
-  },
-  {
-    "title": "Surveying and mapping technicians",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/surveying-and-mapping-technicians.htm",
-    "category": "architecture-and-engineering",
-    "slug": "surveying-and-mapping-technicians"
-  },
-  {
-    "title": "Surveyors",
-    "url": "https://www.bls.gov/ooh/architecture-and-engineering/surveyors.htm",
-    "category": "architecture-and-engineering",
-    "slug": "surveyors"
-  },
-  {
-    "title": "Tax examiners and collectors, and revenue agents",
-    "url": "https://www.bls.gov/ooh/business-and-financial/tax-examiners-and-collectors-and-revenue-agents.htm",
-    "category": "business-and-financial",
-    "slug": "tax-examiners-and-collectors-and-revenue-agents"
-  },
-  {
-    "title": "Taxi drivers, shuttle drivers, and chauffeurs",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/taxi-drivers-and-chauffeurs.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "taxi-drivers-and-chauffeurs"
-  },
-  {
-    "title": "Teacher assistants",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/teacher-assistants.htm",
-    "category": "education-training-and-library",
-    "slug": "teacher-assistants"
-  },
-  {
-    "title": "Technical writers",
-    "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
-    "category": "media-and-communication",
-    "slug": "technical-writers"
-  },
-  {
-    "title": "Telecommunications technicians",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/telecommunications-equipment-installers-and-repairers-except-line-installers.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "telecommunications-equipment-installers-and-repairers-except-line-installers"
-  },
-  {
-    "title": "Tellers",
-    "url": "https://www.bls.gov/ooh/office-and-administrative-support/tellers.htm",
-    "category": "office-and-administrative-support",
-    "slug": "tellers"
-  },
-  {
-    "title": "Top executives",
-    "url": "https://www.bls.gov/ooh/management/top-executives.htm",
-    "category": "management",
-    "slug": "top-executives"
-  },
-  {
-    "title": "Tour and travel guides",
-    "url": "https://www.bls.gov/ooh/personal-care-and-service/tour-and-travel-guides.htm",
-    "category": "personal-care-and-service",
-    "slug": "tour-and-travel-guides"
-  },
-  {
-    "title": "Training and development managers",
-    "url": "https://www.bls.gov/ooh/management/training-and-development-managers.htm",
-    "category": "management",
-    "slug": "training-and-development-managers"
-  },
-  {
-    "title": "Training and development specialists",
-    "url": "https://www.bls.gov/ooh/business-and-financial/training-and-development-specialists.htm",
-    "category": "business-and-financial",
-    "slug": "training-and-development-specialists"
-  },
-  {
-    "title": "Transportation, storage, and distribution managers",
-    "url": "https://www.bls.gov/ooh/management/transportation-storage-and-distribution-managers.htm",
-    "category": "management",
-    "slug": "transportation-storage-and-distribution-managers"
-  },
-  {
-    "title": "Travel agents",
-    "url": "https://www.bls.gov/ooh/sales/travel-agents.htm",
-    "category": "sales",
-    "slug": "travel-agents"
-  },
-  {
-    "title": "Tutors",
-    "url": "https://www.bls.gov/ooh/education-training-and-library/tutors.htm",
-    "category": "education-training-and-library",
-    "slug": "tutors"
-  },
-  {
-    "title": "Umpires, referees, and other sports officials",
-    "url": "https://www.bls.gov/ooh/entertainment-and-sports/umpires-referees-and-other-sports-officials.htm",
-    "category": "entertainment-and-sports",
-    "slug": "umpires-referees-and-other-sports-officials"
-  },
-  {
-    "title": "Urban and regional planners",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/urban-and-regional-planners.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "urban-and-regional-planners"
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2723-psychologists",
+    "category": "professionals",
+    "slug": "2723-psychologists",
+    "anzsco_code": "2723"
   },
   {
     "title": "Veterinarians",
-    "url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm",
-    "category": "healthcare",
-    "slug": "veterinarians"
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2347-veterinarians",
+    "category": "professionals",
+    "slug": "2347-veterinarians",
+    "anzsco_code": "2347"
   },
   {
-    "title": "Veterinary assistants and laboratory animal caretakers",
-    "url": "https://www.bls.gov/ooh/healthcare/veterinary-assistants-and-laboratory-animal-caretakers.htm",
-    "category": "healthcare",
-    "slug": "veterinary-assistants-and-laboratory-animal-caretakers"
+    "title": "Barristers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2711-barristers",
+    "category": "professionals",
+    "slug": "2711-barristers",
+    "anzsco_code": "2711"
   },
   {
-    "title": "Veterinary technologists and technicians",
-    "url": "https://www.bls.gov/ooh/healthcare/veterinary-technologists-and-technicians.htm",
-    "category": "healthcare",
-    "slug": "veterinary-technologists-and-technicians"
+    "title": "Solicitors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2713-solicitors",
+    "category": "professionals",
+    "slug": "2713-solicitors",
+    "anzsco_code": "2713"
   },
   {
-    "title": "Waiters and waitresses",
-    "url": "https://www.bls.gov/ooh/food-preparation-and-serving/waiters-and-waitresses.htm",
-    "category": "food-preparation-and-serving",
-    "slug": "waiters-and-waitresses"
+    "title": "Economists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2244-economists",
+    "category": "professionals",
+    "slug": "2244-economists",
+    "anzsco_code": "2244"
   },
   {
-    "title": "Water and wastewater treatment plant and system operators",
-    "url": "https://www.bls.gov/ooh/production/water-and-wastewater-treatment-plant-and-system-operators.htm",
-    "category": "production",
-    "slug": "water-and-wastewater-treatment-plant-and-system-operators"
+    "title": "Actuaries, Mathematicians and Statisticians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2241-actuaries-mathematicians-and-statisticians",
+    "category": "professionals",
+    "slug": "2241-actuaries-mathematicians-and-statisticians",
+    "anzsco_code": "2241"
   },
   {
-    "title": "Water transportation workers",
-    "url": "https://www.bls.gov/ooh/transportation-and-material-moving/water-transportation-occupations.htm",
-    "category": "transportation-and-material-moving",
-    "slug": "water-transportation-occupations"
+    "title": "School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2411-early-childhood-pre-primary-school-teachers",
+    "category": "professionals",
+    "slug": "2411-early-childhood-pre-primary-school-teachers",
+    "anzsco_code": "2411"
   },
   {
-    "title": "Web developers and digital designers",
-    "url": "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm",
-    "category": "computer-and-information-technology",
-    "slug": "web-developers"
+    "title": "Primary School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2412-primary-school-teachers",
+    "category": "professionals",
+    "slug": "2412-primary-school-teachers",
+    "anzsco_code": "2412"
   },
   {
-    "title": "Welders, cutters, solderers, and brazers",
-    "url": "https://www.bls.gov/ooh/production/welders-cutters-solderers-and-brazers.htm",
-    "category": "production",
-    "slug": "welders-cutters-solderers-and-brazers"
+    "title": "Secondary School Teachers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2414-secondary-school-teachers",
+    "category": "professionals",
+    "slug": "2414-secondary-school-teachers",
+    "anzsco_code": "2414"
   },
   {
-    "title": "Wholesale and manufacturing sales representatives",
-    "url": "https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm",
-    "category": "sales",
-    "slug": "wholesale-and-manufacturing-sales-representatives"
+    "title": "University Lecturers and Tutors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2421-university-lecturers-and-tutors",
+    "category": "professionals",
+    "slug": "2421-university-lecturers-and-tutors",
+    "anzsco_code": "2421"
   },
   {
-    "title": "Wind turbine technicians",
-    "url": "https://www.bls.gov/ooh/installation-maintenance-and-repair/wind-turbine-technicians.htm",
-    "category": "installation-maintenance-and-repair",
-    "slug": "wind-turbine-technicians"
+    "title": "Journalists and Other Writers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2124-journalists-and-other-writers",
+    "category": "professionals",
+    "slug": "2124-journalists-and-other-writers",
+    "anzsco_code": "2124"
   },
   {
-    "title": "Woodworkers",
-    "url": "https://www.bls.gov/ooh/production/woodworkers.htm",
-    "category": "production",
-    "slug": "woodworkers"
+    "title": "Graphic and Web Designers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2322-graphic-and-web-designers-and-illustrators",
+    "category": "professionals",
+    "slug": "2322-graphic-and-web-designers-and-illustrators",
+    "anzsco_code": "2322"
   },
   {
-    "title": "Writers and authors",
-    "url": "https://www.bls.gov/ooh/media-and-communication/writers-and-authors.htm",
-    "category": "media-and-communication",
-    "slug": "writers-and-authors"
+    "title": "Social Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2725-social-workers",
+    "category": "professionals",
+    "slug": "2725-social-workers",
+    "anzsco_code": "2725"
   },
   {
-    "title": "Zoologists and wildlife biologists",
-    "url": "https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm",
-    "category": "life-physical-and-social-science",
-    "slug": "zoologists-and-wildlife-biologists"
+    "title": "Welfare, Recreation and Community Arts Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/2726-welfare-recreation-and-community-arts-workers",
+    "category": "professionals",
+    "slug": "2726-welfare-recreation-and-community-arts-workers",
+    "anzsco_code": "2726"
+  },
+  {
+    "title": "Electricians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3411-electricians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3411-electricians",
+    "anzsco_code": "3411"
+  },
+  {
+    "title": "Plumbers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3341-plumbers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3341-plumbers",
+    "anzsco_code": "3341"
+  },
+  {
+    "title": "Carpenters and Joiners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3312-carpenters-and-joiners",
+    "category": "technicians-and-trades-workers",
+    "slug": "3312-carpenters-and-joiners",
+    "anzsco_code": "3312"
+  },
+  {
+    "title": "Bricklayers and Stonemasons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3311-bricklayers-and-stonemasons",
+    "category": "technicians-and-trades-workers",
+    "slug": "3311-bricklayers-and-stonemasons",
+    "anzsco_code": "3311"
+  },
+  {
+    "title": "Painting Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3322-painting-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3322-painting-trades-workers",
+    "anzsco_code": "3322"
+  },
+  {
+    "title": "Motor Mechanics",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3212-motor-mechanics",
+    "category": "technicians-and-trades-workers",
+    "slug": "3212-motor-mechanics",
+    "anzsco_code": "3212"
+  },
+  {
+    "title": "Metal Fitters and Machinists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3232-metal-fitters-and-machinists",
+    "category": "technicians-and-trades-workers",
+    "slug": "3232-metal-fitters-and-machinists",
+    "anzsco_code": "3232"
+  },
+  {
+    "title": "Chefs",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3513-chefs",
+    "category": "technicians-and-trades-workers",
+    "slug": "3513-chefs",
+    "anzsco_code": "3513"
+  },
+  {
+    "title": "Bakers and Pastrycooks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3511-bakers-and-pastrycooks",
+    "category": "technicians-and-trades-workers",
+    "slug": "3511-bakers-and-pastrycooks",
+    "anzsco_code": "3511"
+  },
+  {
+    "title": "Hairdressers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3911-hairdressers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3911-hairdressers",
+    "anzsco_code": "3911"
+  },
+  {
+    "title": "Gardeners",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3622-gardeners",
+    "category": "technicians-and-trades-workers",
+    "slug": "3622-gardeners",
+    "anzsco_code": "3622"
+  },
+  {
+    "title": "Telecommunications Trades Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3423-telecommunications-trades-workers",
+    "category": "technicians-and-trades-workers",
+    "slug": "3423-telecommunications-trades-workers",
+    "anzsco_code": "3423"
+  },
+  {
+    "title": "ICT Support Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3131-ict-support-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3131-ict-support-technicians",
+    "anzsco_code": "3131"
+  },
+  {
+    "title": "Medical Technicians",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3112-medical-technicians",
+    "category": "technicians-and-trades-workers",
+    "slug": "3112-medical-technicians",
+    "anzsco_code": "3112"
+  },
+  {
+    "title": "Veterinary Nurses",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3613-veterinary-nurses",
+    "category": "technicians-and-trades-workers",
+    "slug": "3613-veterinary-nurses",
+    "anzsco_code": "3613"
+  },
+  {
+    "title": "Dental Hygienists, Technicians and Therapists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/3113-dental-hygienists-technicians-and-therapists",
+    "category": "technicians-and-trades-workers",
+    "slug": "3113-dental-hygienists-technicians-and-therapists",
+    "anzsco_code": "3113"
+  },
+  {
+    "title": "Enrolled and Mothercraft Nurses",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4114-enrolled-and-mothercraft-nurses",
+    "category": "community-and-personal-service-workers",
+    "slug": "4114-enrolled-and-mothercraft-nurses",
+    "anzsco_code": "4114"
+  },
+  {
+    "title": "Aged and Disabled Carers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4231-aged-and-disabled-carers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4231-aged-and-disabled-carers",
+    "anzsco_code": "4231"
+  },
+  {
+    "title": "Child Carers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4211-child-carers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4211-child-carers",
+    "anzsco_code": "4211"
+  },
+  {
+    "title": "Education Aides",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4221-education-aides",
+    "category": "community-and-personal-service-workers",
+    "slug": "4221-education-aides",
+    "anzsco_code": "4221"
+  },
+  {
+    "title": "Nursing Support and Personal Care Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4233-nursing-support-and-personal-care-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4233-nursing-support-and-personal-care-workers",
+    "anzsco_code": "4233"
+  },
+  {
+    "title": "Personal Care Consultants",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4516-personal-care-consultants",
+    "category": "community-and-personal-service-workers",
+    "slug": "4516-personal-care-consultants",
+    "anzsco_code": "4516"
+  },
+  {
+    "title": "Fitness Instructors",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4523-fitness-instructors",
+    "category": "community-and-personal-service-workers",
+    "slug": "4523-fitness-instructors",
+    "anzsco_code": "4523"
+  },
+  {
+    "title": "Police",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4413-police",
+    "category": "community-and-personal-service-workers",
+    "slug": "4413-police",
+    "anzsco_code": "4413"
+  },
+  {
+    "title": "Fire and Emergency Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4411-fire-and-emergency-workers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4411-fire-and-emergency-workers",
+    "anzsco_code": "4411"
+  },
+  {
+    "title": "Prison Officers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4421-prison-officers",
+    "category": "community-and-personal-service-workers",
+    "slug": "4421-prison-officers",
+    "anzsco_code": "4421"
+  },
+  {
+    "title": "Security Officers and Guards",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4422-security-officers-and-guards",
+    "category": "community-and-personal-service-workers",
+    "slug": "4422-security-officers-and-guards",
+    "anzsco_code": "4422"
+  },
+  {
+    "title": "Waiters",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4315-waiters",
+    "category": "community-and-personal-service-workers",
+    "slug": "4315-waiters",
+    "anzsco_code": "4315"
+  },
+  {
+    "title": "Bar Attendants and Baristas",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/4311-bar-attendants-and-baristas",
+    "category": "community-and-personal-service-workers",
+    "slug": "4311-bar-attendants-and-baristas",
+    "anzsco_code": "4311"
+  },
+  {
+    "title": "General Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5311-general-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5311-general-clerks",
+    "anzsco_code": "5311"
+  },
+  {
+    "title": "Accounting Clerks and Bookkeepers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5511-accounting-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5511-accounting-clerks",
+    "anzsco_code": "5511"
+  },
+  {
+    "title": "Bookkeepers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5512-bookkeepers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5512-bookkeepers",
+    "anzsco_code": "5512"
+  },
+  {
+    "title": "Payroll Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5513-payroll-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5513-payroll-clerks",
+    "anzsco_code": "5513"
+  },
+  {
+    "title": "Bank Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5521-bank-workers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5521-bank-workers",
+    "anzsco_code": "5521"
+  },
+  {
+    "title": "Receptionists",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5421-receptionists",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5421-receptionists",
+    "anzsco_code": "5421"
+  },
+  {
+    "title": "Personal Assistants and Secretaries",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5212-personal-assistants",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5212-personal-assistants",
+    "anzsco_code": "5212"
+  },
+  {
+    "title": "Office Managers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5121-office-managers",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5121-office-managers",
+    "anzsco_code": "5121"
+  },
+  {
+    "title": "Data Entry Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5321-keyboard-operators",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5321-keyboard-operators",
+    "anzsco_code": "5321"
+  },
+  {
+    "title": "Insurance, Money Market and Statistical Clerks",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/5522-insurance-money-market-and-statistical-clerks",
+    "category": "clerical-and-administrative-workers",
+    "slug": "5522-insurance-money-market-and-statistical-clerks",
+    "anzsco_code": "5522"
+  },
+  {
+    "title": "Sales Assistants (General)",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6211-sales-assistants-general",
+    "category": "sales-workers",
+    "slug": "6211-sales-assistants-general",
+    "anzsco_code": "6211"
+  },
+  {
+    "title": "Real Estate Sales Agents",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6121-real-estate-sales-agents",
+    "category": "sales-workers",
+    "slug": "6121-real-estate-sales-agents",
+    "anzsco_code": "6121"
+  },
+  {
+    "title": "Insurance Agents and Sales Representatives",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6112-insurance-agents",
+    "category": "sales-workers",
+    "slug": "6112-insurance-agents",
+    "anzsco_code": "6112"
+  },
+  {
+    "title": "Checkout Operators and Office Cashiers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6311-checkout-operators-and-office-cashiers",
+    "category": "sales-workers",
+    "slug": "6311-checkout-operators-and-office-cashiers",
+    "anzsco_code": "6311"
+  },
+  {
+    "title": "Telemarketers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/6393-telemarketers",
+    "category": "sales-workers",
+    "slug": "6393-telemarketers",
+    "anzsco_code": "6393"
+  },
+  {
+    "title": "Truck Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7331-truck-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7331-truck-drivers",
+    "anzsco_code": "7331"
+  },
+  {
+    "title": "Bus and Coach Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7312-bus-and-coach-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7312-bus-and-coach-drivers",
+    "anzsco_code": "7312"
+  },
+  {
+    "title": "Train and Tram Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7321-train-and-tram-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7321-train-and-tram-drivers",
+    "anzsco_code": "7321"
+  },
+  {
+    "title": "Delivery Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7311-delivery-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7311-delivery-drivers",
+    "anzsco_code": "7311"
+  },
+  {
+    "title": "Machine Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7112-stationary-plant-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7112-stationary-plant-operators",
+    "anzsco_code": "7112"
+  },
+  {
+    "title": "Forklift Drivers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7213-forklift-drivers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7213-forklift-drivers",
+    "anzsco_code": "7213"
+  },
+  {
+    "title": "Crane, Hoist and Lift Operators",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7212-crane-hoist-and-lift-operators",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7212-crane-hoist-and-lift-operators",
+    "anzsco_code": "7212"
+  },
+  {
+    "title": "Storepersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/7419-other-miscellaneous-labourers",
+    "category": "machinery-operators-and-drivers",
+    "slug": "7419-other-miscellaneous-labourers",
+    "anzsco_code": "7419"
+  },
+  {
+    "title": "Cleaners and Laundry Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8112-cleaners-and-laundry-workers",
+    "category": "labourers",
+    "slug": "8112-cleaners-and-laundry-workers",
+    "anzsco_code": "8112"
+  },
+  {
+    "title": "Construction and Mining Labourers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8212-construction-and-mining-labourers",
+    "category": "labourers",
+    "slug": "8212-construction-and-mining-labourers",
+    "anzsco_code": "8212"
+  },
+  {
+    "title": "Farm, Forestry and Garden Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8411-farm-forestry-and-garden-workers",
+    "category": "labourers",
+    "slug": "8411-farm-forestry-and-garden-workers",
+    "anzsco_code": "8411"
+  },
+  {
+    "title": "Food Process Workers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8311-food-and-drink-factory-workers",
+    "category": "labourers",
+    "slug": "8311-food-and-drink-factory-workers",
+    "anzsco_code": "8311"
+  },
+  {
+    "title": "Packers and Product Assemblers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8393-product-assemblers",
+    "category": "labourers",
+    "slug": "8393-product-assemblers",
+    "anzsco_code": "8393"
+  },
+  {
+    "title": "Kitchen Hands",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8511-kitchenhands",
+    "category": "labourers",
+    "slug": "8511-kitchenhands",
+    "anzsco_code": "8511"
+  },
+  {
+    "title": "Freight Handlers and Shelf Fillers",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8414-freight-handlers-and-shelf-fillers",
+    "category": "labourers",
+    "slug": "8414-freight-handlers-and-shelf-fillers",
+    "anzsco_code": "8414"
+  },
+  {
+    "title": "Handypersons",
+    "url": "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations/8211-handypersons",
+    "category": "labourers",
+    "slug": "8211-handypersons",
+    "anzsco_code": "8211"
   }
 ]

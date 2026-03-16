@@ -1,4 +1,4 @@
-"""Parse a BLS OOH detail page into a clean Markdown document."""
+"""Parse a Jobs and Skills Australia occupation profile page into a clean Markdown document."""
 
 import sys
 import re
@@ -9,7 +9,9 @@ def clean(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-def parse_ooh_page(html_path):
+
+def parse_jsa_page(html_path):
+    """Parse a JSA occupation profile page into Markdown."""
     with open(html_path, "r") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
@@ -23,168 +25,113 @@ def parse_ooh_page(html_path):
 
     # --- Source URL ---
     canonical = soup.find("link", rel="canonical")
-    if canonical:
+    if canonical and canonical.get("href"):
         md.append(f"**Source:** {canonical['href']}")
         md.append("")
 
-    # --- Quick Facts ---
-    qf_table = soup.find("table", id="quickfacts")
-    if qf_table:
-        md.append("## Quick Facts")
-        md.append("")
-        md.append("| Field | Value |")
-        md.append("|-------|-------|")
-        for row in qf_table.find("tbody").find_all("tr"):
-            th = row.find("th")
-            td = row.find("td")
-            if th and td:
-                field = clean(th.get_text())
-                value = clean(td.get_text())
-                md.append(f"| {field} | {value} |")
-        md.append("")
+    # --- Quick stats / Key facts ---
+    # JSA pages typically have key stats in structured sections
+    # Look for common stat containers
+    for section in soup.find_all(["div", "section"]):
+        heading = section.find(["h2", "h3"])
+        if not heading:
+            continue
+        heading_text = clean(heading.get_text()).lower()
 
-    # --- Tab sections ---
-    panes = soup.find("div", id="panes")
-    if not panes:
-        return "\n".join(md)
-
-    tab_ids = ["tab-1", "tab-2", "tab-3", "tab-4", "tab-5", "tab-6", "tab-7", "tab-8", "tab-9"]
-    # Skip tab-1 (Summary, already covered by quick facts) and tab-7 (State & Area Data, just links)
-
-    for tab_id in tab_ids:
-        tab_div = panes.find("div", id=tab_id)
-        if not tab_div:
+        # Skip navigation and irrelevant sections
+        if any(skip in heading_text for skip in ["menu", "footer", "navigation", "breadcrumb"]):
             continue
 
-        article = tab_div.find("article")
-        if not article:
-            # tab-8 (Similar Occupations) doesn't have an article wrapper
-            article = tab_div
-
-        h2 = article.find("h2")
-        if not h2:
-            continue
-        section_title = clean(h2.find("span").get_text()) if h2.find("span") else clean(h2.get_text())
-
-        # Skip tabs we don't need
-        if tab_id in ("tab-1",   # Summary (redundant with Quick Facts)
-                       "tab-7",   # State & Area Data (just links)
-                       "tab-8",   # Similar Occupations
-                       "tab-9"):  # Contacts for More Information
+        section_title = clean(heading.get_text())
+        if not section_title:
             continue
 
-        md.append(f"## {section_title}")
+        # Extract content from the section
+        content_parts = []
+
+        # Get all paragraphs
+        for p in section.find_all("p", recursive=False):
+            text = clean(p.get_text())
+            if text and len(text) > 5:
+                content_parts.append(text)
+
+        # Get all list items
+        for ul in section.find_all("ul", recursive=False):
+            for li in ul.find_all("li"):
+                text = clean(li.get_text())
+                if text:
+                    content_parts.append(f"- {text}")
+
+        # Get all definition lists (common in JSA for stats)
+        for dl in section.find_all("dl", recursive=False):
+            dts = dl.find_all("dt")
+            dds = dl.find_all("dd")
+            for dt, dd in zip(dts, dds):
+                label = clean(dt.get_text())
+                value = clean(dd.get_text())
+                if label and value:
+                    content_parts.append(f"- **{label}:** {value}")
+
+        # Get tables
+        for table in section.find_all("table", recursive=False):
+            rows = table.find_all("tr")
+            if rows:
+                table_data = []
+                for row in rows:
+                    cells = row.find_all(["td", "th"])
+                    row_data = [clean(c.get_text()) for c in cells]
+                    if row_data and any(row_data):
+                        table_data.append(row_data)
+                if table_data:
+                    max_cols = max(len(r) for r in table_data)
+                    for r in table_data:
+                        while len(r) < max_cols:
+                            r.append("")
+                    # Header row
+                    content_parts.append("| " + " | ".join(table_data[0]) + " |")
+                    content_parts.append("| " + " | ".join(["---"] * max_cols) + " |")
+                    for row_data in table_data[1:]:
+                        content_parts.append("| " + " | ".join(row_data) + " |")
+
+        if content_parts:
+            md.append(f"## {section_title}")
+            md.append("")
+            md.extend(content_parts)
+            md.append("")
+
+    # --- Fallback: extract all meaningful text if sections yielded little ---
+    if len(md) < 5:
+        # Extract key stat values from common patterns
+        for elem in soup.find_all(["span", "div", "p"]):
+            text = clean(elem.get_text())
+            # Look for earnings patterns (e.g., "$1,889 per week")
+            if re.search(r'\$[\d,]+\s*per\s*week', text):
+                md.append(f"- {text}")
+            # Look for employment numbers
+            elif re.search(r'[\d,]+\s*(employed|workers|people)', text, re.I):
+                md.append(f"- {text}")
+            # Look for growth percentages
+            elif re.search(r'[\d.]+%\s*(growth|decline|change)', text, re.I):
+                md.append(f"- {text}")
         md.append("")
-
-        # --- Generic tab: extract paragraphs, headers, lists, tables ---
-        # Process the pay chart if present
-        chart_div = article.find("div", class_="ooh-chart")
-        if chart_div:
-            # Extract the bar chart data
-            chart_title_h3 = chart_div.find("h3")
-            chart_subtitle = chart_div.find("p")
-            dts = chart_div.find("dl")
-            if dts:
-                items = []
-                dt_list = dts.find_all("dt")
-                dd_list = dts.find_all("dd")
-                for dt, dd in zip(dt_list, dd_list):
-                    label = clean(dt.get_text())
-                    # find the value span
-                    val_spans = dd.find_all("span")
-                    for s in val_spans:
-                        val_text = clean(s.get_text())
-                        if val_text and (val_text.startswith("$") or val_text.endswith("%")):
-                            items.append((label, val_text))
-                            break
-                if items:
-                    subtitle = clean(chart_subtitle.get_text()) if chart_subtitle else ""
-                    if subtitle:
-                        md.append(f"*{subtitle}*")
-                        md.append("")
-                    for label, val in items:
-                        md.append(f"- **{label}**: {val}")
-                    md.append("")
-
-        # Now process remaining content (skip chart divs)
-        for elem in article.children:
-            if hasattr(elem, 'name'):
-                if elem.name == 'h2':
-                    continue  # already printed
-                if elem.name == 'div' and elem.get('class') and 'ooh-chart' in elem.get('class', []):
-                    continue  # already handled
-                if elem.name == 'div' and elem.get('class') and 'ooh_right_img' in elem.get('class', []):
-                    continue  # skip images
-                if elem.name == 'h3':
-                    md.append(f"### {clean(elem.get_text())}")
-                    md.append("")
-                elif elem.name == 'p':
-                    text = clean(elem.get_text())
-                    if text:
-                        md.append(text)
-                        md.append("")
-                elif elem.name == 'ul':
-                    for li in elem.find_all("li"):
-                        md.append(f"- {clean(li.get_text())}")
-                    md.append("")
-                elif elem.name == 'table':
-                    # Skip the outlook-table (handled separately below)
-                    if elem.get("id") == "outlook-table":
-                        continue
-                    # Parse generic table (employer breakdown, pay by industry, etc.)
-                    rows = elem.find_all("tr")
-                    if rows:
-                        table_data = []
-                        for row in rows:
-                            cells = row.find_all(["td", "th"])
-                            row_data = [clean(c.get_text()) for c in cells]
-                            if row_data and any(row_data):
-                                table_data.append(row_data)
-                        if table_data:
-                            max_cols = max(len(r) for r in table_data)
-                            for r in table_data:
-                                while len(r) < max_cols:
-                                    r.append("")
-                            # Render as simple rows (no header row for these tables)
-                            md.append("| " + " | ".join(["---"] * max_cols) + " |")
-                            for row_data in table_data:
-                                md.append("| " + " | ".join(row_data) + " |")
-                            md.append("")
-
-        # Employment projections table (in Job Outlook tab)
-        if tab_id == "tab-6":
-            outlook_table = article.find("table", id="outlook-table")
-            if outlook_table:
-                md.append("### Employment Projections")
-                md.append("")
-                tbody = outlook_table.find("tbody")
-                if tbody:
-                    for row in tbody.find_all("tr"):
-                        cells = row.find_all(["td", "th"])
-                        values = [clean(c.get_text()) for c in cells]
-                        if values:
-                            # Format: Title, SOC, Employment 2024, Projected 2034, % change, numeric change
-                            labels = ["Occupational Title", "SOC Code", "Employment 2024",
-                                      "Projected Employment 2034", "Change % 2024-34",
-                                      "Change Numeric 2024-34"]
-                            for label, val in zip(labels, values):
-                                if val and val != "Get data":
-                                    md.append(f"- **{label}:** {val}")
-                            md.append("")
 
     # --- Last Modified ---
-    update_p = soup.find("p", class_="update")
-    if update_p:
+    update_elem = soup.find(string=re.compile(r'last updated|modified|published', re.I))
+    if update_elem:
         md.append("---")
-        md.append(f"*{clean(update_p.get_text())}*")
+        md.append(f"*{clean(update_elem)}*")
         md.append("")
 
     return "\n".join(md)
 
 
+# Keep backward compatibility alias
+parse_ooh_page = parse_jsa_page
+
+
 if __name__ == "__main__":
     html_path = sys.argv[1] if len(sys.argv) > 1 else "electrician.html"
-    result = parse_ooh_page(html_path)
+    result = parse_jsa_page(html_path)
 
     # Write output
     out_path = html_path.replace(".html", ".md")

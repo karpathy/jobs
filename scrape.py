@@ -1,13 +1,12 @@
 """
-Scrape BLS Occupational Outlook Handbook detail pages (raw HTML).
+Scrape Jobs and Skills Australia occupation profile pages (raw HTML).
 
 Saves raw HTML to html/<slug>.html as the source of truth.
-Run process.py afterwards to derive data/<slug>.json and pages/<slug>.md.
+Run process.py afterwards to derive pages/<slug>.md.
 
 Usage:
-    uv run python scrape.py                      # scrape all (0 to 342)
+    uv run python scrape.py                      # scrape all
     uv run python scrape.py --start 0 --end 5    # scrape first 5
-    uv run python scrape.py --start 10 --end 20  # scrape indices 10-19
     uv run python scrape.py --force               # re-scrape ignoring cache
 
 Caching: skips any occupation where html/<slug>.html already exists.
@@ -23,7 +22,7 @@ from playwright.sync_api import sync_playwright
 # Main scraper
 # ---------------------------------------------------------------------------
 def main():
-    parser = argparse.ArgumentParser(description="Scrape BLS OOH pages")
+    parser = argparse.ArgumentParser(description="Scrape JSA occupation profile pages")
     parser.add_argument("--start", type=int, default=0, help="Start index (inclusive)")
     parser.add_argument("--end", type=int, default=None, help="End index (exclusive)")
     parser.add_argument("--force", action="store_true", help="Re-scrape even if cached")
@@ -69,10 +68,13 @@ def main():
             print(f"  [{i}] {occ['title']}...", end=" ", flush=True)
 
             try:
-                resp = page.goto(url, wait_until="domcontentloaded", timeout=15000)
+                resp = page.goto(url, wait_until="networkidle", timeout=30000)
                 if resp.status != 200:
                     print(f"HTTP {resp.status} — SKIPPED")
                     continue
+
+                # Wait for dynamic content to load
+                page.wait_for_timeout(2000)
 
                 # Save raw HTML — this is the source of truth
                 html = page.content()

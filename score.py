@@ -9,6 +9,8 @@ Usage:
     uv run python score.py
     uv run python score.py --model google/gemini-3-flash-preview
     uv run python score.py --start 0 --end 10   # test on first 10
+
+Data source: Jobs and Skills Australia occupation profiles.
 """
 
 import argparse
@@ -26,8 +28,8 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 SYSTEM_PROMPT = """\
 You are an expert analyst evaluating how exposed different occupations are to \
-AI. You will be given a detailed description of an occupation from the Bureau \
-of Labor Statistics.
+AI. You will be given a detailed description of an occupation from Jobs and \
+Skills Australia (ANZSCO classification).
 
 Rate the occupation's overall **AI Exposure** on a scale from 0 to 10.
 
@@ -49,7 +51,7 @@ Use these anchors to calibrate your score:
 - **0–1: Minimal exposure.** The work is almost entirely physical, hands-on, \
 or requires real-time human presence in unpredictable environments. AI has \
 essentially no impact on daily work. \
-Examples: roofer, landscaper, commercial diver.
+Examples: roofer, landscape gardener, commercial diver.
 
 - **2–3: Low exposure.** Mostly physical or interpersonal work. AI might help \
 with minor peripheral tasks (scheduling, paperwork) but doesn't touch the \
