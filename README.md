@@ -14,8 +14,9 @@ The original repo scraped US Bureau of Labor Statistics (BLS) occupation data, s
 | SOC occupation codes | ANZSCO 4-digit unit groups (361 occupations) |
 | USD pay figures | AUD median weekly full-time earnings x 52 |
 | US degree classifications | Australian Qualifications Framework (AQF) |
-| BLS employment projections | JSA/Victoria University 5-year projections |
+| BLS 10-year employment projections | JSA/Victoria University **5-year** projections |
 | 143M total employment | 14.4M total employment |
+| 24% of jobs in declining occupations | 5% of jobs in declining occupations |
 
 ## What's here
 
@@ -88,10 +89,20 @@ uv run python score.py               # score AI exposure (needs API key)
 uv run python build_site_data.py     # merge into site/data.json
 ```
 
+## Methodology differences vs US version
+
+The Australian visualisation looks noticeably more optimistic than the US version. Key reasons:
+
+- **Projection horizon**: Australia uses **5-year** growth projections (May 2025–May 2030) while the US uses **10-year** BLS projections. The magnitudes are roughly comparable (+6.6% AU 5yr vs +3.4% US 10yr), but they measure different time spans.
+- **Fewer declining occupations**: Only 5% of Australian jobs are in occupations with negative 5-year growth, vs 24% for US 10-year projections. This reflects Australia's strong population growth from immigration, which sustains demand across most occupations. Even over 10 years, only 13 of 358 Australian occupations are projected to decline.
+- **The projections do not account for AI**: The JSA/Victoria University model projects employment based on historical trends, demographics, and industry structure. It does not currently reflect the potential labour market impact of generative AI adoption.
+- **Currency**: AUD pay figures are not directly comparable to USD. At current exchange rates (~0.65 USD/AUD), an Australian median of A$92K is roughly US$60K.
+- **Education system**: Australia uses the Australian Qualifications Framework (AQF) — Certificate I–IV, Diploma, Bachelor degree, etc. — rather than US degree classifications (Associate's, Bachelor's, Master's). The education groups are not directly comparable.
+- **Coverage**: 296 of 361 occupations have real earnings data from JSA; the remaining 65 (mostly farmers, defence, niche trades) are estimated from ANZSCO skill levels.
+
 ## Notes on Australian data
 
 - **Currency**: All pay figures are in Australian dollars (AUD). Median weekly full-time earnings are converted to annual by multiplying by 52.
 - **Classification**: ANZSCO (Australian and New Zealand Standard Classification of Occupations) 4-digit unit groups. 8 major groups: Managers, Professionals, Technicians & Trades, Community & Personal Service, Clerical & Admin, Sales, Machinery Operators & Drivers, Labourers.
 - **Employment projections**: JSA / Victoria University Employment Forecasting model (May 2025–May 2035). These do not currently reflect the labour market implications of generative AI adoption.
 - **Education**: Uses the Australian Qualifications Framework (AQF) — from Year 10 through Doctoral degree — rather than US degree classifications.
-- **Coverage**: 296 of 361 occupations have real earnings data from JSA; the remaining 65 (mostly farmers, defence, niche trades) are estimated from ANZSCO skill levels.

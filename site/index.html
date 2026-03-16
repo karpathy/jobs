@@ -209,9 +209,10 @@ canvas#canvas {
 <div id="wrapper">
 <div id="header">
   <div class="intro">
-    <h1>Australian Job Market Visualiser <a href="https://github.com/karpathy/jobs">GitHub</a></h1>
-    <p>This is a research tool that visualises Australian occupations from <a href="https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles">Jobs and Skills Australia</a> (ANZSCO classification), covering the Australian labour market. Each rectangle's <b>area</b> is proportional to total employment. <b>Colour</b> shows the selected metric &mdash; toggle between projected growth outlook, median pay, education requirements, and AI exposure. Click any tile to view its full JSA profile. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Australian labour market data visually.</p>
-    <p><b>LLM-powered colouring:</b> The <a href="https://github.com/karpathy/jobs">source code</a> includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and colour occupations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colours accordingly. The "Digital AI Exposure" option is one example &mdash; it estimates how much current AI (which is primarily digital) will reshape each occupation. But you could write a different prompt for any question &mdash; e.g. exposure to humanoid robotics, offshoring risk, climate impact &mdash; and re-run the pipeline to get a different colouring.</p>
+    <h1>Australian Job Market Visualiser <a href="https://github.com/ychua/jobs">GitHub</a></h1>
+    <p>An Australian adaptation of <a href="https://karpathy.ai/jobs">Andrej Karpathy's US Job Market Visualizer</a>, rebuilt with real data from <a href="https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles">Jobs and Skills Australia</a>. Covers <b>361 ANZSCO occupations</b> across the Australian labour market (~14.4M employed). Each rectangle's <b>area</b> is proportional to total employment. <b>Colour</b> shows the selected metric &mdash; toggle between growth outlook, median pay, education, and AI exposure. Click any tile to view its full JSA profile.</p>
+    <p><b>Key differences from the US version:</b> Australia uses ANZSCO occupation codes (not SOC), the Australian Qualifications Framework for education (not US degrees), pay is in AUD, and growth projections are <b>5-year</b> forecasts from JSA/Victoria University (the US version uses 10-year BLS projections). Australia's projections show fewer declining occupations than the US &mdash; partly methodology, partly strong population growth from immigration.</p>
+    <p><b>LLM-powered colouring:</b> The <a href="https://github.com/ychua/jobs">source code</a> includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and colour occupations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colours accordingly. The "Digital AI Exposure" option is one example &mdash; it estimates how much current AI (which is primarily digital) will reshape each occupation. But you could write a different prompt for any question &mdash; e.g. exposure to humanoid robotics, offshoring risk, climate impact &mdash; and re-run the pipeline to get a different colouring.</p>
     <details>
       <summary>View the Digital AI Exposure scoring prompt (example)</summary>
       <div class="prompt-box">You are an expert analyst evaluating how exposed different occupations are to AI. You will be given a detailed description of an occupation from Jobs and Skills Australia (ANZSCO classification).
@@ -240,14 +241,14 @@ Respond with ONLY a JSON object in this exact format, no other text:
 {"exposure": &lt;0-10&gt;, "rationale": "&lt;2-3 sentences explaining the key factors&gt;"}</div>
     </details>
     <p><b>Caveat on Digital AI Exposure scores:</b> These are rough LLM estimates, not rigorous predictions. A high score does not predict the job will disappear. Software developers score 9/10 because AI is transforming their work &mdash; but demand for software could easily <em>grow</em> as each developer becomes more productive. The score does not account for demand elasticity, latent demand, regulatory barriers, or social preferences for human workers. Many high-exposure jobs will be reshaped, not replaced.</p>
-    <p><b>Data source:</b> <a href="https://www.jobsandskills.gov.au/">Jobs and Skills Australia</a> occupation profiles (ANZSCO classification). Pay figures are in Australian dollars (AUD), derived from median weekly full-time earnings. Employment projections are from JSA/Victoria University modelling.</p>
+    <p><b>Data sources:</b> <a href="https://www.jobsandskills.gov.au/">Jobs and Skills Australia</a> Occupation Profiles (Nov 2025) for employment, earnings, and education. <a href="https://www.jobsandskills.gov.au/data/employment-projections">JSA Employment Projections</a> (May 2025&ndash;2035, Victoria University model) for 5-year growth outlook. Pay is in AUD, derived from median weekly full-time earnings &times; 52.</p>
   </div>
 
   <div class="controls-row">
     <div class="stat-section">
       <h3>Layer</h3>
       <div class="color-toggle" id="colorToggle">
-        <button data-mode="outlook" class="active">Growth Outlook</button>
+        <button data-mode="outlook" class="active">Growth Outlook (5yr)</button>
         <button data-mode="pay">Median Pay</button>
         <button data-mode="education">Education</button>
         <button data-mode="exposure">Digital AI Exposure</button>
@@ -536,7 +537,7 @@ function tooltipHighlight(d) {
     const v = d.outlook;
     if (v == null) return "";
     const color = outlookColor(v, 1);
-    return `<span style="color:${color};font-weight:600;">Outlook: ${v > 0 ? '+' : ''}${v}%</span>` +
+    return `<span style="color:${color};font-weight:600;">5yr Outlook: ${v > 0 ? '+' : ''}${v}%</span>` +
       (d.outlook_desc ? ` <span style="color:var(--fg2);">(${d.outlook_desc})</span>` : '') +
       `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
       `<div style="height:100%;width:${Math.min(100, Math.max(0, (v + 10) / 30 * 100))}%;background:${color};border-radius:2px;"></div></div>`;
@@ -563,7 +564,7 @@ function showTooltip(d, mx, my) {
   tt.querySelector(".tt-stats").innerHTML = `
     <span class="label">Median pay (annual)</span><span class="value">${formatPay(d.pay)}</span>
     <span class="label">Employment</span><span class="value">${formatNumber(d.jobs)}</span>
-    <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
+    <span class="label">5yr outlook</span><span class="value">${d.outlook != null ? (d.outlook > 0 ? '+' : '') + d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
   tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
   let tx = mx + 16, ty = my - 16;
@@ -594,11 +595,11 @@ const EDU_GROUPS = [
 ];
 
 const OUTLOOK_TIERS = [
-  { label: "Declining (<0%)", min: -Infinity, max: -1 },
-  { label: "Slow (0\u20133%)", min: 0, max: 3 },
-  { label: "Average (4\u20137%)", min: 4, max: 7 },
-  { label: "Fast (8\u201314%)", min: 8, max: 14 },
-  { label: "Much faster (15%+)", min: 15, max: Infinity },
+  { label: "Declining (<0%)", min: -Infinity, max: -0.01 },
+  { label: "Slow (0\u20134%)", min: 0, max: 4 },
+  { label: "Moderate (4\u20138%)", min: 4.01, max: 8 },
+  { label: "Fast (8\u201315%)", min: 8.01, max: 15 },
+  { label: "Very fast (15%+)", min: 15.01, max: Infinity },
 ];
 
 // Weighted avg of metric across a set of group filters
@@ -648,9 +649,9 @@ function updateOutlookStats(totalJobs) {
   let wS = 0, wC = 0;
   for (const d of data) { if (d.outlook != null && d.jobs) { wS += d.outlook * d.jobs; wC += d.jobs; } }
   const avg = wC > 0 ? wS / wC : 0;
-  document.getElementById("block2").innerHTML = `<h3>Avg. outlook</h3>
+  document.getElementById("block2").innerHTML = `<h3>Avg. 5yr outlook</h3>
     <div class="stat-big"><span style="color:${outlookColor(avg, 1)}">${avg > 0 ? "+" : ""}${avg.toFixed(1)}%</span></div>
-    <div class="stat-label">job-weighted</div>`;
+    <div class="stat-label">job-weighted, 5-year projected</div>`;
 
   // Histogram: jobs by outlook bucket
   const buckets = [
@@ -690,15 +691,15 @@ function updateOutlookStats(totalJobs) {
   let declining = 0;
   for (const d of data) { if (d.outlook != null && d.outlook < 0 && d.jobs) declining += d.jobs; }
   document.getElementById("block7").innerHTML = `<h3>Declining jobs</h3>
-    <div class="stat-big" style="color:${outlookColor(-5, 1)}">${(declining / 1e6).toFixed(1)}M</div>
-    <div class="stat-label">negative outlook</div>`;
+    <div class="stat-big" style="color:${outlookColor(-5, 1)}">${declining >= 1e6 ? (declining / 1e6).toFixed(1) + "M" : Math.round(declining / 1e3) + "K"}</div>
+    <div class="stat-label">negative 5yr outlook</div>`;
 
   // Impact: growing jobs
   let growing = 0;
   for (const d of data) { if (d.outlook != null && d.outlook > 0 && d.jobs) growing += d.jobs; }
   document.getElementById("block8").innerHTML = `<h3>Growing jobs</h3>
     <div class="stat-big" style="color:${outlookColor(10, 1)}">${(growing / 1e6).toFixed(1)}M</div>
-    <div class="stat-label">positive outlook</div>`;
+    <div class="stat-label">positive 5yr outlook</div>`;
 }
 
 function updatePayStats(totalJobs) {
@@ -773,7 +774,7 @@ function updateEducationStats(totalJobs) {
   const maxH = Math.max(...groups.map(g => g.jobs));
   document.getElementById("block3").innerHTML = `<h3>Jobs by education</h3>
     <div class="histogram">${groups.map(g => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? g.jobs / maxH * 100 : 0)}%;background:${eduColor(g.idx * 2, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>HS</span><span>BS</span><span>PhD</span></div>`;
+    <div class="hist-labels"><span>Yr 10-12</span><span>Bachelor</span><span>Postgrad</span></div>`;
 
   // Tier breakdown (same groups with counts)
   const tiers = groups.map((g, i) => ({ label: g.label, jobs: g.jobs, color: eduColor(i * 2, 1) }));
