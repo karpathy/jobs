@@ -1990,5 +1990,179 @@
     "title": "Other Miscellaneous Labourers",
     "exposure": 0,
     "rationale": "Other Miscellaneous Labourers is almost entirely physical labour in real-world environments. AI has essentially no impact on the core work, which requires manual effort and physical presence."
+  },
+  {
+    "slug": "5412-information-officers",
+    "title": "Information Officers",
+    "exposure": 7,
+    "rationale": "Information officers primarily handle enquiries, provide advice, and manage communications \u2014 largely digital, knowledge-based work. AI chatbots and information retrieval systems can automate much of this, though human judgment remains needed for complex queries."
+  },
+  {
+    "slug": "7122-drillers-miners-and-shot-firers",
+    "title": "Drillers, Miners and Shot Firers",
+    "exposure": 1,
+    "rationale": "This is physically demanding work in hazardous underground or surface environments. Core tasks \u2014 operating drilling rigs, handling explosives, extracting minerals \u2014 require physical presence and manual skill with minimal digital component."
+  },
+  {
+    "slug": "2249-other-information-and-organisation-professionals",
+    "title": "Other Information and Organisation Professionals",
+    "exposure": 7,
+    "rationale": "These professionals work primarily with information systems, records management, and organisational knowledge. The work is predominantly digital and involves tasks like classification, analysis, and information architecture where AI tools are increasingly capable."
+  },
+  {
+    "slug": "8321-packers",
+    "title": "Packers",
+    "exposure": 2,
+    "rationale": "Packing is manual, repetitive physical work \u2014 sorting, wrapping, boxing, and labelling goods. While robotic automation exists, most packing roles still require human dexterity for varied products. AI has limited direct impact on the core physical tasks."
+  },
+  {
+    "slug": "2726-welfare-recreation-and-community-arts-workers",
+    "title": "Welfare, Recreation and Community Arts Workers",
+    "exposure": 4,
+    "rationale": "This role combines interpersonal community engagement with administrative and planning work. AI can assist with program design and documentation, but the core work requires human presence, empathy, and relationship-building in community settings."
+  },
+  {
+    "slug": "8414-garden-and-nursery-labourers",
+    "title": "Garden and Nursery Labourers",
+    "exposure": 1,
+    "rationale": "Garden and nursery labour is fundamentally physical outdoor work \u2014 planting, weeding, watering, and maintaining gardens. AI has virtually no practical application to these hands-on tasks."
+  },
+  {
+    "slug": "8415-livestock-farm-workers",
+    "title": "Livestock Farm Workers",
+    "exposure": 1,
+    "rationale": "Livestock farm work involves physical animal handling, feeding, mustering, and property maintenance in outdoor environments. While precision agriculture technologies exist, the core daily work remains manual and physical."
+  },
+  {
+    "slug": "8322-product-assemblers",
+    "title": "Product Assemblers",
+    "exposure": 2,
+    "rationale": "Product assembly is primarily manual work requiring physical dexterity to fit components together. While industrial robotics can automate some assembly lines, many assembly tasks still need human adaptability for varied products."
+  },
+  {
+    "slug": "7123-engineering-production-workers",
+    "title": "Engineering Production Workers",
+    "exposure": 2,
+    "rationale": "Engineering production work involves operating machinery, handling materials, and performing physical manufacturing tasks. AI may optimise production scheduling, but the hands-on operation of equipment remains human-dependent."
+  },
+  {
+    "slug": "3613-veterinary-nurses",
+    "title": "Veterinary Nurses",
+    "exposure": 3,
+    "rationale": "Veterinary nursing requires physical handling of animals, assisting in surgeries, administering treatments, and monitoring patients. AI can help with diagnostic support and record-keeping, but the core caregiving work demands physical presence and animal handling skills."
+  },
+  {
+    "slug": "8419-other-farm-forestry-and-garden-workers",
+    "title": "Other Farm, Forestry and Garden Workers",
+    "exposure": 1,
+    "rationale": "These roles are fundamentally physical outdoor work \u2014 farming, forestry operations, and garden maintenance. AI has minimal practical application to these hands-on agricultural and horticultural tasks."
+  },
+  {
+    "slug": "2347-veterinarians",
+    "title": "Veterinarians",
+    "exposure": 4,
+    "rationale": "Veterinarians combine knowledge work (diagnosis, treatment planning) with physical examination and surgery. AI can assist with diagnostic imaging and treatment recommendations, but physical examination and procedures require hands-on expertise."
+  },
+  {
+    "slug": "6216-service-station-attendants",
+    "title": "Service Station Attendants",
+    "exposure": 2,
+    "rationale": "Service station work involves physical tasks like fuel dispensing, basic vehicle checks, and retail sales. Automation through self-service pumps reduces some roles, but the remaining attendant work is primarily physical and interpersonal."
+  },
+  {
+    "slug": "3241-panelbeaters",
+    "title": "Panelbeaters",
+    "exposure": 1,
+    "rationale": "Panel beating is skilled manual trades work \u2014 reshaping, repairing, and replacing damaged vehicle body panels. It requires physical skill, spatial judgment, and hands-on craftsmanship that AI cannot replicate."
+  },
+  {
+    "slug": "1419-other-accommodation-and-hospitality-managers",
+    "title": "Other Accommodation and Hospitality Managers",
+    "exposure": 5,
+    "rationale": "Hospitality management blends operational oversight with administrative and customer service tasks. AI can streamline bookings, revenue management, and reporting, but managing staff and guest experiences requires human presence and interpersonal skills."
+  },
+  {
+    "slug": "3923-printers",
+    "title": "Printers",
+    "exposure": 3,
+    "rationale": "Printing trades involve operating and maintaining printing machinery, colour matching, and quality control. While pre-press design work is increasingly digital, the physical operation of printing equipment and hands-on quality assurance remain manual."
+  },
+  {
+    "slug": "3243-vehicle-painters",
+    "title": "Vehicle Painters",
+    "exposure": 1,
+    "rationale": "Vehicle painting is skilled manual work \u2014 surface preparation, colour mixing, spray application, and finishing. It requires physical dexterity and an eye for colour matching that AI cannot perform."
+  },
+  {
+    "slug": "3932-clothing-trades-workers",
+    "title": "Clothing Trades Workers",
+    "exposure": 2,
+    "rationale": "Clothing trades involve cutting, sewing, and finishing garments \u2014 primarily manual work requiring physical dexterity. AI can assist with pattern design, but the core fabrication work remains hands-on."
+  },
+  {
+    "slug": "6395-visual-merchandisers",
+    "title": "Visual Merchandisers",
+    "exposure": 6,
+    "rationale": "Visual merchandising combines creative design skills with physical store setup. AI can generate display concepts, analyse sales data for layout optimisation, and create digital mockups, but physical installation and spatial judgment in-store still require human presence."
+  },
+  {
+    "slug": "3242-vehicle-body-builders-and-trimmers",
+    "title": "Vehicle Body Builders and Trimmers",
+    "exposure": 1,
+    "rationale": "Building and trimming vehicle bodies is skilled manual trades work \u2014 fabricating, fitting, and finishing vehicle interiors and exteriors. Core tasks require physical craftsmanship with minimal digital component."
+  },
+  {
+    "slug": "3126-safety-inspectors",
+    "title": "Safety Inspectors",
+    "exposure": 5,
+    "rationale": "Safety inspection combines on-site physical inspection with report writing, compliance analysis, and regulatory knowledge. AI can assist with documentation, checklist analysis, and regulatory updates, but physical site visits and judgment calls require human presence."
+  },
+  {
+    "slug": "5619-other-clerical-and-office-support-workers",
+    "title": "Other Clerical and Office Support Workers",
+    "exposure": 8,
+    "rationale": "Clerical and office support work is predominantly digital \u2014 filing, data management, correspondence, and administrative tasks performed on computers. AI can automate much of this routine information processing work."
+  },
+  {
+    "slug": "6217-street-vendors-and-related-salespersons",
+    "title": "Street Vendors and Related Salespersons",
+    "exposure": 1,
+    "rationale": "Street vending is physical, in-person sales work \u2014 preparing, displaying, and selling goods in public spaces. It requires physical presence and direct human interaction with minimal digital component."
+  },
+  {
+    "slug": "2493-teachers-of-english-to-speakers-of-other-languages",
+    "title": "Teachers of English to Speakers of Other Languages",
+    "exposure": 7,
+    "rationale": "TESOL teaching involves significant knowledge work \u2014 lesson planning, assessment, and language instruction. AI language tutors and translation tools are advancing rapidly, potentially reshaping how language is taught, though classroom management and cultural sensitivity still benefit from human teachers."
+  },
+  {
+    "slug": "8416-mixed-crop-and-livestock-farm-workers",
+    "title": "Mixed Crop and Livestock Farm Workers",
+    "exposure": 1,
+    "rationale": "Mixed farming is physically demanding outdoor work \u2014 planting, harvesting, animal husbandry, and property maintenance. AI has minimal practical application to these hands-on agricultural tasks."
+  },
+  {
+    "slug": "3624-nurserypersons",
+    "title": "Nurserypersons",
+    "exposure": 1,
+    "rationale": "Nursery work involves growing, propagating, and maintaining plants \u2014 physical horticultural work in outdoor or greenhouse settings. AI has minimal application to the hands-on plant care tasks."
+  },
+  {
+    "slug": "3933-upholsterers",
+    "title": "Upholsterers",
+    "exposure": 1,
+    "rationale": "Upholstery is skilled manual trades work \u2014 cutting, sewing, and fitting fabric and padding to furniture. It requires physical craftsmanship and material handling that AI cannot perform."
+  },
+  {
+    "slug": "7117-textile-and-footwear-production-machine-operators",
+    "title": "Textile and Footwear Production Machine Operators",
+    "exposure": 2,
+    "rationale": "Operating textile and footwear machinery is primarily physical work \u2014 feeding materials, monitoring machines, and handling output. Industrial automation may reduce some roles, but machine operation and troubleshooting remain manual."
+  },
+  {
+    "slug": "3922-graphic-pre-press-trades-workers",
+    "title": "Graphic Pre-press Trades Workers",
+    "exposure": 8,
+    "rationale": "Pre-press work is almost entirely computer-based \u2014 preparing digital files, colour correction, layout proofing, and print-ready output. AI design tools and automated preflighting are rapidly advancing in this digital-first domain."
   }
 ]
