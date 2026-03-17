@@ -120,10 +120,10 @@ Each is independent and can be built in any order:
 - [x] Spec created (8 TSV files in `spec/`)
 - [x] Plan documented (this file)
 - [x] Branch created (`brazil`)
-- [ ] Step 1: Scrape CBO
+- [x] Step 1: Scrape CBO (626 families, 7 CSVs from gov.br, perfil ocupacional with activities)
+- [x] Step 4: Generate descriptions (626 markdown pages with deduplicated activities from perfil)
 - [ ] Step 2: Get CAGED data
 - [ ] Step 3: Build CSV
-- [ ] Step 4: Generate descriptions
 - [ ] Step 5: LLM scoring
 - [ ] Step 6: Build site data
 - [ ] Step 7: Adapt treemap

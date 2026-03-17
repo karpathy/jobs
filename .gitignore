@@ -13,7 +13,7 @@ wheels/
 .env
 
 # Parsed markdown (reproducible via process.py)
-pages/
+/pages/
 
 # Embeddings (unused in final visualization)
 embed.py

@@ -1,0 +1,4 @@
+# Raw CBO CSV downloads — large files, re-downloadable via scrape_cbo.py
+*.csv
+# Keep the processed JSON
+!.gitignore
