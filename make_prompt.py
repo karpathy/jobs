@@ -9,6 +9,7 @@ Usage:
 
 import csv
 import json
+import os
 
 
 def fmt_pay(pay):
@@ -38,14 +39,29 @@ def main():
     with open("scores.json") as f:
         scores = {s["slug"]: s for s in json.load(f)}
 
+    scores_adv = {}
+    if os.path.exists("scores_advantage.json"):
+        with open("scores_advantage.json") as f:
+            scores_adv = {s["slug"]: s for s in json.load(f)}
+
+    scores_gro = {}
+    if os.path.exists("scores_growth.json"):
+        with open("scores_growth.json") as f:
+            scores_gro = {s["slug"]: s for s in json.load(f)}
+
     # Merge into unified records
     records = []
     for occ in occupations:
         slug = occ["slug"]
         row = csv_rows.get(slug, {})
         score = scores.get(slug, {})
+        adv = scores_adv.get(slug, {})
+        gro = scores_gro.get(slug, {})
         pay = int(row["median_pay_annual"]) if row.get("median_pay_annual") else None
         jobs = int(row["num_jobs_2024"]) if row.get("num_jobs_2024") else None
+        advantage = adv.get("advantage")
+        growth = gro.get("growth")
+        opportunity = round((advantage + growth) / 2, 1) if advantage is not None and growth is not None else None
         records.append({
             "title": occ["title"],
             "slug": slug,
@@ -57,6 +73,11 @@ def main():
             "education": row.get("entry_education", ""),
             "exposure": score.get("exposure"),
             "rationale": score.get("rationale", ""),
+            "advantage": advantage,
+            "advantage_rationale": adv.get("rationale", ""),
+            "growth": growth,
+            "growth_rationale": gro.get("rationale", ""),
+            "opportunity": opportunity,
             "url": occ.get("url", ""),
         })
 
@@ -195,6 +216,8 @@ def main():
     lines.append("Sorted by AI exposure (descending), then by number of jobs (descending).")
     lines.append("")
 
+    has_opp = any(r["advantage"] is not None for r in records)
+
     for score in range(10, -1, -1):
         group = [r for r in records if r["exposure"] == score]
         if not group:
@@ -202,8 +225,12 @@ def main():
         group_jobs = sum(r["jobs"] or 0 for r in group)
         lines.append(f"### Exposure {score}/10 ({len(group)} occupations, {fmt_jobs(group_jobs)} jobs)")
         lines.append("")
-        lines.append("| # | Occupation | Pay | Jobs | Outlook | Education | Rationale |")
-        lines.append("|---|-----------|-----|------|---------|-----------|-----------|")
+        if has_opp:
+            lines.append("| # | Occupation | Pay | Jobs | Outlook | Education | Exposure | Advantage | Growth | Opportunity | Rationale |")
+            lines.append("|---|-----------|-----|------|---------|-----------|----------|-----------|--------|-------------|-----------|")
+        else:
+            lines.append("| # | Occupation | Pay | Jobs | Outlook | Education | Rationale |")
+            lines.append("|---|-----------|-----|------|---------|-----------|-----------|")
         for i, r in enumerate(group, 1):
             outlook = f"{r['outlook_pct']:+d}%" if r["outlook_pct"] is not None else "?"
             edu = r["education"] if r["education"] else "?"
@@ -220,7 +247,13 @@ def main():
                 "See How to Become One": "Varies",
             }.get(edu, edu)
             rationale = r["rationale"].replace("|", "/").replace("\n", " ")
-            lines.append(f"| {i} | {r['title']} | {fmt_pay(r['pay'])} | {fmt_jobs(r['jobs'])} | {outlook} | {edu_short} | {rationale} |")
+            if has_opp:
+                adv_s = str(r["advantage"]) if r["advantage"] is not None else "?"
+                gro_s = str(r["growth"]) if r["growth"] is not None else "?"
+                opp_s = str(r["opportunity"]) if r["opportunity"] is not None else "?"
+                lines.append(f"| {i} | {r['title']} | {fmt_pay(r['pay'])} | {fmt_jobs(r['jobs'])} | {outlook} | {edu_short} | {score}/10 | {adv_s}/10 | {gro_s}/10 | {opp_s}/10 | {rationale} |")
+            else:
+                lines.append(f"| {i} | {r['title']} | {fmt_pay(r['pay'])} | {fmt_jobs(r['jobs'])} | {outlook} | {edu_short} | {rationale} |")
         lines.append("")
 
     # Write
