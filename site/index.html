@@ -862,6 +862,39 @@ function updateExposureStats(totalJobs) {
   document.getElementById("block8").innerHTML = "";
 }
 
+function buildAccessibleTable() {
+  const container = document.getElementById("srTable");
+  const sorted = [...data].sort((a, b) => {
+    const cat = a.category.localeCompare(b.category);
+    if (cat !== 0) return cat;
+    return (b.jobs || 0) - (a.jobs || 0);
+  });
+  const rows = sorted.map(d =>
+    `<tr>
+      <td><a href="${d.url}" target="_blank" rel="noopener">${d.title}<span class="sr-only"> (opens in new tab)</span></a></td>
+      <td>${d.category.replace(/-/g, " ")}</td>
+      <td>${d.jobs != null ? d.jobs.toLocaleString() : "\u2014"}</td>
+      <td>${d.pay != null ? "$" + d.pay.toLocaleString() : "\u2014"}</td>
+      <td>${d.outlook != null ? (d.outlook > 0 ? "+" : "") + d.outlook + "%" : "\u2014"}${d.outlook_desc ? " (" + d.outlook_desc + ")" : ""}</td>
+      <td>${d.education || "\u2014"}</td>
+      <td>${d.exposure != null ? d.exposure + "/10" : "\u2014"}</td>
+    </tr>`
+  ).join("");
+  container.innerHTML = `<table>
+    <caption>${data.length} occupations from the Bureau of Labor Statistics Occupational Outlook Handbook. The AI Exposure column contains LLM-generated estimates, not BLS data.</caption>
+    <thead><tr>
+      <th scope="col">Title</th>
+      <th scope="col">Category</th>
+      <th scope="col">Jobs</th>
+      <th scope="col">Median Pay</th>
+      <th scope="col">Outlook</th>
+      <th scope="col">Education</th>
+      <th scope="col">AI Exposure</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
 function announceLayerChange() {
   const btn = document.querySelector("#colorToggle button.active");
   const block = document.getElementById("block2");
@@ -933,6 +966,7 @@ fetch("data.json")
   .then(r => r.json())
   .then(d => {
     data = d;
+    buildAccessibleTable();
     updateStats();
     drawGradientLegend();
     resize();
