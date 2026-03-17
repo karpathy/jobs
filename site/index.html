@@ -240,6 +240,7 @@ Respond with ONLY a JSON object in this exact format, no other text:
 {"exposure": &lt;0-10&gt;, "rationale": "&lt;2-3 sentences explaining the key factors&gt;"}</div>
     </details>
     <p><b>Caveat on Digital AI Exposure scores:</b> These are rough LLM estimates, not rigorous predictions. A high score does not predict the job will disappear. Software developers score 9/10 because AI is transforming their work &mdash; but demand for software could easily <em>grow</em> as each developer becomes more productive. The score does not account for demand elasticity, latent demand, regulatory barriers, or social preferences for human workers. Many high-exposure jobs will be reshaped, not replaced.</p>
+    <p><b>AI Opportunity layers:</b> To complement the exposure view, three positive-framing layers are available. <b>AI Advantage</b> (0&ndash;10) measures how much a worker can amplify their productivity by adopting AI tools. <b>AI Growth</b> (0&ndash;10) measures how much AI will expand demand or create new roles for an occupation. <b>AI Opportunity</b> is the composite average of Advantage and Growth. Green = high opportunity.</p>
   </div>
 
   <div class="controls-row">
@@ -250,6 +251,9 @@ Respond with ONLY a JSON object in this exact format, no other text:
         <button data-mode="pay">Median Pay</button>
         <button data-mode="education">Education</button>
         <button data-mode="exposure">Digital AI Exposure</button>
+        <button data-mode="advantage">AI Advantage</button>
+        <button data-mode="growth">AI Growth</button>
+        <button data-mode="opportunity">AI Opportunity</button>
       </div>
     </div>
     <div class="gradient-legend">
@@ -343,8 +347,25 @@ function exposureColor(v, a) {
   return greenRedCSS(v / 10, a);
 }
 
+// Green-positive: same green-red scale but flipped (high=green=good)
+function advantageColor(v, a) {
+  if (v == null) return `rgba(128,128,128,${a})`;
+  return greenRedCSS(1 - v / 10, a);
+}
+function growthColor(v, a) {
+  if (v == null) return `rgba(128,128,128,${a})`;
+  return greenRedCSS(1 - v / 10, a);
+}
+function opportunityColor(v, a) {
+  if (v == null) return `rgba(128,128,128,${a})`;
+  return greenRedCSS(1 - v / 10, a);
+}
+
 function tileColorCSS(d, alpha) {
   if (colorMode === "exposure") return exposureColor(d.exposure, alpha);
+  if (colorMode === "advantage") return advantageColor(d.advantage, alpha);
+  if (colorMode === "growth") return growthColor(d.growth, alpha);
+  if (colorMode === "opportunity") return opportunityColor(d.opportunity, alpha);
   if (colorMode === "outlook") return outlookColor(d.outlook, alpha);
   if (colorMode === "pay") return payColor(d.pay, alpha);
   if (colorMode === "education") {
@@ -356,6 +377,18 @@ function tileColorCSS(d, alpha) {
 function tileSubInfo(r) {
   if (colorMode === "exposure") {
     return (r.exposure != null ? r.exposure + "/10" : "") +
+           (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+  }
+  if (colorMode === "advantage") {
+    return (r.advantage != null ? r.advantage + "/10" : "") +
+           (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+  }
+  if (colorMode === "growth") {
+    return (r.growth != null ? r.growth + "/10" : "") +
+           (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+  }
+  if (colorMode === "opportunity") {
+    return (r.opportunity != null ? r.opportunity + "/10" : "") +
            (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
   }
   if (colorMode === "outlook") {
@@ -513,14 +546,40 @@ function formatNumber(n) {
 }
 function formatPay(n) { return n == null ? "\u2014" : "$" + n.toLocaleString(); }
 
+function aiScoresTooltipLines(d) {
+  const lines = [];
+  if (d.advantage != null) lines.push(`<span style="color:${advantageColor(d.advantage, 1)}">AI Advantage: ${d.advantage}/10</span>`);
+  if (d.growth != null) lines.push(`<span style="color:${growthColor(d.growth, 1)}">AI Growth: ${d.growth}/10</span>`);
+  if (d.opportunity != null) lines.push(`<span style="color:${opportunityColor(d.opportunity, 1)}">AI Opportunity: ${d.opportunity}/10</span>`);
+  if (d.exposure != null) lines.push(`<span style="color:${exposureColor(d.exposure, 1)}">AI Exposure: ${d.exposure}/10</span>`);
+  return lines.join("<br>");
+}
+
 function tooltipHighlight(d) {
-  if (colorMode === "exposure") {
-    const v = d.exposure;
-    if (v == null) return "";
-    const color = exposureColor(v, 1);
-    return `<span style="color:${color};font-weight:600;">Digital AI Exposure: ${v}/10</span>` +
-      `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
-      `<div style="height:100%;width:${v * 10}%;background:${color};border-radius:2px;"></div></div>`;
+  const isAILayer = ["exposure", "advantage", "growth", "opportunity"].includes(colorMode);
+  if (isAILayer) {
+    // Show all available AI scores
+    const primary = colorMode === "exposure" ? d.exposure
+      : colorMode === "advantage" ? d.advantage
+      : colorMode === "growth" ? d.growth
+      : d.opportunity;
+    const colorFn = colorMode === "exposure" ? exposureColor
+      : colorMode === "advantage" ? advantageColor
+      : colorMode === "growth" ? growthColor
+      : opportunityColor;
+    const label = colorMode === "exposure" ? "Digital AI Exposure"
+      : colorMode === "advantage" ? "AI Advantage"
+      : colorMode === "growth" ? "AI Growth"
+      : "AI Opportunity";
+    let html = "";
+    if (primary != null) {
+      const color = colorFn(primary, 1);
+      html += `<span style="color:${color};font-weight:600;">${label}: ${primary}/10</span>` +
+        `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
+        `<div style="height:100%;width:${primary * 10}%;background:${color};border-radius:2px;"></div></div>`;
+    }
+    html += `<div style="margin-top:5px;font-size:11px;line-height:1.6;">${aiScoresTooltipLines(d)}</div>`;
+    return html;
   } else if (colorMode === "outlook") {
     const v = d.outlook;
     if (v == null) return "";
@@ -554,7 +613,11 @@ function showTooltip(d, mx, my) {
     <span class="label">Jobs (2024)</span><span class="value">${formatNumber(d.jobs)}</span>
     <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
-  tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
+  const rationale = colorMode === "exposure" ? (d.exposure_rationale || "")
+    : colorMode === "advantage" ? (d.advantage_rationale || "")
+    : colorMode === "growth" ? (d.growth_rationale || "")
+    : colorMode === "opportunity" ? [d.advantage_rationale, d.growth_rationale].filter(Boolean).join(" | ") : "";
+  tt.querySelector(".tt-rationale").textContent = rationale;
   let tx = mx + 16, ty = my - 16;
   if (tx + 340 > window.innerWidth) tx = mx - 356;
   if (ty < 10) ty = my + 16;
@@ -629,6 +692,9 @@ function updateStats() {
   if (colorMode === "outlook") updateOutlookStats(totalJobs);
   else if (colorMode === "pay") updatePayStats(totalJobs);
   else if (colorMode === "education") updateEducationStats(totalJobs);
+  else if (colorMode === "advantage") updateAdvantageStats(totalJobs);
+  else if (colorMode === "growth") updateGrowthStats(totalJobs);
+  else if (colorMode === "opportunity") updateOpportunityStats(totalJobs);
   else updateExposureStats(totalJobs);
 }
 
@@ -846,6 +912,66 @@ function updateExposureStats(totalJobs) {
   document.getElementById("block8").innerHTML = "";
 }
 
+// Generic stats builder for 0-10 green-positive AI layers
+function updateGreenLayerStats(totalJobs, key, label, colorFn) {
+  let wS = 0, wC = 0;
+  for (const d of data) { if (d[key] != null && d.jobs) { wS += d[key] * d.jobs; wC += d.jobs; } }
+  const avg = wC > 0 ? wS / wC : 0;
+  document.getElementById("block2").innerHTML = `<h3>Avg. ${label.toLowerCase()}</h3>
+    <div class="stat-big"><span style="color:${colorFn(avg, 1)}">${avg.toFixed(1)}</span></div>
+    <div class="stat-label">job-weighted, 0\u201310</div>`;
+
+  // Histogram
+  const histogram = new Array(11).fill(0);
+  for (const d of data) { if (d[key] != null && d.jobs) histogram[Math.round(d[key])] += d.jobs; }
+  const maxH = Math.max(...histogram);
+  document.getElementById("block3").innerHTML = `<h3>Jobs by ${label.toLowerCase()}</h3>
+    <div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${colorFn(i, 0.7)}"></div>`).join("")}</div>
+    <div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
+
+  // Tier breakdown
+  const tierDefs = [
+    { label: "Low (0\u20132)", lo: 0, hi: 2, mid: 1 },
+    { label: "Moderate (3\u20134)", lo: 3, hi: 4, mid: 3.5 },
+    { label: "Good (5\u20136)", lo: 5, hi: 6, mid: 5.5 },
+    { label: "High (7\u20138)", lo: 7, hi: 8, mid: 7.5 },
+    { label: "Very high (9\u201310)", lo: 9, hi: 10, mid: 9.5 },
+  ];
+  const tiers = tierDefs.map(t => {
+    let jobs = 0;
+    for (const d of data) { if (d[key] != null && d.jobs && d[key] >= t.lo && d[key] <= t.hi) jobs += d.jobs; }
+    return { ...t, jobs, color: colorFn(t.mid, 1) };
+  });
+  document.getElementById("block4").innerHTML = `<h3>${label} tiers</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
+
+  // Cross: by pay
+  const byPay = weightedAvgByGroups(PAY_BANDS, (d, g) => d.pay != null && d.pay >= g.min && d.pay < g.max, d => d[key]);
+  document.getElementById("block5").innerHTML = `<h3>${label} by pay</h3><div class="hbar-chart">${renderHbars(byPay.map(g => ({
+    label: g.label, val: g.avg.toFixed(1), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8)
+  })))}</div>`;
+
+  // Cross: by education
+  const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.education), d => d[key]);
+  document.getElementById("block6").innerHTML = `<h3>${label} by education</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
+    label: g.label, val: g.avg.toFixed(1), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8)
+  })))}</div>`;
+
+  document.getElementById("block7").innerHTML = "";
+  document.getElementById("block8").innerHTML = "";
+}
+
+function updateAdvantageStats(totalJobs) {
+  updateGreenLayerStats(totalJobs, "advantage", "Advantage", advantageColor);
+}
+
+function updateGrowthStats(totalJobs) {
+  updateGreenLayerStats(totalJobs, "growth", "Growth", growthColor);
+}
+
+function updateOpportunityStats(totalJobs) {
+  updateGreenLayerStats(totalJobs, "opportunity", "Opportunity", opportunityColor);
+}
+
 // ── Events ─────────────────────────────────────────────────────────────
 
 canvas.addEventListener("mousemove", (e) => {
@@ -861,10 +987,13 @@ function resize() { dpr = window.devicePixelRatio || 1; layout(); draw(); }
 // ── Legend gradient ────────────────────────────────────────────────────
 
 const LEGEND_CONFIG = {
-  exposure:  { low: "Low", high: "High" },
-  outlook:   { low: "Declining", high: "Growing" },
-  pay:       { low: "$25K", high: "$250K" },
-  education: { low: "No degree", high: "Doctoral" },
+  exposure:    { low: "Low", high: "High" },
+  advantage:   { low: "Low", high: "High" },
+  growth:      { low: "Shrinking", high: "Explosive" },
+  opportunity: { low: "Low", high: "High" },
+  outlook:     { low: "Declining", high: "Growing" },
+  pay:         { low: "$25K", high: "$250K" },
+  education:   { low: "No degree", high: "Doctoral" },
 };
 
 function drawGradientLegend() {
@@ -872,7 +1001,12 @@ function drawGradientLegend() {
   const gctx = c.getContext("2d");
   for (let x = 0; x < 80; x++) {
     const t = x / 79;
-    gctx.fillStyle = colorMode === "exposure" ? greenRedCSS(t, 1) : greenRedCSS(1 - t, 1);
+    if (colorMode === "exposure") {
+      gctx.fillStyle = greenRedCSS(t, 1);
+    } else {
+      // All other modes: low=red/left, high=green/right
+      gctx.fillStyle = greenRedCSS(1 - t, 1);
+    }
     gctx.fillRect(x, 0, 1, 8);
   }
   const cfg = LEGEND_CONFIG[colorMode];
