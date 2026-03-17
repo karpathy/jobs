@@ -218,7 +218,7 @@ canvas#canvas {
 <body>
 
 <div id="wrapper">
-<div id="header">
+<header id="header">
   <div class="intro">
     <h1>US Job Market Visualizer <a href="https://github.com/karpathy/jobs">GitHub</a></h1>
     <p>This is a research tool that visualizes <b>342 occupations</b> from the <a href="https://www.bls.gov/ooh/">Bureau of Labor Statistics Occupational Outlook Handbook</a>, covering <b>143M jobs</b> across the US economy. Each rectangle's <b>area</b> is proportional to total employment. <b>Color</b> shows the selected metric &mdash; toggle between BLS projected growth outlook, median pay, education requirements, and AI exposure. Click any tile to view its full BLS page. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring BLS data visually.</p>
@@ -252,20 +252,23 @@ Respond with ONLY a JSON object in this exact format, no other text:
     </details>
     <p><b>Caveat on Digital AI Exposure scores:</b> These are rough LLM estimates, not rigorous predictions. A high score does not predict the job will disappear. Software developers score 9/10 because AI is transforming their work &mdash; but demand for software could easily <em>grow</em> as each developer becomes more productive. The score does not account for demand elasticity, latent demand, regulatory barriers, or social preferences for human workers. Many high-exposure jobs will be reshaped, not replaced.</p>
   </div>
+</header>
 
+<main>
+<h2 class="sr-only">Dashboard</h2>
   <div class="controls-row">
     <div class="stat-section">
       <h3>Layer</h3>
       <div class="color-toggle" id="colorToggle">
-        <button data-mode="outlook" class="active">BLS Outlook</button>
-        <button data-mode="pay">Median Pay</button>
-        <button data-mode="education">Education</button>
-        <button data-mode="exposure">Digital AI Exposure</button>
+        <button data-mode="outlook" class="active" aria-pressed="true">BLS Outlook</button>
+        <button data-mode="pay" aria-pressed="false">Median Pay</button>
+        <button data-mode="education" aria-pressed="false">Education</button>
+        <button data-mode="exposure" aria-pressed="false">Digital AI Exposure</button>
       </div>
     </div>
     <div class="gradient-legend">
       <span id="legendLow">Declining</span>
-      <canvas id="gradientLegend" width="80" height="8"></canvas>
+      <canvas id="gradientLegend" width="80" height="8" aria-hidden="true"></canvas>
       <span id="legendHigh">Growing</span>
     </div>
   </div>
@@ -283,12 +286,14 @@ Respond with ONLY a JSON object in this exact format, no other text:
     <div class="stat-section" id="block7"></div>
     <div class="stat-section" id="block8"></div>
   </div>
+
+<div class="sr-only" id="srTable"></div>
+<div class="sr-only" aria-live="polite" id="liveAnnounce"></div>
+<canvas id="canvas" aria-hidden="true"></canvas>
+</main>
 </div>
 
-<canvas id="canvas"></canvas>
-</div>
-
-<div id="tooltip">
+<div id="tooltip" aria-hidden="true">
   <div class="tt-title"></div>
   <div class="tt-exposure"></div>
   <div class="tt-stats"></div>
