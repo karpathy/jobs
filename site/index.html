@@ -902,8 +902,12 @@ document.getElementById("colorToggle").addEventListener("click", (e) => {
   const btn = e.target.closest("button");
   if (!btn || !btn.dataset.mode) return;
   colorMode = btn.dataset.mode;
-  document.querySelectorAll("#colorToggle button").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll("#colorToggle button").forEach(b => {
+    b.classList.remove("active");
+    b.setAttribute("aria-pressed", "false");
+  });
   btn.classList.add("active");
+  btn.setAttribute("aria-pressed", "true");
   updateStats();
   drawGradientLegend();
   draw();
