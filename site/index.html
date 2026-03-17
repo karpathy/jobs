@@ -862,6 +862,17 @@ function updateExposureStats(totalJobs) {
   document.getElementById("block8").innerHTML = "";
 }
 
+function announceLayerChange() {
+  const btn = document.querySelector("#colorToggle button.active");
+  const block = document.getElementById("block2");
+  const metric = block.querySelector("h3");
+  const value = block.querySelector(".stat-big");
+  const el = document.getElementById("liveAnnounce");
+  el.textContent = "Switched to " + (btn ? btn.textContent : "") + ". " +
+    (metric ? metric.textContent : "") + ": " +
+    (value ? value.textContent : "");
+}
+
 // ── Events ─────────────────────────────────────────────────────────────
 
 canvas.addEventListener("mousemove", (e) => {
@@ -909,6 +920,7 @@ document.getElementById("colorToggle").addEventListener("click", (e) => {
   btn.classList.add("active");
   btn.setAttribute("aria-pressed", "true");
   updateStats();
+  announceLayerChange();
   drawGradientLegend();
   draw();
   // Re-layout since stats height may have changed
