@@ -1,0 +1,2054 @@
+[
+  {
+    "slug": "accountants-and-auditors",
+    "title": "Accountants and auditors",
+    "advantage": 7,
+    "rationale": "Accountants can use AI to automate high-volume, repetitive tasks like data entry, reconciliation, and fraud detection, shifting their focus toward high-value advisory and strategic roles. While AI significantly boosts productivity in auditing and tax preparation, the profession still requires human judgment for complex regulatory compliance, ethical considerations, and client relationships."
+  },
+  {
+    "slug": "actors",
+    "title": "Actors",
+    "advantage": 5,
+    "rationale": "AI provides moderate advantages by automating script analysis, character research, and line memorization through AI-powered rehearsal partners. While it can significantly streamline the administrative and preparation phases of the job, the core value remains a physical and emotional human performance that AI currently competes with rather than purely amplifies."
+  },
+  {
+    "slug": "actuaries",
+    "title": "Actuaries",
+    "advantage": 8,
+    "rationale": "Actuarial work is highly digital and data-intensive, making it ideal for AI integration in areas like predictive modeling, risk assessment, and automated report generation. AI tools can significantly accelerate the analysis of massive datasets and the coding of complex simulations, allowing actuaries to shift their focus from manual data processing to high-level strategic risk management and communication."
+  },
+  {
+    "slug": "administrative-services-managers",
+    "title": "Administrative services and facilities managers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances this role by automating complex scheduling, predictive maintenance for facilities, and large-scale records management. Adopters can use AI to analyze energy consumption patterns and regulatory compliance documents much faster than manual review, creating a clear efficiency gap between tech-forward managers and traditional ones."
+  },
+  {
+    "slug": "adult-literacy-and-ged-teachers",
+    "title": "Adult basic and secondary education and ESL teachers",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify productivity by automating lesson planning, generating personalized practice materials for diverse ability levels, and providing instant translation or simplified explanations for ESL students. Adopters can use AI to rapidly grade assessments and identify specific learning gaps, allowing them to focus more time on the high-value emotional support and cultural navigation required for adult learners."
+  },
+  {
+    "slug": "advertising-sales-agents",
+    "title": "Advertising sales agents",
+    "advantage": 8,
+    "rationale": "AI tools dramatically amplify an agent's ability to research prospects, generate personalized sales pitches, and create professional media kits or ad mockups in seconds. Adopters can use AI to automate the heavy administrative burden of account management and data analysis, allowing them to handle a significantly larger volume of clients and outperform those relying on manual outreach and traditional presentation methods."
+  },
+  {
+    "slug": "advertising-promotions-and-marketing-managers",
+    "title": "Advertising, promotions, and marketing managers",
+    "advantage": 9,
+    "rationale": "AI tools dramatically amplify productivity in this role by automating market research analysis, generating creative copy and visual assets, and optimizing digital ad spend in real-time. Adopters can execute complex, multi-channel campaigns with a fraction of the traditional staff, creating a massive competitive gap between AI-enabled managers and those relying on manual workflows. While human judgment remains essential for high-level strategy and relationship management, nearly every core deliverable\u2014from pricing models to promotional content\u2014is transformed by AI copilots."
+  },
+  {
+    "slug": "aerospace-engineering-and-operations-technicians",
+    "title": "Aerospace engineering and operations technologists and technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the knowledge-based aspects of this role, such as analyzing test data, programming simulations, and predictive maintenance of complex equipment. While physical tasks like installing parts and calibrating hardware limit the total automation potential, adopters can use AI to troubleshoot malfunctions faster and manage quality control documentation with much higher efficiency than non-adopters."
+  },
+  {
+    "slug": "aerospace-engineers",
+    "title": "Aerospace engineers",
+    "advantage": 8,
+    "rationale": "Aerospace engineering is a highly digital, data-intensive field where AI significantly accelerates core tasks like computational fluid dynamics (CFD), structural optimization, and predictive maintenance modeling. AI tools act as powerful copilots for writing complex simulation code, analyzing massive sensor datasets from flight tests, and automating the documentation required for strict regulatory compliance. Adopters can iterate on designs and troubleshoot malfunctions exponentially faster than those relying on traditional manual engineering methods."
+  },
+  {
+    "slug": "agricultural-and-food-science-technicians",
+    "title": "Agricultural and food science technicians",
+    "advantage": 6,
+    "rationale": "AI tools significantly enhance the 'knowledge work' components of this role, such as analyzing complex test results, identifying patterns in crop diseases, and automating the generation of charts and technical reports. While physical tasks like sample collection and lab maintenance remain manual, AI-driven computer vision and predictive modeling create a substantial productivity gap between adopters and non-adopters in research and quality control settings."
+  },
+  {
+    "slug": "agricultural-and-food-scientists",
+    "title": "Agricultural and food scientists",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies core research tasks by accelerating genomic analysis, predictive modeling for crop yields, and the discovery of new food formulations through machine learning. While physical fieldwork and lab experiments remain essential, AI tools create a major competitive gap in data analysis, grant writing, and regulatory compliance documentation."
+  },
+  {
+    "slug": "agricultural-engineers",
+    "title": "Agricultural engineers",
+    "advantage": 8,
+    "rationale": "Agricultural engineers can significantly amplify their output by using AI for complex system modeling, geospatial data analysis, and the design of autonomous farming equipment. AI tools serve as a force multiplier in optimizing resource application (like fertilizer and water) and automating labor-intensive design and testing phases, creating a vast productivity gap between traditional and AI-enabled engineers."
+  },
+  {
+    "slug": "agricultural-workers",
+    "title": "Agricultural workers",
+    "advantage": 3,
+    "rationale": "While the core work is physical labor, AI-driven precision agriculture and automated machinery (like robotic harvesters and smart irrigation) are beginning to transform the field. Workers who adopt AI tools for livestock monitoring, crop health analysis, and equipment operation will see a significant productivity gap over traditional manual laborers, though the physical nature of the tasks limits the total impact."
+  },
+  {
+    "slug": "air-traffic-controllers",
+    "title": "Air traffic controllers",
+    "advantage": 7,
+    "rationale": "Air traffic control is a high-stakes knowledge profession where AI can significantly amplify productivity by automating complex calculations of speed, distance, and separation. While the final decision-making remains human-centric for safety and regulatory reasons, AI tools (like NextGen) act as powerful copilots that allow controllers to manage higher traffic volumes with reduced cognitive load and faster response times."
+  },
+  {
+    "slug": "aircraft-and-avionics-equipment-mechanics-and-technicians",
+    "title": "Aircraft and avionics equipment mechanics and technicians",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the knowledge-based aspects of this role, such as predictive maintenance, interpreting complex flight data, and navigating vast technical manuals or FAA regulations. However, the core work remains heavily physical, requiring manual dexterity and on-site inspections that AI cannot perform, capping the overall advantage at a moderate level."
+  },
+  {
+    "slug": "airline-and-commercial-pilots",
+    "title": "Airline and commercial pilots",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the knowledge-heavy 'desk' portions of the job, such as optimizing flight plans, analyzing complex weather patterns, and processing technical manuals. While the core physical act of flying is already highly automated by traditional systems, AI-driven decision support tools create a competitive edge for pilots in managing fuel efficiency and emergency response. However, the high level of regulation and the physical requirement for human presence in the cockpit cap the overall advantage compared to purely digital roles."
+  },
+  {
+    "slug": "animal-care-and-service-workers",
+    "title": "Animal care and service workers",
+    "advantage": 3,
+    "rationale": "The core duties are heavily physical and manual, involving cleaning, feeding, and direct animal interaction that AI cannot perform. However, AI can assist with administrative tasks like scheduling, record-keeping, and analyzing behavioral data, providing a slight edge to adopters in business management and health monitoring."
+  },
+  {
+    "slug": "announcers",
+    "title": "Announcers and DJs",
+    "advantage": 8,
+    "rationale": "AI tools can automate the most time-consuming aspects of this role, including scriptwriting, topic research, and social media management, while AI-driven audio editing and voice cloning allow a single announcer to produce significantly more content. Early adopters can leverage AI to transition into high-output podcasting or automated radio programming, creating a massive productivity gap over traditional workers. While live event DJing has a physical component, the digital core of broadcasting is being fundamentally transformed by AI 'copilots' and synthetic voices."
+  },
+  {
+    "slug": "anthropologists-and-archeologists",
+    "title": "Anthropologists and archeologists",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the core knowledge-work components of this role, such as automating the analysis of large datasets, identifying patterns in archaeological imagery (like LiDAR), and assisting in the synthesis of complex cultural research. While physical fieldwork remains essential, AI tools for GIS, linguistic translation, and report generation create a substantial productivity gap between traditional researchers and those using advanced computational tools."
+  },
+  {
+    "slug": "arbitrators-mediators-and-conciliators",
+    "title": "Arbitrators, mediators, and conciliators",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating the synthesis of complex evidence, drafting settlement agreements, and performing legal research across vast precedents. While the core human elements of emotional intelligence and neutral facilitation remain essential, AI-equipped practitioners can process cases much faster and with higher precision than those relying on manual document review."
+  },
+  {
+    "slug": "architects",
+    "title": "Architects",
+    "advantage": 8,
+    "rationale": "Architects can leverage AI to automate complex technical tasks like generative design, building code compliance checks, and energy efficiency simulations, which significantly accelerates the conceptual and drafting phases. While site visits and client negotiations remain human-centric, AI-powered BIM and visualization tools create a massive productivity gap between traditional practitioners and those using AI to optimize structural performance and aesthetic options."
+  },
+  {
+    "slug": "architectural-and-engineering-managers",
+    "title": "Architectural and engineering managers",
+    "advantage": 7,
+    "rationale": "AI tools significantly enhance core management tasks such as project scheduling, budget forecasting, and technical document review, which are central to this role. While the human elements of leadership and cross-functional collaboration remain essential, AI-driven predictive analytics and generative design tools create a substantial performance gap between adopters and non-adopters in complex engineering environments."
+  },
+  {
+    "slug": "curators-museum-technicians-and-conservators",
+    "title": "Archivists, curators, and museum workers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core knowledge tasks such as cataloging, metadata generation, and the transcription of historical documents, which are traditionally time-intensive. While physical conservation and exhibit installation remain manual, AI tools for research, digital archiving, and personalized visitor engagement create a substantial productivity gap between tech-forward institutions and traditional ones."
+  },
+  {
+    "slug": "art-directors",
+    "title": "Art directors",
+    "advantage": 9,
+    "rationale": "Art directors can use generative AI to instantly create high-fidelity mood boards, storyboards, and concept visualizations that previously took days of manual labor. While the role requires human leadership and creative vision, AI tools dramatically amplify their ability to direct staff, iterate on styles, and manage the visual output of digital and print campaigns."
+  },
+  {
+    "slug": "assemblers-and-fabricators",
+    "title": "Assemblers and fabricators",
+    "advantage": 3,
+    "rationale": "The core work is physical and manual, requiring dexterity and hand-eye coordination that AI cannot directly replicate. However, AI tools can assist with the 'desk' portions of the job, such as interpreting complex schematics, troubleshooting equipment via computer vision, and optimizing team-based assembly workflows."
+  },
+  {
+    "slug": "athletes-and-sports-competitors",
+    "title": "Athletes and sports competitors",
+    "advantage": 4,
+    "rationale": "While the core work is physical and manual, AI provides a significant competitive edge through advanced performance analytics, injury prevention modeling, and opponent strategy simulation. Adopters can use AI-driven insights to optimize training loads and refine technique, though the physical execution remains the primary barrier to success."
+  },
+  {
+    "slug": "athletic-trainers",
+    "title": "Athletic trainers",
+    "advantage": 4,
+    "rationale": "The core of the work is highly physical and interpersonal, involving manual tasks like taping, first aid, and on-field injury evaluation that AI cannot perform. However, AI can significantly enhance the administrative and diagnostic aspects by automating injury reporting, optimizing rehabilitation schedules through data analysis, and assisting in the development of personalized injury-prevention programs."
+  },
+  {
+    "slug": "atmospheric-scientists-including-meteorologists",
+    "title": "Atmospheric scientists, including meteorologists",
+    "advantage": 8,
+    "rationale": "Atmospheric science is heavily reliant on processing massive datasets, computer modeling, and programming, all of which are core strengths of AI and machine learning. AI tools can dramatically accelerate data analysis, automate the generation of weather graphics, and assist in writing the complex code required for meteorological research, creating a significant performance gap between AI-enabled scientists and those using traditional methods."
+  },
+  {
+    "slug": "audiologists",
+    "title": "Audiologists",
+    "advantage": 6,
+    "rationale": "AI significantly enhances audiologists' core work through automated audiogram analysis, AI-driven hearing aid optimization, and predictive diagnostics for complex balance disorders. While the role requires essential physical tasks like ear examinations and hands-on device fitting, AI tools create a major competitive gap by streamlining clinical documentation and personalizing treatment plans based on large datasets."
+  },
+  {
+    "slug": "automotive-body-and-glass-repairers",
+    "title": "Automotive body and glass repairers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, involving manual dexterity, welding, and structural repairs that AI cannot perform. However, AI tools can significantly improve administrative and technical tasks such as generating accurate damage estimates, interpreting complex manufacturer repair manuals, and calibrating the increasing number of sensors and ADAS systems found in modern vehicles."
+  },
+  {
+    "slug": "automotive-service-technicians-and-mechanics",
+    "title": "Automotive service technicians and mechanics",
+    "advantage": 4,
+    "rationale": "While the core work is physical and manual, AI significantly enhances the diagnostic phase by analyzing complex sensor data and error codes to pinpoint issues faster than traditional methods. Adopters can also use AI to automate repair documentation and customer communication, though the physical labor of replacing parts remains a bottleneck that AI cannot address."
+  },
+  {
+    "slug": "bakers",
+    "title": "Bakers",
+    "advantage": 3,
+    "rationale": "The core work of a baker is physical and manual, involving kneading, shaping, and monitoring ovens, which AI cannot perform. However, AI can assist with secondary tasks like recipe optimization, inventory management, and demand forecasting, providing a slight edge to adopters in retail or entrepreneurial roles."
+  },
+  {
+    "slug": "barbers-hairstylists-and-cosmetologists",
+    "title": "Barbers, hairstylists, and cosmetologists",
+    "advantage": 3,
+    "rationale": "The core work is highly manual and requires physical presence, making it resistant to direct AI replacement. However, AI provides a competitive edge in secondary tasks like personalized style visualization for clients, automated appointment scheduling, and targeted social media marketing for self-employed professionals."
+  },
+  {
+    "slug": "bartenders",
+    "title": "Bartenders",
+    "advantage": 2,
+    "rationale": "The core of bartending is physical and social, involving manual drink preparation, cleaning, and human interaction that AI cannot replicate. While AI can assist with secondary tasks like inventory management, menu engineering, or generating creative cocktail recipes, it does not significantly change the primary value proposition of the worker."
+  },
+  {
+    "slug": "bill-and-account-collectors",
+    "title": "Bill and account collectors",
+    "advantage": 9,
+    "rationale": "AI tools can automate the most time-consuming aspects of this role, including skip tracing, compliance monitoring for 'mini-Miranda' requirements, and drafting personalized negotiation scripts. Adopters can use AI to analyze debtor behavior and predict the best times and methods for contact, creating a massive productivity gap compared to manual outreach."
+  },
+  {
+    "slug": "biochemists-and-biophysicists",
+    "title": "Biochemists and biophysicists",
+    "advantage": 8,
+    "rationale": "AI tools like AlphaFold and generative models for drug discovery have fundamentally transformed core tasks such as protein folding prediction and molecular synthesis. Adopters can process massive datasets and simulate biological processes exponentially faster than traditional methods, while also automating the heavy administrative burden of grant writing and literature reviews."
+  },
+  {
+    "slug": "biomedical-engineers",
+    "title": "Bioengineers and biomedical engineers",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify core tasks like developing complex statistical models, simulating biological systems, and designing medical software, which are central to this role. Adopters can leverage AI for rapid prototyping of drug therapies and analyzing massive datasets from brain or heart signals, creating a massive efficiency gap over those using traditional manual modeling. While some physical testing and clinical collaboration remain, the digital-heavy nature of the research and design phases makes AI a transformative copilot."
+  },
+  {
+    "slug": "biological-technicians",
+    "title": "Biological technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the knowledge-based aspects of this role, such as automating complex data analysis, interpreting experimental results, and streamlining the documentation of findings. While physical laboratory tasks like sample preparation and equipment maintenance remain manual, AI tools create a major competitive gap by allowing adopters to process larger datasets and model biological systems more efficiently than non-adopters."
+  },
+  {
+    "slug": "boilermakers",
+    "title": "Boilermakers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, involving manual assembly, welding, and repair in confined spaces where AI cannot currently replace human labor. However, AI tools can provide a competitive edge in the 'desk' portions of the job, such as using computer vision for more accurate defect detection during inspections or using AI-powered tablets to interpret complex blueprints and 3D models on-site."
+  },
+  {
+    "slug": "bookkeeping-accounting-and-auditing-clerks",
+    "title": "Bookkeeping, accounting, and auditing clerks",
+    "advantage": 9,
+    "rationale": "This occupation is highly digital and centers on structured data, making it ideal for AI-driven automation of data entry, reconciliation, and error detection. Adopters can leverage AI to shift from manual posting to high-level auditing and advisory roles, creating a massive productivity gap compared to those using traditional manual methods."
+  },
+  {
+    "slug": "broadcast-and-sound-engineering-technicians",
+    "title": "Broadcast, sound, and video technicians",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify productivity in the digital aspects of this role, such as automated audio mixing, noise reduction, and AI-assisted video editing/color grading. While physical setup and equipment maintenance remain manual, the core work product\u2014high-quality media\u2014can be produced much faster by adopters who use AI to handle complex synchronization and technical adjustments that previously required hours of manual labor."
+  },
+  {
+    "slug": "budget-analysts",
+    "title": "Budget analysts",
+    "advantage": 8,
+    "rationale": "Budget analysts work in a data-intensive, digital environment where AI can automate the consolidation of departmental budgets, identify discrepancies, and perform complex cost-benefit simulations instantly. Adopters can use AI to draft technical reports and legislative justifications, significantly reducing the time spent on manual data entry and document drafting while improving the accuracy of financial forecasts."
+  },
+  {
+    "slug": "bus-drivers",
+    "title": "Bus drivers",
+    "advantage": 2,
+    "rationale": "The core work is physical and requires real-time manual operation of a vehicle and direct human supervision of passengers. While AI can assist with secondary tasks like route optimization, schedule management, or automated fare collection, it does not significantly amplify the productivity of the driver's primary duty of safe transport."
+  },
+  {
+    "slug": "butchers-and-meat-cutters",
+    "title": "Butchers",
+    "advantage": 3,
+    "rationale": "The core work of a butcher is highly physical, requiring manual dexterity and strength that AI cannot replicate. However, AI tools can significantly improve secondary tasks like inventory forecasting, demand planning for seasonal trends, and optimizing waste reduction, creating a competitive edge for butchers who use data to manage their shop's profitability."
+  },
+  {
+    "slug": "calibration-technologists-and-technicians",
+    "title": "Calibration technologists and technicians",
+    "advantage": 5,
+    "rationale": "This role involves a significant mix of physical dexterity and technical knowledge work. AI can greatly enhance the 'knowledge' side by automating the recording of test results, optimizing maintenance schedules, and assisting in the development of complex new calibration standards or troubleshooting protocols. However, the core tasks of physical inspection, manual adjustment, and handling equipment remain resistant to full AI automation."
+  },
+  {
+    "slug": "cardiovascular-technologists-and-technicians",
+    "title": "Cardiovascular technologists and technicians",
+    "advantage": 5,
+    "rationale": "This role involves a significant mix of physical patient care and technical data analysis. AI tools can dramatically enhance the speed and accuracy of preliminary test interpretations (such as EKG and pulmonary analysis), but the core physical tasks of positioning patients, assisting in invasive surgeries, and operating manual equipment remain human-dependent."
+  },
+  {
+    "slug": "career-and-technical-education-teachers",
+    "title": "Career and technical education teachers",
+    "advantage": 6,
+    "rationale": "AI significantly streamlines the 'desk work' of teaching, such as generating lesson plans, grading assignments, and creating personalized learning materials for diverse student needs. However, the core of CTE involves hands-on supervision of physical tasks (like welding or culinary arts) and safety monitoring, which AI cannot currently perform, capping the overall advantage compared to purely digital instruction."
+  },
+  {
+    "slug": "carpenters",
+    "title": "Carpenters",
+    "advantage": 3,
+    "rationale": "The core work of a carpenter is highly physical and manual, requiring on-site dexterity and strength that AI cannot replicate. However, AI tools can significantly assist with the 'desk' portions of the job, such as optimizing material estimates, interpreting complex blueprints, and automating business tasks like bidding and scheduling for the 27% who are self-employed."
+  },
+  {
+    "slug": "cartographers-and-photogrammetrists",
+    "title": "Cartographers and photogrammetrists",
+    "advantage": 8,
+    "rationale": "This occupation is highly digital and data-intensive, relying on the analysis of massive datasets from satellites, LiDAR, and GIS. AI significantly amplifies productivity by automating feature extraction from imagery, reconciling disparate data sources, and generating complex visualizations, creating a massive efficiency gap between traditional manual mappers and AI-augmented professionals."
+  },
+  {
+    "slug": "cashiers",
+    "title": "Cashiers",
+    "advantage": 2,
+    "rationale": "The core tasks of a cashier are physical and interpersonal, involving scanning items, bagging goods, and manual store upkeep, which AI tools cannot directly perform. While AI-driven point-of-sale systems and automated inventory management can streamline administrative tasks, these tools are typically implemented at the corporate level rather than providing a competitive edge for individual workers to adopt."
+  },
+  {
+    "slug": "chefs-and-head-cooks",
+    "title": "Chefs and head cooks",
+    "advantage": 5,
+    "rationale": "While the core work is physical and sensory, AI significantly amplifies the administrative and creative 'head' functions of the role, such as menu engineering, inventory optimization, and recipe development. Early adopters can use AI to drastically reduce time spent on scheduling, food cost analysis, and social media marketing, creating a competitive edge in business profitability."
+  },
+  {
+    "slug": "chemical-engineers",
+    "title": "Chemical engineers",
+    "advantage": 7,
+    "rationale": "Chemical engineers can significantly leverage AI for complex process simulation, molecular modeling, and predictive maintenance, which are core to their research and design duties. While physical site visits and safety oversight remain manual, AI tools dramatically accelerate the data-heavy aspects of troubleshooting, cost estimation, and regulatory compliance."
+  },
+  {
+    "slug": "chemical-technicians",
+    "title": "Chemical technicians",
+    "advantage": 6,
+    "rationale": "Chemical technicians benefit significantly from AI in the data-heavy portions of their role, such as interpreting complex experimental results, automating report generation, and using predictive modeling for chemical processes. While the core physical tasks of setting up equipment and preparing solutions remain manual, AI tools create a major competitive edge by accelerating data analysis and troubleshooting manufacturing anomalies."
+  },
+  {
+    "slug": "chemists-and-materials-scientists",
+    "title": "Chemists and materials scientists",
+    "advantage": 8,
+    "rationale": "AI tools like generative design and machine learning models are revolutionizing the core work of chemists by predicting molecular properties and simulating reactions, which drastically reduces the trial-and-error phase of research. While physical lab work remains necessary, AI-driven 'lab-on-a-chip' and automated synthesis technologies create a massive productivity gap between traditional researchers and those using AI to navigate vast chemical spaces. Furthermore, AI significantly accelerates the technical writing and data analysis components that comprise a large portion of the scientist's daily routine."
+  },
+  {
+    "slug": "childcare-workers",
+    "title": "Childcare workers",
+    "advantage": 4,
+    "rationale": "While the core work is physical and interpersonal (supervision, hygiene, and safety), AI can significantly streamline administrative tasks like record-keeping, progress tracking, and lesson planning. Adopters can use AI to generate creative educational activities and personalized developmental reports, creating a professional edge over those who rely on manual documentation."
+  },
+  {
+    "slug": "chiropractors",
+    "title": "Chiropractors",
+    "advantage": 4,
+    "rationale": "The core of chiropractic work is physical manipulation and manual therapy, which AI cannot perform. However, AI can significantly enhance the 'desk' portions of the role, such as analyzing X-rays, automating clinical documentation, and providing personalized nutrition or exercise plans, creating a moderate efficiency gap between adopters and non-adopters."
+  },
+  {
+    "slug": "civil-engineering-technicians",
+    "title": "Civil engineering technologists and technicians",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core tasks like CAD drafting, cost estimation, and report generation, which comprise a large portion of the technician's workload. While field inspections and material testing require a physical presence, AI-driven data analysis and automated documentation create a substantial productivity gap between adopters and non-adopters."
+  },
+  {
+    "slug": "civil-engineers",
+    "title": "Civil engineers",
+    "advantage": 7,
+    "rationale": "Civil engineers can significantly amplify productivity by using AI for generative design, automated cost estimation, and complex data analysis of soil and traffic patterns. While physical site visits and professional licensure (PE) provide a 'human-in-the-loop' floor, AI tools create a massive gap between adopters and non-adopters in the speed of drafting, regulatory compliance checking, and project management."
+  },
+  {
+    "slug": "claims-adjusters-appraisers-examiners-and-investigators",
+    "title": "Claims adjusters, appraisers, examiners, and investigators",
+    "advantage": 8,
+    "rationale": "AI tools can dramatically accelerate core tasks like analyzing damage photos, detecting fraud patterns, and summarizing complex legal or medical documents. While physical inspections remain, AI-driven automation of claim estimation and policy cross-referencing creates a massive productivity gap between traditional workers and those using advanced digital copilots."
+  },
+  {
+    "slug": "clinical-laboratory-technologists-and-technicians",
+    "title": "Clinical laboratory technologists and technicians",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core tasks like image analysis in cytotechnology and hematology, where computer vision can identify abnormalities faster and more accurately than the human eye. While physical sample handling and equipment maintenance remain manual, AI-driven automation of data entry, quality control, and complex diagnostic interpretation creates a major productivity gap between traditional workers and AI-augmented adopters."
+  },
+  {
+    "slug": "coaches-and-scouts",
+    "title": "Coaches and scouts",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies the 'knowledge work' aspects of coaching and scouting through advanced data analytics, automated video breakdown, and opponent pattern recognition. Adopters can use AI to process massive datasets on player performance and biomechanics that are impossible to analyze manually, creating a distinct competitive edge in strategy and recruitment."
+  },
+  {
+    "slug": "community-health-workers",
+    "title": "Community health workers",
+    "advantage": 5,
+    "rationale": "AI can significantly streamline administrative burdens like case management documentation, report writing, and data collection, which currently take workers away from the field. It also serves as a powerful translation and cultural adaptation tool for health resources; however, the core value of the role\u2014building trust, empathy, and community-based advocacy\u2014remains a deeply human task that AI cannot replicate."
+  },
+  {
+    "slug": "compensation-and-benefits-managers",
+    "title": "Compensation and benefits managers",
+    "advantage": 7,
+    "rationale": "This role involves heavy data analysis, regulatory compliance monitoring, and complex communication, all of which are significantly enhanced by AI tools. AI can automate market wage benchmarking and benefits cost modeling, allowing managers to focus on high-level strategy and vendor negotiation while creating a distinct competitive edge for those who can leverage predictive analytics."
+  },
+  {
+    "slug": "compensation-benefits-and-job-analysis-specialists",
+    "title": "Compensation, benefits, and job analysis specialists",
+    "advantage": 8,
+    "rationale": "This role is highly data-driven and digital, involving complex tasks like market benchmarking, job description drafting, and regulatory compliance analysis that are perfectly suited for AI augmentation. AI tools can rapidly process large datasets for cost-benefit analysis and automate the creation of position classifications, allowing specialists to focus on high-level strategic recommendations and employee communication."
+  },
+  {
+    "slug": "compliance-officers",
+    "title": "Compliance officers",
+    "advantage": 8,
+    "rationale": "Compliance officers can use AI to automate the high-volume monitoring of regulatory changes, draft complex policy documentation, and perform rapid audits of massive datasets for violations. Adopters gain a massive edge by shifting from manual spot-checking to comprehensive, AI-driven risk assessment and real-time compliance monitoring."
+  },
+  {
+    "slug": "computer-and-information-research-scientists",
+    "title": "Computer and information research scientists",
+    "advantage": 9,
+    "rationale": "This occupation is at the forefront of AI development, allowing workers to use AI to automate code generation, simulate complex models, and accelerate data analysis. AI tools act as a force multiplier for their core tasks\u2014designing algorithms and writing research papers\u2014creating a massive productivity gap between those who leverage these tools and those who do not."
+  },
+  {
+    "slug": "computer-and-information-systems-managers",
+    "title": "Computer and information systems managers",
+    "advantage": 8,
+    "rationale": "As leaders of digital infrastructure, these managers can use AI to automate complex technical tasks like security monitoring, budget forecasting, and vendor analysis. AI tools significantly amplify their ability to oversee larger teams and more complex systems, creating a massive productivity gap between those who use AI for strategic decision-making and those who rely on manual oversight."
+  },
+  {
+    "slug": "computer-hardware-engineers",
+    "title": "Computer hardware engineers",
+    "advantage": 8,
+    "rationale": "AI tools significantly accelerate hardware design through automated schematic generation, PCB layout optimization, and complex simulation analysis. Adopters can leverage AI to debug digital circuits and write hardware description language (HDL) code much faster than traditional manual methods, creating a substantial productivity gap. While physical testing and manufacturing oversight remain, the core design and verification phases are being transformed by AI-driven EDA (Electronic Design Automation) tools."
+  },
+  {
+    "slug": "computer-network-architects",
+    "title": "Computer network architects",
+    "advantage": 8,
+    "rationale": "AI tools significantly accelerate the core tasks of network architects by automating complex configuration scripts, generating detailed technical documentation, and simulating network traffic patterns. Adopters can use AI to optimize cloud infrastructure layouts and identify security vulnerabilities much faster than manual analysis, creating a substantial productivity gap over those using traditional methods."
+  },
+  {
+    "slug": "computer-programmers",
+    "title": "Computer programmers",
+    "advantage": 9,
+    "rationale": "Computer programming is a primary beneficiary of AI, as LLMs can generate, debug, and refactor code with high accuracy, drastically reducing the time spent on repetitive syntax and boilerplate tasks. Adopters can leverage AI 'copilots' to handle the translation of designs into code, creating a massive productivity gap between those who use AI and those who code manually. The BLS itself notes that automation and AI are already impacting this field's efficiency and employment outlook."
+  },
+  {
+    "slug": "computer-support-specialists",
+    "title": "Computer support specialists",
+    "advantage": 9,
+    "rationale": "AI tools can automate the majority of routine troubleshooting, documentation, and script generation, which are core components of this digital-first role. Early adopters can use AI to diagnose complex network issues and draft user guides instantly, creating a massive productivity gap that explains the projected decline in overall employment for the occupation."
+  },
+  {
+    "slug": "computer-systems-analysts",
+    "title": "Computer systems analysts",
+    "advantage": 9,
+    "rationale": "Computer systems analysts can use AI to automate complex data modeling, generate system documentation, and write the code required for system integrations. AI tools significantly accelerate the research and cost-benefit analysis phases of their work, allowing adopters to design and deploy more efficient IT architectures in a fraction of the time required by traditional methods."
+  },
+  {
+    "slug": "concierges",
+    "title": "Concierges",
+    "advantage": 6,
+    "rationale": "AI tools significantly amplify a concierge's ability to provide high-end service by instantly generating personalized itineraries, translating complex requests, and automating administrative tasks like booking and email management. While the physical and interpersonal aspects of the role remain human-centric, early adopters can leverage AI to act as a 'super-assistant,' providing faster and more comprehensive local expertise than those relying on traditional search methods."
+  },
+  {
+    "slug": "conservation-scientists",
+    "title": "Conservation scientists and foresters",
+    "advantage": 6,
+    "rationale": "AI significantly enhances core analytical tasks such as processing GIS data, satellite imagery, and drone footage to monitor forest health and fire risks. While physical field work and stakeholder negotiations remain human-centric, AI tools for predictive modeling and automated reporting create a substantial productivity gap between tech-forward adopters and traditional workers."
+  },
+  {
+    "slug": "construction-and-building-inspectors",
+    "title": "Construction and building inspectors",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the knowledge-heavy aspects of this role, such as automating the cross-referencing of building plans against complex local codes and streamlining the generation of detailed inspection reports. While physical site visits remain essential, AI-powered computer vision and remote inspection tools allow adopters to identify defects more accurately and handle a higher volume of cases than non-adopters."
+  },
+  {
+    "slug": "construction-equipment-operators",
+    "title": "Construction equipment operators",
+    "advantage": 3,
+    "rationale": "While the core work is physical and manual, AI-driven teleoperation and autonomous grading systems are beginning to assist with precision and safety. Adopters can benefit from AI-enhanced GPS and site-mapping tools that reduce rework, but the physical nature of the machinery limits the overall impact of digital AI tools compared to knowledge-based roles."
+  },
+  {
+    "slug": "construction-laborers-and-helpers",
+    "title": "Construction laborers and helpers",
+    "advantage": 2,
+    "rationale": "The core work is overwhelmingly physical, involving manual labor, material handling, and site preparation where AI has little direct impact. While AI can assist with peripheral tasks like safety training, basic math for measurements, or operating robotic pipe cutters, it does not fundamentally change the primary hands-on nature of the role for most workers."
+  },
+  {
+    "slug": "construction-managers",
+    "title": "Construction managers",
+    "advantage": 6,
+    "rationale": "Construction managers can significantly leverage AI for complex scheduling, cost estimation, and risk management, which are core knowledge-based tasks. While the role requires a physical presence and human leadership to manage tradespeople, AI tools for predictive analytics and automated progress monitoring create a substantial efficiency gap between tech-forward managers and traditional ones."
+  },
+  {
+    "slug": "cooks",
+    "title": "Cooks",
+    "advantage": 3,
+    "rationale": "The core work of a cook is physical and sensory, involving manual dexterity and real-time adjustments that AI cannot perform. However, AI tools can provide a competitive edge in secondary tasks like recipe optimization, inventory management, and dietary customization, particularly for private household or institutional cooks."
+  },
+  {
+    "slug": "correctional-officers",
+    "title": "Correctional officers and bailiffs",
+    "advantage": 3,
+    "rationale": "The core of this work is physical presence, supervision, and manual security tasks which AI cannot perform. However, AI can significantly streamline administrative duties like writing conduct reports and daily logs, and AI-powered surveillance can assist in monitoring facilities, though it does not replace the need for human intervention."
+  },
+  {
+    "slug": "cost-estimators",
+    "title": "Cost estimators",
+    "advantage": 8,
+    "rationale": "Cost estimation is highly data-driven and digital, making it ideal for AI integration through automated data extraction from blueprints (BIM/CAD) and predictive modeling for labor and material costs. AI tools can process historical project data and market variables much faster than manual methods, creating a significant competitive gap between adopters who can produce rapid, accurate bids and non-adopters. The projected decline in employment specifically due to software-driven productivity gains underscores the high impact of automation in this field."
+  },
+  {
+    "slug": "court-reporters",
+    "title": "Court reporters and simultaneous captioners",
+    "advantage": 9,
+    "rationale": "AI-powered speech-to-text and Large Language Models can automate the core task of verbatim transcription and initial editing, which previously required years of specialized stenography training. Adopters can shift from manual typing to 'scoping' or AI-assisted editing, dramatically increasing their output speed and allowing them to handle more proceedings with higher accuracy and less physical strain."
+  },
+  {
+    "slug": "craft-and-fine-artists",
+    "title": "Craft and fine artists",
+    "advantage": 7,
+    "rationale": "While physical craft (pottery, glassblowing) remains manual, AI tools significantly amplify the 'knowledge work' aspects of the role, such as generating creative concepts, creating digital sketches, and automating business tasks like grant writing and marketing. For digital artists and illustrators, AI serves as a powerful co-pilot that can dramatically accelerate the production of core work products and portfolio development."
+  },
+  {
+    "slug": "credit-counselors",
+    "title": "Credit counselors",
+    "advantage": 7,
+    "rationale": "AI tools can significantly automate the data-heavy aspects of this role, such as analyzing income-to-debt ratios, generating optimized repayment schedules, and drafting personalized financial recommendation documents. While the interpersonal and empathetic aspects of counseling remain human-centric, AI adopters can handle a much higher volume of clients by using automated tools for financial assessment and creditor negotiation preparation."
+  },
+  {
+    "slug": "customer-service-representatives",
+    "title": "Customer service representatives",
+    "advantage": 9,
+    "rationale": "AI tools like real-time sentiment analysis, automated knowledge retrieval, and drafting assistants allow representatives to handle complex inquiries much faster and with higher accuracy. Adopters can manage multiple digital chats simultaneously or resolve phone calls more efficiently than those relying on manual documentation, creating a massive productivity gap that is already driving the projected decline in total employment for the role."
+  },
+  {
+    "slug": "dancers-and-choreographers",
+    "title": "Dancers and choreographers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and requires manual dexterity and live performance, which AI cannot replicate. However, choreographers can use AI for music selection, administrative tasks, and emerging motion-capture or generative visualization tools to brainstorm sequences, creating a small but notable gap for tech-savvy creators."
+  },
+  {
+    "slug": "data-scientists",
+    "title": "Data scientists",
+    "advantage": 9,
+    "rationale": "Data scientists benefit immensely from AI tools that automate the most time-consuming parts of their workflow, such as data cleaning, exploratory analysis, and boilerplate coding. Generative AI acts as a powerful co-pilot for writing complex algorithms and SQL queries, while automated machine learning (AutoML) allows them to test and iterate on models at a scale previously impossible. This creates a massive productivity gap between adopters who can focus on high-level strategy and non-adopters bogged down by manual technical tasks."
+  },
+  {
+    "slug": "database-administrators",
+    "title": "Database administrators and architects",
+    "advantage": 9,
+    "rationale": "AI tools dramatically accelerate core tasks like writing complex SQL queries, automating schema migrations, and optimizing database performance through predictive tuning. Adopters can use AI to automate routine maintenance and security monitoring, allowing them to focus on high-level architecture and data strategy, which creates a massive productivity gap over traditional manual administrators."
+  },
+  {
+    "slug": "delivery-truck-drivers-and-driver-sales-workers",
+    "title": "Delivery truck drivers and driver/sales workers",
+    "advantage": 3,
+    "rationale": "While the core work is physical (driving and manual loading), AI significantly optimizes secondary tasks like dynamic route planning, fuel efficiency, and predictive maintenance. For driver/sales workers, AI tools can provide personalized customer insights and sales recommendations, creating a competitive edge for those who use data to target high-value stops."
+  },
+  {
+    "slug": "dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians",
+    "title": "Dental and ophthalmic laboratory technicians and medical appliance technicians",
+    "advantage": 7,
+    "rationale": "AI and computer-aided design (CAD) tools are revolutionizing these roles by automating the translation of digital scans into precise 3D models for printing and milling. Adopters can produce highly accurate dental and medical appliances significantly faster than manual methods, creating a massive productivity gap between digital-first technicians and traditional manual crafters."
+  },
+  {
+    "slug": "dental-assistants",
+    "title": "Dental assistants",
+    "advantage": 4,
+    "rationale": "The core of the role is physical and interpersonal, involving manual dexterity for chairside assistance and sterilization that AI cannot replace. However, AI tools significantly enhance the administrative and diagnostic portions of the job, such as automating appointment scheduling, billing, and using AI-powered imaging software to help identify clear X-ray results or dental pathologies."
+  },
+  {
+    "slug": "dental-hygienists",
+    "title": "Dental hygienists",
+    "advantage": 4,
+    "rationale": "The core of the role is highly manual, requiring physical dexterity to perform cleanings and clinical procedures that AI cannot replicate. However, AI significantly enhances the 'desk' portions of the job, such as using computer vision to assist in X-ray analysis for early disease detection and automating the documentation of patient care plans."
+  },
+  {
+    "slug": "dentists",
+    "title": "Dentists",
+    "advantage": 5,
+    "rationale": "Dentists benefit from AI primarily through enhanced diagnostic accuracy, where AI tools analyze X-rays and 3D scans to detect decay or bone loss more precisely than the human eye. While AI significantly streamlines administrative tasks and treatment planning, the core work remains highly physical, requiring manual dexterity and hands-on procedures that AI cannot perform."
+  },
+  {
+    "slug": "desktop-publishers",
+    "title": "Desktop publishers",
+    "advantage": 9,
+    "rationale": "Desktop publishing is an entirely digital workflow where AI can now automate core tasks like layout generation, text reflow, image editing, and grammar correction. Adopters can use generative AI to instantly create templates and assets that previously required manual assembly, creating a massive productivity gap between traditional manual publishers and AI-augmented workers."
+  },
+  {
+    "slug": "diagnostic-medical-sonographers",
+    "title": "Diagnostic medical sonographers",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the core task of image analysis by providing real-time quality checks and automated measurements, which reduces the time spent on manual calculations and reporting. However, the physical requirements of patient positioning, transducer manipulation, and interpersonal communication remain human-centric, limiting the overall automation potential."
+  },
+  {
+    "slug": "diesel-service-technicians-and-mechanics",
+    "title": "Diesel service technicians and mechanics",
+    "advantage": 4,
+    "rationale": "While the core work is physical and manual, AI significantly enhances the increasingly complex diagnostic and troubleshooting phases of the job. Adopters can use AI-powered predictive maintenance and diagnostic tools to interpret sensor data and technical manuals faster than traditional methods, though they must still perform the physical repairs by hand."
+  },
+  {
+    "slug": "dietitians-and-nutritionists",
+    "title": "Dietitians and nutritionists",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating the creation of personalized meal plans, analyzing complex laboratory data, and synthesizing the latest nutritional research. While the core counseling and empathetic patient interaction remain human-centric, AI tools allow adopters to handle a much higher volume of clients with more precise, data-driven interventions."
+  },
+  {
+    "slug": "drafters",
+    "title": "Drafters",
+    "advantage": 9,
+    "rationale": "Drafters work in a purely digital environment where AI can automate the conversion of rough sketches into precise CAD models and perform complex geometric calculations instantly. Generative design and AI-powered BIM tools allow adopters to produce high-fidelity technical drawings and 3D renders significantly faster than manual CAD operation, creating a massive productivity gap between AI-enabled drafters and traditional ones."
+  },
+  {
+    "slug": "drywall-and-ceiling-tile-installers-and-tapers",
+    "title": "Drywall installers, ceiling tile installers, and tapers",
+    "advantage": 2,
+    "rationale": "The core work is highly physical, involving manual dexterity, balance on stilts, and heavy lifting, which AI cannot perform. AI's primary benefit is limited to administrative tasks like material estimation and project scheduling, which are secondary to the manual installation and finishing process."
+  },
+  {
+    "slug": "economists",
+    "title": "Economists",
+    "advantage": 8,
+    "rationale": "Economists benefit immensely from AI tools that can automate complex data cleaning, write and debug statistical code (R, Python, Stata), and synthesize vast amounts of literature. AI significantly accelerates the production of reports and forecasts, creating a major productivity gap between traditional researchers and those using AI to handle the heavy lifting of quantitative modeling and drafting."
+  },
+  {
+    "slug": "editors",
+    "title": "Editors",
+    "advantage": 9,
+    "rationale": "Editors can use AI to automate nearly all time-consuming technical tasks, including proofreading, fact-checking, and style consistency, while using LLMs to rapidly generate headlines and structural outlines. Adopters gain a massive competitive edge by shifting their focus from manual correction to high-level strategy and creative direction, drastically increasing their output volume and quality."
+  },
+  {
+    "slug": "electrical-and-electronics-engineering-technicians",
+    "title": "Electrical and electronic engineering technologists and technicians",
+    "advantage": 6,
+    "rationale": "AI tools significantly enhance the knowledge-based aspects of this role, such as troubleshooting complex circuitry, writing technical reports, and interpreting engineering specifications. While physical tasks like soldering and assembly remain manual, AI-driven diagnostic tools and automated design software create a substantial productivity gap between adopters and non-adopters."
+  },
+  {
+    "slug": "electrical-and-electronics-engineers",
+    "title": "Electrical and electronics engineers",
+    "advantage": 8,
+    "rationale": "Electrical and electronics engineers can use AI to automate complex circuit design, optimize power distribution simulations, and generate technical documentation. AI-powered EDA (Electronic Design Automation) tools and LLMs for coding and troubleshooting create a significant productivity gap between traditional engineers and those using AI 'copilots' for hardware design and verification."
+  },
+  {
+    "slug": "electrical-and-electronics-installers-and-repairers",
+    "title": "Electrical and electronics installers and repairers",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the troubleshooting and diagnostic phase of the work by analyzing complex sensor data and technical manuals to isolate faults faster than manual testing. While the core physical tasks of disassembly and repair remain manual, AI-driven predictive maintenance and computer vision for inspecting components create a clear efficiency gap between tech-forward adopters and traditional workers."
+  },
+  {
+    "slug": "line-installers-and-repairers",
+    "title": "Electrical power-line installers and repairers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, involving manual labor, climbing, and operating heavy machinery in outdoor environments where AI cannot replace human presence. However, AI provides a modest advantage through improved diagnostic tools, predictive maintenance schedules, and drone-based aerial inspections that help workers identify faults more efficiently before they begin physical repairs."
+  },
+  {
+    "slug": "electricians",
+    "title": "Electricians",
+    "advantage": 3,
+    "rationale": "The core work of an electrician is highly physical, involving manual installation, wiring, and repairs in unpredictable environments that AI cannot navigate. However, AI tools can significantly assist with secondary tasks like interpreting complex blueprints, automating National Electrical Code (NEC) compliance checks, and providing advanced diagnostic troubleshooting for complex control systems."
+  },
+  {
+    "slug": "electro-mechanical-technicians",
+    "title": "Electro-mechanical and mechatronics technologists and technicians",
+    "advantage": 5,
+    "rationale": "This role involves a significant amount of physical labor, such as soldering, operating metalworking machines, and manual repairs, which AI cannot perform. However, AI tools can greatly enhance the 'knowledge' components of the job, such as interpreting complex schematics, troubleshooting system errors, and automating the documentation and analysis of test results."
+  },
+  {
+    "slug": "elementary-middle-and-high-school-principals",
+    "title": "Elementary, middle, and high school principals",
+    "advantage": 6,
+    "rationale": "Principals can significantly amplify their productivity by using AI to automate administrative burdens such as scheduling, budget reporting, and data analysis of student test scores. While AI provides a major edge in curriculum development and drafting communications, the core of the role remains deeply rooted in high-stakes interpersonal tasks like student discipline, teacher evaluations, and community relations that require human empathy and judgment."
+  },
+  {
+    "slug": "elevator-installers-and-repairers",
+    "title": "Elevator and escalator installers and repairers",
+    "advantage": 4,
+    "rationale": "While the core work is highly physical and manual, AI tools significantly enhance the 'troubleshooting' and 'maintenance' aspects of the role through predictive diagnostics and real-time analysis of computerized control systems. Adopters can use AI-powered vision or sensor data to identify mechanical failures faster than traditional methods, though the physical installation and repair remain human-dependent."
+  },
+  {
+    "slug": "emergency-management-directors",
+    "title": "Emergency management directors",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the core knowledge-work components of this role, such as drafting complex emergency response plans, analyzing vast amounts of hazard data, and automating grant application processes. During active emergencies, AI tools can provide real-time situational awareness and predictive modeling, creating a major performance gap between adopters who can make data-driven decisions and non-adopters relying on manual coordination."
+  },
+  {
+    "slug": "emts-and-paramedics",
+    "title": "EMTs and paramedics",
+    "advantage": 4,
+    "rationale": "AI can significantly enhance the 'desk' and diagnostic portions of the role, such as automating patient documentation and providing real-time clinical decision support for EKG interpretation or drug dosages. However, the core of the job remains highly physical, requiring manual life-saving interventions and patient transport that AI cannot perform. Adopters will benefit from reduced administrative burden and improved diagnostic accuracy, but the physical nature of the work limits the overall impact."
+  },
+  {
+    "slug": "entertainment-and-recreation-managers",
+    "title": "Entertainment and recreation managers",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the administrative and strategic aspects of this role, such as automating complex scheduling, budget forecasting, and personalized marketing for events. While the core work requires physical presence and interpersonal leadership, AI tools for analyzing customer feedback and generating program ideas create a clear competitive edge for tech-forward managers."
+  },
+  {
+    "slug": "environmental-engineering-technicians",
+    "title": "Environmental engineering technologists and technicians",
+    "advantage": 5,
+    "rationale": "This role involves a significant amount of physical fieldwork and laboratory testing that AI cannot perform directly. However, AI can greatly enhance the 'desk' portions of the job, such as analyzing complex environmental data sets, automating regulatory compliance reporting, and optimizing project scheduling, creating a clear efficiency gap between tech-savvy technicians and traditional ones."
+  },
+  {
+    "slug": "environmental-engineers",
+    "title": "Environmental engineers",
+    "advantage": 7,
+    "rationale": "Environmental engineers can significantly leverage AI for complex data analysis, predictive modeling of environmental impacts, and automating the generation of technical reports and permit documentation. While site inspections and physical system designs require human oversight, AI tools drastically accelerate the processing of scientific data and regulatory compliance checks, creating a clear productivity gap between adopters and traditional workers."
+  },
+  {
+    "slug": "environmental-science-and-protection-technicians",
+    "title": "Environmental science and protection technicians",
+    "advantage": 5,
+    "rationale": "This role involves a significant amount of physical fieldwork and manual sample collection that AI cannot perform. However, AI provides a moderate advantage in the desk-based portions of the job, such as automating the generation of charts and reports, analyzing complex datasets for regulatory compliance, and using predictive modeling to identify potential contamination sites."
+  },
+  {
+    "slug": "environmental-scientists-and-specialists",
+    "title": "Environmental scientists and specialists",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity in this role by automating complex data analysis, pattern recognition in environmental samples, and the drafting of technical regulatory reports. While fieldwork remains a manual component, AI tools for predictive modeling, GIS integration, and compliance monitoring create a substantial competitive gap between adopters and traditional practitioners."
+  },
+  {
+    "slug": "epidemiologists",
+    "title": "Epidemiologists",
+    "advantage": 8,
+    "rationale": "Epidemiology is heavily data-driven, and AI tools significantly accelerate core tasks like pattern recognition in large datasets, predictive modeling of disease outbreaks, and automating literature reviews. Adopters can leverage AI for complex statistical analysis and grant writing, creating a substantial productivity gap over those relying on traditional manual methods."
+  },
+  {
+    "slug": "exercise-physiologists",
+    "title": "Exercise physiologists",
+    "advantage": 5,
+    "rationale": "AI tools can significantly streamline the desk-based portions of this role, such as analyzing complex medical data, generating personalized exercise regimens based on clinical research, and automating patient progress reports. However, the core of the work remains physical and interpersonal, requiring hands-on testing, direct patient supervision, and empathetic communication that AI cannot replicate."
+  },
+  {
+    "slug": "farmers-ranchers-and-other-agricultural-managers",
+    "title": "Farmers, ranchers, and other agricultural managers",
+    "advantage": 6,
+    "rationale": "While much of the work is physical, the managerial core\u2014market analysis, crop planning, and resource optimization\u2014is highly susceptible to AI enhancement through precision agriculture and predictive analytics. AI tools can significantly amplify a manager's ability to forecast yields, manage financial risks, and automate administrative tasks, creating a widening gap between tech-forward operators and traditional farmers."
+  },
+  {
+    "slug": "fashion-designers",
+    "title": "Fashion designers",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify a designer's productivity by automating trend analysis, generating rapid design iterations from text or sketches, and streamlining the digital prototyping process within CAD software. Early adopters can move from concept to high-fidelity visualization much faster than traditional designers, creating a substantial competitive gap in an industry driven by speed and social media-led trends."
+  },
+  {
+    "slug": "film-and-video-editors-and-camera-operators",
+    "title": "Film and video editors and camera operators",
+    "advantage": 8,
+    "rationale": "While camera operation remains partially physical, the editing component is undergoing a massive transformation through AI-driven automation of rotoscoping, color grading, and generative b-roll. Adopters can now perform complex post-production tasks in minutes that previously took days, creating a significant competitive gap in speed and creative capability."
+  },
+  {
+    "slug": "financial-analysts",
+    "title": "Financial analysts",
+    "advantage": 9,
+    "rationale": "Financial analysis is almost entirely digital and data-driven, making it a prime candidate for AI transformation. AI tools can instantly process vast datasets, automate complex financial modeling, and generate initial drafts of investment reports, allowing adopters to focus on high-level strategy and client relationships while significantly outperforming those using traditional manual methods."
+  },
+  {
+    "slug": "financial-clerks",
+    "title": "Financial clerks",
+    "advantage": 9,
+    "rationale": "Financial clerks perform highly structured, digital tasks like record-keeping, data verification, and calculating charges, which are perfectly suited for AI automation and augmentation. AI tools can instantly process invoices, verify creditworthiness, and reconcile transactions, creating a massive productivity gap between clerks using legacy manual methods and those using AI-integrated workflows."
+  },
+  {
+    "slug": "financial-examiners",
+    "title": "Financial examiners",
+    "advantage": 8,
+    "rationale": "Financial examiners deal with massive volumes of digital data, including balance sheets, loan documentation, and regulatory filings, all of which are highly suitable for AI-driven analysis and anomaly detection. AI tools can dramatically accelerate the review of meeting minutes and complex regulations, while automated report generation allows examiners to focus on high-level risk assessment and strategic decision-making."
+  },
+  {
+    "slug": "financial-managers",
+    "title": "Financial managers",
+    "advantage": 8,
+    "rationale": "Financial management is a data-intensive knowledge profession where AI can automate complex reporting, forecasting, and risk assessment tasks that previously required significant manual effort. Adopters gain a massive edge by using AI to synthesize market trends and regulatory data, shifting their focus from data preparation to high-level strategic advisory and decision-making."
+  },
+  {
+    "slug": "fire-inspectors-and-investigators",
+    "title": "Fire inspectors",
+    "advantage": 5,
+    "rationale": "AI can significantly streamline the desk-based portions of this role, such as cross-referencing building blueprints against complex fire codes and automating the generation of detailed inspection reports. While the core work requires physical presence, evidence collection, and manual testing, AI-powered image recognition and predictive modeling can assist in identifying fire patterns and assessing wildfire risks. Adopters will likely see a meaningful gap in efficiency regarding documentation and legal preparation compared to non-adopters."
+  },
+  {
+    "slug": "firefighters",
+    "title": "Firefighters",
+    "advantage": 3,
+    "rationale": "The core of firefighting is physical, manual labor and high-stakes emergency response that AI cannot perform. However, AI tools can significantly improve administrative efficiency in incident reporting and provide critical decision support through real-time data analysis of fire behavior or hazardous material identification, creating a performance gap for tech-enabled departments."
+  },
+  {
+    "slug": "fishers-and-related-fishing-workers",
+    "title": "Fishing and hunting workers",
+    "advantage": 3,
+    "rationale": "While the core work is physical and manual, AI can significantly enhance the 'knowledge' aspects of the job, such as using predictive analytics for fish-finding, optimizing fuel-efficient navigation, and automating regulatory compliance/reporting. Adopters can gain a competitive edge through better catch yields and reduced overhead, but AI cannot assist with the strenuous physical labor of hauling nets or processing catches."
+  },
+  {
+    "slug": "fitness-trainers-and-instructors",
+    "title": "Fitness trainers and instructors",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the 'desk' portions of the job, such as generating personalized workout plans, analyzing client nutrition data, and automating social media marketing or administrative tasks. However, the core value of the role remains physical\u2014demonstrating technique, ensuring safety, and providing human motivation\u2014which AI cannot replicate in a gym setting."
+  },
+  {
+    "slug": "flight-attendants",
+    "title": "Flight attendants",
+    "advantage": 3,
+    "rationale": "The core responsibilities of flight attendants are physical and interpersonal, involving safety enforcement, emergency response, and manual service tasks that AI cannot perform. While AI can streamline administrative duties like post-flight reporting, language translation for international passengers, and schedule management, it does not fundamentally change the hands-on nature of the role or create a significant competitive gap between individual workers."
+  },
+  {
+    "slug": "tile-and-marble-setters",
+    "title": "Flooring installers and tile and stone setters",
+    "advantage": 2,
+    "rationale": "The core work is highly physical and manual, requiring on-site presence for tasks like cutting, laying, and finishing materials. AI's benefit is limited to administrative and preparatory tasks such as material estimation, pattern visualization for customers, and business management, which do not change the fundamental labor-intensive nature of the job."
+  },
+  {
+    "slug": "floral-designers",
+    "title": "Floral designers",
+    "advantage": 4,
+    "rationale": "While the core work is physical and artistic, AI tools can significantly enhance the design phase through generative image previews for customers and optimize business operations like inventory management and seasonal demand forecasting. Adopters can use AI to automate marketing, handle complex event logistics, and provide instant care instructions, creating a competitive edge in a declining market."
+  },
+  {
+    "slug": "food-and-beverage-serving-and-related-workers",
+    "title": "Food and beverage serving and related workers",
+    "advantage": 2,
+    "rationale": "The core duties are physical and manual, such as clearing tables, carrying heavy trays, and preparing food, which AI cannot perform. While AI can assist with peripheral tasks like automated order-taking or reservation management, these tools often replace the worker's role rather than amplifying the individual worker's productivity."
+  },
+  {
+    "slug": "food-preparation-workers",
+    "title": "Food preparation workers",
+    "advantage": 1,
+    "rationale": "The core duties of food preparation workers are physical and manual, involving tasks like chopping, cleaning, and lifting that AI cannot perform. While AI might marginally assist with inventory tracking or temperature logging, it offers no significant competitive edge or productivity boost to the individual worker's primary output."
+  },
+  {
+    "slug": "food-and-tobacco-processing-workers",
+    "title": "Food processing equipment workers",
+    "advantage": 3,
+    "rationale": "The core work is physical and manual, involving the loading of ingredients and cleaning of machinery, which AI cannot perform. However, AI tools can assist with the 'desk' portions of the job, such as optimizing batch recipes, predicting equipment maintenance needs, and automating the recording of production data, providing a slight edge to workers who can navigate these digital systems."
+  },
+  {
+    "slug": "food-service-managers",
+    "title": "Food service managers",
+    "advantage": 5,
+    "rationale": "AI tools can significantly optimize the administrative and analytical portions of the role, such as predictive inventory ordering, automated staff scheduling, and AI-driven financial forecasting. However, the core of the job remains deeply rooted in physical presence, manual oversight of kitchen operations, and high-touch human interaction, which limits the overall impact of AI on daily productivity."
+  },
+  {
+    "slug": "forensic-science-technicians",
+    "title": "Forensic science technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances core tasks like pattern recognition in fingerprints or ballistics, automates complex statistical DNA analysis, and streamlines the drafting of technical reports. While physical evidence collection and laboratory handling remain manual, AI tools create a major productivity gap by accelerating data interpretation and ensuring higher accuracy in evidence matching."
+  },
+  {
+    "slug": "forest-and-conservation-workers",
+    "title": "Forest and conservation workers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and manual, involving tasks like planting seedlings, clearing brush, and suppressing fires that AI cannot perform. However, AI-driven tools like remote sensing and automated tree-counting software are already beginning to replace some manual monitoring tasks, creating a productivity gap between workers who can utilize these technologies and those who rely solely on traditional methods."
+  },
+  {
+    "slug": "fundraisers",
+    "title": "Fundraisers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core fundraising tasks such as donor research, predictive modeling for gift likelihood, and the generation of personalized communication at scale. While interpersonal relationship-building remains a human-centric task, AI tools for data management and content creation create a major productivity gap between tech-enabled fundraisers and traditional ones."
+  },
+  {
+    "slug": "funeral-service-occupations",
+    "title": "Funeral service workers",
+    "advantage": 5,
+    "rationale": "AI provides a moderate advantage by automating administrative burdens such as drafting obituaries, filing legal documents, and managing complex scheduling within tight 24-72 hour windows. While AI can assist with business operations and marketing, the core value of the role remains deeply rooted in physical tasks like embalming and high-touch emotional labor like grief counseling, which AI cannot replicate."
+  },
+  {
+    "slug": "gaming-services-occupations",
+    "title": "Gambling services workers",
+    "advantage": 3,
+    "rationale": "The core work of dealers and floor staff is physical and interpersonal, requiring a human presence to maintain the social atmosphere and physical integrity of games. While AI can significantly assist managers with scheduling, odds optimization, and fraud detection, the majority of the workforce (dealers) has limited direct use for AI tools in their immediate, hands-on tasks."
+  },
+  {
+    "slug": "general-maintenance-and-repair-workers",
+    "title": "General maintenance and repair workers",
+    "advantage": 3,
+    "rationale": "The core of this role is physical labor and manual dexterity, which AI cannot perform. However, AI tools can significantly assist in troubleshooting complex mechanical issues via computer vision or diagnostic apps and streamline administrative tasks like cost estimation and supply ordering."
+  },
+  {
+    "slug": "general-office-clerks",
+    "title": "General office clerks",
+    "advantage": 9,
+    "rationale": "General office clerks perform highly repetitive digital tasks like data entry, document formatting, and scheduling that are perfectly suited for AI automation. Adopters can use AI to handle the bulk of their clerical workload, creating a massive productivity gap compared to those using traditional manual methods, which explains the projected decline in total employment for this role."
+  },
+  {
+    "slug": "genetic-counselors",
+    "title": "Genetic counselors",
+    "advantage": 7,
+    "rationale": "AI significantly accelerates the core knowledge-work tasks of analyzing complex genomic data, researching rare hereditary disorders, and drafting detailed clinical documentation. While the empathetic, face-to-face counseling and ethical decision-making remain human-centric, AI tools create a major productivity gap by automating the synthesis of medical histories and the interpretation of rapidly evolving genetic literature."
+  },
+  {
+    "slug": "geographers",
+    "title": "Geographers",
+    "advantage": 8,
+    "rationale": "Geographers rely heavily on digital data analysis, GIS, and remote sensing, all of which are being revolutionized by AI-driven spatial analysis and automated image recognition. AI tools can process massive satellite datasets and census information significantly faster than traditional methods, while LLMs can streamline the extensive report writing and interdisciplinary research required in the field."
+  },
+  {
+    "slug": "geological-and-petroleum-technicians",
+    "title": "Geological and hydrologic technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the data-intensive portions of this role, such as automating the analysis of sensor data, generating complex maps, and drafting technical reports. While physical fieldwork and sample collection remain manual, AI-driven predictive modeling and computer vision for sample analysis create a substantial productivity gap between tech-forward technicians and traditional ones."
+  },
+  {
+    "slug": "geoscientists",
+    "title": "Geoscientists",
+    "advantage": 7,
+    "rationale": "Geoscientists benefit significantly from AI in processing vast amounts of remote sensing, seismic, and GIS data, where machine learning can identify patterns and resource deposits far faster than manual analysis. While fieldwork and physical sampling remain essential, AI-driven modeling and automated report generation create a substantial productivity gap between tech-forward adopters and traditional practitioners."
+  },
+  {
+    "slug": "glaziers",
+    "title": "Glaziers",
+    "advantage": 2,
+    "rationale": "The core work of a glazier is highly physical and manual, involving the on-site installation and handling of heavy glass, which AI cannot perform. AI tools offer minor benefits in peripheral tasks like blueprint interpretation, automated measurements via computer vision, or administrative scheduling, but they do not fundamentally change the primary labor-intensive nature of the trade."
+  },
+  {
+    "slug": "graphic-designers",
+    "title": "Graphic designers",
+    "advantage": 9,
+    "rationale": "Graphic design is almost entirely digital, and generative AI tools for image creation, layout, and photo editing act as powerful 'copilots' that can reduce task time from hours to seconds. Adopters can produce a higher volume of concepts and iterations, creating a massive competitive gap over those relying on traditional manual digital methods."
+  },
+  {
+    "slug": "grounds-maintenance-workers",
+    "title": "Grounds maintenance workers",
+    "advantage": 2,
+    "rationale": "The core work is highly physical and manual, involving tasks like mowing, pruning, and planting that AI cannot perform directly. AI tools primarily offer minor benefits in administrative areas like scheduling, client communication, or using computer vision for plant disease diagnosis, but they do not fundamentally change the primary labor-intensive nature of the job."
+  },
+  {
+    "slug": "hand-laborers-and-material-movers",
+    "title": "Hand laborers and material movers",
+    "advantage": 2,
+    "rationale": "The core work is overwhelmingly physical, involving manual labor like lifting, cleaning, and moving materials that AI software cannot perform. While AI can optimize routing or inventory tracking via handheld scanners, these tools are typically managed at the enterprise level rather than providing a personal competitive edge for the individual laborer."
+  },
+  {
+    "slug": "hazardous-materials-removal-workers",
+    "title": "Hazardous materials removal workers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and manual, involving the hands-on removal of toxic substances and the construction of containment areas. AI provides a low advantage by assisting with secondary tasks like regulatory compliance documentation, analyzing radiation/chemical sensor data, and optimizing logistics for waste transport, but it cannot replace the physical labor required for remediation."
+  },
+  {
+    "slug": "health-and-safety-engineers",
+    "title": "Health and safety engineers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the core knowledge-work components of this role, such as interpreting complex safety regulations, drafting safety programs, and analyzing accident data for patterns. While physical inspections and interpersonal interviews remain essential, AI-driven predictive modeling and automated plan reviews create a substantial productivity gap between adopters and non-adopters."
+  },
+  {
+    "slug": "health-educators",
+    "title": "Health education specialists",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies the core knowledge-work components of this role, such as drafting educational materials, analyzing community health data, and writing grant proposals. While the role requires human-centric interpersonal skills for community engagement, AI tools allow specialists to personalize health content for diverse audiences and evaluate program effectiveness much faster than manual methods."
+  },
+  {
+    "slug": "health-information-technologists-and-medical-registrars",
+    "title": "Health information technologists and medical registrars",
+    "advantage": 9,
+    "rationale": "This occupation is almost entirely digital and revolves around data abstraction, classification, and analysis, which are core strengths of LLMs and specialized AI. AI tools can dramatically accelerate the processing of pathology reports, automate medical coding, and identify patterns in large clinical datasets, creating a massive productivity gap between manual practitioners and AI-augmented technologists."
+  },
+  {
+    "slug": "heating-air-conditioning-and-refrigeration-mechanics-and-installers",
+    "title": "Heating, air conditioning, and refrigeration mechanics and installers",
+    "advantage": 3,
+    "rationale": "The core work is physical, involving manual installation and repair in cramped or hazardous environments where AI cannot assist. However, AI tools can improve diagnostic accuracy through predictive maintenance sensors and streamline administrative tasks like scheduling, customer communication, and regulatory record-keeping."
+  },
+  {
+    "slug": "heavy-and-tractor-trailer-truck-drivers",
+    "title": "Heavy and tractor-trailer truck drivers",
+    "advantage": 3,
+    "rationale": "While the core task of driving remains a physical activity, AI significantly assists with secondary tasks like route optimization, fuel efficiency monitoring, and automated logbook management. For owner-operators, AI tools can provide a competitive edge in business administration and load matching, but for most drivers, the primary work remains manual and highly regulated."
+  },
+  {
+    "slug": "heavy-vehicle-and-mobile-equipment-service-technicians",
+    "title": "Heavy vehicle and mobile equipment service technicians",
+    "advantage": 4,
+    "rationale": "While the core work is physical and manual, AI significantly enhances the diagnostic and administrative phases of the job. Adopters can use AI-powered predictive maintenance and diagnostic tools to identify complex mechanical or software failures faster than traditional methods, though the physical repair still requires human dexterity."
+  },
+  {
+    "slug": "high-school-teachers",
+    "title": "High school teachers",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating time-intensive administrative tasks such as lesson planning, grading, and drafting parent communications, which currently occupy much of a teacher's evening and weekend time. Furthermore, AI tools enable highly personalized learning by adapting materials to individual student needs and abilities, creating a substantial performance gap between adopters who can provide tailored instruction and non-adopters who rely on one-size-fits-all curricula."
+  },
+  {
+    "slug": "historians",
+    "title": "Historians",
+    "advantage": 7,
+    "rationale": "Historians can significantly amplify their productivity by using AI for rapid synthesis of massive archival datasets, automated transcription of handwritten manuscripts, and initial translation of foreign primary sources. While the final interpretation requires human expertise, AI tools create a major competitive gap by accelerating the research, drafting, and cataloging phases of their work."
+  },
+  {
+    "slug": "home-health-aides-and-personal-care-aides",
+    "title": "Home health and personal care aides",
+    "advantage": 3,
+    "rationale": "The core responsibilities are physical and interpersonal, such as bathing, lifting, and providing companionship, which AI cannot perform. However, AI can assist with secondary tasks like meal planning for dietary restrictions, optimizing appointment schedules, and streamlining the documentation of patient vitals and progress reports."
+  },
+  {
+    "slug": "human-resources-managers",
+    "title": "Human resources managers",
+    "advantage": 7,
+    "rationale": "Human Resources Managers can significantly leverage AI for data-heavy tasks like screening resumes, drafting policies, and analyzing workforce productivity trends. While the core of the role requires high-level interpersonal skills and conflict resolution that AI cannot replace, early adopters gain a massive competitive edge by automating administrative overhead and using predictive analytics for strategic talent management."
+  },
+  {
+    "slug": "human-resources-specialists",
+    "title": "Human resources specialists",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify productivity by automating high-volume tasks like resume screening, candidate sourcing, and drafting job descriptions, which are core to the specialist's role. While interpersonal interviews and complex employee relations still require human judgment, AI 'copilots' allow adopters to manage much larger talent pipelines and provide data-driven insights for strategic hiring that non-adopters cannot match."
+  },
+  {
+    "slug": "hydrologists",
+    "title": "Hydrologists",
+    "advantage": 7,
+    "rationale": "Hydrologists rely heavily on complex computer modeling, data analysis, and forecasting, all of which are significantly enhanced by AI and machine learning for processing large environmental datasets. While fieldwork and physical sampling remain essential, AI tools dramatically accelerate the synthesis of LiDAR/sonar data and the generation of technical reports, creating a clear competitive gap for tech-forward practitioners."
+  },
+  {
+    "slug": "industrial-designers",
+    "title": "Industrial designers",
+    "advantage": 8,
+    "rationale": "Industrial designers can use generative AI to rapidly produce hundreds of concept sketches and 3D renderings, drastically shortening the ideation phase. AI tools also assist in complex simulations for ergonomics and material stress, creating a significant competitive gap between traditional designers and those using AI-augmented workflows."
+  },
+  {
+    "slug": "industrial-engineering-technicians",
+    "title": "Industrial engineering technologists and technicians",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core tasks like statistical production studies, workflow simulation, and cost analysis, allowing technicians to process vast amounts of sensor and manufacturing data instantly. Adopters can use AI-driven predictive modeling and automated CAD adjustments to optimize floor layouts and schedules far faster than manual methods, creating a distinct competitive edge in efficiency-focused manufacturing environments."
+  },
+  {
+    "slug": "industrial-engineers",
+    "title": "Industrial engineers",
+    "advantage": 8,
+    "rationale": "Industrial engineers can significantly amplify their impact by using AI for complex data analysis, predictive modeling of supply chains, and generative design of facility layouts. AI tools automate the most time-consuming parts of the role\u2014such as processing large datasets from time studies and simulations\u2014allowing engineers to focus on high-level strategic optimization and cross-departmental implementation."
+  },
+  {
+    "slug": "industrial-machinery-mechanics-and-maintenance-workers-and-millwrights",
+    "title": "Industrial machinery mechanics, machinery maintenance workers, and millwrights",
+    "advantage": 4,
+    "rationale": "While the core work is physical and manual, AI significantly enhances the diagnostic and troubleshooting phases through predictive maintenance and computer-aided vibration analysis. Adopters can use AI-powered tools to interpret complex technical manuals and sensor data more quickly, though the physical repair and installation tasks remain resistant to automation."
+  },
+  {
+    "slug": "industrial-production-managers",
+    "title": "Industrial production managers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core tasks like analyzing production data, predicting equipment failures, and optimizing complex supply chains or schedules. While the role requires physical presence and human leadership, adopters can use AI to move from reactive troubleshooting to proactive, data-driven optimization, creating a major efficiency gap over traditional managers."
+  },
+  {
+    "slug": "information-clerks",
+    "title": "Information clerks",
+    "advantage": 9,
+    "rationale": "Information clerks perform highly routine, digital-centric tasks like drafting correspondence, organizing records, and processing data that are perfectly suited for AI automation. Adopters can use LLMs and automated workflows to handle the bulk of report generation and customer inquiries, creating a massive productivity gap compared to those using traditional manual entry and filing methods."
+  },
+  {
+    "slug": "information-security-analysts",
+    "title": "Information security analysts",
+    "advantage": 9,
+    "rationale": "AI tools dramatically amplify the capabilities of security analysts by automating log analysis, threat detection, and incident response at a scale impossible for humans alone. Adopters can use AI to rapidly generate security reports, simulate complex attack vectors, and write remediation code, creating a massive productivity gap over those relying on manual monitoring. The core work product\u2014system security\u2014is fundamentally transformed by AI's ability to identify patterns in vast datasets in real-time."
+  },
+  {
+    "slug": "instructional-coordinators",
+    "title": "Instructional coordinators",
+    "advantage": 8,
+    "rationale": "Instructional coordinators can use AI to rapidly generate curriculum frameworks, lesson plans, and assessment materials, which are core digital outputs of the role. AI tools also dramatically accelerate the analysis of student test data and the personalization of teacher training materials, creating a significant productivity gap between adopters and those using manual methods."
+  },
+  {
+    "slug": "insulation-workers",
+    "title": "Insulation workers",
+    "advantage": 2,
+    "rationale": "The core work is highly physical, involving manual installation, cutting, and spraying in confined spaces where AI cannot currently assist. AI tools offer minor benefits for administrative tasks like calculating material needs from blueprints or optimizing project scheduling, but they do not fundamentally change the primary labor-intensive duties."
+  },
+  {
+    "slug": "insurance-sales-agents",
+    "title": "Insurance sales agents",
+    "advantage": 8,
+    "rationale": "AI tools can automate the most time-consuming aspects of this role, including lead generation, policy comparisons, and the drafting of personalized coverage summaries. Adopters gain a massive competitive edge by using AI to instantly analyze complex client financial data and provide real-time, customized recommendations, allowing them to manage a significantly larger client base than traditional agents."
+  },
+  {
+    "slug": "insurance-underwriters",
+    "title": "Insurance underwriters",
+    "advantage": 9,
+    "rationale": "Underwriting is a data-intensive, digital-first occupation where AI can automate the synthesis of complex documents, medical records, and financial history to generate risk assessments. While basic automation is already causing a decline in total jobs, advanced AI tools allow individual underwriters to handle significantly more complex cases with higher accuracy and speed, creating a massive productivity gap between tech-enabled workers and traditional ones."
+  },
+  {
+    "slug": "interior-designers",
+    "title": "Interior designers",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify interior designers' productivity through generative rendering, which converts simple sketches into photorealistic 3D visualizations in seconds, and AI-powered CAD plugins that automate space planning and material estimation. Adopters can present more iterations to clients faster and with higher fidelity than non-adopters, though the physical aspects of site visits and contractor coordination remain human-centric."
+  },
+  {
+    "slug": "interpreters-and-translators",
+    "title": "Interpreters and translators",
+    "advantage": 9,
+    "rationale": "Translators are at the forefront of AI adoption, using Large Language Models and Neural Machine Translation to automate initial drafts, which they then post-edit for cultural nuance and accuracy. While interpreters face more technical hurdles with real-time latency, AI-driven speech-to-speech tools and terminology databases provide a massive competitive edge for those who integrate them into their workflow."
+  },
+  {
+    "slug": "structural-iron-and-steel-workers",
+    "title": "Ironworkers",
+    "advantage": 2,
+    "rationale": "Ironworking is a highly physical trade centered on manual labor, balance, and mechanical skills that AI cannot perform. While AI can assist with secondary tasks like blueprint interpretation, safety monitoring, or project scheduling, it does not impact the core work of cutting, welding, and placing steel at height."
+  },
+  {
+    "slug": "janitors-and-building-cleaners",
+    "title": "Janitors and building cleaners",
+    "advantage": 1,
+    "rationale": "The core tasks of this occupation are physical and manual, such as mopping, lifting, and making repairs, which AI cannot perform. While AI might slightly assist with supply ordering or scheduling, it does not amplify the productivity of the primary cleaning and maintenance work."
+  },
+  {
+    "slug": "jewelers-and-precious-stone-and-metal-workers",
+    "title": "Jewelers and precious stone and metal workers",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the 'knowledge' and 'design' aspects of this role, particularly through AI-driven CAD generation, automated gemstone grading, and market-based appraisal algorithms. However, the core of the work remains physical\u2014soldering, setting stones, and manual repair\u2014which limits the total productivity gain compared to purely digital occupations."
+  },
+  {
+    "slug": "judges-and-hearing-officers",
+    "title": "Judges and hearing officers",
+    "advantage": 7,
+    "rationale": "Judges and hearing officers spend a significant portion of their time on document-heavy tasks like legal research, evaluating motions, and drafting opinions, all of which are highly susceptible to AI acceleration. While the final decision-making and courtroom presiding require human judgment and ethics, AI tools can dramatically speed up the synthesis of case law and the preparation of first drafts, creating a major efficiency gap for adopters."
+  },
+  {
+    "slug": "kindergarten-and-elementary-school-teachers",
+    "title": "Kindergarten and elementary school teachers",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating time-intensive administrative tasks like lesson planning, grading, and personalized parent communication, which teachers currently perform on evenings and weekends. While the core physical and emotional work of classroom management and student interaction remains human-centric, AI-driven differentiation allows adopters to provide highly customized learning materials for diverse student needs far more efficiently than non-adopters."
+  },
+  {
+    "slug": "labor-relations-specialists",
+    "title": "Labor relations specialists",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the core knowledge-based tasks of this role, such as drafting complex collective bargaining agreements, analyzing labor laws for compliance, and synthesizing large volumes of grievance data. While the high-stakes interpersonal negotiations and dispute resolutions still require human empathy and judgment, AI tools provide a massive competitive edge in preparation, legal research, and policy development."
+  },
+  {
+    "slug": "landscape-architects",
+    "title": "Landscape architects",
+    "advantage": 7,
+    "rationale": "Landscape architects can significantly amplify their productivity by using AI for generative site design, automated environmental analysis (drainage/energy usage), and rapid 3D visualization. While site visits and client negotiations remain human-centric, AI tools that integrate with CADD and GIS allow adopters to iterate through complex design constraints and regulatory requirements much faster than traditional methods."
+  },
+  {
+    "slug": "lawyers",
+    "title": "Lawyers",
+    "advantage": 8,
+    "rationale": "Lawyers can use AI to automate highly time-consuming core tasks such as legal research, document review, and the drafting of contracts or wills, which significantly increases their billable efficiency. While interpersonal advocacy and complex strategy remain human-centric, the gap between AI-enabled lawyers and traditional practitioners is massive in terms of speed and the volume of information they can process."
+  },
+  {
+    "slug": "librarians",
+    "title": "Librarians and library media specialists",
+    "advantage": 7,
+    "rationale": "Librarianship is fundamentally about information retrieval, organization, and synthesis\u2014tasks where AI excels through automated cataloging, advanced semantic search, and summarizing complex research. While the role retains a significant human-centric component in community programming and education, AI tools create a massive productivity gap by allowing adopters to manage vast digital collections and complex reference queries with unprecedented speed."
+  },
+  {
+    "slug": "library-technicians-and-assistants",
+    "title": "Library technicians and assistants",
+    "advantage": 7,
+    "rationale": "AI tools can significantly automate core clerical tasks such as cataloging, metadata generation, and answering routine reference questions, which are central to this role. While physical tasks like reshelving books remain, the shift toward digital resource management allows early adopters to use AI for complex information retrieval and curriculum support, creating a major efficiency gap."
+  },
+  {
+    "slug": "licensed-practical-and-licensed-vocational-nurses",
+    "title": "Licensed practical and licensed vocational nurses",
+    "advantage": 4,
+    "rationale": "The core of this role is physical and interpersonal, involving manual tasks like changing bandages and assisting with patient mobility that AI cannot perform. However, AI can significantly streamline the documentation and reporting aspects of the job, and AI-driven monitoring tools can help LPNs track patient vitals more efficiently, creating a moderate productivity gap between tech-enabled and traditional workers."
+  },
+  {
+    "slug": "loan-officers",
+    "title": "Loan officers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the core tasks of data verification, financial analysis, and regulatory compliance, allowing loan officers to process complex applications much faster. While AI handles the technical underwriting and risk assessment, human officers can focus on high-value sales, relationship management, and navigating nuanced commercial deals. Adopters gain a massive edge by providing near-instant feedback to clients while maintaining higher accuracy in risk prediction."
+  },
+  {
+    "slug": "lodging-managers",
+    "title": "Lodging managers",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the 'Revenue Manager' and 'General Manager' functions through dynamic pricing algorithms, automated guest sentiment analysis, and predictive staffing models. While physical inspections and interpersonal conflict resolution remain manual, AI tools create a major competitive gap by optimizing profitability and streamlining administrative coordination."
+  },
+  {
+    "slug": "logging-workers",
+    "title": "Logging workers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and manual, involving the operation of heavy machinery and chainsaws in outdoor environments where AI has limited direct impact. However, log graders and scalers can benefit from AI-powered computer vision and data collection tools to more accurately estimate wood volume and value, creating a productivity gap between tech-enabled workers and those using traditional methods."
+  },
+  {
+    "slug": "logisticians",
+    "title": "Logisticians",
+    "advantage": 8,
+    "rationale": "Logisticians work in a data-intensive field where AI excels at forecasting demand, optimizing complex routes, and managing inventory levels in real-time. Adopters can use AI to automate administrative tracking and simulate 'what-if' scenarios for risk management, creating a massive efficiency gap over those relying on manual spreadsheets and traditional methods."
+  },
+  {
+    "slug": "machinists-and-tool-and-die-makers",
+    "title": "Machinists and tool and die makers",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the digital aspects of this role, such as automating complex CNC G-code generation, optimizing tool paths, and assisting in CAD/CAM design. While the physical setup and manual finishing remain human-centric, AI adopters can produce parts much faster and with fewer errors by leveraging predictive maintenance and AI-driven simulation tools."
+  },
+  {
+    "slug": "management-analysts",
+    "title": "Management analysts",
+    "advantage": 8,
+    "rationale": "Management analysts can use AI to automate the heavy lifting of data synthesis, financial modeling, and report drafting, which are core components of their digital-heavy workload. AI tools create a significant competitive gap by allowing adopters to process vast amounts of organizational data and generate strategic recommendations much faster than traditional manual methods."
+  },
+  {
+    "slug": "manicurists-and-pedicurists",
+    "title": "Manicurists and pedicurists",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and requires manual dexterity for tasks like trimming, filing, and applying polish, which AI cannot perform. However, AI tools can significantly assist with business operations, such as automated scheduling, inventory management, and generating creative nail art inspiration or marketing content for social media."
+  },
+  {
+    "slug": "marine-engineers-and-naval-architects",
+    "title": "Marine engineers and naval architects",
+    "advantage": 7,
+    "rationale": "Marine engineers and naval architects can significantly leverage AI for complex fluid dynamics simulations, hull optimization, and automated CAD drafting, which are core digital tasks. AI tools also accelerate the preparation of technical reports, cost estimates, and regulatory compliance documentation, creating a substantial productivity gap between adopters and those using traditional manual methods."
+  },
+  {
+    "slug": "market-research-analysts",
+    "title": "Market research analysts",
+    "advantage": 9,
+    "rationale": "Market research is almost entirely digital and data-driven, allowing AI to automate core tasks like sentiment analysis of social media, survey design, and the synthesis of massive datasets into reports. Adopters can use LLMs and specialized analytics tools to perform competitive research and trend forecasting at a speed and scale that manual analysts cannot match, creating a massive competitive gap."
+  },
+  {
+    "slug": "marriage-and-family-therapists",
+    "title": "Marriage and family therapists",
+    "advantage": 6,
+    "rationale": "AI significantly enhances productivity by automating administrative burdens like clinical documentation, session transcription, and insurance billing, which are major components of the role. While the core therapeutic relationship requires human empathy, AI tools can assist in treatment planning, identifying behavioral patterns in client data, and providing supplemental support between sessions, creating a clear efficiency gap between adopters and non-adopters."
+  },
+  {
+    "slug": "brickmasons-blockmasons-and-stonemasons",
+    "title": "Masonry workers",
+    "advantage": 2,
+    "rationale": "Masonry is a highly physical trade requiring manual dexterity, strength, and on-site sensory judgment that AI cannot replicate. While AI can assist with administrative tasks like material estimation, blueprint analysis, and project scheduling, it does not impact the core work of laying bricks or finishing concrete."
+  },
+  {
+    "slug": "massage-therapists",
+    "title": "Massage therapists",
+    "advantage": 3,
+    "rationale": "The core work of a massage therapist is highly physical and requires manual dexterity and human touch, which AI cannot replicate. However, because 42% are self-employed, AI provides a competitive edge in administrative tasks like automated scheduling, personalized marketing, and using AI-assisted documentation for client progress notes."
+  },
+  {
+    "slug": "material-moving-machine-operators",
+    "title": "Material moving machine operators",
+    "advantage": 3,
+    "rationale": "The core work is physical and requires real-time manual coordination of heavy machinery, which limits the direct utility of LLMs or generative AI. However, AI-driven logistics software and computer vision sensors can assist with route optimization, inventory tracking, and safety monitoring, creating a moderate productivity gap between tech-enabled operators and traditional ones."
+  },
+  {
+    "slug": "material-recording-clerks",
+    "title": "Material recording clerks",
+    "advantage": 7,
+    "rationale": "AI significantly enhances core tasks like production scheduling, inventory forecasting, and vendor communication, creating a major gap between manual record-keepers and AI-augmented clerks. While some physical inspection and handling remain, AI tools can automate complex data entry, report generation, and logistics optimization that previously required significant manual effort. The projected job decline highlights that those who do not adopt these efficiency-boosting technologies are at high risk of being replaced by automated systems."
+  },
+  {
+    "slug": "materials-engineers",
+    "title": "Materials engineers",
+    "advantage": 8,
+    "rationale": "AI and machine learning are revolutionizing materials science through 'materials informatics,' allowing engineers to predict properties and simulate atomic structures much faster than traditional trial-and-error. Adopters can use AI to automate complex data analysis, optimize manufacturing processes, and rapidly screen thousands of potential alloys or polymers, creating a massive productivity gap over those using manual methods."
+  },
+  {
+    "slug": "mathematicians-and-statisticians",
+    "title": "Mathematicians and statisticians",
+    "advantage": 9,
+    "rationale": "AI tools dramatically accelerate core tasks such as writing complex statistical code, cleaning large datasets, and generating visualizations. LLMs and specialized AI agents can now assist in proving theorems, suggesting novel modeling approaches, and translating technical findings into non-technical reports, creating a massive productivity gap between AI-enabled practitioners and traditionalists."
+  },
+  {
+    "slug": "mechanical-engineering-technicians",
+    "title": "Mechanical engineering technologists and technicians",
+    "advantage": 7,
+    "rationale": "AI tools significantly enhance core tasks like 3D modeling, data analysis, and cost estimation, creating a clear productivity gap between adopters and non-adopters. While physical assembly and testing remain manual, AI-driven generative design and predictive maintenance simulations allow these technicians to optimize designs and troubleshoot systems much faster than traditional methods."
+  },
+  {
+    "slug": "mechanical-engineers",
+    "title": "Mechanical engineers",
+    "advantage": 7,
+    "rationale": "Mechanical engineers can significantly boost productivity by using AI for generative design, automated simulation analysis, and predictive failure modeling, which accelerates the iterative design-test cycle. While physical prototyping and site visits remain manual, AI tools create a major competitive gap by handling complex mathematical optimizations and technical documentation more efficiently than traditional methods."
+  },
+  {
+    "slug": "medical-and-health-services-managers",
+    "title": "Medical and health services managers",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify productivity in this role by automating complex scheduling, financial auditing, and regulatory compliance monitoring. Adopters can leverage predictive analytics for patient load forecasting and AI-driven EHR management, creating a substantial efficiency gap over managers using traditional manual oversight methods."
+  },
+  {
+    "slug": "medical-assistants",
+    "title": "Medical assistants",
+    "advantage": 5,
+    "rationale": "Medical assistants perform a hybrid of physical clinical tasks and digital administrative work. AI significantly amplifies productivity in the administrative domain\u2014such as automated scheduling, medical coding, and AI-assisted scribing for patient histories\u2014but cannot replace the hands-on clinical duties like drawing blood or taking physical vital signs."
+  },
+  {
+    "slug": "medical-dosimetrists",
+    "title": "Medical dosimetrists",
+    "advantage": 8,
+    "rationale": "Medical dosimetry is primarily a digital knowledge-work role focused on complex calculations and image analysis, tasks where AI excels through auto-contouring and automated treatment planning. AI tools can dramatically accelerate the design of radiation plans and improve precision, creating a significant productivity gap between adopters who use AI-driven optimization and those relying on manual calculations."
+  },
+  {
+    "slug": "medical-equipment-repairers",
+    "title": "Medical equipment repairers",
+    "advantage": 5,
+    "rationale": "While the core work is physical and requires manual dexterity to repair hardware, AI significantly enhances the diagnostic and administrative phases. AI-powered predictive maintenance and diagnostic tools can help repairers identify complex faults faster than manual troubleshooting, and AI can automate the extensive record-keeping and regulatory compliance documentation required in healthcare."
+  },
+  {
+    "slug": "medical-records-and-health-information-technicians",
+    "title": "Medical records specialists",
+    "advantage": 9,
+    "rationale": "This occupation is almost entirely digital and revolves around data entry, classification, and coding, which are tasks where LLMs and specialized AI excel. AI tools can automate the translation of clinical notes into codes (Computer-Assisted Coding) and audit records for accuracy, allowing early adopters to process significantly higher volumes of records with fewer errors than manual workers."
+  },
+  {
+    "slug": "medical-scientists",
+    "title": "Medical scientists",
+    "advantage": 8,
+    "rationale": "Medical scientists benefit immensely from AI in core tasks like high-throughput data analysis, drug discovery simulations, and literature synthesis for grant writing. While physical lab work remains essential, AI tools for predictive modeling and automated statistical analysis create a massive productivity gap between traditional researchers and those using AI-driven discovery platforms."
+  },
+  {
+    "slug": "medical-transcriptionists",
+    "title": "Medical transcriptionists",
+    "advantage": 9,
+    "rationale": "Medical transcription is almost entirely digital and revolves around converting audio to text, a task where AI (LLMs and advanced speech-to-text) excels. Early adopters can shift from manual typing to high-speed AI-assisted editing and verification, dramatically increasing their output volume and accuracy compared to traditional methods."
+  },
+  {
+    "slug": "meeting-convention-and-event-planners",
+    "title": "Meeting, convention, and event planners",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the heavy administrative and logistical workload by automating vendor research, contract analysis, and schedule optimization. While physical site visits and interpersonal negotiation remain human-centric, AI tools for personalized attendee communication, marketing content generation, and post-event data analysis create a major competitive gap between tech-enabled and traditional planners."
+  },
+  {
+    "slug": "metal-and-plastic-machine-workers",
+    "title": "Metal and plastic machine workers",
+    "advantage": 5,
+    "rationale": "While much of the work is physical and manual, the increasing reliance on CNC programming and CAD/CAM software creates a significant advantage for workers who can use AI to optimize tool paths, predict machine maintenance, and automate complex code generation. AI tools can bridge the gap between manual operation and high-level programming, though the core physical tasks of machine setup and material handling remain less affected."
+  },
+  {
+    "slug": "microbiologists",
+    "title": "Microbiologists",
+    "advantage": 7,
+    "rationale": "Microbiologists benefit significantly from AI in data-heavy tasks like genomic sequencing, protein folding predictions, and automated image analysis of cultures. While physical lab work and sample collection remain manual, AI tools dramatically accelerate the research cycle, grant writing, and the interpretation of complex experimental datasets, creating a wide gap between traditional researchers and those using computational AI models."
+  },
+  {
+    "slug": "middle-school-teachers",
+    "title": "Middle school teachers",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating time-intensive tasks like lesson planning, grading, and administrative communication, which teachers currently perform during evenings and weekends. While the core human elements of classroom management and emotional support remain manual, AI tools for personalized learning and content creation create a major efficiency gap between adopters and non-adopters."
+  },
+  {
+    "slug": "military-careers",
+    "title": "Military careers",
+    "advantage": 6,
+    "rationale": "The military is a massive organization where a significant portion of personnel (especially officers) perform knowledge-intensive roles in engineering, logistics, and administration that are highly compatible with AI optimization. While physical combat and manual maintenance tasks have a lower AI ceiling, the 'adopter gap' in strategic decision-making, intelligence analysis, and complex supply-chain management creates a high overall advantage for the modern service member."
+  },
+  {
+    "slug": "mining-and-geological-engineers",
+    "title": "Mining and geological engineers",
+    "advantage": 7,
+    "rationale": "Mining and geological engineers can significantly amplify their productivity by using AI for complex geological modeling, predictive safety analytics, and optimizing mineral extraction sequences. While the role requires physical site visits and inspections, the core engineering work\u2014designing mines, analyzing ore deposits, and drafting technical reports\u2014is highly data-driven and benefits immensely from AI-powered simulation and automation tools."
+  },
+  {
+    "slug": "models",
+    "title": "Models",
+    "advantage": 3,
+    "rationale": "While AI tools can assist models with administrative tasks like portfolio management, social media optimization, and brand research, the core work remains physical and presence-based. AI is more of a competitive threat than a productivity multiplier for human models, as digital avatars and AI-generated imagery can replace the need for a human worker entirely rather than amplifying the individual's output."
+  },
+  {
+    "slug": "music-directors-and-composers",
+    "title": "Music directors and composers",
+    "advantage": 7,
+    "rationale": "Composers can significantly accelerate their workflow using AI for orchestration, melody generation, and rapid prototyping of scores, creating a wide gap between traditional and AI-augmented creators. While music directors still rely on physical presence and interpersonal leadership for rehearsals, AI tools assist them in administrative tasks, score analysis, and the creation of promotional materials."
+  },
+  {
+    "slug": "musicians-and-singers",
+    "title": "Musicians and singers",
+    "advantage": 5,
+    "rationale": "AI tools significantly assist with the 'business' side of being a musician, such as social media promotion, booking, and administrative tasks, which are critical for the 47% who are self-employed. While AI cannot replace the physical act of live performance, it offers a competitive edge in songwriting, practice accompaniment, and high-quality demo production, creating a gap between tech-savvy independent artists and traditionalists."
+  },
+  {
+    "slug": "natural-sciences-managers",
+    "title": "Natural sciences managers",
+    "advantage": 7,
+    "rationale": "Natural sciences managers can significantly leverage AI for data-heavy tasks such as reviewing research, drafting operational reports, and optimizing project budgets and resource allocation. While interpersonal leadership and physical lab oversight remain human-centric, AI tools for predictive analytics and automated technical synthesis create a substantial productivity gap between adopters and non-adopters."
+  },
+  {
+    "slug": "network-and-computer-systems-administrators",
+    "title": "Network and computer systems administrators",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify productivity in this role by automating complex script generation, log analysis, and real-time security monitoring. Adopters can use AI to diagnose network failures and generate configuration code much faster than manual troubleshooting, creating a massive efficiency gap that is already contributing to the projected decline in total employment for the field."
+  },
+  {
+    "slug": "reporters-correspondents-and-broadcast-news-analysts",
+    "title": "News analysts, reporters, and journalists",
+    "advantage": 8,
+    "rationale": "AI tools dramatically accelerate core journalistic tasks including transcribing interviews, drafting articles from notes, summarizing large datasets for investigative pieces, and repurposing content for multiple social media platforms. While AI cannot replace on-the-ground reporting or relationship-building, early adopters can produce a significantly higher volume of high-quality, multimedia content, creating a massive competitive gap in an industry facing consolidation and declining traditional revenue."
+  },
+  {
+    "slug": "nuclear-engineers",
+    "title": "Nuclear engineers",
+    "advantage": 7,
+    "rationale": "Nuclear engineers can significantly leverage AI for complex simulations, radiation shielding calculations, and predictive maintenance of reactor systems. While high-stakes safety and regulatory oversight require human accountability, AI tools dramatically accelerate the data analysis, technical documentation, and design optimization phases of their work."
+  },
+  {
+    "slug": "nuclear-medicine-technologists",
+    "title": "Nuclear medicine technologists",
+    "advantage": 5,
+    "rationale": "The role involves a significant physical component, including patient handling and the manual preparation of radiopharmaceuticals, which AI cannot replace. However, AI tools can dramatically improve the 'desk' portions of the job, such as optimizing image quality, automating radiation dose calculations, and streamlining the detailed record-keeping required for safety compliance."
+  },
+  {
+    "slug": "nuclear-technicians",
+    "title": "Nuclear technicians",
+    "advantage": 5,
+    "rationale": "Nuclear technicians perform a mix of physical field work and data-intensive monitoring. AI can significantly enhance their productivity by automating complex radiation calculations, predicting equipment failure through sensor data analysis, and assisting in the development of decontamination plans, but it cannot replace the physical tasks of collecting samples and maintaining hardware in hazardous environments."
+  },
+  {
+    "slug": "nurse-anesthetists-nurse-midwives-and-nurse-practitioners",
+    "title": "Nurse anesthetists, nurse midwives, and nurse practitioners",
+    "advantage": 6,
+    "rationale": "APRNs can significantly leverage AI for clinical decision support, automated medical charting, and analyzing complex diagnostic data, which reduces the heavy administrative burden and enhances diagnostic accuracy. However, the core of the role remains deeply physical and interpersonal, requiring hands-on patient care, manual procedures, and emotional intelligence that AI cannot replicate."
+  },
+  {
+    "slug": "nursing-assistants",
+    "title": "Nursing assistants and orderlies",
+    "advantage": 3,
+    "rationale": "The core responsibilities are highly physical and manual, such as bathing, lifting, and transporting patients, which AI cannot perform. However, AI can assist with secondary tasks like automated charting, voice-to-text reporting of patient concerns, and monitoring vital signs, slightly reducing the administrative burden on the worker."
+  },
+  {
+    "slug": "occupational-health-and-safety-specialists-and-technicians",
+    "title": "Occupational health and safety specialists and technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the knowledge-work components of this role, such as analyzing incident trends, drafting complex regulatory reports, and designing safety training programs. While physical inspections and equipment testing remain manual, AI-driven predictive analytics and computer vision can dramatically improve a specialist's ability to identify risks and ensure compliance compared to non-adopters."
+  },
+  {
+    "slug": "occupational-therapists",
+    "title": "Occupational therapists",
+    "advantage": 5,
+    "rationale": "Occupational therapy is a hybrid of physical intervention and complex clinical reasoning. AI significantly boosts the 'desk' portions of the job\u2014such as drafting treatment plans, automating clinical documentation, and analyzing patient progress data\u2014but it cannot replace the essential physical tasks of manual therapy, home modifications, and empathetic interpersonal interaction."
+  },
+  {
+    "slug": "occupational-therapy-assistants-and-aides",
+    "title": "Occupational therapy assistants and aides",
+    "advantage": 4,
+    "rationale": "The core of this role is highly physical and interpersonal, involving manual therapy, patient lifting, and direct supervision of exercises that AI cannot replicate. However, AI can significantly streamline administrative burdens such as progress recording, billing paperwork, and scheduling, allowing assistants to spend more time on direct patient care."
+  },
+  {
+    "slug": "oil-and-gas-workers",
+    "title": "Oil and gas workers",
+    "advantage": 3,
+    "rationale": "The core work is heavily manual and physical, involving the assembly and maintenance of heavy machinery in remote environments where AI cannot replace human labor. However, AI tools for predictive maintenance, safety monitoring, and real-time drilling data analysis can provide a competitive edge for operators who use them to reduce equipment downtime and improve extraction efficiency."
+  },
+  {
+    "slug": "operations-research-analysts",
+    "title": "Operations research analysts",
+    "advantage": 9,
+    "rationale": "Operations research is a highly digital, data-driven field where AI can exponentially speed up core tasks like data cleaning, code generation for optimization models, and complex simulations. AI tools act as a powerful force multiplier, allowing analysts to process larger datasets and explore more variables in less time, creating a massive productivity gap between those who use AI copilots and those who rely on manual modeling."
+  },
+  {
+    "slug": "opticians-dispensing",
+    "title": "Opticians",
+    "advantage": 4,
+    "rationale": "AI can significantly enhance the desk-based and sales aspects of the role, such as using computer vision for precise facial measurements and AI-driven style recommendations for frames. However, the core of the job remains highly physical, requiring manual dexterity for adjusting frames, repairing hardware, and providing hands-on assistance with contact lenses."
+  },
+  {
+    "slug": "optometrists",
+    "title": "Optometrists",
+    "advantage": 5,
+    "rationale": "Optometrists benefit from AI primarily through advanced diagnostic imaging and screening tools that can detect ocular diseases like glaucoma or diabetic retinopathy with higher precision. While AI significantly enhances the 'desk' and diagnostic portions of the role, the core work remains a mix of physical examinations, minor surgical procedures, and patient counseling that requires a human touch and professional licensure."
+  },
+  {
+    "slug": "orthotists-and-prosthetists",
+    "title": "Orthotists and prosthetists",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the design and customization phase through automated 3D modeling, predictive gait analysis, and generative design for lightweight, high-strength components. While the physical fitting and patient interaction remain manual, AI-driven tools create a major competitive gap by allowing adopters to produce more precise, personalized devices faster than traditional manual molding methods."
+  },
+  {
+    "slug": "painters-construction-and-maintenance",
+    "title": "Painters, construction and maintenance",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and manual, involving climbing, sanding, and applying coatings, which AI cannot perform. However, AI tools can significantly assist with administrative and technical prep tasks such as precise area calculations, material estimation, color matching, and customer communication, providing a competitive edge for self-employed painters and contractors."
+  },
+  {
+    "slug": "painting-and-coating-workers",
+    "title": "Painting and coating workers",
+    "advantage": 3,
+    "rationale": "The core work is physical and manual, involving the application of finishes and equipment maintenance. AI provides a minor advantage through computer-controlled machine programming and color-matching software, but it cannot replace the physical dexterity and environmental setup required for the majority of tasks."
+  },
+  {
+    "slug": "paralegals-and-legal-assistants",
+    "title": "Paralegals and legal assistants",
+    "advantage": 9,
+    "rationale": "The core responsibilities of paralegals\u2014legal research, document drafting, and evidence organization\u2014are almost entirely digital and align perfectly with the capabilities of Large Language Models. AI tools can compress hours of case law research and contract drafting into minutes, creating a massive productivity gap between tech-enabled paralegals and those using traditional methods."
+  },
+  {
+    "slug": "personal-financial-advisors",
+    "title": "Personal financial advisors",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify productivity by automating complex data analysis, investment research, and the generation of personalized financial reports. While the core value remains human-centric trust and relationship management, AI-enabled advisors can handle a much larger client base and provide more sophisticated, real-time insights than those relying on traditional methods."
+  },
+  {
+    "slug": "pest-control-workers",
+    "title": "Pest control workers",
+    "advantage": 3,
+    "rationale": "The core of the work is physical and manual, involving crawling, spraying, and setting traps, which AI cannot perform. However, AI can significantly improve administrative efficiency through automated scheduling, route optimization, and image-based pest identification, creating a competitive edge for tech-forward service providers."
+  },
+  {
+    "slug": "petroleum-engineers",
+    "title": "Petroleum engineers",
+    "advantage": 7,
+    "rationale": "Petroleum engineering relies heavily on complex data analysis, reservoir modeling, and predictive maintenance, all of which are significantly enhanced by AI and machine learning. While physical site visits and safety oversight remain essential, AI tools create a massive competitive gap by allowing engineers to optimize extraction rates and simulate drilling scenarios much faster and more accurately than traditional methods."
+  },
+  {
+    "slug": "pharmacists",
+    "title": "Pharmacists",
+    "advantage": 6,
+    "rationale": "AI significantly enhances a pharmacist's ability to cross-reference complex drug interactions, analyze patient medical histories, and stay updated on rapidly evolving pharmaceutical research. While physical tasks like administering vaccinations and compounding require a human presence, AI tools can automate administrative burdens such as insurance billing and inventory management, allowing pharmacists to focus more on high-value clinical consultation."
+  },
+  {
+    "slug": "pharmacy-technicians",
+    "title": "Pharmacy technicians",
+    "advantage": 5,
+    "rationale": "AI can significantly streamline the administrative and knowledge-based aspects of the role, such as processing insurance claims, managing inventory, and cross-referencing patient data for potential errors. However, the core physical tasks\u2014such as measuring medications, compounding, and interacting face-to-face with customers\u2014limit the total impact of AI on daily productivity."
+  },
+  {
+    "slug": "phlebotomists",
+    "title": "Phlebotomists",
+    "advantage": 3,
+    "rationale": "The core of phlebotomy is a physical, high-dexterity task (drawing blood) that AI cannot perform. While AI can streamline administrative duties like data entry, patient scheduling, and sample tracking, it does not significantly amplify the primary clinical output of the worker."
+  },
+  {
+    "slug": "photographers",
+    "title": "Photographers",
+    "advantage": 8,
+    "rationale": "AI tools dramatically accelerate the most time-consuming part of a photographer's workflow: post-production, including automated culling, generative fill, and advanced retouching. Adopters can deliver high-quality work significantly faster than those using manual editing techniques, while also leveraging AI for business tasks like marketing and client communication which are critical for the 66% who are self-employed."
+  },
+  {
+    "slug": "physical-therapist-assistants-and-aides",
+    "title": "Physical therapist assistants and aides",
+    "advantage": 4,
+    "rationale": "The core of the work is highly physical, involving manual therapy, patient movement, and equipment setup that AI cannot perform. However, AI tools can significantly streamline the 'desk' portions of the job, such as clinical documentation, progress reporting, and insurance coding, which currently consume a large portion of their time."
+  },
+  {
+    "slug": "physical-therapists",
+    "title": "Physical therapists",
+    "advantage": 5,
+    "rationale": "Physical therapy is a hybrid of manual labor and knowledge work; while AI cannot perform the physical manipulations or hands-on exercises, it can significantly streamline administrative burdens like clinical documentation and insurance coding. Furthermore, AI-driven computer vision and predictive analytics can assist in more accurately diagnosing movement patterns and customizing long-term recovery plans, creating a productivity gap between tech-enabled practitioners and traditional ones."
+  },
+  {
+    "slug": "physician-assistants",
+    "title": "Physician assistants",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the knowledge-based aspects of the role, such as automating clinical documentation, interpreting complex diagnostic tests, and researching the latest treatment protocols. However, the core of the profession remains deeply rooted in physical examinations, hands-on procedures like stitching wounds, and the high-stakes interpersonal communication required for patient counseling, which AI cannot replicate."
+  },
+  {
+    "slug": "physicians-and-surgeons",
+    "title": "Physicians and surgeons",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies physician productivity by automating clinical documentation (medical scribing) and providing advanced diagnostic support in specialties like radiology and pathology. While physical procedures and patient empathy remain human-centric, AI-adopters can process information faster and reduce diagnostic errors, creating a major efficiency gap over non-adopters."
+  },
+  {
+    "slug": "physicists-and-astronomers",
+    "title": "Physicists and astronomers",
+    "advantage": 8,
+    "rationale": "Physicists and astronomers rely heavily on data analysis, complex mathematical modeling, and software development, all of which are being revolutionized by AI and machine learning. AI tools significantly accelerate the processing of massive astronomical datasets, automate grant proposal drafting, and assist in writing scientific papers, creating a massive productivity gap between traditional researchers and AI-augmented ones."
+  },
+  {
+    "slug": "plumbers-pipefitters-and-steamfitters",
+    "title": "Plumbers, pipefitters, and steamfitters",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, requiring manual dexterity and strength to install and repair hardware in tight spaces, which AI cannot perform. However, AI tools can significantly improve administrative and technical planning tasks such as generating cost estimates, interpreting complex building codes, and optimizing Building Information Modeling (BIM) workflows for master plumbers."
+  },
+  {
+    "slug": "podiatrists",
+    "title": "Podiatrists",
+    "advantage": 5,
+    "rationale": "Podiatrists benefit from AI in diagnostic imaging analysis, personalized orthotic design via 3D scanning, and administrative automation for practice management. However, the core of the profession involves physical examinations, manual surgical procedures, and hands-on patient care, which AI cannot currently replicate or significantly accelerate."
+  },
+  {
+    "slug": "police-and-detectives",
+    "title": "Police and detectives",
+    "advantage": 6,
+    "rationale": "While much of the work is physical and high-risk, AI significantly amplifies the 'knowledge' components of the role, such as automating the drafting of detailed incident reports and analyzing vast amounts of digital evidence or database records. Detectives and investigators, in particular, gain a massive competitive edge by using AI for pattern recognition in criminal data and streamlining administrative burdens that traditionally consume a large portion of their shift."
+  },
+  {
+    "slug": "political-scientists",
+    "title": "Political scientists",
+    "advantage": 8,
+    "rationale": "Political scientists can use AI to drastically accelerate the analysis of massive datasets, such as public opinion surveys, legislative texts, and historical archives. AI tools serve as powerful research assistants for drafting reports, forecasting trends, and monitoring global events in real-time, creating a significant productivity gap between traditional researchers and AI-augmented adopters."
+  },
+  {
+    "slug": "postal-service-workers",
+    "title": "Postal service workers",
+    "advantage": 2,
+    "rationale": "The core duties of postal workers are physical, involving the manual sorting, transport, and delivery of physical mail and parcels. While AI and automation drive the machinery that sorts mail, individual workers have limited opportunities to use AI tools to amplify their personal productivity or create a competitive edge in their daily manual tasks."
+  },
+  {
+    "slug": "postsecondary-education-administrators",
+    "title": "Postsecondary education administrators",
+    "advantage": 7,
+    "rationale": "Postsecondary administrators handle vast amounts of data related to admissions, financial aid, and student records, all of which are highly susceptible to AI-driven analysis and automation. AI tools can significantly accelerate the review of applications, the generation of promotional materials, and the complex scheduling of courses and facilities. While interpersonal tasks like student advising and faculty relations remain human-centric, the administrative and data-heavy core of the role offers a high ceiling for productivity gains through AI adoption."
+  },
+  {
+    "slug": "postsecondary-teachers",
+    "title": "Postsecondary teachers",
+    "advantage": 7,
+    "rationale": "Postsecondary teachers can significantly amplify their productivity by using AI to automate lesson planning, syllabus creation, and the grading of routine assignments. Furthermore, AI tools serve as powerful research assistants for data analysis, literature reviews, and drafting scholarly papers, creating a distinct competitive edge for early adopters in the 'publish or perish' academic environment."
+  },
+  {
+    "slug": "power-plant-operators-distributors-and-dispatchers",
+    "title": "Power plant operators, distributors, and dispatchers",
+    "advantage": 7,
+    "rationale": "AI and smart-grid technologies are directly transforming the core tasks of monitoring, load balancing, and outage response, allowing operators to manage increasingly complex systems with higher efficiency. Adopters who leverage AI for predictive maintenance and real-time data analysis will have a significant edge in safety and reliability, though strict regulatory and safety protocols (especially in nuclear) may slow the pace of autonomous implementation."
+  },
+  {
+    "slug": "preschool-and-childcare-center-directors",
+    "title": "Preschool and childcare center directors",
+    "advantage": 6,
+    "rationale": "Directors can significantly amplify their productivity by using AI to automate administrative burdens such as budgeting, staff scheduling, and drafting parent communications. AI tools also assist in curriculum development and ensuring compliance with complex state regulations, though the core of the role remains deeply rooted in physical presence and interpersonal leadership."
+  },
+  {
+    "slug": "preschool-teachers",
+    "title": "Preschool teachers",
+    "advantage": 4,
+    "rationale": "While the core work is physical and interpersonal, AI can significantly streamline administrative tasks like lesson planning, progress reporting, and parent communication. Adopters can use AI to generate creative activities and personalized learning materials, but the physical supervision and emotional development of children remain entirely human-dependent."
+  },
+  {
+    "slug": "private-detectives-and-investigators",
+    "title": "Private detectives and investigators",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies the 'desk' portion of the job by automating the analysis of massive datasets, social media footprints, and public records that would take humans days to parse. While physical surveillance and interviewing remain manual, AI tools for facial recognition, pattern detection in financial records, and automated report generation create a major competitive gap between high-tech investigators and traditional ones."
+  },
+  {
+    "slug": "probation-officers-and-correctional-treatment-specialists",
+    "title": "Probation officers and correctional treatment specialists",
+    "advantage": 6,
+    "rationale": "AI can significantly streamline the heavy administrative burden of this role, such as drafting case reports, summarizing psychological evaluations, and maintaining detailed client files. Predictive analytics can also assist in risk assessment and identifying optimal rehabilitation resources, though the core work still requires high-stakes human judgment and physical presence for field visits and court testimony."
+  },
+  {
+    "slug": "producers-and-directors",
+    "title": "Producers and directors",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify a producer or director's ability to handle complex tasks like script analysis, automated scheduling, and budget optimization, while generative AI transforms pre-visualization and post-production workflows. Early adopters can produce high-quality content with much smaller crews and lower budgets, creating a massive competitive gap between traditional and AI-augmented creators."
+  },
+  {
+    "slug": "project-management-specialists",
+    "title": "Project management specialists",
+    "advantage": 8,
+    "rationale": "AI tools can automate the most time-consuming aspects of project management, such as drafting project plans, generating status reports, and performing complex risk and budget analysis. Adopters gain a massive edge by using AI to synthesize meeting notes into action items and predict schedule slippage, allowing them to focus on high-level stakeholder management and strategic problem-solving."
+  },
+  {
+    "slug": "appraisers-and-assessors-of-real-estate",
+    "title": "Property appraisers and assessors",
+    "advantage": 7,
+    "rationale": "AI and Automated Valuation Models (AVMs) significantly accelerate the core task of analyzing 'comparables' and processing large datasets of public records. While physical site inspections remain necessary, AI tools can automate report generation, image analysis for property condition, and mass appraisal calculations, creating a major productivity gap between tech-enabled and traditional workers."
+  },
+  {
+    "slug": "property-real-estate-and-community-association-managers",
+    "title": "Property, real estate, and community association managers",
+    "advantage": 7,
+    "rationale": "AI significantly enhances the knowledge-work components of this role, such as drafting leases, automating financial reporting, and using predictive analytics for maintenance and market pricing. While physical inspections and interpersonal conflict resolution remain human-centric, AI tools for tenant screening, automated communication, and budget optimization create a substantial productivity gap between tech-enabled managers and traditional ones."
+  },
+  {
+    "slug": "psychiatric-technicians-and-aides",
+    "title": "Psychiatric technicians and aides",
+    "advantage": 4,
+    "rationale": "While the core work is physical and interpersonal, AI can significantly streamline administrative tasks like recording patient behavior, reporting health changes, and managing intake/discharge documentation. Adopters can use AI-driven monitoring tools and predictive analytics to better anticipate patient crises, though the physical nature of restraining and assisting patients remains unaffected."
+  },
+  {
+    "slug": "psychologists",
+    "title": "Psychologists",
+    "advantage": 7,
+    "rationale": "Psychologists can significantly amplify their productivity by using AI for clinical documentation, research synthesis, and analyzing complex data patterns in behavioral testing. While the core therapeutic relationship and ethical judgment remain human-centric, AI tools create a major competitive gap by automating administrative burdens and providing advanced diagnostic support."
+  },
+  {
+    "slug": "public-relations-managers",
+    "title": "Public relations and fundraising managers",
+    "advantage": 8,
+    "rationale": "These roles are heavily centered on content creation, strategic communication, and data-driven audience targeting, all of which are significantly enhanced by AI. AI tools can rapidly draft press releases, analyze social media trends for reputation management, and personalize donor outreach at scale, creating a massive productivity gap between adopters and traditional managers."
+  },
+  {
+    "slug": "public-relations-specialists",
+    "title": "Public relations specialists",
+    "advantage": 9,
+    "rationale": "Public relations is almost entirely digital and text-based, allowing AI to automate core tasks like drafting press releases, speeches, and social media content. AI tools also provide a massive competitive edge in monitoring public sentiment and analyzing vast amounts of social media data in real-time, which are critical components of modern reputation management."
+  },
+  {
+    "slug": "police-fire-and-ambulance-dispatchers",
+    "title": "Public safety telecommunicators",
+    "advantage": 7,
+    "rationale": "AI tools can significantly amplify productivity by providing real-time transcription, automated language translation, and instant protocol suggestions, which reduces the cognitive load during high-stress calls. Adopters can use AI to synthesize complex location data and background records faster than manual entry, creating a major performance gap in response times and accuracy compared to non-adopters. While the human element of empathy and critical decision-making remains essential, AI acts as a powerful co-pilot for the data-heavy aspects of dispatching."
+  },
+  {
+    "slug": "purchasing-managers-buyers-and-purchasing-agents",
+    "title": "Purchasing managers, buyers, and purchasing agents",
+    "advantage": 8,
+    "rationale": "AI significantly enhances core procurement tasks by automating data-heavy processes like price analysis, inventory forecasting, and contract review. Adopters can use AI to identify market trends and supplier risks much faster than manual methods, though human judgment remains essential for high-stakes negotiations and relationship management."
+  },
+  {
+    "slug": "quality-control-inspectors",
+    "title": "Quality control inspectors",
+    "advantage": 6,
+    "rationale": "AI-powered computer vision and machine learning can significantly automate the visual inspection of defects and the analysis of complex sensor data, creating a major productivity gap between manual inspectors and those using AI tools. While the role still requires physical presence and manual handling of materials, AI dramatically accelerates the data reporting, blueprint interpretation, and root-cause analysis phases of the job."
+  },
+  {
+    "slug": "radiation-therapists",
+    "title": "Radiation therapists",
+    "advantage": 5,
+    "rationale": "Radiation therapists benefit from AI in the technical aspects of their role, such as tumor localization, automated treatment planning, and precision calibration of linear accelerators. However, the core of the job remains a mix of physical patient positioning and high-touch interpersonal care, which limits the overall amplification AI can provide to the worker's total daily output."
+  },
+  {
+    "slug": "radiologic-technologists",
+    "title": "Radiologic and MRI technologists",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the technical aspects of this role through automated image reconstruction, noise reduction, and preliminary scan quality assessment, which speeds up the core work product. However, the role remains anchored by physical tasks such as patient positioning, shielding, and equipment maintenance that AI cannot perform. Adopters benefit from higher throughput and better image quality, but the manual nature of clinical patient care limits the total potential for AI-driven transformation."
+  },
+  {
+    "slug": "railroad-occupations",
+    "title": "Railroad workers",
+    "advantage": 3,
+    "rationale": "While AI and automation are significantly impacting the rail industry through autonomous driving and predictive maintenance, the individual worker's ability to use AI as a personal productivity tool is limited by strict safety regulations and the physical nature of the work. AI primarily assists with background monitoring and scheduling, but the core tasks\u2014operating heavy machinery, manual inspections, and passenger safety\u2014remain hands-on and highly regulated."
+  },
+  {
+    "slug": "real-estate-brokers-and-sales-agents",
+    "title": "Real estate brokers and sales agents",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating property descriptions, generating marketing content, and analyzing market data for competitive pricing. While the core value remains in human-centric negotiation and physical property showings, early adopters gain a massive edge in lead generation, client communication, and administrative efficiency."
+  },
+  {
+    "slug": "receptionists",
+    "title": "Receptionists",
+    "advantage": 7,
+    "rationale": "AI tools can significantly automate core tasks like scheduling, answering routine inquiries via chatbots, and transcribing messages, allowing receptionists to focus on high-touch interpersonal interactions. Adopters can handle much higher volumes of correspondence and data entry with greater accuracy, creating a clear performance gap over those relying on manual methods."
+  },
+  {
+    "slug": "recreation-workers",
+    "title": "Recreation workers",
+    "advantage": 4,
+    "rationale": "AI can significantly streamline administrative tasks like scheduling, program planning, and creating promotional newsletters, which are common secondary duties. However, the core of the role is physical, interpersonal, and safety-oriented, requiring a human presence to lead activities and respond to emergencies in real-time."
+  },
+  {
+    "slug": "recreational-therapists",
+    "title": "Recreational therapists",
+    "advantage": 5,
+    "rationale": "AI can significantly streamline the administrative and planning aspects of the role, such as generating personalized treatment plans, documenting patient progress, and analyzing medical records for assessment. However, the core of the work is highly physical and interpersonal, requiring human empathy, leadership, and hands-on assistance during activities that AI cannot replicate."
+  },
+  {
+    "slug": "registered-nurses",
+    "title": "Registered nurses",
+    "advantage": 5,
+    "rationale": "Registered nursing is a hybrid of physical labor and knowledge work; AI significantly amplifies the 'desk' portions by automating clinical documentation, patient monitoring alerts, and care plan development. While AI cannot perform physical tasks like administering medicine or lifting patients, adopters gain a massive edge through improved diagnostic accuracy and reduced administrative burnout, allowing more time for direct patient interaction."
+  },
+  {
+    "slug": "rehabilitation-counselors",
+    "title": "Rehabilitation counselors",
+    "advantage": 6,
+    "rationale": "AI significantly enhances productivity by automating administrative burdens like clinical documentation, case notes, and the drafting of personalized rehabilitation plans. While the core counseling and advocacy require human empathy and interpersonal skills, AI tools can rapidly analyze client data to suggest vocational resources, assistive technologies, and career training paths, creating a clear efficiency gap between adopters and non-adopters."
+  },
+  {
+    "slug": "respiratory-therapists",
+    "title": "Respiratory therapists",
+    "advantage": 4,
+    "rationale": "The core of the work is physical and clinical, involving manual procedures like chest physiotherapy and the hands-on operation of ventilators. AI provides moderate advantages by assisting with diagnostic data analysis, optimizing ventilator settings through predictive modeling, and streamlining the documentation of patient progress."
+  },
+  {
+    "slug": "retail-sales-workers",
+    "title": "Retail sales workers",
+    "advantage": 4,
+    "rationale": "AI tools can significantly assist with the knowledge-based aspects of the role, such as instantly providing technical product specifications, generating personalized sales pitches, and managing inventory data. However, the core of the job remains physical and interpersonal, requiring manual tasks like stocking shelves and face-to-face customer interaction that AI cannot yet replicate."
+  },
+  {
+    "slug": "roofers",
+    "title": "Roofers",
+    "advantage": 1,
+    "rationale": "Roofing is a highly physical, manual occupation performed in outdoor environments where AI cannot assist with core tasks like climbing, lifting, or installing materials. While AI might marginally assist with administrative duties like material estimation or scheduling, it has virtually no impact on the primary labor that defines the profession."
+  },
+  {
+    "slug": "sales-engineers",
+    "title": "Sales engineers",
+    "advantage": 8,
+    "rationale": "Sales engineers can use AI to automate technical documentation, generate custom code demos, and synthesize complex product requirements into tailored presentations. AI tools significantly amplify their ability to handle more accounts by streamlining the 'discovery' and 'proposal' phases, creating a massive performance gap between those who use AI for technical research and those who rely on manual preparation."
+  },
+  {
+    "slug": "sales-managers",
+    "title": "Sales managers",
+    "advantage": 8,
+    "rationale": "Sales managers can use AI to automate complex data analysis, sales forecasting, and lead scoring, which are core components of their strategic work. AI tools also significantly enhance their ability to personalize training programs for staff and draft high-stakes communications, creating a major performance gap between tech-enabled managers and traditional ones."
+  },
+  {
+    "slug": "school-and-career-counselors",
+    "title": "School and career counselors and advisors",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating time-consuming tasks like analyzing student performance data, drafting personalized resumes, and researching college/career requirements. While the core human elements of empathy and crisis intervention remain manual, adopters can use AI to create highly customized career roadmaps and intervention strategies at a scale and speed impossible for non-adopters."
+  },
+  {
+    "slug": "secretaries-and-administrative-assistants",
+    "title": "Secretaries and administrative assistants",
+    "advantage": 9,
+    "rationale": "The core duties of this role\u2014scheduling, drafting correspondence, managing databases, and transcribing\u2014align perfectly with current AI capabilities like LLMs and autonomous agents. Adopters can automate the majority of their routine clerical workload, allowing them to support significantly more staff or pivot to high-level executive project management, creating a massive productivity gap over traditional workers."
+  },
+  {
+    "slug": "securities-commodities-and-financial-services-sales-agents",
+    "title": "Securities, commodities, and financial services sales agents",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify productivity by automating complex financial modeling, market monitoring, and the synthesis of vast amounts of data for investment recommendations. Adopters gain a massive competitive edge through AI-driven lead generation and personalized client communication, though the 'human element' of high-stakes negotiation and relationship management remains a critical but assisted component."
+  },
+  {
+    "slug": "security-guards",
+    "title": "Security guards and gambling surveillance officers",
+    "advantage": 6,
+    "rationale": "AI-powered computer vision and anomaly detection significantly amplify the capabilities of surveillance officers by monitoring hundreds of feeds simultaneously and flagging suspicious behavior in real-time. While physical patrolling remains a manual task, adopters who use AI for automated reporting and threat detection can manage much larger areas with higher accuracy than non-adopters. This creates a clear productivity gap, particularly in gambling and high-security environments where digital monitoring is the core work."
+  },
+  {
+    "slug": "semiconductor-processing-technicians",
+    "title": "Semiconductor processing technicians",
+    "advantage": 5,
+    "rationale": "While the core work is physical and performed in a cleanroom, AI significantly enhances the technician's role in quality control, predictive maintenance, and process optimization. Technicians who use AI-driven diagnostic tools to analyze process data and identify microscopic defects can achieve much higher yields and efficiency than those relying on manual inspection and traditional troubleshooting."
+  },
+  {
+    "slug": "set-and-exhibit-designers",
+    "title": "Set and exhibit designers",
+    "advantage": 8,
+    "rationale": "AI tools significantly amplify productivity by automating script analysis, generating rapid visual concept iterations, and streamlining CAD/3D modeling workflows. Adopters can move from a narrative concept to a high-fidelity 3D visualization much faster than traditional methods, creating a massive competitive gap in a field where 64% of workers are self-employed freelancers."
+  },
+  {
+    "slug": "sheet-metal-workers",
+    "title": "Sheet metal workers",
+    "advantage": 3,
+    "rationale": "The core of the work is physical installation and manual fabrication, which AI cannot perform. However, AI can assist in the 'desk' portions of the job, such as optimizing material layouts (nesting), interpreting complex blueprints, and performing the geometric calculations required for precise ductwork and fittings."
+  },
+  {
+    "slug": "skincare-specialists",
+    "title": "Skincare specialists",
+    "advantage": 4,
+    "rationale": "While the core work is physical and requires manual dexterity for treatments, AI significantly enhances the diagnostic and business aspects of the role. Adopters can use AI-driven skin analysis tools to provide more precise product recommendations and personalized routines, while also leveraging AI for marketing and appointment management to gain a competitive edge over traditional practitioners."
+  },
+  {
+    "slug": "small-engine-mechanics",
+    "title": "Small engine mechanics",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, requiring manual dexterity and the use of hand tools to repair mechanical components. AI provides a minor advantage by assisting with complex diagnostic troubleshooting, interpreting technical manuals, and automating administrative tasks like record-keeping and customer communication."
+  },
+  {
+    "slug": "social-and-community-service-managers",
+    "title": "Social and community service managers",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity in this role by automating data analysis for program effectiveness, drafting complex grant proposals, and streamlining administrative reporting. While the core human-centric tasks of community engagement and staff supervision require emotional intelligence, AI tools create a major competitive gap by freeing managers from heavy documentation and logistical burdens."
+  },
+  {
+    "slug": "social-and-human-service-assistants",
+    "title": "Social and human service assistants",
+    "advantage": 6,
+    "rationale": "AI can significantly streamline the heavy administrative burden of this role, such as researching complex eligibility requirements for government programs, drafting case notes, and assisting clients with complicated paperwork. While the core interpersonal and emotional support tasks remain human-centric, AI tools allow assistants to manage larger caseloads more effectively by automating the 'information brokerage' and coordination aspects of the job."
+  },
+  {
+    "slug": "social-workers",
+    "title": "Social workers",
+    "advantage": 6,
+    "rationale": "AI can significantly reduce the heavy administrative burden of case documentation, record-keeping, and resource research, which are major sources of stress and burnout in this field. While the core human-centric tasks of empathy and crisis intervention cannot be automated, AI tools for clinical transcription and treatment planning create a substantial productivity gap between adopters and non-adopters."
+  },
+  {
+    "slug": "sociologists",
+    "title": "Sociologists",
+    "advantage": 8,
+    "rationale": "Sociologists can use AI to dramatically accelerate the analysis of massive qualitative and quantitative datasets, including sentiment analysis of social media and automated coding of interview transcripts. AI tools also serve as powerful research assistants for literature reviews, drafting reports, and simulating social models, creating a significant productivity gap between traditional researchers and AI-augmented adopters."
+  },
+  {
+    "slug": "software-developers",
+    "title": "Software developers, quality assurance analysts, and testers",
+    "advantage": 9,
+    "rationale": "AI tools like LLM-based coding assistants and automated testing frameworks directly transform the core work product, enabling developers to generate boilerplate, debug, and refactor code at unprecedented speeds. The gap between adopters and non-adopters is massive, as AI can handle repetitive syntax tasks and complex test case generation, allowing workers to focus on high-level system architecture and user needs."
+  },
+  {
+    "slug": "solar-photovoltaic-installers",
+    "title": "Solar photovoltaic installers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical, involving manual labor, climbing, and tool use that AI cannot perform. However, AI tools can significantly assist with the 'desk' portions of the job, such as optimizing PV system configurations, automating site measurements via computer vision, and streamlining troubleshooting through diagnostic AI, creating a moderate efficiency gap for tech-forward installers."
+  },
+  {
+    "slug": "special-education-teachers",
+    "title": "Special education teachers",
+    "advantage": 7,
+    "rationale": "AI significantly streamlines the heavy administrative burden of drafting and updating Individualized Education Programs (IEPs) and adapting general curriculum materials for diverse learning needs. While the core work requires high-touch interpersonal skills and physical presence, AI tools allow teachers to spend more time on direct student instruction by automating data tracking and lesson differentiation."
+  },
+  {
+    "slug": "multimedia-artists-and-animators",
+    "title": "Special effects artists and animators",
+    "advantage": 9,
+    "rationale": "Generative AI and neural rendering tools are revolutionizing the core workflow of animators by automating labor-intensive tasks like rotoscoping, in-betweening, and texture generation. Adopters can produce high-fidelity visual assets and complex simulations significantly faster than traditional methods, creating a massive productivity gap between AI-augmented artists and those using legacy manual pipelines."
+  },
+  {
+    "slug": "speech-language-pathologists",
+    "title": "Speech-language pathologists",
+    "advantage": 6,
+    "rationale": "AI significantly enhances productivity by automating the heavy administrative burden of clinical documentation, report writing, and individualized treatment planning. Furthermore, AI-driven speech analysis tools and personalized therapy apps allow practitioners to provide more precise diagnostics and data-driven progress tracking, though the core physical and emotional aspects of therapy remain human-centric."
+  },
+  {
+    "slug": "stationary-engineers-and-boiler-operators",
+    "title": "Stationary engineers and boiler operators",
+    "advantage": 4,
+    "rationale": "While the core work is physical and involves manual repairs, AI significantly enhances the monitoring and diagnostic aspects of the role through predictive maintenance and automated system optimization. Adopters can use AI-driven analytics to preempt equipment failure and optimize fuel efficiency, though they must still perform the physical labor of overhauling and maintaining the machinery."
+  },
+  {
+    "slug": "substance-abuse-behavioral-disorder-and-mental-health-counselors",
+    "title": "Substance abuse, behavioral disorder, and mental health counselors",
+    "advantage": 6,
+    "rationale": "AI significantly amplifies productivity by automating time-consuming administrative tasks like clinical documentation, progress notes, and treatment planning, which are major sources of burnout. While the core therapeutic relationship requires human empathy and intuition, AI tools can provide data-driven insights for behavioral patterns and assist in monitoring client progress between sessions. Adopters can manage larger caseloads more effectively while maintaining a higher quality of personalized care through these digital assistants."
+  },
+  {
+    "slug": "surgical-technologists",
+    "title": "Surgical assistants and technologists",
+    "advantage": 3,
+    "rationale": "The core duties are highly physical and manual, involving the handling of sterile instruments, patient positioning, and direct surgical assistance. While AI can assist with administrative tasks, inventory tracking, or the setup of robotic surgical equipment, it cannot replace the real-time physical dexterity and sterile environment management required in the operating room."
+  },
+  {
+    "slug": "survey-researchers",
+    "title": "Survey researchers",
+    "advantage": 9,
+    "rationale": "AI tools can automate the entire lifecycle of survey research, from generating complex survey instruments and simulating pilot tests to performing advanced statistical analysis and drafting comprehensive reports. Adopters can leverage LLMs to synthesize qualitative focus group data and use AI-driven predictive modeling to solve sampling issues, creating a massive productivity gap over those using traditional manual methods."
+  },
+  {
+    "slug": "surveying-and-mapping-technicians",
+    "title": "Surveying and mapping technicians",
+    "advantage": 6,
+    "rationale": "AI significantly enhances the digital aspects of this role, such as automating feature extraction from satellite imagery, processing drone-captured data, and streamlining CAD/GIS workflows. While the physical fieldwork and equipment operation remain manual, AI tools create a major competitive gap by allowing adopters to process complex spatial data and generate accurate maps much faster than traditional methods."
+  },
+  {
+    "slug": "surveyors",
+    "title": "Surveyors",
+    "advantage": 6,
+    "rationale": "Surveyors benefit significantly from AI through the automation of complex data processing, such as interpreting LiDAR scans, drone imagery, and GIS datasets. While the physical fieldwork remains a core requirement, AI-driven software dramatically accelerates the office-based tasks of reconciling historical records, identifying boundary discrepancies, and generating precise CAD models."
+  },
+  {
+    "slug": "tax-examiners-and-collectors-and-revenue-agents",
+    "title": "Tax examiners and collectors, and revenue agents",
+    "advantage": 8,
+    "rationale": "This occupation is highly digital and rule-based, making it ideal for AI integration; tools can automate the cross-referencing of financial data, identify audit triggers, and draft taxpayer communications. AI creates a massive productivity gap by allowing agents to process complex corporate returns and investigate discrepancies significantly faster than manual review, which is reflected in the projected decline in total employment as technology handles more of the workload."
+  },
+  {
+    "slug": "taxi-drivers-and-chauffeurs",
+    "title": "Taxi drivers, shuttle drivers, and chauffeurs",
+    "advantage": 3,
+    "rationale": "While AI-driven GPS and ride-hailing algorithms are essential for routing and finding passengers, the core work remains physical driving and manual passenger assistance. AI tools primarily assist with administrative and navigational tasks rather than the physical operation of the vehicle or the handling of luggage."
+  },
+  {
+    "slug": "teacher-assistants",
+    "title": "Teacher assistants",
+    "advantage": 5,
+    "rationale": "AI tools can significantly streamline administrative tasks like recordkeeping, grading, and lesson preparation, which are core components of the role. While AI can also assist in generating personalized learning materials for students with different needs, the occupation remains heavily reliant on physical supervision, behavioral management, and hands-on care, which AI cannot replicate."
+  },
+  {
+    "slug": "technical-writers",
+    "title": "Technical writers",
+    "advantage": 9,
+    "rationale": "Technical writing is almost entirely digital and involves synthesizing complex information into structured documentation, a task where LLMs excel at drafting, summarizing, and formatting. AI tools act as a force multiplier by automating the conversion of technical jargon into user-friendly language and maintaining consistency across large document sets, creating a massive productivity gap between AI-enabled writers and traditional ones."
+  },
+  {
+    "slug": "telecommunications-equipment-installers-and-repairers-except-line-installers",
+    "title": "Telecommunications technicians",
+    "advantage": 4,
+    "rationale": "While the core work is physical\u2014climbing towers and splicing cables\u2014AI significantly enhances the diagnostic and administrative aspects of the role. Technicians can use AI-powered computer vision for equipment inspections and predictive maintenance tools to identify network failures before they occur, creating a clear efficiency gap between tech-enabled workers and traditional ones."
+  },
+  {
+    "slug": "tellers",
+    "title": "Tellers",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify a teller's productivity by automating routine verification, fraud detection, and administrative recording, allowing them to handle a higher volume of transactions with fewer errors. Adopters can leverage AI-driven recommendation engines to transition from simple transaction processors to effective financial service advisors, creating a distinct performance gap over those who only perform manual tasks."
+  },
+  {
+    "slug": "top-executives",
+    "title": "Top executives",
+    "advantage": 7,
+    "rationale": "Top executives can significantly amplify their productivity by using AI to automate data-heavy tasks like analyzing financial statements, market trends, and performance indicators. While core leadership and negotiation require human soft skills, AI serves as a powerful strategic co-pilot for decision support, contract review, and organizational planning, creating a distinct competitive edge for tech-augmented leaders."
+  },
+  {
+    "slug": "tour-and-travel-guides",
+    "title": "Tour and travel guides",
+    "advantage": 5,
+    "rationale": "AI significantly enhances the 'desk' portions of the job, such as researching historical facts, drafting scripts, and optimizing complex travel itineraries. However, the core value of the role remains physical presence, interpersonal engagement, and real-time adaptability, which AI cannot replicate, limiting the overall competitive gap between adopters and non-adopters."
+  },
+  {
+    "slug": "training-and-development-managers",
+    "title": "Training and development managers",
+    "advantage": 8,
+    "rationale": "AI tools dramatically accelerate the core outputs of this role, including curriculum design, content generation, and the creation of personalized learning paths. Managers can use AI to automate training needs assessments and analyze program effectiveness data, allowing them to focus on high-level strategic alignment and leadership. The gap between adopters and non-adopters is significant, as AI enables the rapid production of high-quality, interactive training materials that would otherwise require much larger teams or longer timelines."
+  },
+  {
+    "slug": "training-and-development-specialists",
+    "title": "Training and development specialists",
+    "advantage": 8,
+    "rationale": "AI tools dramatically accelerate the core knowledge-work tasks of this role, such as generating training curricula, drafting manuals, and creating multimedia learning modules from scratch. Adopters can use AI to personalize learning paths and automate administrative assessments, creating a significant productivity gap over those using traditional manual design methods."
+  },
+  {
+    "slug": "transportation-storage-and-distribution-managers",
+    "title": "Transportation, storage, and distribution managers",
+    "advantage": 7,
+    "rationale": "AI tools significantly amplify a manager's ability to handle complex logistics, predictive maintenance, and real-time supply chain disruptions, which are core to the role. Adopters can use AI for advanced demand forecasting, automated staff scheduling, and regulatory compliance monitoring, creating a substantial efficiency gap over those relying on manual oversight. While the role requires physical presence and interpersonal leadership, the 'knowledge work' component of optimizing networks and budgets is highly transformable by AI."
+  },
+  {
+    "slug": "travel-agents",
+    "title": "Travel agents",
+    "advantage": 9,
+    "rationale": "Travel agents operate in a purely digital information environment where AI can instantly synthesize vast amounts of data regarding fares, itineraries, and local customs into personalized travel plans. AI tools allow agents to automate the tedious aspects of booking and cost calculation, enabling them to focus on high-value curation and complex problem-solving, which creates a massive productivity gap between AI-enabled agents and those using traditional manual search methods."
+  },
+  {
+    "slug": "tutors",
+    "title": "Tutors",
+    "advantage": 8,
+    "rationale": "AI tools dramatically amplify a tutor's productivity by automating lesson planning, generating custom practice problems, and providing instant explanations for complex subjects. Adopters can offer highly personalized, 24/7 support and handle a larger volume of students with higher-quality materials, creating a significant competitive gap over those relying on manual preparation."
+  },
+  {
+    "slug": "umpires-referees-and-other-sports-officials",
+    "title": "Umpires, referees, and other sports officials",
+    "advantage": 3,
+    "rationale": "While AI and computer vision are increasingly used for automated officiating (like ball-tracking or VAR), the core work remains a physical, on-site presence requiring human management of player behavior and split-second field judgment. AI tools primarily serve as high-level aids for review or training rather than daily productivity boosters for the average official working at the youth or high school level."
+  },
+  {
+    "slug": "urban-and-regional-planners",
+    "title": "Urban and regional planners",
+    "advantage": 7,
+    "rationale": "Urban planners can significantly amplify their productivity by using AI to automate complex data analysis, synthesize zoning laws, and generate draft reports or environmental impact summaries. AI-driven spatial analysis and generative design tools allow adopters to visualize urban scenarios and process community feedback much faster than traditional methods, though the core requirement for stakeholder negotiation and political decision-making remains a human-centric bottleneck."
+  },
+  {
+    "slug": "veterinarians",
+    "title": "Veterinarians",
+    "advantage": 5,
+    "rationale": "Veterinarians benefit from AI in diagnostic imaging (X-ray/ultrasound analysis), automated medical charting, and research synthesis, which significantly speeds up the 'desk' portion of the job. However, the core of the role involves physical surgery, manual examinations, and complex emotional communication with pet owners, which AI cannot replicate or automate."
+  },
+  {
+    "slug": "veterinary-assistants-and-laboratory-animal-caretakers",
+    "title": "Veterinary assistants and laboratory animal caretakers",
+    "advantage": 3,
+    "rationale": "The core duties of this role are heavily physical and manual, involving animal restraint, cleaning, and surgical assistance, which AI cannot perform. While AI can streamline administrative tasks like scheduling, inventory management, and recording observations, it does not fundamentally transform the primary hands-on labor that defines the occupation."
+  },
+  {
+    "slug": "veterinary-technologists-and-technicians",
+    "title": "Veterinary technologists and technicians",
+    "advantage": 4,
+    "rationale": "The core of this role involves physical tasks like animal restraint, surgery preparation, and manual laboratory work that AI cannot perform. However, AI tools can significantly enhance productivity in administrative and diagnostic areas, such as automating case history documentation, assisting in the interpretation of X-rays and lab results, and providing personalized nutrition or behavioral counseling for pet owners."
+  },
+  {
+    "slug": "waiters-and-waitresses",
+    "title": "Waiters and waitresses",
+    "advantage": 2,
+    "rationale": "The core of the work is physical and interpersonal, involving manual tasks like carrying trays and clearing tables that AI cannot perform. While AI can assist with administrative tasks like menu memorization or order management, these tools are often implemented at the establishment level rather than by individual workers to gain a personal competitive edge."
+  },
+  {
+    "slug": "water-and-wastewater-treatment-plant-and-system-operators",
+    "title": "Water and wastewater treatment plant and system operators",
+    "advantage": 5,
+    "rationale": "AI can significantly enhance the 'desk' portions of this role by optimizing chemical dosing, predicting equipment failures through sensor data, and automating regulatory reporting. However, the core work remains a mix of physical inspections, manual sampling, and emergency mechanical repairs that AI cannot perform, limiting the total advantage for the individual worker."
+  },
+  {
+    "slug": "water-transportation-occupations",
+    "title": "Water transportation workers",
+    "advantage": 3,
+    "rationale": "The core work is heavily physical and manual, involving vessel maintenance, cargo handling, and mechanical repair where AI has limited direct application. However, AI tools can significantly assist captains and mates with navigation, fuel optimization, and regulatory logging, creating a moderate productivity gap for those who adopt advanced maritime decision-support systems."
+  },
+  {
+    "slug": "web-developers",
+    "title": "Web developers and digital designers",
+    "advantage": 9,
+    "rationale": "AI tools like GitHub Copilot and generative design software directly automate the core tasks of writing code, debugging, and creating visual mockups. Adopters can build complex websites and interfaces significantly faster than non-adopters, shifting their focus from manual syntax and layout execution to high-level architecture and user experience strategy."
+  },
+  {
+    "slug": "welders-cutters-solderers-and-brazers",
+    "title": "Welders, cutters, solderers, and brazers",
+    "advantage": 3,
+    "rationale": "The core work is highly physical and requires manual dexterity and presence in hazardous environments, which AI cannot directly perform. However, AI tools can significantly assist with secondary tasks like interpreting complex blueprints, optimizing material calculations, and predictive maintenance of welding equipment, creating a moderate efficiency gap between tech-savvy adopters and traditional workers."
+  },
+  {
+    "slug": "wholesale-and-manufacturing-sales-representatives",
+    "title": "Wholesale and manufacturing sales representatives",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity by automating lead generation, personalizing outreach at scale, and analyzing sales statistics to optimize strategy. While the core of the role relies on human-to-human negotiation and relationship building, adopters can use AI to handle administrative burdens and technical research, allowing them to manage a much larger and more profitable territory than non-adopters."
+  },
+  {
+    "slug": "wind-turbine-technicians",
+    "title": "Wind turbine technicians",
+    "advantage": 3,
+    "rationale": "The core of this role is highly physical, involving climbing towers, manual repairs, and mechanical troubleshooting in confined spaces where AI cannot intervene. While AI tools can assist with predictive maintenance alerts, diagnostic data analysis, and streamlining safety documentation, they do not replace the primary manual labor and physical dexterity required for the job."
+  },
+  {
+    "slug": "woodworkers",
+    "title": "Woodworkers",
+    "advantage": 4,
+    "rationale": "While the core work is physical, AI significantly enhances the 'desk' portions of the job, such as generating complex CNC toolpaths, optimizing material yields to reduce waste, and interpreting architectural blueprints. Adopters can use AI-driven design software to create custom furniture faster and more accurately, though the physical assembly and finishing remain manual tasks."
+  },
+  {
+    "slug": "writers-and-authors",
+    "title": "Writers and authors",
+    "advantage": 9,
+    "rationale": "AI tools act as a powerful co-pilot for every stage of the writing process, from brainstorming and research to drafting, editing, and SEO optimization. Adopters can produce high-quality content significantly faster than non-adopters, allowing them to handle a much higher volume of work or focus exclusively on high-level creative strategy and voice."
+  },
+  {
+    "slug": "zoologists-and-wildlife-biologists",
+    "title": "Zoologists and wildlife biologists",
+    "advantage": 7,
+    "rationale": "AI significantly amplifies productivity in this field by automating the analysis of massive datasets, such as identifying species in camera trap footage, processing acoustic monitoring data, and modeling complex ecosystem changes. While fieldwork remains physical and manual, the 'knowledge work' phase\u2014writing reports, analyzing GIS data, and predicting population trends\u2014is transformed by AI, creating a major efficiency gap between traditional researchers and those using AI-driven analytics."
+  }
+]
