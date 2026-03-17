@@ -1,0 +1,11 @@
+Seção	Conteúdo
+Nome do Projeto	Mapa de IA e Emprego no Brasil
+Subtítulo	Visualizador prescritivo do impacto da IA no mercado de trabalho brasileiro
+Problema	Trabalhadores brasileiros não têm visibilidade sobre como a IA afeta suas ocupações, nem orientação prática sobre o que fazer a respeito. Dados existem (CAGED, RAIS, CBO) mas não estão acessíveis de forma visual e acionável.
+Usuários-Alvo	1) Trabalhadores brasileiros preocupados com automação. 2) Profissionais de RH e requalificação. 3) Formuladores de políticas públicas. 4) Jornalistas e pesquisadores.
+Diferenciadores vs Versão US	1) Prescritivo — não apenas mostra risco, mas sugere ações concretas (cursos, transições, projeção salarial). 2) Regional — dados por estado/região. 3) Economia informal — inclui métricas de informalidade. 4) Múltiplas visualizações além do treemap. 5) Dados CAGED/CBO em vez de BLS/SOC.
+Métricas de Sucesso	1) Usuários conseguem identificar risco da sua ocupação em <30s. 2) Cada ocupação tem ≥3 transições sugeridas. 3) Cobertura ≥80% das ocupações CBO com scores. 4) Tempo de carregamento <3s.
+Não-Objetivos	1) Não é plataforma de emprego (não lista vagas). 2) Não substitui orientação profissional humana. 3) Não cobre outros países além do Brasil nesta fase.
+Questões em Aberto	1) Qual nível de granularidade CBO usar (4 dígitos vs 6 dígitos)? 2) Como validar scores LLM para ocupações brasileiras? 3) Parceria com SENAI/SENAC para cursos recomendados? 4) Como tratar ocupações informais sem código CBO?
+Log de Decisões	(registrar decisões aqui com data e contexto)
+Referências	Versão US: aeonixtech.github.io | CAGED: https://portalfat.mte.gov.br | CBO: https://cbo.mte.gov.br

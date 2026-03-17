@@ -1,0 +1,30 @@
+Seção	Campo US	Campo Brasil	Fonte Brasil	Lacunas / Notas
+A) Mapeamento US→Brasil	title	titulo_ocupacao	CBO (Classificação Brasileira de Ocupações)	CBO usa códigos de 4-6 dígitos vs SOC do BLS
+A) Mapeamento US→Brasil	pay (median annual)	salario_mediano	CAGED / RAIS	CAGED tem salário de admissão; RAIS tem estoque. Usar ambos.
+A) Mapeamento US→Brasil	jobs (employment)	estoque_empregados	RAIS (estoque anual)	RAIS é anual com defasagem ~18 meses. CAGED tem fluxo mensal.
+A) Mapeamento US→Brasil	outlook (projected growth)	projecao_crescimento	CAGED tendência + IPEA projeções	Brasil não tem equivalente direto do OOH projections. Calcular via tendência CAGED.
+A) Mapeamento US→Brasil	education (typical entry)	escolaridade_tipica	CBO + PNAD Contínua	CBO descreve requisitos; PNAD tem escolaridade real dos ocupados.
+A) Mapeamento US→Brasil	exposure (AI exposure)	exposicao_ia	LLM scoring (adaptar prompts)	Precisa recalibrar para contexto brasileiro.
+A) Mapeamento US→Brasil	advantage (AI advantage)	vantagem_ia	LLM scoring (adaptar prompts)	Adaptar exemplos de vantagem para realidade BR.
+A) Mapeamento US→Brasil	growth	crescimento	CAGED saldo mensal	Saldo = admissões - desligamentos por ocupação.
+A) Mapeamento US→Brasil	opportunity	oportunidade	Score composto (vantagem + crescimento + salário)	Definir fórmula de composição.
+
+Seção	Campo Novo	Tipo	Descrição	Fonte
+B) Campos Exclusivos Brasil	regiao	string	Estado ou região do Brasil (UF)	CAGED / RAIS
+B) Campos Exclusivos Brasil	salario_com_ia	float	Projeção salarial se adquirir habilidades de IA	LLM scoring + dados salariais
+B) Campos Exclusivos Brasil	informalidade_pct	float	Percentual de trabalhadores informais na ocupação	PNAD Contínua
+B) Campos Exclusivos Brasil	habilidades_chave	list[str]	Top 5 habilidades da ocupação	CBO descrições + LLM
+B) Campos Exclusivos Brasil	habilidades_ia	list[str]	Habilidades de IA relevantes para a ocupação	LLM scoring
+B) Campos Exclusivos Brasil	transicoes_sugeridas	list[str]	3-5 ocupações de destino recomendadas	LLM + similaridade de habilidades
+B) Campos Exclusivos Brasil	cursos_recomendados	list[str]	Cursos gratuitos/acessíveis sugeridos	SENAI, Coursera, Gov.br
+B) Campos Exclusivos Brasil	setor_economico	string	Setor CNAE predominante	RAIS / CAGED
+B) Campos Exclusivos Brasil	risco_automacao	int (0-10)	Score de risco de automação por IA	LLM scoring
+B) Campos Exclusivos Brasil	facilidade_transicao	int (0-10)	Facilidade de transição para ocupação de destino	LLM scoring
+
+Seção	Fonte	URL	O que Fornece	Método de Acesso	Frequência de Atualização
+C) Registro de Fontes	CAGED (Novo CAGED)	https://portalfat.mte.gov.br	Admissões, desligamentos, salários por CBO, município, CNAE	Microdados via FTP ou API BI	Mensal
+C) Registro de Fontes	RAIS	https://bi.mte.gov.br/bgcaged/	Estoque de empregados, salários, escolaridade, por CBO	Microdados anuais via FTP	Anual (defasagem ~18 meses)
+C) Registro de Fontes	CBO	https://cbo.mte.gov.br	Descrição de ocupações, atividades, formação requerida	Site + download de tabelas	Atualização irregular
+C) Registro de Fontes	PNAD Contínua	https://www.ibge.gov.br/estatisticas/sociais/trabalho/	Informalidade, escolaridade real, rendimentos por ocupação	Microdados trimestrais IBGE	Trimestral
+C) Registro de Fontes	IPEA	https://www.ipea.gov.br	Projeções de emprego, estudos setoriais, indicadores	API IPEAData + relatórios	Variável
+C) Registro de Fontes	CNAE	https://cnae.ibge.gov.br	Classificação de atividades econômicas (setores)	Tabela de códigos	Estável

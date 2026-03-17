@@ -1,0 +1,17 @@
+Componente	Arquivo US	Reutilizar?	Mudanças para Brasil	Esforço	Responsável	Dependências
+Scraper de Dados	scrape.py	Parcial	Substituir scraping BLS por download CAGED/RAIS via FTP ou API BI do MTE. Adicionar scraper de CBO para descrições de ocupações.	Alto	A definir	Acesso aos microdados CAGED/RAIS
+Parser de Ocupações	parse_occupations.py, parse_detail.py	Parcial	Adaptar parsing para formato CAGED/RAIS (CSV com layout próprio). Mapear códigos CBO para estrutura hierárquica (Grande Grupo → Subgrupo → Família → Ocupação).	Alto	A definir	Scraper de dados
+Tabulador / Gerador de CSV	make_csv.py	Parcial	Gerar CSV com campos do modelo Brasil (titulo_ocupacao, salario_mediano, estoque, regiao, etc). Adicionar campos novos (informalidade, setor_economico).	Médio	A definir	Parser de ocupações
+Gerador de Prompts	make_prompt.py, prompt.md	Sim, adaptar	Traduzir prompts para português. Adaptar para descrições CBO. Adicionar prompts novos para risco_automacao e facilidade_transicao.	Médio	A definir	Tabulador
+LLM Scorer	score.py	Sim, adaptar	Mesma lógica de scoring, mas com prompts BR. Adicionar scoring de 2 novas métricas. Implementar scoring par-a-par para facilidade_transicao.	Médio	A definir	Gerador de prompts
+Processador	process.py	Sim, adaptar	Pipeline orquestrador: scrape → parse → tabulate → score → build. Adicionar etapas para dados regionais e cálculo de transições.	Médio	A definir	Todos os anteriores
+Build Site Data	build_site_data.py	Sim, adaptar	Gerar occupations.json com schema Brasil. Adicionar dados regionais, transições, cursos. Gerar arquivos auxiliares (setores.json, regioes.json).	Médio	A definir	Processador + LLM Scorer
+Treemap View	site/ (treemap existente)	Sim, adaptar	Trocar categorias SOC por Grandes Grupos CBO. Adaptar tooltips, cores, labels para português. Manter mesma lib (D3.js).	Médio	A definir	Build site data
+Scatter Plot View	(novo)	Novo	Criar visualização de dispersão risco x oportunidade com 4 quadrantes. D3.js ou Observable Plot.	Médio	A definir	Build site data
+Painel Pessoal	(novo)	Novo	Dashboard interativo: search de ocupação, cards de risco/oportunidade, transições, cursos, projeção salarial. Componente mais complexo.	Alto	A definir	Build site data + scoring completo
+Sankey Diagram	(novo)	Novo	Diagrama de fluxo ocupações risco → oportunidade. D3-sankey. Requer cálculo de similaridade.	Alto	A definir	Facilidade_transicao scores
+Mapa Regional	(novo)	Novo	Choropleth do Brasil com TopoJSON. Métricas por UF. Drill-down.	Médio	A definir	Dados regionais CAGED
+Waterfall Salarial	(novo)	Novo	Gráfico waterfall com 3 estágios de salário. Relativamente simples com D3.	Baixo	A definir	Simulador salarial
+Radar de Habilidades	(novo)	Novo	Spider chart comparando habilidades de 2 ocupações. Chart.js ou D3.	Baixo	A definir	Habilidades normalizadas
+Barras por Setor	(novo)	Novo	Horizontal bar chart por CNAE. Mais simples das views novas.	Baixo	A definir	Dados agregados por setor
+Site / Deploy	html/, pages/	Sim, adaptar	Novo layout com navegação entre views. Design responsivo. Internacionalização pt-BR. Nova landing page.	Alto	A definir	Todas as views
