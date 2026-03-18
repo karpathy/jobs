@@ -10,31 +10,119 @@
 :root {
   --bg: #0a0a0f;
   --bg2: #12121a;
+  --bg3: #1a1a26;
   --fg: #e0e0e8;
   --fg2: #888894;
+  --accent: #6c8cff;
+  --green: #4caf50;
+  --red: #ef5350;
+  --yellow: #ffc107;
+  --blue: #42a5f5;
+  --radius: 8px;
 }
 
 body {
   background: var(--bg);
   color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
-#wrapper {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 250px;
+/* ── Navigation ─────────────────────────────────────── */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,10,15,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#nav button {
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: var(--fg2);
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+#nav button.active {
+  color: var(--fg);
+  border-bottom-color: var(--accent);
+}
+#nav button:hover:not(.active) { color: var(--fg); }
+
+/* ── Views container ───────────────────────────────── */
+.view { display: none; max-width: 1400px; margin: 0 auto; padding: 20px 24px 80px; }
+.view.active { display: block; }
+
+/* ── Shared components ─────────────────────────────── */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.section-desc {
+  font-size: 14px;
+  color: var(--fg2);
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-#header {
-  padding: 20px 28px 16px;
-  flex-shrink: 0;
+.card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 16px 20px;
 }
 
-.intro {
-  margin-bottom: 18px;
+.metric-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
 }
+.metric-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.metric-card .metric-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg2);
+  margin-bottom: 8px;
+}
+.metric-card .metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.metric-card .metric-sub {
+  font-size: 11px;
+  color: var(--fg2);
+  margin-top: 4px;
+}
+
+/* ── Treemap view (View 1) ─────────────────────────── */
+#view-mapa { padding-bottom: 250px; }
+#treemap-header { padding: 0 0 16px; }
+
+.intro { margin-bottom: 18px; }
 .intro h1 {
   font-size: 26px;
   font-weight: 700;
@@ -45,20 +133,12 @@ body {
   gap: 14px;
   flex-wrap: wrap;
 }
-.intro h1 a {
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--fg2);
-  text-decoration: none;
-}
-.intro h1 a:hover { text-decoration: underline; }
 .intro p {
   font-size: 15px;
   line-height: 1.6;
   color: var(--fg2);
   margin-bottom: 8px;
 }
-.intro a { color: var(--fg2); }
 .intro strong, .intro b { color: var(--fg); font-weight: 600; }
 
 .stats-row {
@@ -68,12 +148,7 @@ body {
   align-items: flex-start;
   margin-bottom: 12px;
 }
-
-.stat-section {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
+.stat-section { display: flex; flex-direction: column; gap: 5px; }
 .stat-section h3 {
   font-size: 11px;
   font-weight: 600;
@@ -87,10 +162,7 @@ body {
   letter-spacing: -0.03em;
   line-height: 1;
 }
-.stat-label {
-  font-size: 11px;
-  color: var(--fg2);
-}
+.stat-label { font-size: 11px; color: var(--fg2); }
 
 .tier-bar { display: flex; flex-direction: column; gap: 3px; }
 .tier-row { display: flex; align-items: center; gap: 6px; font-size: 12px; }
@@ -117,12 +189,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: 14px;
 }
-
-.color-toggle {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-}
+.color-toggle { display: flex; gap: 4px; flex-wrap: wrap; }
 .color-toggle button {
   padding: 6px 14px;
   font-size: 12px;
@@ -139,24 +206,14 @@ body {
   color: var(--fg);
   border-color: rgba(255,255,255,0.2);
 }
-.color-toggle button:hover:not(.active) {
-  background: rgba(255,255,255,0.04);
-}
+.color-toggle button:hover:not(.active) { background: rgba(255,255,255,0.04); }
 
-.gradient-legend {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 11px;
-  color: var(--fg2);
-}
+.gradient-legend { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--fg2); }
 .gradient-legend canvas { border-radius: 2px; }
 
-canvas#canvas {
-  display: block;
-  cursor: default;
-}
+canvas#treemapCanvas { display: block; cursor: default; }
 
+/* ── Tooltip (shared) ─────────────────────────────── */
 #tooltip {
   position: fixed;
   pointer-events: none;
@@ -169,7 +226,7 @@ canvas#canvas {
   max-width: 380px;
   opacity: 0;
   transition: opacity 0.12s;
-  z-index: 20;
+  z-index: 200;
   box-shadow: 0 8px 32px rgba(0,0,0,0.6);
 }
 #tooltip.visible { opacity: 1; }
@@ -179,55 +236,466 @@ canvas#canvas {
 #tooltip .tt-stats .label { color: var(--fg2); }
 #tooltip .tt-stats .value { color: var(--fg); text-align: right; }
 #tooltip .tt-rationale { font-size: 11px; color: var(--fg2); margin-top: 8px; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 8px; }
+
+/* ── Scatter Plot (View 2) ─────────────────────────── */
+#scatterContainer { position: relative; }
+canvas#scatterCanvas { display: block; cursor: crosshair; }
+
+/* ── Painel Pessoal (View 3) ───────────────────────── */
+.search-box {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+.search-box input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  color: var(--fg);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-box input:focus { border-color: var(--accent); }
+.search-box input::placeholder { color: var(--fg2); }
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 0 0 var(--radius) var(--radius);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+}
+.search-dropdown.open { display: block; }
+.search-dropdown .search-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.1s;
+}
+.search-dropdown .search-item:hover,
+.search-dropdown .search-item.highlighted { background: rgba(255,255,255,0.06); }
+.search-dropdown .search-item .search-code { color: var(--fg2); font-size: 12px; margin-left: 8px; }
+
+#painelContent { display: none; }
+#painelPlaceholder {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--fg2);
+  font-size: 16px;
+}
+
+.salary-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.salary-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  flex: 1;
+  min-width: 200px;
+}
+.salary-card .sal-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg2); margin-bottom: 6px; }
+.salary-card .sal-value { font-size: 24px; font-weight: 700; }
+
+.risk-assessment {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.risk-assessment .risk-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.risk-assessment .risk-text { font-size: 14px; color: var(--fg2); line-height: 1.6; }
+
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.action-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.action-card .action-icon { font-size: 28px; margin-bottom: 10px; }
+.action-card .action-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.action-card .action-desc { font-size: 13px; color: var(--fg2); line-height: 1.5; margin-bottom: 8px; }
+.action-card .action-suggestion { font-size: 12px; color: var(--accent); font-weight: 500; }
+
+.rationale-box {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.rationale-box h3 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.rationale-box p { font-size: 13px; color: var(--fg2); line-height: 1.6; }
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.comparison-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+}
+.comparison-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+.demo-bars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+}
+@media (max-width: 700px) { .demo-bars { grid-template-columns: 1fr; } }
+
+.demo-bar-section h4 { font-size: 13px; font-weight: 600; margin-bottom: 10px; color: var(--fg2); }
+.demo-bar-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+.demo-bar-item .dbl { width: 80px; text-align: right; color: var(--fg2); font-size: 12px; flex-shrink: 0; }
+.demo-bar-item .dbt { flex: 1; height: 18px; background: rgba(255,255,255,0.04); border-radius: 3px; overflow: hidden; }
+.demo-bar-item .dbf { height: 100%; border-radius: 3px; }
+.demo-bar-item .dbv { width: 50px; font-size: 12px; flex-shrink: 0; }
+
+/* ── Demographics (View 4) ─────────────────────────── */
+.demo-summary {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.demo-stat {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  min-width: 180px;
+}
+.demo-stat .ds-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg2); margin-bottom: 8px; }
+.demo-stat .ds-value { font-size: 28px; font-weight: 700; }
+.demo-stat .ds-sub { font-size: 12px; color: var(--fg2); margin-top: 4px; }
+
+.demo-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+@media (max-width: 700px) { .demo-charts { grid-template-columns: 1fr; } }
+
+.demo-chart-box {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.demo-chart-box h3 { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+
+.demo-hbar { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.demo-hbar .dh-label { width: 100px; font-size: 13px; color: var(--fg2); text-align: right; flex-shrink: 0; }
+.demo-hbar .dh-track { flex: 1; height: 24px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; position: relative; }
+.demo-hbar .dh-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.demo-hbar .dh-val { width: 50px; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+
+.demo-table-section { margin-top: 24px; }
+.demo-table-section h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+
+/* ── Regional Map (View 5) ─────────────────────────── */
+.regional-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.regional-controls button {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--fg2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.regional-controls button.active {
+  background: rgba(255,255,255,0.08);
+  color: var(--fg);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.state-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.state-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-1px); }
+.state-card .sc-abbr { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.state-card .sc-row { display: flex; justify-content: space-between; font-size: 12px; color: var(--fg2); margin-bottom: 4px; }
+.state-card .sc-row .sc-val { color: var(--fg); font-weight: 500; }
+
+.state-detail {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  display: none;
+}
+.state-detail.open { display: block; }
+.state-detail h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.state-detail .sd-close { float: right; background: none; border: none; color: var(--fg2); cursor: pointer; font-size: 18px; }
+
+/* ── Ranking (View 6) ──────────────────────────────── */
+.ranking-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.ranking-controls input {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 14px;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  color: var(--fg);
+  outline: none;
+}
+.ranking-controls input:focus { border-color: var(--accent); }
+.ranking-controls input::placeholder { color: var(--fg2); }
+
+.ranking-table-wrap { overflow-x: auto; }
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 900px;
+}
+.ranking-table th {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg2);
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: color 0.1s;
+}
+.ranking-table th:hover { color: var(--fg); }
+.ranking-table th.sorted { color: var(--accent); }
+.ranking-table th .sort-arrow { margin-left: 4px; font-size: 10px; }
+.ranking-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  white-space: nowrap;
+}
+.ranking-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+.score-cell {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.ranking-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.ranking-pagination button {
+  padding: 6px 14px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--fg2);
+  cursor: pointer;
+}
+.ranking-pagination button.active { background: rgba(255,255,255,0.08); color: var(--fg); border-color: rgba(255,255,255,0.2); }
+.ranking-pagination button:disabled { opacity: 0.3; cursor: default; }
+.ranking-pagination span { font-size: 12px; color: var(--fg2); }
+
+/* ── Responsive ────────────────────────────────────── */
+@media (max-width: 600px) {
+  #nav button { padding: 12px 12px; font-size: 12px; }
+  .view { padding: 16px 12px 60px; }
+  .intro h1 { font-size: 20px; }
+  .stat-big { font-size: 24px; }
+  .metric-cards { grid-template-columns: repeat(2, 1fr); }
+  .action-cards { grid-template-columns: 1fr; }
+  .state-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
 </style>
 </head>
 <body>
 
-<div id="wrapper">
-<div id="header">
-  <div class="intro">
-    <h1>Mapa de IA e Emprego no Brasil</h1>
-    <p>Visualiza&ccedil;&atilde;o de <b>626 ocupa&ccedil;&otilde;es</b> da Classifica&ccedil;&atilde;o Brasileira de Ocupa&ccedil;&otilde;es (CBO), cobrindo cerca de <b>19 milh&otilde;es de empregos formais</b> registrados no RAIS/CAGED. Cada ret&acirc;ngulo tem <b>&aacute;rea</b> proporcional ao total de empregados. A <b>cor</b> indica a m&eacute;trica selecionada &mdash; alterne entre exposi&ccedil;&atilde;o &agrave; IA, vantagem, crescimento, oportunidade, sal&aacute;rio e escolaridade.</p>
-    <p><b>Dados:</b> Estoque de empregos formais (RAIS), movimenta&ccedil;&otilde;es do CAGED (admiss&otilde;es e saldo), sal&aacute;rios medianos e escolaridade modal. As pontua&ccedil;&otilde;es de IA (exposi&ccedil;&atilde;o, vantagem, crescimento e oportunidade) foram estimadas por LLM considerando o contexto brasileiro.</p>
-  </div>
+<!-- Navigation -->
+<nav id="nav">
+  <button class="active" data-view="mapa">Mapa</button>
+  <button data-view="scatter">Risco x Oportunidade</button>
+  <button data-view="painel">Minha Ocupa&ccedil;&atilde;o</button>
+  <button data-view="demo">Demografia</button>
+  <button data-view="regional">Mapa Regional</button>
+  <button data-view="ranking">Ranking</button>
+</nav>
 
-  <div class="controls-row">
-    <div class="stat-section">
-      <h3>Camada</h3>
-      <div class="color-toggle" id="colorToggle">
-        <button data-mode="exposicao" class="active">Exposi&ccedil;&atilde;o &agrave; IA</button>
-        <button data-mode="vantagem">Vantagem com IA</button>
-        <button data-mode="crescimento">Crescimento com IA</button>
-        <button data-mode="oportunidade">Oportunidade</button>
-        <button data-mode="salario">Sal&aacute;rio</button>
-        <button data-mode="escolaridade">Escolaridade</button>
+<!-- View 1: Treemap -->
+<div id="view-mapa" class="view active">
+  <div id="treemap-header">
+    <div class="intro">
+      <h1>Mapa de IA e Emprego no Brasil</h1>
+      <p>Visualiza&ccedil;&atilde;o de <b>626 ocupa&ccedil;&otilde;es</b> da Classifica&ccedil;&atilde;o Brasileira de Ocupa&ccedil;&otilde;es (CBO), cobrindo cerca de <b>19 milh&otilde;es de empregos formais</b> registrados no RAIS/CAGED. Cada ret&acirc;ngulo tem <b>&aacute;rea</b> proporcional ao total de empregados. A <b>cor</b> indica a m&eacute;trica selecionada.</p>
+      <p><b>Dados:</b> Estoque de empregos formais (RAIS), movimenta&ccedil;&otilde;es do CAGED (admiss&otilde;es e saldo), sal&aacute;rios medianos e escolaridade modal. As pontua&ccedil;&otilde;es de IA (exposi&ccedil;&atilde;o, vantagem, crescimento e oportunidade) foram estimadas por LLM considerando o contexto brasileiro.</p>
+    </div>
+    <div class="controls-row">
+      <div class="stat-section">
+        <h3>Camada</h3>
+        <div class="color-toggle" id="colorToggle">
+          <button data-mode="exposicao" class="active">Exposi&ccedil;&atilde;o &agrave; IA</button>
+          <button data-mode="vantagem">Vantagem com IA</button>
+          <button data-mode="crescimento">Crescimento com IA</button>
+          <button data-mode="oportunidade">Oportunidade</button>
+          <button data-mode="salario">Sal&aacute;rio</button>
+          <button data-mode="escolaridade">Escolaridade</button>
+        </div>
+      </div>
+      <div class="gradient-legend">
+        <span id="legendLow">Baixa</span>
+        <canvas id="gradientLegend" width="80" height="8"></canvas>
+        <span id="legendHigh">Alta</span>
       </div>
     </div>
-    <div class="gradient-legend">
-      <span id="legendLow">Baixa</span>
-      <canvas id="gradientLegend" width="80" height="8"></canvas>
-      <span id="legendHigh">Alta</span>
+    <div class="stats-row">
+      <div class="stat-section">
+        <h3>Total empregados</h3>
+        <div class="stat-big" id="statTotalJobs">&mdash;</div>
+      </div>
+      <div class="stat-section" id="block2"></div>
+      <div class="stat-section" id="block3"></div>
+      <div class="stat-section" id="block4"></div>
+      <div class="stat-section" id="block5"></div>
+      <div class="stat-section" id="block6"></div>
+      <div class="stat-section" id="block7"></div>
+      <div class="stat-section" id="block8"></div>
     </div>
   </div>
+  <canvas id="treemapCanvas"></canvas>
+</div>
 
-  <div class="stats-row">
-    <div class="stat-section">
-      <h3>Total empregados</h3>
-      <div class="stat-big" id="statTotalJobs">&mdash;</div>
-    </div>
-    <div class="stat-section" id="block2"></div>
-    <div class="stat-section" id="block3"></div>
-    <div class="stat-section" id="block4"></div>
-    <div class="stat-section" id="block5"></div>
-    <div class="stat-section" id="block6"></div>
-    <div class="stat-section" id="block7"></div>
-    <div class="stat-section" id="block8"></div>
+<!-- View 2: Scatter Plot -->
+<div id="view-scatter" class="view">
+  <h2 class="section-title">Risco x Oportunidade</h2>
+  <p class="section-desc">Cada ponto representa uma ocupa&ccedil;&atilde;o. O eixo horizontal mede a <b>exposi&ccedil;&atilde;o &agrave; IA</b> (risco de automa&ccedil;&atilde;o) e o vertical mede a <b>oportunidade</b> (potencial de ganho com IA). O tamanho do ponto &eacute; proporcional ao n&uacute;mero de empregados.</p>
+  <div id="scatterContainer">
+    <canvas id="scatterCanvas"></canvas>
   </div>
 </div>
 
-<canvas id="canvas"></canvas>
+<!-- View 3: Painel Pessoal -->
+<div id="view-painel" class="view">
+  <h2 class="section-title">Minha Ocupa&ccedil;&atilde;o</h2>
+  <p class="section-desc">Busque sua ocupa&ccedil;&atilde;o para ver um painel completo com avalia&ccedil;&atilde;o de risco, recomenda&ccedil;&otilde;es e compara&ccedil;&otilde;es.</p>
+  <div class="search-box" id="painelSearchBox">
+    <input type="text" id="painelSearch" placeholder="Digite o nome da sua ocupa&ccedil;&atilde;o..." autocomplete="off">
+    <div class="search-dropdown" id="painelDropdown"></div>
+  </div>
+  <div id="painelPlaceholder">Selecione uma ocupa&ccedil;&atilde;o acima para ver sua an&aacute;lise personalizada.</div>
+  <div id="painelContent"></div>
 </div>
 
+<!-- View 4: Demographics -->
+<div id="view-demo" class="view">
+  <h2 class="section-title">Demografia e Impacto da IA</h2>
+  <p class="section-desc">An&aacute;lise do impacto diferencial da IA por g&ecirc;nero e ra&ccedil;a no mercado de trabalho formal brasileiro.</p>
+  <div id="demoContent"></div>
+</div>
+
+<!-- View 5: Regional Map -->
+<div id="view-regional" class="view">
+  <h2 class="section-title">Mapa Regional</h2>
+  <p class="section-desc">Vis&atilde;o por estado (UF) do mercado de trabalho e exposi&ccedil;&atilde;o &agrave; IA.</p>
+  <div class="regional-controls" id="regionalControls">
+    <button class="active" data-sort="exposicao">Ordenar por Exposi&ccedil;&atilde;o</button>
+    <button data-sort="workers">Ordenar por Trabalhadores</button>
+    <button data-sort="salary">Ordenar por Sal&aacute;rio</button>
+  </div>
+  <div class="state-detail" id="stateDetail">
+    <button class="sd-close" id="stateDetailClose">&times;</button>
+    <h3 id="stateDetailTitle"></h3>
+    <div id="stateDetailContent"></div>
+  </div>
+  <div class="state-grid" id="stateGrid"></div>
+</div>
+
+<!-- View 6: Ranking -->
+<div id="view-ranking" class="view">
+  <h2 class="section-title">Ranking de Ocupa&ccedil;&otilde;es</h2>
+  <p class="section-desc">Tabela completa com todas as 626 ocupa&ccedil;&otilde;es. Clique nos cabe&ccedil;alhos para ordenar.</p>
+  <div class="ranking-controls">
+    <input type="text" id="rankingSearch" placeholder="Filtrar ocupa&ccedil;&otilde;es...">
+  </div>
+  <div class="ranking-table-wrap">
+    <table class="ranking-table" id="rankingTable">
+      <thead>
+        <tr id="rankingHead"></tr>
+      </thead>
+      <tbody id="rankingBody"></tbody>
+    </table>
+  </div>
+  <div class="ranking-pagination" id="rankingPagination"></div>
+</div>
+
+<!-- Shared tooltip -->
 <div id="tooltip">
   <div class="tt-title"></div>
   <div class="tt-highlight"></div>
@@ -236,9 +704,36 @@ canvas#canvas {
 </div>
 
 <script>
+// ══════════════════════════════════════════════════════════════════════════
+// GLOBALS
+// ══════════════════════════════════════════════════════════════════════════
+let data = [];
+let summaryData = null;
+let currentView = "mapa";
 
-// ── Color scales ────────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════
+// NAVIGATION
+// ══════════════════════════════════════════════════════════════════════════
+document.getElementById("nav").addEventListener("click", function(e) {
+  const btn = e.target.closest("button");
+  if (!btn || !btn.dataset.view) return;
+  switchView(btn.dataset.view);
+});
 
+function switchView(view) {
+  currentView = view;
+  document.querySelectorAll("#nav button").forEach(b => b.classList.toggle("active", b.dataset.view === view));
+  document.querySelectorAll(".view").forEach(v => v.classList.toggle("active", v.id === "view-" + view));
+  if (view === "mapa") treemapResize();
+  if (view === "scatter") initScatter();
+  if (view === "demo") initDemo();
+  if (view === "regional") initRegional();
+  if (view === "ranking") initRanking();
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// COLOR SCALES (from original)
+// ══════════════════════════════════════════════════════════════════════════
 let colorMode = "exposicao";
 
 function boostContrast(t) {
@@ -264,47 +759,14 @@ function greenRedCSS(t, alpha) {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-const EDU_LEVELS = [
-  "Analfabeto",
-  "Até 5ª Incompleto",
-  "6ª a 9ª Fundamental",
-  "Médio Completo",
-  "Superior Completo",
-  "Mestrado",
-  "Doutorado",
-];
+const EDU_LEVELS = ["Analfabeto","At\u00e9 5\u00aa Incompleto","6\u00aa a 9\u00aa Fundamental","M\u00e9dio Completo","Superior Completo","Mestrado","Doutorado"];
+const EDU_SHORT = {"Analfabeto":"Analfabeto","At\u00e9 5\u00aa Incompleto":"Fund. Inc.","6\u00aa a 9\u00aa Fundamental":"Fundamental","M\u00e9dio Completo":"M\u00e9dio","Superior Completo":"Superior","Mestrado":"Mestrado","Doutorado":"Doutorado"};
 
-const EDU_SHORT = {
-  "Analfabeto": "Analfabeto",
-  "Até 5ª Incompleto": "Fund. Inc.",
-  "6ª a 9ª Fundamental": "Fundamental",
-  "Médio Completo": "Médio",
-  "Superior Completo": "Superior",
-  "Mestrado": "Mestrado",
-  "Doutorado": "Doutorado",
-};
+function exposicaoColor(v, a) { if (v == null) return `rgba(128,128,128,${a})`; return greenRedCSS(v / 10, a); }
+function vantagemColor(v, a) { if (v == null) return `rgba(128,128,128,${a})`; return greenRedCSS(1 - v / 10, a); }
+function crescimentoColor(v, a) { if (v == null) return `rgba(128,128,128,${a})`; return greenRedCSS(1 - v / 10, a); }
+function oportunidadeColor(v, a) { if (v == null) return `rgba(128,128,128,${a})`; return greenRedCSS(1 - v / 10, a); }
 
-// Exposure: 0-10, red=high (high t = red)
-function exposicaoColor(v, a) {
-  if (v == null) return `rgba(128,128,128,${a})`;
-  return greenRedCSS(v / 10, a);
-}
-
-// Green-positive: high=green (low t = green in greenRedCSS, so pass 1 - v/10)
-function vantagemColor(v, a) {
-  if (v == null) return `rgba(128,128,128,${a})`;
-  return greenRedCSS(1 - v / 10, a);
-}
-function crescimentoColor(v, a) {
-  if (v == null) return `rgba(128,128,128,${a})`;
-  return greenRedCSS(1 - v / 10, a);
-}
-function oportunidadeColor(v, a) {
-  if (v == null) return `rgba(128,128,128,${a})`;
-  return greenRedCSS(1 - v / 10, a);
-}
-
-// Salary: log scale, green=high
 function salarioColor(v, a) {
   if (v == null) return `rgba(128,128,128,${a})`;
   const minS = Math.log(1000), maxS = Math.log(45000);
@@ -312,7 +774,6 @@ function salarioColor(v, a) {
   return greenRedCSS(t, a);
 }
 
-// Education: categorical, green=high
 function escolaridadeColor(idx, a) {
   if (idx < 0) return `rgba(128,128,128,${a})`;
   return greenRedCSS(1 - idx / (EDU_LEVELS.length - 1), a);
@@ -324,38 +785,46 @@ function tileColorCSS(d, alpha) {
   if (colorMode === "crescimento") return crescimentoColor(d.crescimento, alpha);
   if (colorMode === "oportunidade") return oportunidadeColor(d.oportunidade, alpha);
   if (colorMode === "salario") return salarioColor(d.salario, alpha);
-  if (colorMode === "escolaridade") {
-    return escolaridadeColor(EDU_LEVELS.indexOf(d.escolaridade), alpha);
-  }
+  if (colorMode === "escolaridade") return escolaridadeColor(EDU_LEVELS.indexOf(d.escolaridade), alpha);
   return `rgba(128,128,128,${alpha})`;
 }
 
-function tileSubInfo(r) {
-  const jobs = r.empregados ? formatNumber(r.empregados) + " empr." : "";
-  if (colorMode === "exposicao") {
-    return (r.exposicao != null ? r.exposicao + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
-  }
-  if (colorMode === "vantagem") {
-    return (r.vantagem != null ? r.vantagem + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
-  }
-  if (colorMode === "crescimento") {
-    return (r.crescimento != null ? r.crescimento + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
-  }
-  if (colorMode === "oportunidade") {
-    return (r.oportunidade != null ? r.oportunidade + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
-  }
-  if (colorMode === "salario") {
-    return (r.salario != null ? formatSalario(r.salario) : "") + (jobs ? " \u00b7 " + jobs : "");
-  }
-  if (colorMode === "escolaridade") {
-    const short = EDU_SHORT[r.escolaridade] || "";
-    return short + (jobs ? " \u00b7 " + jobs : "");
-  }
-  return "";
+function scoreColor(value, max, invert) {
+  if (value == null) return "var(--fg2)";
+  const t = invert ? (1 - value / max) : (value / max);
+  return greenRedCSS(t, 1);
 }
 
-// ── Squarified treemap layout ──────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════
+// FORMATTING
+// ══════════════════════════════════════════════════════════════════════════
+function formatNumber(n) {
+  if (n == null) return "\u2014";
+  if (n >= 1e6) return (n / 1e6).toFixed(1).replace(".", ",") + "M";
+  if (n >= 1e3) return Math.round(n / 1e3).toLocaleString("pt-BR") + "K";
+  return n.toLocaleString("pt-BR");
+}
 
+function formatSalario(n) {
+  if (n == null) return "\u2014";
+  return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+}
+
+function formatSalarioFull(n) {
+  if (n == null) return "\u2014";
+  return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function formatSaldo(n) {
+  if (n == null) return "\u2014";
+  return (n > 0 ? "+" : "") + n.toLocaleString("pt-BR");
+}
+
+function formatPct(n) { return n.toFixed(1).replace(".", ",") + "%"; }
+
+// ══════════════════════════════════════════════════════════════════════════
+// SQUARIFIED TREEMAP LAYOUT (original)
+// ══════════════════════════════════════════════════════════════════════════
 function squarify(items, x, y, w, h) {
   if (items.length === 0) return [];
   if (items.length === 1) return [{ ...items[0], rx: x, ry: y, rw: w, rh: h }];
@@ -406,37 +875,35 @@ function worstAspect(row, rowSum, side, totalArea, availableExtent) {
   return worst;
 }
 
-// ── Grande Grupo names (short) ──────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 1: TREEMAP
+// ══════════════════════════════════════════════════════════════════════════
+const GG_SHORT = {"0":"For\u00e7as Armadas","1":"Dirigentes/Gerentes","2":"Ci\u00eancias e Artes","3":"T\u00e9cnicos N\u00edvel M\u00e9dio","4":"Serv. Administrativos","5":"Serv./Com\u00e9rcio","6":"Agropecu\u00e1rios","7":"Prod. Industrial I","8":"Prod. Industrial II","9":"Repara\u00e7\u00e3o/Manuten\u00e7\u00e3o"};
 
-const GG_SHORT = {
-  "0": "For\u00e7as Armadas",
-  "1": "Dirigentes/Gerentes",
-  "2": "Ci\u00eancias e Artes",
-  "3": "T\u00e9cnicos N\u00edvel M\u00e9dio",
-  "4": "Serv. Administrativos",
-  "5": "Serv./Com\u00e9rcio",
-  "6": "Agropecu\u00e1rios",
-  "7": "Prod. Industrial I",
-  "8": "Prod. Industrial II",
-  "9": "Repara\u00e7\u00e3o/Manuten\u00e7\u00e3o",
-};
-
-// ── Rendering ──────────────────────────────────────────────────────────
-
-let data = [];
-let rects = [];
-let hovered = null;
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+let treemapRects = [];
+let treemapHovered = null;
+const treemapCanvas = document.getElementById("treemapCanvas");
+const treemapCtx = treemapCanvas.getContext("2d");
 let dpr = window.devicePixelRatio || 1;
 const MARGIN = 12, GAP = 1.5;
 
-function layout() {
-  const wrapper = document.getElementById("wrapper");
-  const w = wrapper.clientWidth;
+function tileSubInfo(r) {
+  const jobs = r.empregados ? formatNumber(r.empregados) + " empr." : "";
+  if (colorMode === "exposicao") return (r.exposicao != null ? r.exposicao + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
+  if (colorMode === "vantagem") return (r.vantagem != null ? r.vantagem + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
+  if (colorMode === "crescimento") return (r.crescimento != null ? r.crescimento + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
+  if (colorMode === "oportunidade") return (r.oportunidade != null ? r.oportunidade + "/10" : "") + (jobs ? " \u00b7 " + jobs : "");
+  if (colorMode === "salario") return (r.salario != null ? formatSalario(r.salario) : "") + (jobs ? " \u00b7 " + jobs : "");
+  if (colorMode === "escolaridade") { const short = EDU_SHORT[r.escolaridade] || ""; return short + (jobs ? " \u00b7 " + jobs : ""); }
+  return "";
+}
+
+function treemapLayout() {
+  const wrapper = document.getElementById("view-mapa");
+  const w = wrapper.clientWidth - 48;
   const h = Math.round(w * 3 / 4);
-  canvas.width = w * dpr; canvas.height = h * dpr;
-  canvas.style.width = w + "px"; canvas.style.height = h + "px";
+  treemapCanvas.width = w * dpr; treemapCanvas.height = h * dpr;
+  treemapCanvas.style.width = w + "px"; treemapCanvas.style.height = h + "px";
   const tx = MARGIN, ty = MARGIN, tw = w - MARGIN * 2, th = h - MARGIN * 2;
   const byCategory = {};
   for (const d of data) {
@@ -449,79 +916,60 @@ function layout() {
     value: byCategory[cat].reduce((s, d) => s + (d.empregados || d.admissoes || 1), 0),
   })).sort((a, b) => b.value - a.value);
   const catRects = squarify(categories, tx, ty, tw, th);
-  rects = [];
+  treemapRects = [];
   for (const cr of catRects) {
     const items = cr.items.map(d => ({ ...d, value: d.empregados || d.admissoes || 1 }));
     const innerRects = squarify(items, cr.rx + GAP, cr.ry + GAP, cr.rw - GAP * 2, cr.rh - GAP * 2);
-    for (const ir of innerRects) rects.push(ir);
+    for (const ir of innerRects) treemapRects.push(ir);
   }
 }
 
-function draw() {
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  ctx.fillStyle = "#0a0a0f";
-  ctx.fillRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-  for (const r of rects) {
-    const isHovered = r === hovered;
+function treemapDraw() {
+  treemapCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  treemapCtx.fillStyle = "#0a0a0f";
+  treemapCtx.fillRect(0, 0, treemapCanvas.width / dpr, treemapCanvas.height / dpr);
+  for (const r of treemapRects) {
+    const isHovered = r === treemapHovered;
     const g = GAP / 2, rx = r.rx + g, ry = r.ry + g, rw = r.rw - g * 2, rh = r.rh - g * 2;
     if (rw <= 0 || rh <= 0) continue;
-    ctx.fillStyle = tileColorCSS(r, isHovered ? 0.8 : 0.5);
-    ctx.fillRect(rx, ry, rw, rh);
-    if (isHovered) { ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.strokeRect(rx, ry, rw, rh); }
+    treemapCtx.fillStyle = tileColorCSS(r, isHovered ? 0.8 : 0.5);
+    treemapCtx.fillRect(rx, ry, rw, rh);
+    if (isHovered) { treemapCtx.strokeStyle = "#fff"; treemapCtx.lineWidth = 2; treemapCtx.strokeRect(rx, ry, rw, rh); }
     if (rw > 50 && rh > 18) {
-      ctx.save(); ctx.beginPath(); ctx.rect(rx + 4, ry + 2, rw - 8, rh - 4); ctx.clip();
+      treemapCtx.save(); treemapCtx.beginPath(); treemapCtx.rect(rx + 4, ry + 2, rw - 8, rh - 4); treemapCtx.clip();
       const fontSize = Math.min(13, Math.max(9, Math.min(rw / 10, rh / 3)));
-      ctx.font = `500 ${fontSize}px -apple-system, system-ui, sans-serif`;
-      ctx.fillStyle = isHovered ? "#fff" : "rgba(255,255,255,0.85)";
-      ctx.textBaseline = "top";
-      ctx.fillText(r.titulo, rx + 5, ry + 4);
+      treemapCtx.font = `500 ${fontSize}px -apple-system, system-ui, sans-serif`;
+      treemapCtx.fillStyle = isHovered ? "#fff" : "rgba(255,255,255,0.85)";
+      treemapCtx.textBaseline = "top";
+      treemapCtx.fillText(r.titulo, rx + 5, ry + 4);
       if (rh > 34 && rw > 60) {
-        ctx.font = `400 ${Math.max(8, fontSize - 2)}px -apple-system, system-ui, sans-serif`;
-        ctx.fillStyle = "rgba(255,255,255,0.5)";
-        ctx.fillText(tileSubInfo(r), rx + 5, ry + 4 + fontSize + 2);
+        treemapCtx.font = `400 ${Math.max(8, fontSize - 2)}px -apple-system, system-ui, sans-serif`;
+        treemapCtx.fillStyle = "rgba(255,255,255,0.5)";
+        treemapCtx.fillText(tileSubInfo(r), rx + 5, ry + 4 + fontSize + 2);
       }
-      ctx.restore();
+      treemapCtx.restore();
     }
   }
 }
 
-function hitTest(mx, my) {
-  const rect = canvas.getBoundingClientRect();
+function treemapHitTest(mx, my) {
+  const rect = treemapCanvas.getBoundingClientRect();
   const cx = mx - rect.left, cy = my - rect.top;
-  for (let i = rects.length - 1; i >= 0; i--) {
-    const r = rects[i];
+  for (let i = treemapRects.length - 1; i >= 0; i--) {
+    const r = treemapRects[i];
     if (cx >= r.rx && cx < r.rx + r.rw && cy >= r.ry && cy < r.ry + r.rh) return r;
   }
   return null;
 }
 
-// ── Formatting (Brazilian) ─────────────────────────────────────────────
-
-function formatNumber(n) {
-  if (n == null) return "\u2014";
-  if (n >= 1e6) return (n / 1e6).toFixed(1).replace(".", ",") + "M";
-  if (n >= 1e3) return Math.round(n / 1e3).toLocaleString("pt-BR") + "K";
-  return n.toLocaleString("pt-BR");
+function treemapResize() {
+  if (data.length === 0) return;
+  dpr = window.devicePixelRatio || 1;
+  treemapLayout();
+  treemapDraw();
 }
 
-function formatSalario(n) {
-  if (n == null) return "\u2014";
-  return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-}
-
-function formatSalarioFull(n) {
-  if (n == null) return "\u2014";
-  return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-function formatSaldo(n) {
-  if (n == null) return "\u2014";
-  const prefix = n > 0 ? "+" : "";
-  return prefix + n.toLocaleString("pt-BR");
-}
-
-// ── Tooltip ──────────────────────────────────────────────────────────────
-
+// Tooltip
 function aiScoresTooltipLines(d) {
   const lines = [];
   if (d.exposicao != null) lines.push(`<span style="color:${exposicaoColor(d.exposicao, 1)}">Exposi\u00e7\u00e3o: ${d.exposicao}/10</span>`);
@@ -532,11 +980,11 @@ function aiScoresTooltipLines(d) {
 }
 
 function tooltipHighlight(d) {
-  const isAILayer = ["exposicao", "vantagem", "crescimento", "oportunidade"].includes(colorMode);
+  const isAILayer = ["exposicao","vantagem","crescimento","oportunidade"].includes(colorMode);
   if (isAILayer) {
-    const keyMap = { exposicao: "exposicao", vantagem: "vantagem", crescimento: "crescimento", oportunidade: "oportunidade" };
-    const labelMap = { exposicao: "Exposi\u00e7\u00e3o \u00e0 IA", vantagem: "Vantagem com IA", crescimento: "Crescimento com IA", oportunidade: "Oportunidade" };
-    const colorFnMap = { exposicao: exposicaoColor, vantagem: vantagemColor, crescimento: crescimentoColor, oportunidade: oportunidadeColor };
+    const keyMap = { exposicao:"exposicao",vantagem:"vantagem",crescimento:"crescimento",oportunidade:"oportunidade" };
+    const labelMap = { exposicao:"Exposi\u00e7\u00e3o \u00e0 IA",vantagem:"Vantagem com IA",crescimento:"Crescimento com IA",oportunidade:"Oportunidade" };
+    const colorFnMap = { exposicao:exposicaoColor,vantagem:vantagemColor,crescimento:crescimentoColor,oportunidade:oportunidadeColor };
     const primary = d[keyMap[colorMode]];
     const colorFn = colorFnMap[colorMode];
     const label = labelMap[colorMode];
@@ -578,16 +1026,13 @@ function showTooltip(d, mx, my) {
     <span class="label">Vantagem</span><span class="value">${d.vantagem != null ? d.vantagem + '/10' : '\u2014'}</span>
     <span class="label">Crescimento</span><span class="value">${d.crescimento != null ? d.crescimento + '/10' : '\u2014'}</span>
     <span class="label">Oportunidade</span><span class="value">${d.oportunidade != null ? d.oportunidade + '/10' : '\u2014'}</span>`;
-
   const rationaleMap = {
     exposicao: d.exposicao_rationale || "",
     vantagem: d.vantagem_rationale || "",
     crescimento: d.crescimento_rationale || "",
     oportunidade: [d.vantagem_rationale, d.crescimento_rationale].filter(Boolean).join(" | "),
   };
-  const rationale = rationaleMap[colorMode] || "";
-  tt.querySelector(".tt-rationale").textContent = rationale;
-
+  tt.querySelector(".tt-rationale").textContent = rationaleMap[colorMode] || "";
   let tx = mx + 16, ty = my - 16;
   if (tx + 380 > window.innerWidth) tx = mx - 396;
   if (ty < 10) ty = my + 16;
@@ -595,10 +1040,39 @@ function showTooltip(d, mx, my) {
   tt.style.left = tx + "px"; tt.style.top = ty + "px";
   tt.classList.add("visible");
 }
+
+function showSimpleTooltip(d, mx, my) {
+  const tt = document.getElementById("tooltip");
+  tt.querySelector(".tt-title").textContent = d.titulo + " (" + d.codigo + ")";
+  tt.querySelector(".tt-highlight").innerHTML =
+    `<span style="color:${exposicaoColor(d.exposicao,1)}">Exposi\u00e7\u00e3o: ${d.exposicao != null ? d.exposicao + '/10' : '\u2014'}</span> &middot; ` +
+    `<span style="color:${oportunidadeColor(d.oportunidade,1)}">Oportunidade: ${d.oportunidade != null ? d.oportunidade + '/10' : '\u2014'}</span>`;
+  tt.querySelector(".tt-stats").innerHTML = `
+    <span class="label">Sal\u00e1rio</span><span class="value">${formatSalarioFull(d.salario)}</span>
+    <span class="label">Empregados</span><span class="value">${formatNumber(d.empregados)}</span>
+    <span class="label">Vantagem</span><span class="value">${d.vantagem != null ? d.vantagem + '/10' : '\u2014'}</span>
+    <span class="label">Crescimento</span><span class="value">${d.crescimento != null ? d.crescimento + '/10' : '\u2014'}</span>`;
+  tt.querySelector(".tt-rationale").textContent = "";
+  let tx = mx + 16, ty = my - 16;
+  if (tx + 380 > window.innerWidth) tx = mx - 396;
+  if (ty < 10) ty = my + 16;
+  if (ty + 200 > window.innerHeight) ty = my - 200;
+  tt.style.left = tx + "px"; tt.style.top = ty + "px";
+  tt.classList.add("visible");
+}
+
 function hideTooltip() { document.getElementById("tooltip").classList.remove("visible"); }
 
-// ── Shared stat helpers ────────────────────────────────────────────────
+// Treemap events
+treemapCanvas.addEventListener("mousemove", function(e) {
+  const hit = treemapHitTest(e.clientX, e.clientY);
+  if (hit !== treemapHovered) { treemapHovered = hit; treemapDraw(); }
+  if (treemapHovered) { showTooltip(treemapHovered, e.clientX, e.clientY); treemapCanvas.style.cursor = "pointer"; }
+  else { hideTooltip(); treemapCanvas.style.cursor = "default"; }
+});
+treemapCanvas.addEventListener("mouseleave", function() { treemapHovered = null; hideTooltip(); treemapDraw(); });
 
+// Treemap stats (original)
 const SALARY_BANDS = [
   { label: "<R$1.500", min: 0, max: 1500 },
   { label: "R$1.500\u20133K", min: 1500, max: 3000 },
@@ -606,21 +1080,21 @@ const SALARY_BANDS = [
   { label: "R$5\u201310K", min: 5000, max: 10000 },
   { label: "R$10K+", min: 10000, max: Infinity },
 ];
-
 const EDU_GROUPS = [
-  { label: "Analfab./Fund.Inc.", match: ["Analfabeto", "At\u00e9 5\u00aa Incompleto"] },
+  { label: "Analfab./Fund.Inc.", match: ["Analfabeto","At\u00e9 5\u00aa Incompleto"] },
   { label: "Fundamental", match: ["6\u00aa a 9\u00aa Fundamental"] },
   { label: "M\u00e9dio", match: ["M\u00e9dio Completo"] },
   { label: "Superior", match: ["Superior Completo"] },
-  { label: "Mestrado/Dout.", match: ["Mestrado", "Doutorado"] },
+  { label: "Mestrado/Dout.", match: ["Mestrado","Doutorado"] },
 ];
+
+function getJobs(d) { return d.empregados || d.admissoes || 0; }
 
 function weightedAvgByGroups(groups, filterFn, metricFn) {
   return groups.map(g => {
     let wS = 0, wC = 0;
     for (const d of data) {
-      const v = metricFn(d);
-      const jobs = d.empregados || d.admissoes || 0;
+      const v = metricFn(d); const jobs = getJobs(d);
       if (v != null && jobs && filterFn(d, g)) { wS += v * jobs; wC += jobs; }
     }
     return { ...g, avg: wC > 0 ? wS / wC : 0, jobs: wC };
@@ -628,30 +1102,16 @@ function weightedAvgByGroups(groups, filterFn, metricFn) {
 }
 
 function renderTiers(tiers, totalJobs) {
-  return tiers.map(t => `<div class="tier-row">
-    <div class="tier-color" style="background:${t.color}"></div>
-    <span class="tier-name">${t.label}</span>
-    <span class="tier-jobs">${formatNumber(t.jobs)}</span>
-    <span class="tier-pct">${totalJobs > 0 ? (t.jobs / totalJobs * 100).toFixed(0) : 0}%</span>
-  </div>`).join("");
+  return tiers.map(t => `<div class="tier-row"><div class="tier-color" style="background:${t.color}"></div><span class="tier-name">${t.label}</span><span class="tier-jobs">${formatNumber(t.jobs)}</span><span class="tier-pct">${totalJobs > 0 ? (t.jobs / totalJobs * 100).toFixed(0) : 0}%</span></div>`).join("");
 }
 
 function renderHbars(items) {
-  return items.map(it => `<div class="hbar-row">
-    <span class="hbar-label">${it.label}</span>
-    <div class="hbar-track"><div class="hbar-fill" style="width:${it.pct}%;background:${it.color}"></div></div>
-    <span class="hbar-val">${it.val}</span>
-  </div>`).join("");
+  return items.map(it => `<div class="hbar-row"><span class="hbar-label">${it.label}</span><div class="hbar-track"><div class="hbar-fill" style="width:${it.pct}%;background:${it.color}"></div></div><span class="hbar-val">${it.val}</span></div>`).join("");
 }
-
-// ── Stats update ────────────────────────────────────────────────────────
-
-function getJobs(d) { return d.empregados || d.admissoes || 0; }
 
 function updateStats() {
   const totalJobs = data.reduce((s, d) => s + getJobs(d), 0);
   document.getElementById("statTotalJobs").textContent = (totalJobs / 1e6).toFixed(1).replace(".", ",") + "M";
-
   if (colorMode === "exposicao") updateExposicaoStats(totalJobs);
   else if (colorMode === "vantagem") updateGreenLayerStats(totalJobs, "vantagem", "Vantagem", vantagemColor);
   else if (colorMode === "crescimento") updateGreenLayerStats(totalJobs, "crescimento", "Crescimento", crescimentoColor);
@@ -664,104 +1124,41 @@ function updateExposicaoStats(totalJobs) {
   let wS = 0, wC = 0;
   for (const d of data) { const j = getJobs(d); if (d.exposicao != null && j) { wS += d.exposicao * j; wC += j; } }
   const avg = wC > 0 ? wS / wC : 0;
-  document.getElementById("block2").innerHTML = `<h3>Exp. m\u00e9dia</h3>
-    <div class="stat-big"><span style="color:${exposicaoColor(avg, 1)}">${avg.toFixed(1).replace(".", ",")}</span></div>
-    <div class="stat-label">ponderada, 0\u201310</div>`;
-
-  // Histogram
+  document.getElementById("block2").innerHTML = `<h3>Exp. m\u00e9dia</h3><div class="stat-big"><span style="color:${exposicaoColor(avg, 1)}">${avg.toFixed(1).replace(".", ",")}</span></div><div class="stat-label">ponderada, 0\u201310</div>`;
   const histogram = new Array(11).fill(0);
   for (const d of data) { const j = getJobs(d); if (d.exposicao != null && j) histogram[d.exposicao] += j; }
   const maxH = Math.max(...histogram);
-  document.getElementById("block3").innerHTML = `<h3>Empregos por exposi\u00e7\u00e3o</h3>
-    <div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${exposicaoColor(i, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
-
-  // Tier breakdown
-  const tierDefs = [
-    { label: "M\u00ednima (0\u20131)", lo: 0, hi: 1, mid: 0.5 },
-    { label: "Baixa (2\u20133)", lo: 2, hi: 3, mid: 2.5 },
-    { label: "Moderada (4\u20135)", lo: 4, hi: 5, mid: 4.5 },
-    { label: "Alta (6\u20137)", lo: 6, hi: 7, mid: 6.5 },
-    { label: "Muito alta (8\u201310)", lo: 8, hi: 10, mid: 9 },
-  ];
-  const tiers = tierDefs.map(t => {
-    let jobs = 0;
-    for (const d of data) { const j = getJobs(d); if (d.exposicao != null && j && d.exposicao >= t.lo && d.exposicao <= t.hi) jobs += j; }
-    return { ...t, jobs, color: exposicaoColor(t.mid, 1) };
-  });
+  document.getElementById("block3").innerHTML = `<h3>Empregos por exposi\u00e7\u00e3o</h3><div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${exposicaoColor(i, 0.7)}"></div>`).join("")}</div><div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
+  const tierDefs = [{ label: "M\u00ednima (0\u20131)", lo: 0, hi: 1, mid: 0.5 },{ label: "Baixa (2\u20133)", lo: 2, hi: 3, mid: 2.5 },{ label: "Moderada (4\u20135)", lo: 4, hi: 5, mid: 4.5 },{ label: "Alta (6\u20137)", lo: 6, hi: 7, mid: 6.5 },{ label: "Muito alta (8\u201310)", lo: 8, hi: 10, mid: 9 }];
+  const tiers = tierDefs.map(t => { let jobs = 0; for (const d of data) { const j = getJobs(d); if (d.exposicao != null && j && d.exposicao >= t.lo && d.exposicao <= t.hi) jobs += j; } return { ...t, jobs, color: exposicaoColor(t.mid, 1) }; });
   document.getElementById("block4").innerHTML = `<h3>Faixas de exposi\u00e7\u00e3o</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
-
-  // Cross: exposure by salary
   const bySal = weightedAvgByGroups(SALARY_BANDS, (d, g) => d.salario != null && d.salario >= g.min && d.salario < g.max, d => d.exposicao);
-  document.getElementById("block5").innerHTML = `<h3>Exposi\u00e7\u00e3o por sal\u00e1rio</h3><div class="hbar-chart">${renderHbars(bySal.map(g => ({
-    label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Cross: exposure by education
+  document.getElementById("block5").innerHTML = `<h3>Exposi\u00e7\u00e3o por sal\u00e1rio</h3><div class="hbar-chart">${renderHbars(bySal.map(g => ({ label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8) })))}</div>`;
   const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.escolaridade), d => d.exposicao);
-  document.getElementById("block6").innerHTML = `<h3>Exposi\u00e7\u00e3o por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
-    label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Top growing by saldo
+  document.getElementById("block6").innerHTML = `<h3>Exposi\u00e7\u00e3o por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({ label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8) })))}</div>`;
   const sorted = [...data].filter(d => d.saldo != null).sort((a, b) => b.saldo - a.saldo);
   const top5 = sorted.slice(0, 5);
-  document.getElementById("block7").innerHTML = `<h3>Mais crescem (saldo)</h3><div class="hbar-chart">${renderHbars(top5.map(g => {
-    const maxSaldo = Math.max(...top5.map(x => Math.abs(x.saldo)));
-    return { label: g.titulo.substring(0, 18), val: formatSaldo(g.saldo), pct: Math.abs(g.saldo) / maxSaldo * 100, color: "rgba(80,200,120,0.7)" };
-  }))}</div>`;
-
-  // Top declining by saldo
+  document.getElementById("block7").innerHTML = `<h3>Mais crescem (saldo)</h3><div class="hbar-chart">${renderHbars(top5.map(g => { const maxSaldo = Math.max(...top5.map(x => Math.abs(x.saldo))); return { label: g.titulo.substring(0, 18), val: formatSaldo(g.saldo), pct: Math.abs(g.saldo) / maxSaldo * 100, color: "rgba(80,200,120,0.7)" }; }))}</div>`;
   const bot5 = sorted.slice(-5).reverse();
-  document.getElementById("block8").innerHTML = `<h3>Mais declinam (saldo)</h3><div class="hbar-chart">${renderHbars(bot5.map(g => {
-    const maxSaldo = Math.max(...bot5.map(x => Math.abs(x.saldo)));
-    return { label: g.titulo.substring(0, 18), val: formatSaldo(g.saldo), pct: Math.abs(g.saldo) / maxSaldo * 100, color: "rgba(230,80,60,0.7)" };
-  }))}</div>`;
+  document.getElementById("block8").innerHTML = `<h3>Mais declinam (saldo)</h3><div class="hbar-chart">${renderHbars(bot5.map(g => { const maxSaldo = Math.max(...bot5.map(x => Math.abs(x.saldo))); return { label: g.titulo.substring(0, 18), val: formatSaldo(g.saldo), pct: Math.abs(g.saldo) / maxSaldo * 100, color: "rgba(230,80,60,0.7)" }; }))}</div>`;
 }
 
 function updateGreenLayerStats(totalJobs, key, label, colorFn) {
   let wS = 0, wC = 0;
   for (const d of data) { const j = getJobs(d); if (d[key] != null && j) { wS += d[key] * j; wC += j; } }
   const avg = wC > 0 ? wS / wC : 0;
-  document.getElementById("block2").innerHTML = `<h3>${label} m\u00e9d.</h3>
-    <div class="stat-big"><span style="color:${colorFn(avg, 1)}">${avg.toFixed(1).replace(".", ",")}</span></div>
-    <div class="stat-label">ponderada, 0\u201310</div>`;
-
-  // Histogram
+  document.getElementById("block2").innerHTML = `<h3>${label} m\u00e9d.</h3><div class="stat-big"><span style="color:${colorFn(avg, 1)}">${avg.toFixed(1).replace(".", ",")}</span></div><div class="stat-label">ponderada, 0\u201310</div>`;
   const histogram = new Array(11).fill(0);
   for (const d of data) { const j = getJobs(d); if (d[key] != null && j) histogram[Math.round(d[key])] += j; }
   const maxH = Math.max(...histogram);
-  document.getElementById("block3").innerHTML = `<h3>Empregos por ${label.toLowerCase()}</h3>
-    <div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${colorFn(i, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
-
-  // Tier breakdown
-  const tierDefs = [
-    { label: "Baixo (0\u20132)", lo: 0, hi: 2, mid: 1 },
-    { label: "Moderado (3\u20134)", lo: 3, hi: 4, mid: 3.5 },
-    { label: "Bom (5\u20136)", lo: 5, hi: 6, mid: 5.5 },
-    { label: "Alto (7\u20138)", lo: 7, hi: 8, mid: 7.5 },
-    { label: "Muito alto (9\u201310)", lo: 9, hi: 10, mid: 9.5 },
-  ];
-  const tiers = tierDefs.map(t => {
-    let jobs = 0;
-    for (const d of data) { const j = getJobs(d); if (d[key] != null && j && d[key] >= t.lo && d[key] <= t.hi) jobs += j; }
-    return { ...t, jobs, color: colorFn(t.mid, 1) };
-  });
+  document.getElementById("block3").innerHTML = `<h3>Empregos por ${label.toLowerCase()}</h3><div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${colorFn(i, 0.7)}"></div>`).join("")}</div><div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
+  const tierDefs = [{ label: "Baixo (0\u20132)", lo: 0, hi: 2, mid: 1 },{ label: "Moderado (3\u20134)", lo: 3, hi: 4, mid: 3.5 },{ label: "Bom (5\u20136)", lo: 5, hi: 6, mid: 5.5 },{ label: "Alto (7\u20138)", lo: 7, hi: 8, mid: 7.5 },{ label: "Muito alto (9\u201310)", lo: 9, hi: 10, mid: 9.5 }];
+  const tiers = tierDefs.map(t => { let jobs = 0; for (const d of data) { const j = getJobs(d); if (d[key] != null && j && d[key] >= t.lo && d[key] <= t.hi) jobs += j; } return { ...t, jobs, color: colorFn(t.mid, 1) }; });
   document.getElementById("block4").innerHTML = `<h3>Faixas de ${label.toLowerCase()}</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
-
-  // Cross: by salary
   const bySal = weightedAvgByGroups(SALARY_BANDS, (d, g) => d.salario != null && d.salario >= g.min && d.salario < g.max, d => d[key]);
-  document.getElementById("block5").innerHTML = `<h3>${label} por sal\u00e1rio</h3><div class="hbar-chart">${renderHbars(bySal.map(g => ({
-    label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8)
-  })))}</div>`;
-
-  // Cross: by education
+  document.getElementById("block5").innerHTML = `<h3>${label} por sal\u00e1rio</h3><div class="hbar-chart">${renderHbars(bySal.map(g => ({ label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8) })))}</div>`;
   const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.escolaridade), d => d[key]);
-  document.getElementById("block6").innerHTML = `<h3>${label} por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
-    label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8)
-  })))}</div>`;
-
+  document.getElementById("block6").innerHTML = `<h3>${label} por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({ label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: colorFn(g.avg, 0.8) })))}</div>`;
   document.getElementById("block7").innerHTML = "";
   document.getElementById("block8").innerHTML = "";
 }
@@ -770,134 +1167,52 @@ function updateSalarioStats(totalJobs) {
   let wS = 0, wC = 0;
   for (const d of data) { const j = getJobs(d); if (d.salario != null && j) { wS += d.salario * j; wC += j; } }
   const avg = wC > 0 ? wS / wC : 0;
-  document.getElementById("block2").innerHTML = `<h3>Sal\u00e1rio m\u00e9dio</h3>
-    <div class="stat-big"><span style="color:${salarioColor(avg, 1)}">${formatSalario(avg)}</span></div>
-    <div class="stat-label">ponderado/m\u00eas</div>`;
-
-  // Histogram
-  const buckets = [
-    { lo: 0, hi: 1500, mid: 1200 }, { lo: 1500, hi: 2500, mid: 2000 }, { lo: 2500, hi: 4000, mid: 3200 },
-    { lo: 4000, hi: 7000, mid: 5500 }, { lo: 7000, hi: 12000, mid: 9500 }, { lo: 12000, hi: Infinity, mid: 20000 },
-  ];
+  document.getElementById("block2").innerHTML = `<h3>Sal\u00e1rio m\u00e9dio</h3><div class="stat-big"><span style="color:${salarioColor(avg, 1)}">${formatSalario(avg)}</span></div><div class="stat-label">ponderado/m\u00eas</div>`;
+  const buckets = [{ lo: 0, hi: 1500, mid: 1200 },{ lo: 1500, hi: 2500, mid: 2000 },{ lo: 2500, hi: 4000, mid: 3200 },{ lo: 4000, hi: 7000, mid: 5500 },{ lo: 7000, hi: 12000, mid: 9500 },{ lo: 12000, hi: Infinity, mid: 20000 }];
   const histJobs = buckets.map(() => 0);
   for (const d of data) { const j = getJobs(d); if (d.salario != null && j) { const i = buckets.findIndex(b => d.salario >= b.lo && d.salario < b.hi); if (i >= 0) histJobs[i] += j; } }
   const maxH = Math.max(...histJobs);
-  document.getElementById("block3").innerHTML = `<h3>Empregos por sal\u00e1rio</h3>
-    <div class="histogram">${histJobs.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${salarioColor(buckets[i].mid, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>R$1,5K</span><span>R$5K</span><span>R$12K+</span></div>`;
-
-  // Tiers
-  const tiers = SALARY_BANDS.map(t => {
-    let jobs = 0;
-    for (const d of data) { const j = getJobs(d); if (d.salario != null && j && d.salario >= t.min && d.salario < t.max) jobs += j; }
-    return { ...t, label: t.label, jobs, color: salarioColor(t.max === Infinity ? 20000 : (t.min + t.max) / 2, 1) };
-  });
+  document.getElementById("block3").innerHTML = `<h3>Empregos por sal\u00e1rio</h3><div class="histogram">${histJobs.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${salarioColor(buckets[i].mid, 0.7)}"></div>`).join("")}</div><div class="hist-labels"><span>R$1,5K</span><span>R$5K</span><span>R$12K+</span></div>`;
+  const tiers = SALARY_BANDS.map(t => { let jobs = 0; for (const d of data) { const j = getJobs(d); if (d.salario != null && j && d.salario >= t.min && d.salario < t.max) jobs += j; } return { ...t, label: t.label, jobs, color: salarioColor(t.max === Infinity ? 20000 : (t.min + t.max) / 2, 1) }; });
   document.getElementById("block4").innerHTML = `<h3>Faixas salariais</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
-
-  // Cross: salary by education
   const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.escolaridade), d => d.salario);
-  document.getElementById("block5").innerHTML = `<h3>Sal\u00e1rio por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
-    label: g.label, val: formatSalario(g.avg),
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)),
-    color: salarioColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Cross: salary by exposure tier
-  const expTiers = [
-    { label: "Exp. 0\u20132", lo: 0, hi: 2 },
-    { label: "Exp. 3\u20134", lo: 3, hi: 4 },
-    { label: "Exp. 5\u20136", lo: 5, hi: 6 },
-    { label: "Exp. 7\u20138", lo: 7, hi: 8 },
-    { label: "Exp. 9\u201310", lo: 9, hi: 10 },
-  ];
+  document.getElementById("block5").innerHTML = `<h3>Sal\u00e1rio por escolaridade</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({ label: g.label, val: formatSalario(g.avg), pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)), color: salarioColor(g.avg, 0.8) })))}</div>`;
+  const expTiers = [{ label: "Exp. 0\u20132", lo: 0, hi: 2 },{ label: "Exp. 3\u20134", lo: 3, hi: 4 },{ label: "Exp. 5\u20136", lo: 5, hi: 6 },{ label: "Exp. 7\u20138", lo: 7, hi: 8 },{ label: "Exp. 9\u201310", lo: 9, hi: 10 }];
   const byExp = weightedAvgByGroups(expTiers, (d, g) => d.exposicao != null && d.exposicao >= g.lo && d.exposicao <= g.hi, d => d.salario);
-  document.getElementById("block6").innerHTML = `<h3>Sal\u00e1rio por exposi\u00e7\u00e3o</h3><div class="hbar-chart">${renderHbars(byExp.map(g => ({
-    label: g.label, val: formatSalario(g.avg),
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)),
-    color: salarioColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Total wages
+  document.getElementById("block6").innerHTML = `<h3>Sal\u00e1rio por exposi\u00e7\u00e3o</h3><div class="hbar-chart">${renderHbars(byExp.map(g => ({ label: g.label, val: formatSalario(g.avg), pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)), color: salarioColor(g.avg, 0.8) })))}</div>`;
   let totalWages = 0;
   for (const d of data) { const j = getJobs(d); if (d.salario != null && j) totalWages += d.salario * j; }
-  document.getElementById("block7").innerHTML = `<h3>Massa salarial</h3>
-    <div class="stat-big">R$ ${(totalWages / 1e9).toFixed(1).replace(".", ",")}B</div>
-    <div class="stat-label">mensal</div>`;
+  document.getElementById("block7").innerHTML = `<h3>Massa salarial</h3><div class="stat-big">R$ ${(totalWages / 1e9).toFixed(1).replace(".", ",")}B</div><div class="stat-label">mensal</div>`;
   document.getElementById("block8").innerHTML = "";
 }
 
 function updateEscolaridadeStats(totalJobs) {
-  // Headline: % Superior+
   let supJobs = 0;
-  for (const d of data) {
-    const j = getJobs(d);
-    if (j && ["Superior Completo", "Mestrado", "Doutorado"].includes(d.escolaridade)) supJobs += j;
-  }
-  document.getElementById("block2").innerHTML = `<h3>Superior+</h3>
-    <div class="stat-big"><span style="color:${escolaridadeColor(4, 1)}">${(supJobs / totalJobs * 100).toFixed(0)}%</span></div>
-    <div class="stat-label">dos empregos</div>`;
-
-  // Histogram: jobs by edu group
-  const groups = EDU_GROUPS.map((g, i) => {
-    let jobs = 0;
-    for (const d of data) { const j = getJobs(d); if (j && g.match.includes(d.escolaridade)) jobs += j; }
-    return { ...g, jobs, idx: i };
-  });
+  for (const d of data) { const j = getJobs(d); if (j && ["Superior Completo","Mestrado","Doutorado"].includes(d.escolaridade)) supJobs += j; }
+  document.getElementById("block2").innerHTML = `<h3>Superior+</h3><div class="stat-big"><span style="color:${escolaridadeColor(4, 1)}">${(supJobs / totalJobs * 100).toFixed(0)}%</span></div><div class="stat-label">dos empregos</div>`;
+  const groups = EDU_GROUPS.map((g, i) => { let jobs = 0; for (const d of data) { const j = getJobs(d); if (j && g.match.includes(d.escolaridade)) jobs += j; } return { ...g, jobs, idx: i }; });
   const maxH = Math.max(...groups.map(g => g.jobs));
-  document.getElementById("block3").innerHTML = `<h3>Empregos por escolaridade</h3>
-    <div class="histogram">${groups.map(g => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? g.jobs / maxH * 100 : 0)}%;background:${escolaridadeColor(g.idx * 1.5, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>Fund.</span><span>M\u00e9dio</span><span>Dout.</span></div>`;
-
-  // Tier breakdown
+  document.getElementById("block3").innerHTML = `<h3>Empregos por escolaridade</h3><div class="histogram">${groups.map(g => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? g.jobs / maxH * 100 : 0)}%;background:${escolaridadeColor(g.idx * 1.5, 0.7)}"></div>`).join("")}</div><div class="hist-labels"><span>Fund.</span><span>M\u00e9dio</span><span>Dout.</span></div>`;
   const tiers = groups.map((g, i) => ({ label: g.label, jobs: g.jobs, color: escolaridadeColor(i * 1.5, 1) }));
   document.getElementById("block4").innerHTML = `<h3>Faixas de escolaridade</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
-
-  // Cross: avg salary by education
   const salByEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.escolaridade), d => d.salario);
-  document.getElementById("block5").innerHTML = `<h3>Sal\u00e1rio por escolaridade</h3><div class="hbar-chart">${renderHbars(salByEdu.map(g => ({
-    label: g.label, val: formatSalario(g.avg),
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)),
-    color: salarioColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Cross: avg exposure by education
+  document.getElementById("block5").innerHTML = `<h3>Sal\u00e1rio por escolaridade</h3><div class="hbar-chart">${renderHbars(salByEdu.map(g => ({ label: g.label, val: formatSalario(g.avg), pct: Math.max(0, Math.min(100, (Math.log(Math.max(1000, g.avg)) - Math.log(1000)) / (Math.log(45000) - Math.log(1000)) * 100)), color: salarioColor(g.avg, 0.8) })))}</div>`;
   const expByEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.escolaridade), d => d.exposicao);
-  document.getElementById("block6").innerHTML = `<h3>Exposi\u00e7\u00e3o por escolaridade</h3><div class="hbar-chart">${renderHbars(expByEdu.map(g => ({
-    label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8)
-  })))}</div>`;
-
-  // Jobs with no degree
+  document.getElementById("block6").innerHTML = `<h3>Exposi\u00e7\u00e3o por escolaridade</h3><div class="hbar-chart">${renderHbars(expByEdu.map(g => ({ label: g.label, val: g.avg.toFixed(1).replace(".", ","), pct: g.avg / 10 * 100, color: exposicaoColor(g.avg, 0.8) })))}</div>`;
   let noFormal = 0;
-  for (const d of data) {
-    const j = getJobs(d);
-    if (j && ["Analfabeto", "At\u00e9 5\u00aa Incompleto", "6\u00aa a 9\u00aa Fundamental"].includes(d.escolaridade)) noFormal += j;
-  }
-  document.getElementById("block7").innerHTML = `<h3>Fundamental ou menos</h3>
-    <div class="stat-big">${formatNumber(noFormal)}</div>
-    <div class="stat-label">empregos sem ensino m\u00e9dio</div>`;
+  for (const d of data) { const j = getJobs(d); if (j && ["Analfabeto","At\u00e9 5\u00aa Incompleto","6\u00aa a 9\u00aa Fundamental"].includes(d.escolaridade)) noFormal += j; }
+  document.getElementById("block7").innerHTML = `<h3>Fundamental ou menos</h3><div class="stat-big">${formatNumber(noFormal)}</div><div class="stat-label">empregos sem ensino m\u00e9dio</div>`;
   document.getElementById("block8").innerHTML = "";
 }
 
-// ── Events ─────────────────────────────────────────────────────────────
-
-canvas.addEventListener("mousemove", (e) => {
-  const hit = hitTest(e.clientX, e.clientY);
-  if (hit !== hovered) { hovered = hit; draw(); }
-  if (hovered) { showTooltip(hovered, e.clientX, e.clientY); canvas.style.cursor = "pointer"; }
-  else { hideTooltip(); canvas.style.cursor = "default"; }
-});
-canvas.addEventListener("mouseleave", () => { hovered = null; hideTooltip(); draw(); });
-function resize() { dpr = window.devicePixelRatio || 1; layout(); draw(); }
-
-// ── Legend gradient ────────────────────────────────────────────────────
-
+// Legend gradient
 const LEGEND_CONFIG = {
-  exposicao:     { low: "Baixa", high: "Alta" },
-  vantagem:      { low: "Baixa", high: "Alta" },
-  crescimento:   { low: "Baixo", high: "Alto" },
-  oportunidade:  { low: "Baixa", high: "Alta" },
-  salario:       { low: "R$1K", high: "R$45K" },
-  escolaridade:  { low: "Analfabeto", high: "Doutorado" },
+  exposicao: { low: "Baixa", high: "Alta" },
+  vantagem: { low: "Baixa", high: "Alta" },
+  crescimento: { low: "Baixo", high: "Alto" },
+  oportunidade: { low: "Baixa", high: "Alta" },
+  salario: { low: "R$1K", high: "R$45K" },
+  escolaridade: { low: "Analfabeto", high: "Doutorado" },
 };
 
 function drawGradientLegend() {
@@ -905,11 +1220,7 @@ function drawGradientLegend() {
   const gctx = c.getContext("2d");
   for (let x = 0; x < 80; x++) {
     const t = x / 79;
-    if (colorMode === "exposicao") {
-      gctx.fillStyle = greenRedCSS(t, 1);
-    } else {
-      gctx.fillStyle = greenRedCSS(1 - t, 1);
-    }
+    gctx.fillStyle = colorMode === "exposicao" ? greenRedCSS(t, 1) : greenRedCSS(1 - t, 1);
     gctx.fillRect(x, 0, 1, 8);
   }
   const cfg = LEGEND_CONFIG[colorMode];
@@ -917,9 +1228,8 @@ function drawGradientLegend() {
   document.getElementById("legendHigh").textContent = cfg.high;
 }
 
-// ── Layer toggle ─────────────────────────────────────────────────────
-
-document.getElementById("colorToggle").addEventListener("click", (e) => {
+// Color toggle
+document.getElementById("colorToggle").addEventListener("click", function(e) {
   const btn = e.target.closest("button");
   if (!btn || !btn.dataset.mode) return;
   colorMode = btn.dataset.mode;
@@ -927,22 +1237,741 @@ document.getElementById("colorToggle").addEventListener("click", (e) => {
   btn.classList.add("active");
   updateStats();
   drawGradientLegend();
-  draw();
-  requestAnimationFrame(resize);
+  treemapDraw();
+  requestAnimationFrame(treemapResize);
 });
 
-// ── Load ───────────────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 2: SCATTER PLOT
+// ══════════════════════════════════════════════════════════════════════════
+let scatterInited = false;
+let scatterHovered = null;
+const scatterCanvas = document.getElementById("scatterCanvas");
+const scatterCtx = scatterCanvas.getContext("2d");
 
-fetch("data.json")
-  .then(r => r.json())
-  .then(d => {
-    data = d;
-    updateStats();
-    drawGradientLegend();
-    resize();
+const SCATTER_PAD = { top: 40, right: 30, bottom: 50, left: 60 };
+const QUADRANT_LABELS = [
+  { label: "Est\u00e1vel", x: 0.25, y: 0.75, color: "rgba(150,150,160,0.12)" },
+  { label: "Prosperar", x: 0.25, y: 0.25, color: "rgba(76,175,80,0.10)" },
+  { label: "Urgente", x: 0.75, y: 0.75, color: "rgba(239,83,80,0.10)" },
+  { label: "Transformar", x: 0.75, y: 0.25, color: "rgba(66,165,245,0.10)" },
+];
+
+function initScatter() {
+  if (data.length === 0) return;
+  scatterInited = true;
+  scatterResize();
+}
+
+function scatterResize() {
+  if (!scatterInited || data.length === 0) return;
+  const container = document.getElementById("scatterContainer");
+  const w = container.clientWidth;
+  const h = Math.min(w * 0.7, 700);
+  const d = window.devicePixelRatio || 1;
+  scatterCanvas.width = w * d; scatterCanvas.height = h * d;
+  scatterCanvas.style.width = w + "px"; scatterCanvas.style.height = h + "px";
+  scatterDraw();
+}
+
+function scatterToPlot(exposicao, oportunidade) {
+  const w = scatterCanvas.width / (window.devicePixelRatio || 1);
+  const h = scatterCanvas.height / (window.devicePixelRatio || 1);
+  const plotW = w - SCATTER_PAD.left - SCATTER_PAD.right;
+  const plotH = h - SCATTER_PAD.top - SCATTER_PAD.bottom;
+  return {
+    px: SCATTER_PAD.left + (exposicao / 10) * plotW,
+    py: SCATTER_PAD.top + (1 - oportunidade / 10) * plotH
+  };
+}
+
+function scatterFromMouse(mx, my) {
+  const rect = scatterCanvas.getBoundingClientRect();
+  return { mx: mx - rect.left, my: my - rect.top };
+}
+
+function scatterDraw() {
+  const d = window.devicePixelRatio || 1;
+  const w = scatterCanvas.width / d;
+  const h = scatterCanvas.height / d;
+  scatterCtx.setTransform(d, 0, 0, d, 0, 0);
+  scatterCtx.fillStyle = "#0a0a0f";
+  scatterCtx.fillRect(0, 0, w, h);
+
+  const plotW = w - SCATTER_PAD.left - SCATTER_PAD.right;
+  const plotH = h - SCATTER_PAD.top - SCATTER_PAD.bottom;
+
+  // Quadrant backgrounds
+  const midX = SCATTER_PAD.left + plotW * 0.5;
+  const midY = SCATTER_PAD.top + plotH * 0.5;
+
+  // Top-left (Prosperar)
+  scatterCtx.fillStyle = "rgba(76,175,80,0.06)";
+  scatterCtx.fillRect(SCATTER_PAD.left, SCATTER_PAD.top, plotW * 0.5, plotH * 0.5);
+  // Top-right (Transformar)
+  scatterCtx.fillStyle = "rgba(66,165,245,0.06)";
+  scatterCtx.fillRect(midX, SCATTER_PAD.top, plotW * 0.5, plotH * 0.5);
+  // Bottom-left (Estavel)
+  scatterCtx.fillStyle = "rgba(150,150,160,0.04)";
+  scatterCtx.fillRect(SCATTER_PAD.left, midY, plotW * 0.5, plotH * 0.5);
+  // Bottom-right (Urgente)
+  scatterCtx.fillStyle = "rgba(239,83,80,0.06)";
+  scatterCtx.fillRect(midX, midY, plotW * 0.5, plotH * 0.5);
+
+  // Quadrant labels
+  scatterCtx.font = "600 14px -apple-system, system-ui, sans-serif";
+  scatterCtx.textAlign = "center";
+  scatterCtx.fillStyle = "rgba(76,175,80,0.4)";
+  scatterCtx.fillText("Prosperar", SCATTER_PAD.left + plotW * 0.25, SCATTER_PAD.top + 24);
+  scatterCtx.fillStyle = "rgba(66,165,245,0.4)";
+  scatterCtx.fillText("Transformar", midX + plotW * 0.25, SCATTER_PAD.top + 24);
+  scatterCtx.fillStyle = "rgba(150,150,160,0.3)";
+  scatterCtx.fillText("Est\u00e1vel", SCATTER_PAD.left + plotW * 0.25, midY + plotH * 0.5 - 10);
+  scatterCtx.fillStyle = "rgba(239,83,80,0.4)";
+  scatterCtx.fillText("Urgente", midX + plotW * 0.25, midY + plotH * 0.5 - 10);
+
+  // Grid lines
+  scatterCtx.strokeStyle = "rgba(255,255,255,0.06)";
+  scatterCtx.lineWidth = 1;
+  for (let i = 0; i <= 10; i++) {
+    const x = SCATTER_PAD.left + (i / 10) * plotW;
+    const y = SCATTER_PAD.top + (i / 10) * plotH;
+    scatterCtx.beginPath(); scatterCtx.moveTo(x, SCATTER_PAD.top); scatterCtx.lineTo(x, SCATTER_PAD.top + plotH); scatterCtx.stroke();
+    scatterCtx.beginPath(); scatterCtx.moveTo(SCATTER_PAD.left, y); scatterCtx.lineTo(SCATTER_PAD.left + plotW, y); scatterCtx.stroke();
+  }
+  // Midline emphasis
+  scatterCtx.strokeStyle = "rgba(255,255,255,0.15)";
+  scatterCtx.setLineDash([4, 4]);
+  scatterCtx.beginPath(); scatterCtx.moveTo(midX, SCATTER_PAD.top); scatterCtx.lineTo(midX, SCATTER_PAD.top + plotH); scatterCtx.stroke();
+  scatterCtx.beginPath(); scatterCtx.moveTo(SCATTER_PAD.left, midY); scatterCtx.lineTo(SCATTER_PAD.left + plotW, midY); scatterCtx.stroke();
+  scatterCtx.setLineDash([]);
+
+  // Axis labels
+  scatterCtx.fillStyle = "rgba(255,255,255,0.5)";
+  scatterCtx.font = "500 12px -apple-system, system-ui, sans-serif";
+  scatterCtx.textAlign = "center";
+  for (let i = 0; i <= 10; i += 2) {
+    const x = SCATTER_PAD.left + (i / 10) * plotW;
+    scatterCtx.fillText(String(i), x, SCATTER_PAD.top + plotH + 18);
+  }
+  scatterCtx.textAlign = "right";
+  for (let i = 0; i <= 10; i += 2) {
+    const y = SCATTER_PAD.top + (1 - i / 10) * plotH;
+    scatterCtx.fillText(String(i), SCATTER_PAD.left - 8, y + 4);
+  }
+  // Axis titles
+  scatterCtx.fillStyle = "rgba(255,255,255,0.6)";
+  scatterCtx.font = "600 12px -apple-system, system-ui, sans-serif";
+  scatterCtx.textAlign = "center";
+  scatterCtx.fillText("Exposi\u00e7\u00e3o \u00e0 IA \u2192", SCATTER_PAD.left + plotW / 2, h - 6);
+  scatterCtx.save();
+  scatterCtx.translate(14, SCATTER_PAD.top + plotH / 2);
+  scatterCtx.rotate(-Math.PI / 2);
+  scatterCtx.fillText("Oportunidade \u2192", 0, 0);
+  scatterCtx.restore();
+
+  // Compute max empregados for sizing
+  let maxEmp = 0;
+  for (const dd of data) { if (dd.empregados > maxEmp) maxEmp = dd.empregados; }
+
+  // Dots
+  const dots = [];
+  for (const dd of data) {
+    if (dd.exposicao == null || dd.oportunidade == null) continue;
+    const { px, py } = scatterToPlot(dd.exposicao, dd.oportunidade);
+    const emp = dd.empregados || 1;
+    const r = Math.max(3, Math.sqrt(emp / maxEmp) * 28);
+    dots.push({ d: dd, px, py, r });
+  }
+
+  // Sort so smaller dots draw on top
+  dots.sort((a, b) => b.r - a.r);
+
+  for (const dot of dots) {
+    const isH = dot.d === scatterHovered;
+    scatterCtx.beginPath();
+    scatterCtx.arc(dot.px, dot.py, dot.r, 0, Math.PI * 2);
+    scatterCtx.fillStyle = exposicaoColor(dot.d.exposicao, isH ? 0.9 : 0.45);
+    scatterCtx.fill();
+    if (isH) {
+      scatterCtx.strokeStyle = "#fff";
+      scatterCtx.lineWidth = 2;
+      scatterCtx.stroke();
+    }
+  }
+
+  // Store dots for hit testing
+  scatterCanvas._dots = dots;
+}
+
+scatterCanvas.addEventListener("mousemove", function(e) {
+  if (!scatterInited) return;
+  const { mx, my } = scatterFromMouse(e.clientX, e.clientY);
+  const dots = scatterCanvas._dots || [];
+  let hit = null;
+  // Check smaller dots first (they're drawn on top)
+  for (let i = dots.length - 1; i >= 0; i--) {
+    const dot = dots[i];
+    const dx = mx - dot.px, dy = my - dot.py;
+    if (dx * dx + dy * dy <= (dot.r + 2) * (dot.r + 2)) { hit = dot.d; break; }
+  }
+  if (hit !== scatterHovered) { scatterHovered = hit; scatterDraw(); }
+  if (scatterHovered) { showSimpleTooltip(scatterHovered, e.clientX, e.clientY); scatterCanvas.style.cursor = "pointer"; }
+  else { hideTooltip(); scatterCanvas.style.cursor = "crosshair"; }
+});
+scatterCanvas.addEventListener("mouseleave", function() { scatterHovered = null; hideTooltip(); if (scatterInited) scatterDraw(); });
+
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 3: PAINEL PESSOAL
+// ══════════════════════════════════════════════════════════════════════════
+const painelSearch = document.getElementById("painelSearch");
+const painelDropdown = document.getElementById("painelDropdown");
+let painelHighlightIdx = -1;
+
+function fuzzyMatch(query, text) {
+  const q = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const t = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return t.includes(q);
+}
+
+painelSearch.addEventListener("input", function() {
+  const q = this.value.trim();
+  if (q.length < 2) { painelDropdown.classList.remove("open"); return; }
+  const matches = data.filter(d => fuzzyMatch(q, d.titulo) || fuzzyMatch(q, d.codigo)).slice(0, 20);
+  if (matches.length === 0) { painelDropdown.classList.remove("open"); return; }
+  painelDropdown.innerHTML = matches.map((m, i) =>
+    `<div class="search-item" data-idx="${data.indexOf(m)}">${m.titulo}<span class="search-code">${m.codigo}</span></div>`
+  ).join("");
+  painelDropdown.classList.add("open");
+  painelHighlightIdx = -1;
+});
+
+painelSearch.addEventListener("keydown", function(e) {
+  const items = painelDropdown.querySelectorAll(".search-item");
+  if (!items.length) return;
+  if (e.key === "ArrowDown") { e.preventDefault(); painelHighlightIdx = Math.min(painelHighlightIdx + 1, items.length - 1); updatePainelHighlight(items); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); painelHighlightIdx = Math.max(painelHighlightIdx - 1, 0); updatePainelHighlight(items); }
+  else if (e.key === "Enter" && painelHighlightIdx >= 0) { e.preventDefault(); items[painelHighlightIdx].click(); }
+  else if (e.key === "Escape") { painelDropdown.classList.remove("open"); }
+});
+
+function updatePainelHighlight(items) {
+  items.forEach((it, i) => it.classList.toggle("highlighted", i === painelHighlightIdx));
+  if (painelHighlightIdx >= 0) items[painelHighlightIdx].scrollIntoView({ block: "nearest" });
+}
+
+painelDropdown.addEventListener("click", function(e) {
+  const item = e.target.closest(".search-item");
+  if (!item) return;
+  const idx = parseInt(item.dataset.idx);
+  selectOccupation(data[idx]);
+  painelDropdown.classList.remove("open");
+});
+
+document.addEventListener("click", function(e) {
+  if (!e.target.closest("#painelSearchBox")) painelDropdown.classList.remove("open");
+});
+
+function selectOccupation(occ) {
+  painelSearch.value = occ.titulo;
+  document.getElementById("painelPlaceholder").style.display = "none";
+  const content = document.getElementById("painelContent");
+  content.style.display = "block";
+
+  const exp = occ.exposicao != null ? occ.exposicao : 0;
+  const van = occ.vantagem != null ? occ.vantagem : 0;
+  const cre = occ.crescimento != null ? occ.crescimento : 0;
+  const opo = occ.oportunidade != null ? occ.oportunidade : 0;
+
+  // Metric cards
+  let html = `<div class="metric-cards">
+    <div class="metric-card">
+      <div class="metric-label">Exposi\u00e7\u00e3o \u00e0 IA</div>
+      <div class="metric-value" style="color:${exposicaoColor(exp, 1)}">${exp}/10</div>
+      <div class="metric-sub">${exp <= 3 ? 'Baixa' : exp <= 5 ? 'Moderada' : exp <= 7 ? 'Alta' : 'Muito alta'}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Vantagem com IA</div>
+      <div class="metric-value" style="color:${vantagemColor(van, 1)}">${van}/10</div>
+      <div class="metric-sub">${van <= 3 ? 'Baixa' : van <= 5 ? 'Moderada' : van <= 7 ? 'Alta' : 'Muito alta'}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Crescimento</div>
+      <div class="metric-value" style="color:${crescimentoColor(cre, 1)}">${cre}/10</div>
+      <div class="metric-sub">${cre <= 3 ? 'Baixo' : cre <= 5 ? 'Moderado' : cre <= 7 ? 'Alto' : 'Muito alto'}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Oportunidade</div>
+      <div class="metric-value" style="color:${oportunidadeColor(opo, 1)}">${opo}/10</div>
+      <div class="metric-sub">${opo <= 3 ? 'Baixa' : opo <= 5 ? 'Moderada' : opo <= 7 ? 'Alta' : 'Muito alta'}</div>
+    </div>
+  </div>`;
+
+  // Salary
+  html += `<div class="salary-section">
+    <div class="salary-card">
+      <div class="sal-label">Sal\u00e1rio mediano (RAIS)</div>
+      <div class="sal-value">${formatSalarioFull(occ.salario)}<span style="font-size:14px;color:var(--fg2)">/m\u00eas</span></div>
+    </div>
+    <div class="salary-card">
+      <div class="sal-label">Sal\u00e1rio de admiss\u00e3o (CAGED)</div>
+      <div class="sal-value">${formatSalarioFull(occ.salario_admissao)}<span style="font-size:14px;color:var(--fg2)">/m\u00eas</span></div>
+    </div>
+  </div>`;
+
+  // Risk assessment
+  let riskTitle, riskText, riskColor;
+  if (exp <= 3) {
+    riskTitle = "Risco baixo";
+    riskText = "Sua ocupa\u00e7\u00e3o tem baixa exposi\u00e7\u00e3o \u00e0 IA. As tarefas principais deste trabalho ainda s\u00e3o dif\u00edceis de automatizar com a tecnologia atual. Mesmo assim, vale acompanhar as evolu\u00e7\u00f5es tecnol\u00f3gicas e buscar oportunidades de usar IA como ferramenta auxiliar.";
+    riskColor = "var(--green)";
+  } else if (exp <= 5) {
+    riskTitle = "Risco moderado";
+    riskText = "A IA come\u00e7a a impactar partes do seu trabalho. Algumas tarefas rotineiras podem ser automatizadas, mas o n\u00facleo da ocupa\u00e7\u00e3o ainda requer habilidades humanas. Este \u00e9 o momento ideal para aprender ferramentas de IA e integr\u00e1-las ao seu fluxo de trabalho.";
+    riskColor = "var(--yellow)";
+  } else if (exp <= 7) {
+    riskTitle = "Risco alto";
+    riskText = "A IA est\u00e1 transformando significativamente esta ocupa\u00e7\u00e3o. Muitas tarefas j\u00e1 podem ser realizadas por sistemas automatizados. Profissionais que dominarem ferramentas de IA ter\u00e3o vantagem competitiva. Considere investir em habilidades complementares e especializa\u00e7\u00f5es que a IA n\u00e3o substitui facilmente.";
+    riskColor = "var(--red)";
+  } else {
+    riskTitle = "Risco muito alto";
+    riskText = "Esta ocupa\u00e7\u00e3o enfrenta automa\u00e7\u00e3o significativa pela IA. Grande parte das tarefas core podem ser realizadas por sistemas inteligentes. \u00c9 fundamental come\u00e7ar a planejar uma transi\u00e7\u00e3o de carreira, desenvolver novas habilidades e explorar ocupa\u00e7\u00f5es relacionadas com menor exposi\u00e7\u00e3o.";
+    riskColor = "var(--red)";
+  }
+
+  html += `<div class="risk-assessment" style="border-left:3px solid ${riskColor}">
+    <div class="risk-title" style="color:${riskColor}">${riskTitle}</div>
+    <div class="risk-text">${riskText}</div>
+  </div>`;
+
+  // Action cards
+  html += `<h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">O que fazer?</h3>`;
+  html += `<div class="action-cards">`;
+  if (exp >= 5 && opo >= 5) {
+    html += `<div class="action-card" style="border-left:3px solid var(--blue)">
+      <div class="action-icon">&#x1F680;</div>
+      <div class="action-title">Adote IA como ferramenta</div>
+      <div class="action-desc">Profissionais da sua \u00e1rea que dominam ferramentas de IA t\u00eam vantagem competitiva. A alta oportunidade indica que a IA pode amplificar sua produtividade.</div>
+      <div class="action-suggestion">Explore ferramentas de IA espec\u00edficas para sua \u00e1rea e invista em cursos pr\u00e1ticos.</div>
+    </div>`;
+  }
+  if (exp >= 6 && opo < 5) {
+    html += `<div class="action-card" style="border-left:3px solid var(--yellow)">
+      <div class="action-icon">&#x1F504;</div>
+      <div class="action-title">Considere uma transi\u00e7\u00e3o</div>
+      <div class="action-desc">Com alta exposi\u00e7\u00e3o e baixa oportunidade, esta ocupa\u00e7\u00e3o pode encolher. Veja abaixo ocupa\u00e7\u00f5es relacionadas com melhores perspectivas.</div>
+      <div class="action-suggestion">Avalie ocupa\u00e7\u00f5es do mesmo grupo com melhor pontua\u00e7\u00e3o de oportunidade.</div>
+    </div>`;
+  }
+  html += `<div class="action-card" style="border-left:3px solid var(--green)">
+    <div class="action-icon">&#x1F331;</div>
+    <div class="action-title">Desenvolva habilidades complementares</div>
+    <div class="action-desc">Habilidades que a IA n\u00e3o substitui facilmente: criatividade, empatia, lideran\u00e7a, negocia\u00e7\u00e3o, pensamento cr\u00edtico e gest\u00e3o de pessoas.</div>
+    <div class="action-suggestion">Invista em soft skills e em \u00e1reas que exigem julgamento humano complexo.</div>
+  </div>`;
+  html += `</div>`;
+
+  // Rationale
+  if (occ.exposicao_rationale) {
+    html += `<div class="rationale-box">
+      <h3>An\u00e1lise de exposi\u00e7\u00e3o \u00e0 IA</h3>
+      <p>${occ.exposicao_rationale}</p>
+    </div>`;
+  }
+  if (occ.vantagem_rationale) {
+    html += `<div class="rationale-box">
+      <h3>An\u00e1lise de vantagem com IA</h3>
+      <p>${occ.vantagem_rationale}</p>
+    </div>`;
+  }
+  if (occ.crescimento_rationale) {
+    html += `<div class="rationale-box">
+      <h3>An\u00e1lise de crescimento</h3>
+      <p>${occ.crescimento_rationale}</p>
+    </div>`;
+  }
+
+  // Similar occupations in same grande_grupo with better opportunity
+  const sameGroup = data.filter(d => d.grande_grupo_codigo === occ.grande_grupo_codigo && d.codigo !== occ.codigo && d.oportunidade != null);
+  const betterOps = sameGroup.filter(d => d.oportunidade > opo).sort((a, b) => b.oportunidade - a.oportunidade).slice(0, 5);
+  if (betterOps.length === 0) {
+    // Just show top 5 from same group
+    const top5 = sameGroup.sort((a, b) => (b.oportunidade || 0) - (a.oportunidade || 0)).slice(0, 5);
+    if (top5.length > 0) {
+      html += `<h3 style="font-size:16px;font-weight:600;margin:20px 0 12px;">Ocupa\u00e7\u00f5es do mesmo grupo</h3>`;
+      html += buildComparisonTable(top5, occ);
+    }
+  } else {
+    html += `<h3 style="font-size:16px;font-weight:600;margin:20px 0 12px;">Sugest\u00f5es de transi\u00e7\u00e3o (mesmo grupo, melhor oportunidade)</h3>`;
+    html += buildComparisonTable(betterOps, occ);
+  }
+
+  // Demographics
+  if (occ.demographics) {
+    const dem = occ.demographics;
+    const totalDem = (dem.total_feminino || 0) + (dem.total_masculino || 0);
+    if (totalDem > 0) {
+      html += `<h3 style="font-size:16px;font-weight:600;margin:20px 0 12px;">Demografia desta ocupa\u00e7\u00e3o</h3>`;
+      html += `<div class="card" style="margin-bottom:20px"><div class="demo-bars">`;
+      // Gender
+      const pctFem = (dem.total_feminino || 0) / totalDem * 100;
+      const pctMasc = (dem.total_masculino || 0) / totalDem * 100;
+      html += `<div class="demo-bar-section"><h4>G\u00eanero</h4>`;
+      html += `<div class="demo-bar-item"><span class="dbl">Feminino</span><div class="dbt"><div class="dbf" style="width:${pctFem}%;background:rgba(186,104,200,0.7)"></div></div><span class="dbv">${formatPct(pctFem)}</span></div>`;
+      html += `<div class="demo-bar-item"><span class="dbl">Masculino</span><div class="dbt"><div class="dbf" style="width:${pctMasc}%;background:rgba(66,165,245,0.7)"></div></div><span class="dbv">${formatPct(pctMasc)}</span></div>`;
+      html += `</div>`;
+      // Race
+      const totalRace = (dem.total_branca || 0) + (dem.total_negra || 0);
+      if (totalRace > 0) {
+        const pctBranca = (dem.total_branca || 0) / totalRace * 100;
+        const pctNegra = (dem.total_negra || 0) / totalRace * 100;
+        html += `<div class="demo-bar-section"><h4>Ra\u00e7a</h4>`;
+        html += `<div class="demo-bar-item"><span class="dbl">Branca</span><div class="dbt"><div class="dbf" style="width:${pctBranca}%;background:rgba(255,183,77,0.7)"></div></div><span class="dbv">${formatPct(pctBranca)}</span></div>`;
+        html += `<div class="demo-bar-item"><span class="dbl">Negra</span><div class="dbt"><div class="dbf" style="width:${pctNegra}%;background:rgba(129,199,132,0.7)"></div></div><span class="dbv">${formatPct(pctNegra)}</span></div>`;
+        html += `</div>`;
+      }
+      html += `</div></div>`;
+    }
+  }
+
+  content.innerHTML = html;
+}
+
+function buildComparisonTable(occs, current) {
+  let html = `<div class="ranking-table-wrap"><table class="comparison-table">
+    <thead><tr>
+      <th>Ocupa\u00e7\u00e3o</th><th>Sal\u00e1rio</th><th>Empregados</th><th>Exposi\u00e7\u00e3o</th><th>Oportunidade</th><th>Vantagem</th>
+    </tr></thead><tbody>`;
+  for (const o of occs) {
+    const salDiff = (o.salario && current.salario) ? o.salario - current.salario : null;
+    const salDiffStr = salDiff != null ? ` (${salDiff >= 0 ? '+' : ''}${formatSalario(salDiff)})` : '';
+    html += `<tr>
+      <td>${o.titulo}<br><span style="font-size:11px;color:var(--fg2)">${o.codigo}</span></td>
+      <td>${formatSalarioFull(o.salario)}<span style="font-size:11px;color:${salDiff >= 0 ? 'var(--green)' : 'var(--red)'}">${salDiffStr}</span></td>
+      <td>${formatNumber(o.empregados)}</td>
+      <td><span class="score-cell" style="background:${exposicaoColor(o.exposicao, 0.2)};color:${exposicaoColor(o.exposicao, 1)}">${o.exposicao != null ? o.exposicao : '\u2014'}</span></td>
+      <td><span class="score-cell" style="background:${oportunidadeColor(o.oportunidade, 0.2)};color:${oportunidadeColor(o.oportunidade, 1)}">${o.oportunidade != null ? o.oportunidade : '\u2014'}</span></td>
+      <td><span class="score-cell" style="background:${vantagemColor(o.vantagem, 0.2)};color:${vantagemColor(o.vantagem, 1)}">${o.vantagem != null ? o.vantagem : '\u2014'}</span></td>
+    </tr>`;
+  }
+  html += `</tbody></table></div>`;
+  return html;
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 4: DEMOGRAPHICS
+// ══════════════════════════════════════════════════════════════════════════
+let demoInited = false;
+
+function initDemo() {
+  if (demoInited || !summaryData) return;
+  demoInited = true;
+
+  const dem = summaryData.demographics;
+  const totalWorkers = dem.total_feminino + dem.total_masculino;
+  const pctFem = dem.total_feminino / totalWorkers * 100;
+  const pctNegra = dem.total_negra / (dem.total_branca + dem.total_negra) * 100;
+
+  let html = `<div class="demo-summary">
+    <div class="demo-stat">
+      <div class="ds-label">Total de trabalhadores</div>
+      <div class="ds-value">${(totalWorkers / 1e6).toFixed(1).replace(".", ",")}M</div>
+      <div class="ds-sub">com dados demogr\u00e1ficos</div>
+    </div>
+    <div class="demo-stat">
+      <div class="ds-label">Feminino</div>
+      <div class="ds-value" style="color:rgba(186,104,200,1)">${formatPct(pctFem)}</div>
+      <div class="ds-sub">${formatNumber(dem.total_feminino)} trabalhadoras</div>
+    </div>
+    <div class="demo-stat">
+      <div class="ds-label">Popula\u00e7\u00e3o negra</div>
+      <div class="ds-value" style="color:rgba(129,199,132,1)">${formatPct(pctNegra)}</div>
+      <div class="ds-sub">${formatNumber(dem.total_negra)} trabalhadores (preta + parda)</div>
+    </div>
+  </div>`;
+
+  // Risk by gender and race
+  html += `<div class="demo-charts">
+    <div class="demo-chart-box">
+      <h3>Risco por G\u00eanero</h3>
+      <p style="font-size:12px;color:var(--fg2);margin-bottom:14px">% em ocupa\u00e7\u00f5es de alto risco (exposi\u00e7\u00e3o >= 6)</p>
+      <div class="demo-hbar">
+        <span class="dh-label">Feminino</span>
+        <div class="dh-track"><div class="dh-fill" style="width:${dem.pct_high_risk_feminino}%;background:rgba(186,104,200,0.7)"></div></div>
+        <span class="dh-val" style="color:rgba(186,104,200,1)">${formatPct(dem.pct_high_risk_feminino)}</span>
+      </div>
+      <div class="demo-hbar">
+        <span class="dh-label">Masculino</span>
+        <div class="dh-track"><div class="dh-fill" style="width:${dem.pct_high_risk_masculino}%;background:rgba(66,165,245,0.7)"></div></div>
+        <span class="dh-val" style="color:rgba(66,165,245,1)">${formatPct(dem.pct_high_risk_masculino)}</span>
+      </div>
+    </div>
+    <div class="demo-chart-box">
+      <h3>Risco por Ra\u00e7a</h3>
+      <p style="font-size:12px;color:var(--fg2);margin-bottom:14px">% em ocupa\u00e7\u00f5es de alto risco (exposi\u00e7\u00e3o >= 6)</p>
+      <div class="demo-hbar">
+        <span class="dh-label">Branca</span>
+        <div class="dh-track"><div class="dh-fill" style="width:${dem.pct_high_risk_branca}%;background:rgba(255,183,77,0.7)"></div></div>
+        <span class="dh-val" style="color:rgba(255,183,77,1)">${formatPct(dem.pct_high_risk_branca)}</span>
+      </div>
+      <div class="demo-hbar">
+        <span class="dh-label">Negra</span>
+        <div class="dh-track"><div class="dh-fill" style="width:${dem.pct_high_risk_negra}%;background:rgba(129,199,132,0.7)"></div></div>
+        <span class="dh-val" style="color:rgba(129,199,132,1)">${formatPct(dem.pct_high_risk_negra)}</span>
+      </div>
+    </div>
+  </div>`;
+
+  // Top 10 at-risk occupations for women and Black workers
+  const withDem = data.filter(d => d.demographics && d.exposicao != null && d.exposicao >= 6);
+
+  // For women: highest proportion of female workers in high-risk occupations
+  const womenRisk = withDem
+    .filter(d => d.demographics.total_feminino > 0)
+    .map(d => ({ ...d, pctFem: d.demographics.total_feminino / (d.demographics.total_feminino + d.demographics.total_masculino) * 100, femWorkers: d.demographics.total_feminino }))
+    .sort((a, b) => b.femWorkers - a.femWorkers)
+    .slice(0, 10);
+
+  html += `<div class="demo-table-section"><h3>Ocupa\u00e7\u00f5es de alto risco com mais mulheres</h3>`;
+  html += `<div class="ranking-table-wrap"><table class="comparison-table">
+    <thead><tr><th>Ocupa\u00e7\u00e3o</th><th>Exposi\u00e7\u00e3o</th><th>Mulheres</th><th>% Fem.</th><th>Sal\u00e1rio</th></tr></thead><tbody>`;
+  for (const o of womenRisk) {
+    html += `<tr><td>${o.titulo}</td>
+      <td><span class="score-cell" style="background:${exposicaoColor(o.exposicao, 0.2)};color:${exposicaoColor(o.exposicao, 1)}">${o.exposicao}</span></td>
+      <td>${formatNumber(o.femWorkers)}</td><td>${formatPct(o.pctFem)}</td><td>${formatSalarioFull(o.salario)}</td></tr>`;
+  }
+  html += `</tbody></table></div></div>`;
+
+  // For Black workers
+  const blackRisk = withDem
+    .filter(d => d.demographics.total_negra > 0)
+    .map(d => ({ ...d, pctNegra: d.demographics.total_negra / (d.demographics.total_branca + d.demographics.total_negra) * 100, negraWorkers: d.demographics.total_negra }))
+    .sort((a, b) => b.negraWorkers - a.negraWorkers)
+    .slice(0, 10);
+
+  html += `<div class="demo-table-section" style="margin-top:28px"><h3>Ocupa\u00e7\u00f5es de alto risco com mais trabalhadores negros</h3>`;
+  html += `<div class="ranking-table-wrap"><table class="comparison-table">
+    <thead><tr><th>Ocupa\u00e7\u00e3o</th><th>Exposi\u00e7\u00e3o</th><th>Trab. Negros</th><th>% Negra</th><th>Sal\u00e1rio</th></tr></thead><tbody>`;
+  for (const o of blackRisk) {
+    html += `<tr><td>${o.titulo}</td>
+      <td><span class="score-cell" style="background:${exposicaoColor(o.exposicao, 0.2)};color:${exposicaoColor(o.exposicao, 1)}">${o.exposicao}</span></td>
+      <td>${formatNumber(o.negraWorkers)}</td><td>${formatPct(o.pctNegra)}</td><td>${formatSalarioFull(o.salario)}</td></tr>`;
+  }
+  html += `</tbody></table></div></div>`;
+
+  document.getElementById("demoContent").innerHTML = html;
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 5: REGIONAL MAP
+// ══════════════════════════════════════════════════════════════════════════
+let regionalInited = false;
+let regionalSort = "exposicao";
+
+function initRegional() {
+  if (!summaryData) return;
+  if (!regionalInited) {
+    regionalInited = true;
+    document.getElementById("regionalControls").addEventListener("click", function(e) {
+      const btn = e.target.closest("button");
+      if (!btn || !btn.dataset.sort) return;
+      regionalSort = btn.dataset.sort;
+      this.querySelectorAll("button").forEach(b => b.classList.toggle("active", b.dataset.sort === regionalSort));
+      renderRegional();
+    });
+    document.getElementById("stateDetailClose").addEventListener("click", function() {
+      document.getElementById("stateDetail").classList.remove("open");
+    });
+  }
+  renderRegional();
+}
+
+function renderRegional() {
+  const porUf = summaryData.por_uf;
+  const ufCodes = summaryData.uf_codes;
+  let states = Object.keys(porUf).map(code => ({
+    code, abbr: ufCodes[code] || code, ...porUf[code]
+  }));
+
+  if (regionalSort === "exposicao") states.sort((a, b) => b.avg_exposicao - a.avg_exposicao);
+  else if (regionalSort === "workers") states.sort((a, b) => b.total_workers - a.total_workers);
+  else if (regionalSort === "salary") states.sort((a, b) => b.avg_salary - a.avg_salary);
+
+  const grid = document.getElementById("stateGrid");
+  grid.innerHTML = states.map(s => {
+    const expColor = exposicaoColor(s.avg_exposicao, 1);
+    return `<div class="state-card" data-code="${s.code}">
+      <div class="sc-abbr" style="color:${expColor}">${s.abbr}</div>
+      <div class="sc-row"><span>Trabalhadores</span><span class="sc-val">${formatNumber(s.total_workers)}</span></div>
+      <div class="sc-row"><span>Sal\u00e1rio m\u00e9dio</span><span class="sc-val">${formatSalario(s.avg_salary)}</span></div>
+      <div class="sc-row"><span>Exposi\u00e7\u00e3o m\u00e9dia</span><span class="sc-val" style="color:${expColor}">${s.avg_exposicao.toFixed(1).replace(".",",")}</span></div>
+    </div>`;
+  }).join("");
+
+  grid.addEventListener("click", function(e) {
+    const card = e.target.closest(".state-card");
+    if (!card) return;
+    const code = card.dataset.code;
+    showStateDetail(code);
+  });
+}
+
+function showStateDetail(code) {
+  const s = summaryData.por_uf[code];
+  const abbr = summaryData.uf_codes[code] || code;
+  const detail = document.getElementById("stateDetail");
+  document.getElementById("stateDetailTitle").textContent = abbr + " \u2014 " + (s.nome || abbr);
+
+  let html = `<div class="metric-cards" style="margin-bottom:16px">
+    <div class="metric-card"><div class="metric-label">Trabalhadores</div><div class="metric-value">${formatNumber(s.total_workers)}</div></div>
+    <div class="metric-card"><div class="metric-label">Sal\u00e1rio m\u00e9dio</div><div class="metric-value">${formatSalario(s.avg_salary)}</div></div>
+    <div class="metric-card"><div class="metric-label">Exposi\u00e7\u00e3o m\u00e9dia</div><div class="metric-value" style="color:${exposicaoColor(s.avg_exposicao,1)}">${s.avg_exposicao.toFixed(1).replace(".",",")}</div></div>
+  </div>`;
+
+  if (s.top_occupations && s.top_occupations.length > 0) {
+    html += `<h4 style="font-size:14px;font-weight:600;margin-bottom:10px">Principais ocupa\u00e7\u00f5es</h4>`;
+    html += `<div class="ranking-table-wrap"><table class="comparison-table">
+      <thead><tr><th>Ocupa\u00e7\u00e3o</th><th>Trabalhadores</th></tr></thead><tbody>`;
+    for (const o of s.top_occupations) {
+      html += `<tr><td>${o.titulo}</td><td>${formatNumber(o.workers)}</td></tr>`;
+    }
+    html += `</tbody></table></div>`;
+  }
+
+  document.getElementById("stateDetailContent").innerHTML = html;
+  detail.classList.add("open");
+  detail.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// VIEW 6: RANKING
+// ══════════════════════════════════════════════════════════════════════════
+let rankingInited = false;
+let rankingSortKey = "empregados";
+let rankingSortAsc = false;
+let rankingFilter = "";
+let rankingPage = 0;
+const ROWS_PER_PAGE = 50;
+
+const RANKING_COLS = [
+  { key: "codigo", label: "C\u00f3digo", fmt: v => v || "\u2014" },
+  { key: "titulo", label: "Ocupa\u00e7\u00e3o", fmt: v => v || "\u2014" },
+  { key: "empregados", label: "Empregados", fmt: v => formatNumber(v) },
+  { key: "salario", label: "Sal\u00e1rio", fmt: v => formatSalarioFull(v) },
+  { key: "exposicao", label: "Exposi\u00e7\u00e3o", fmt: v => v != null ? v : "\u2014", color: (v) => v != null ? { bg: exposicaoColor(v, 0.15), fg: exposicaoColor(v, 1) } : null },
+  { key: "vantagem", label: "Vantagem", fmt: v => v != null ? v : "\u2014", color: (v) => v != null ? { bg: vantagemColor(v, 0.15), fg: vantagemColor(v, 1) } : null },
+  { key: "crescimento", label: "Crescimento", fmt: v => v != null ? v : "\u2014", color: (v) => v != null ? { bg: crescimentoColor(v, 0.15), fg: crescimentoColor(v, 1) } : null },
+  { key: "oportunidade", label: "Oportunidade", fmt: v => v != null ? v : "\u2014", color: (v) => v != null ? { bg: oportunidadeColor(v, 0.15), fg: oportunidadeColor(v, 1) } : null },
+  { key: "escolaridade", label: "Escolaridade", fmt: v => EDU_SHORT[v] || v || "\u2014" },
+  { key: "saldo", label: "Saldo", fmt: v => formatSaldo(v) },
+];
+
+function initRanking() {
+  if (data.length === 0) return;
+  if (!rankingInited) {
+    rankingInited = true;
+    // Build header
+    const head = document.getElementById("rankingHead");
+    head.innerHTML = RANKING_COLS.map(c =>
+      `<th data-key="${c.key}">${c.label}<span class="sort-arrow"></span></th>`
+    ).join("");
+    head.addEventListener("click", function(e) {
+      const th = e.target.closest("th");
+      if (!th) return;
+      const key = th.dataset.key;
+      if (rankingSortKey === key) rankingSortAsc = !rankingSortAsc;
+      else { rankingSortKey = key; rankingSortAsc = key === "titulo" || key === "codigo"; }
+      rankingPage = 0;
+      renderRanking();
+    });
+    document.getElementById("rankingSearch").addEventListener("input", function() {
+      rankingFilter = this.value.trim();
+      rankingPage = 0;
+      renderRanking();
+    });
+  }
+  renderRanking();
+}
+
+function renderRanking() {
+  let filtered = data;
+  if (rankingFilter.length >= 2) {
+    filtered = data.filter(d => fuzzyMatch(rankingFilter, d.titulo) || fuzzyMatch(rankingFilter, d.codigo));
+  }
+
+  // Sort
+  const sorted = [...filtered].sort((a, b) => {
+    let va = a[rankingSortKey], vb = b[rankingSortKey];
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;
+    if (vb == null) return -1;
+    if (typeof va === "string") return rankingSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    return rankingSortAsc ? va - vb : vb - va;
   });
 
-window.addEventListener("resize", resize);
+  // Pagination
+  const totalPages = Math.ceil(sorted.length / ROWS_PER_PAGE);
+  rankingPage = Math.min(rankingPage, totalPages - 1);
+  if (rankingPage < 0) rankingPage = 0;
+  const start = rankingPage * ROWS_PER_PAGE;
+  const page = sorted.slice(start, start + ROWS_PER_PAGE);
+
+  // Update header sort indicators
+  document.querySelectorAll("#rankingHead th").forEach(th => {
+    const isActive = th.dataset.key === rankingSortKey;
+    th.classList.toggle("sorted", isActive);
+    th.querySelector(".sort-arrow").textContent = isActive ? (rankingSortAsc ? " \u25B2" : " \u25BC") : "";
+  });
+
+  // Render body
+  const body = document.getElementById("rankingBody");
+  body.innerHTML = page.map(d => {
+    return `<tr>${RANKING_COLS.map(c => {
+      const v = d[c.key];
+      const colorInfo = c.color ? c.color(v) : null;
+      if (colorInfo) {
+        return `<td><span class="score-cell" style="background:${colorInfo.bg};color:${colorInfo.fg}">${c.fmt(v)}</span></td>`;
+      }
+      return `<td>${c.fmt(v)}</td>`;
+    }).join("")}</tr>`;
+  }).join("");
+
+  // Pagination
+  const pag = document.getElementById("rankingPagination");
+  if (totalPages <= 1) { pag.innerHTML = `<span>${sorted.length} ocupa\u00e7\u00f5es</span>`; return; }
+  let pagHtml = `<button ${rankingPage === 0 ? 'disabled' : ''} data-page="${rankingPage - 1}">&laquo; Anterior</button>`;
+  pagHtml += `<span>P\u00e1gina ${rankingPage + 1} de ${totalPages} (${sorted.length} ocup.)</span>`;
+  pagHtml += `<button ${rankingPage >= totalPages - 1 ? 'disabled' : ''} data-page="${rankingPage + 1}">Pr\u00f3xima &raquo;</button>`;
+  pag.innerHTML = pagHtml;
+  pag.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", function() {
+      if (this.disabled) return;
+      rankingPage = parseInt(this.dataset.page);
+      renderRanking();
+      document.getElementById("rankingTable").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// LOAD DATA
+// ══════════════════════════════════════════════════════════════════════════
+Promise.all([
+  fetch("data.json").then(r => r.json()),
+  fetch("summary.json").then(r => r.json())
+]).then(([d, s]) => {
+  data = d;
+  summaryData = s;
+  updateStats();
+  drawGradientLegend();
+  treemapResize();
+});
+
+window.addEventListener("resize", function() {
+  dpr = window.devicePixelRatio || 1;
+  if (currentView === "mapa") treemapResize();
+  if (currentView === "scatter" && scatterInited) scatterResize();
+});
 </script>
 </body>
 </html>
