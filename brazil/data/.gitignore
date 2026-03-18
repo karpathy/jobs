@@ -2,5 +2,7 @@
 *.csv
 # Raw CAGED movement files — very large, re-downloadable via scrape_caged.py
 caged_raw/
+# Raw RAIS files — very large, re-downloadable via scrape_rais.py
+rais_raw/
 # Keep the processed JSON and this file
 !.gitignore
