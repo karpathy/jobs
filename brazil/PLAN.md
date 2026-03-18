@@ -122,8 +122,8 @@ Each is independent and can be built in any order:
 - [x] Branch created (`brazil`)
 - [x] Step 1: Scrape CBO (626 families, 7 CSVs from gov.br, perfil ocupacional with activities)
 - [x] Step 4: Generate descriptions (626 markdown pages with deduplicated activities from perfil)
-- [ ] Step 2: Get CAGED data
-- [ ] Step 3: Build CSV
+- [x] Step 2: Get CAGED data (12 months 2025, 51.4M rows from MTE FTP, 623 families with salary/employment)
+- [x] Step 3: Build CSV (626 rows merging CBO + CAGED, 608 with employment data)
 - [ ] Step 5: LLM scoring
 - [ ] Step 6: Build site data
 - [ ] Step 7: Adapt treemap
