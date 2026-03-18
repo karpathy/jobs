@@ -3,7 +3,6 @@ name: Deploy Brazil Site to GitHub Pages
 on:
   push:
     branches: [brazil]
-    paths: [brazil/site/**]
   workflow_dispatch:
 
 permissions:
