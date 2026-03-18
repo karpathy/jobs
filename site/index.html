@@ -175,6 +175,60 @@ body {
 }
 .gradient-legend canvas { border-radius: 2px; }
 
+.stats-outer {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 0 28px 12px;
+}
+.weight-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+.weight-sliders h3 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg2);
+  margin-bottom: 2px;
+}
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.slider-row label {
+  width: 76px;
+  color: var(--fg2);
+  text-align: right;
+  flex-shrink: 0;
+  font-size: 11px;
+}
+.slider-row input[type="range"] {
+  width: 80px;
+  accent-color: #6c8;
+}
+.slider-row .slider-val {
+  width: 16px;
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 12px;
+}
+.slider-hints {
+  font-size: 10px;
+  color: var(--fg2);
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
 canvas#canvas {
   display: block;
   cursor: default;
@@ -250,6 +304,7 @@ Respond with ONLY a JSON object in this exact format, no other text:
         <button data-mode="pay">Median Pay</button>
         <button data-mode="education">Education</button>
         <button data-mode="exposure">Digital AI Exposure</button>
+        <button data-mode="composite">Composite Score</button>
       </div>
     </div>
     <div class="gradient-legend">
@@ -259,18 +314,28 @@ Respond with ONLY a JSON object in this exact format, no other text:
     </div>
   </div>
 
-  <div class="stats-row">
-    <div class="stat-section">
-      <h3>Total jobs</h3>
-      <div class="stat-big" id="statTotalJobs">&mdash;</div>
+  <div class="stats-outer" id="statsOuter">
+    <div class="weight-sliders" id="weightSliders" style="display:none;">
+      <h3>Weights</h3>
+      <div class="slider-row"><label>Pay</label><input type="range" min="0" max="10" value="10" data-weight="pay"><span class="slider-val">10</span></div>
+      <div class="slider-row"><label>Outlook</label><input type="range" min="0" max="10" value="10" data-weight="outlook"><span class="slider-val">10</span></div>
+      <div class="slider-row"><label>Education</label><input type="range" min="0" max="10" value="10" data-weight="education"><span class="slider-val">10</span></div>
+      <div class="slider-row"><label>AI Exposure</label><input type="range" min="0" max="10" value="10" data-weight="exposure"><span class="slider-val">10</span></div>
+      <div class="slider-hints">0 = ignore, 10 = max importance</div>
     </div>
-    <div class="stat-section" id="block2"></div>
-    <div class="stat-section" id="block3"></div>
-    <div class="stat-section" id="block4"></div>
-    <div class="stat-section" id="block5"></div>
-    <div class="stat-section" id="block6"></div>
-    <div class="stat-section" id="block7"></div>
-    <div class="stat-section" id="block8"></div>
+    <div class="stats-row">
+      <div class="stat-section">
+        <h3>Total jobs</h3>
+        <div class="stat-big" id="statTotalJobs">&mdash;</div>
+      </div>
+      <div class="stat-section" id="block2"></div>
+      <div class="stat-section" id="block3"></div>
+      <div class="stat-section" id="block4"></div>
+      <div class="stat-section" id="block5"></div>
+      <div class="stat-section" id="block6"></div>
+      <div class="stat-section" id="block7"></div>
+      <div class="stat-section" id="block8"></div>
+    </div>
   </div>
 </div>
 
@@ -343,6 +408,35 @@ function exposureColor(v, a) {
   return greenRedCSS(v / 10, a);
 }
 
+// Composite composite score: high pay + growing outlook + low education + low AI exposure = green
+const oppWeights = { pay: 10, outlook: 10, education: 10, exposure: 10 };
+
+function compositeScore(d) {
+  let sum = 0, totalW = 0;
+  if (d.pay != null && oppWeights.pay > 0) {
+    const payFloor = 50000, payCeil = 250000;
+    const payNorm = d.pay <= payFloor ? 0 : (Math.log(Math.min(payCeil, d.pay)) - Math.log(payFloor)) / (Math.log(payCeil) - Math.log(payFloor));
+    sum += payNorm * oppWeights.pay; totalW += oppWeights.pay;
+  }
+  if (d.outlook != null && oppWeights.outlook > 0) {
+    const olNorm = Math.max(0, Math.min(1, (d.outlook + 12) / 24));
+    sum += olNorm * oppWeights.outlook; totalW += oppWeights.outlook;
+  }
+  if (d.education && oppWeights.education > 0) {
+    const eduIdx = EDU_LEVELS.indexOf(d.education);
+    if (eduIdx >= 0) { sum += (1 - eduIdx / (EDU_LEVELS.length - 1)) * oppWeights.education; totalW += oppWeights.education; }
+  }
+  if (d.exposure != null && oppWeights.exposure > 0) {
+    sum += (1 - d.exposure / 10) * oppWeights.exposure; totalW += oppWeights.exposure;
+  }
+  return totalW > 0 ? sum / totalW : null;
+}
+function compositeColor(d, a) {
+  const s = compositeScore(d);
+  if (s == null) return `rgba(128,128,128,${a})`;
+  return greenRedCSS(1 - s, a);
+}
+
 function tileColorCSS(d, alpha) {
   if (colorMode === "exposure") return exposureColor(d.exposure, alpha);
   if (colorMode === "outlook") return outlookColor(d.outlook, alpha);
@@ -350,6 +444,7 @@ function tileColorCSS(d, alpha) {
   if (colorMode === "education") {
     return eduColor(EDU_LEVELS.indexOf(d.education), alpha);
   }
+  if (colorMode === "composite") return compositeColor(d, alpha);
   return `rgba(128,128,128,${alpha})`;
 }
 
@@ -378,6 +473,11 @@ function tileSubInfo(r) {
       "Doctoral or professional degree": "Doctoral/Prof",
     }[r.education] || "";
     return short + (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+  }
+  if (colorMode === "composite") {
+    const s = compositeScore(r);
+    return (s != null ? (s * 100).toFixed(0) + "%" : "") +
+           (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
   }
   return "";
 }
@@ -541,6 +641,13 @@ function tooltipHighlight(d) {
     const idx = EDU_LEVELS.indexOf(edu);
     const color = idx >= 0 ? eduColor(idx, 1) : "var(--fg)";
     return `<span style="color:${color};font-weight:600;">Education: ${edu || '\u2014'}</span>`;
+  } else if (colorMode === "composite") {
+    const s = compositeScore(d);
+    if (s == null) return "";
+    const color = compositeColor(d, 1);
+    return `<span style="color:${color};font-weight:600;">Opportunity: ${(s * 100).toFixed(0)}%</span>` +
+      `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
+      `<div style="height:100%;width:${s * 100}%;background:${color};border-radius:2px;"></div></div>`;
   }
   return "";
 }
@@ -554,7 +661,8 @@ function showTooltip(d, mx, my) {
     <span class="label">Jobs (2024)</span><span class="value">${formatNumber(d.jobs)}</span>
     <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
-  tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
+  tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") :
+    colorMode === "composite" ? "Composite of: high pay + growing outlook + low education requirement + low AI exposure" : "";
   let tx = mx + 16, ty = my - 16;
   if (tx + 340 > window.innerWidth) tx = mx - 356;
   if (ty < 10) ty = my + 16;
@@ -629,6 +737,7 @@ function updateStats() {
   if (colorMode === "outlook") updateOutlookStats(totalJobs);
   else if (colorMode === "pay") updatePayStats(totalJobs);
   else if (colorMode === "education") updateEducationStats(totalJobs);
+  else if (colorMode === "composite") updateOpportunityStats(totalJobs);
   else updateExposureStats(totalJobs);
 }
 
@@ -846,6 +955,65 @@ function updateExposureStats(totalJobs) {
   document.getElementById("block8").innerHTML = "";
 }
 
+function updateOpportunityStats(totalJobs) {
+  // Headline: weighted avg composite score
+  let wS = 0, wC = 0;
+  for (const d of data) {
+    const s = compositeScore(d);
+    if (s != null && d.jobs) { wS += s * d.jobs; wC += d.jobs; }
+  }
+  const avg = wC > 0 ? wS / wC : 0;
+  document.getElementById("block2").innerHTML = `<h3>Avg. composite</h3>
+    <div class="stat-big"><span style="color:${greenRedCSS(1 - avg, 1)}">${(avg * 100).toFixed(0)}%</span></div>
+    <div class="stat-label">job-weighted composite</div>`;
+
+  document.getElementById("block3").innerHTML = "";
+
+  // Tier breakdown by score range
+  const tierDefs = [
+    { label: "Excellent (75%+)", lo: 0.75, hi: 1.01 },
+    { label: "Good (60\u201375%)", lo: 0.60, hi: 0.75 },
+    { label: "Average (45\u201360%)", lo: 0.45, hi: 0.60 },
+    { label: "Below avg (30\u201345%)", lo: 0.30, hi: 0.45 },
+    { label: "Low (<30%)", lo: 0, hi: 0.30 },
+  ];
+  const tiers = tierDefs.map(t => {
+    let jobs = 0;
+    for (const d of data) {
+      const s = compositeScore(d);
+      if (s != null && d.jobs && s >= t.lo && s < t.hi) jobs += d.jobs;
+    }
+    return { ...t, jobs, color: greenRedCSS(1 - (t.lo + t.hi) / 2, 1) };
+  });
+  document.getElementById("block4").innerHTML = `<h3>Opportunity tiers</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
+
+  // Cross: composite by pay band
+  const byPay = weightedAvgByGroups(PAY_BANDS, (d, g) => d.pay != null && d.pay >= g.min && d.pay < g.max, d => compositeScore(d));
+  document.getElementById("block5").innerHTML = `<h3>Opportunity by pay</h3><div class="hbar-chart">${renderHbars(byPay.map(g => ({
+    label: g.label, val: (g.avg * 100).toFixed(0) + "%",
+    pct: g.avg * 100, color: greenRedCSS(1 - g.avg, 0.8)
+  })))}</div>`;
+
+  // Cross: composite by education
+  const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.education), d => compositeScore(d));
+  document.getElementById("block6").innerHTML = `<h3>Opportunity by education</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
+    label: g.label, val: (g.avg * 100).toFixed(0) + "%",
+    pct: g.avg * 100, color: greenRedCSS(1 - g.avg, 0.8)
+  })))}</div>`;
+
+  // Impact: jobs in excellent tier
+  let excellentJobs = 0;
+  for (const d of data) {
+    const s = compositeScore(d);
+    if (s != null && s >= 0.75 && d.jobs) excellentJobs += d.jobs;
+  }
+  document.getElementById("block7").innerHTML = `<h3>Excellent tier</h3>
+    <div class="stat-big" style="color:${greenRedCSS(0.1, 1)}">${(excellentJobs / 1e6).toFixed(1)}M</div>
+    <div class="stat-label">jobs scoring 75%+</div>`;
+
+  document.getElementById("block8").innerHTML = "";
+}
+
 // ── Events ─────────────────────────────────────────────────────────────
 
 canvas.addEventListener("mousemove", (e) => {
@@ -865,6 +1033,7 @@ const LEGEND_CONFIG = {
   outlook:   { low: "Declining", high: "Growing" },
   pay:       { low: "$25K", high: "$250K" },
   education: { low: "No degree", high: "Doctoral" },
+  composite: { low: "Low", high: "High" },
 };
 
 function drawGradientLegend() {
@@ -891,8 +1060,20 @@ document.getElementById("colorToggle").addEventListener("click", (e) => {
   updateStats();
   drawGradientLegend();
   draw();
+  document.getElementById("weightSliders").style.display = colorMode === "composite" ? "flex" : "none";
   // Re-layout since stats height may have changed
   requestAnimationFrame(resize);
+});
+
+document.getElementById("weightSliders").addEventListener("input", (e) => {
+  const input = e.target.closest("input[data-weight]");
+  if (!input) return;
+  const key = input.dataset.weight;
+  const val = parseInt(input.value);
+  oppWeights[key] = val;
+  input.nextElementSibling.textContent = val;
+  updateStats();
+  draw();
 });
 
 // ── Load ───────────────────────────────────────────────────────────────
