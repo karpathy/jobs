@@ -1,16 +1,24 @@
-"""Parse a BLS OOH detail page into a clean Markdown document."""
+"""
+Parse an occupation detail page into a clean Markdown document.
 
-import sys
+Currently parses BLS OOH HTML format. Will be extended to handle
+Cyprus-specific data sources (HRDA, Eurostat) in future iterations.
+"""
+
 import re
+import sys
+
 from bs4 import BeautifulSoup
+
 
 def clean(text):
     """Clean up whitespace from extracted text."""
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
+
 def parse_ooh_page(html_path):
-    with open(html_path, "r") as f:
+    with open(html_path) as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
     md = []
@@ -67,10 +75,12 @@ def parse_ooh_page(html_path):
         section_title = clean(h2.find("span").get_text()) if h2.find("span") else clean(h2.get_text())
 
         # Skip tabs we don't need
-        if tab_id in ("tab-1",   # Summary (redundant with Quick Facts)
-                       "tab-7",   # State & Area Data (just links)
-                       "tab-8",   # Similar Occupations
-                       "tab-9"):  # Contacts for More Information
+        if tab_id in (
+            "tab-1",  # Summary (redundant with Quick Facts)
+            "tab-7",  # State & Area Data (just links)
+            "tab-8",  # Similar Occupations
+            "tab-9",
+        ):  # Contacts for More Information
             continue
 
         md.append(f"## {section_title}")
@@ -81,14 +91,13 @@ def parse_ooh_page(html_path):
         chart_div = article.find("div", class_="ooh-chart")
         if chart_div:
             # Extract the bar chart data
-            chart_title_h3 = chart_div.find("h3")
             chart_subtitle = chart_div.find("p")
             dts = chart_div.find("dl")
             if dts:
                 items = []
                 dt_list = dts.find_all("dt")
                 dd_list = dts.find_all("dd")
-                for dt, dd in zip(dt_list, dd_list):
+                for dt, dd in zip(dt_list, dd_list, strict=False):
                     label = clean(dt.get_text())
                     # find the value span
                     val_spans = dd.find_all("span")
@@ -108,26 +117,26 @@ def parse_ooh_page(html_path):
 
         # Now process remaining content (skip chart divs)
         for elem in article.children:
-            if hasattr(elem, 'name'):
-                if elem.name == 'h2':
+            if hasattr(elem, "name"):
+                if elem.name == "h2":
                     continue  # already printed
-                if elem.name == 'div' and elem.get('class') and 'ooh-chart' in elem.get('class', []):
+                if elem.name == "div" and elem.get("class") and "ooh-chart" in elem.get("class", []):
                     continue  # already handled
-                if elem.name == 'div' and elem.get('class') and 'ooh_right_img' in elem.get('class', []):
+                if elem.name == "div" and elem.get("class") and "ooh_right_img" in elem.get("class", []):
                     continue  # skip images
-                if elem.name == 'h3':
+                if elem.name == "h3":
                     md.append(f"### {clean(elem.get_text())}")
                     md.append("")
-                elif elem.name == 'p':
+                elif elem.name == "p":
                     text = clean(elem.get_text())
                     if text:
                         md.append(text)
                         md.append("")
-                elif elem.name == 'ul':
+                elif elem.name == "ul":
                     for li in elem.find_all("li"):
                         md.append(f"- {clean(li.get_text())}")
                     md.append("")
-                elif elem.name == 'table':
+                elif elem.name == "table":
                     # Skip the outlook-table (handled separately below)
                     if elem.get("id") == "outlook-table":
                         continue
@@ -164,10 +173,15 @@ def parse_ooh_page(html_path):
                         values = [clean(c.get_text()) for c in cells]
                         if values:
                             # Format: Title, SOC, Employment 2024, Projected 2034, % change, numeric change
-                            labels = ["Occupational Title", "SOC Code", "Employment 2024",
-                                      "Projected Employment 2034", "Change % 2024-34",
-                                      "Change Numeric 2024-34"]
-                            for label, val in zip(labels, values):
+                            labels = [
+                                "Occupational Title",
+                                "SOC Code",
+                                "Employment 2024",
+                                "Projected Employment 2034",
+                                "Change % 2024-34",
+                                "Change Numeric 2024-34",
+                            ]
+                            for label, val in zip(labels, values, strict=False):
                                 if val and val != "Get data":
                                     md.append(f"- **{label}:** {val}")
                             md.append("")

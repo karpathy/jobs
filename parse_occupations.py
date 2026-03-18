@@ -1,9 +1,15 @@
-"""Parse BLS Occupational Outlook Handbook A-Z index to extract all occupations."""
+"""
+Parse occupation index page to extract all occupations.
 
-from bs4 import BeautifulSoup
+Currently parses BLS OOH A-Z index. Will be replaced with parsers for
+HRDA occupation listings and Eurostat ISCO-08 codes for Cyprus.
+"""
+
 import json
 
-with open("occupational_outlook_handbook.html", "r") as f:
+from bs4 import BeautifulSoup
+
+with open("occupational_outlook_handbook.html") as f:
     soup = BeautifulSoup(f.read(), "html.parser")
 
 # The occupation listings are inside <div class="a-z-list">

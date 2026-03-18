@@ -5,6 +5,8 @@ Reads Markdown descriptions from pages/, sends each to an LLM with a scoring
 rubric, and collects structured scores. Results are cached incrementally to
 scores.json so the script can be resumed if interrupted.
 
+Scoring rubric is designed for the Cyprus/EU labour market context.
+
 Usage:
     uv run python score.py
     uv run python score.py --model google/gemini-3-flash-preview
@@ -15,6 +17,7 @@ import argparse
 import json
 import os
 import time
+
 import httpx
 from dotenv import load_dotenv
 
@@ -122,14 +125,13 @@ def main():
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--end", type=int, default=None)
     parser.add_argument("--delay", type=float, default=0.5)
-    parser.add_argument("--force", action="store_true",
-                        help="Re-score even if already cached")
+    parser.add_argument("--force", action="store_true", help="Re-score even if already cached")
     args = parser.parse_args()
 
     with open("occupations.json") as f:
         occupations = json.load(f)
 
-    subset = occupations[args.start:args.end]
+    subset = occupations[args.start : args.end]
 
     # Load existing scores
     scores = {}
@@ -152,13 +154,13 @@ def main():
 
         md_path = f"pages/{slug}.md"
         if not os.path.exists(md_path):
-            print(f"  [{i+1}] SKIP {slug} (no markdown)")
+            print(f"  [{i + 1}] SKIP {slug} (no markdown)")
             continue
 
         with open(md_path) as f:
             text = f.read()
 
-        print(f"  [{i+1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
+        print(f"  [{i + 1}/{len(subset)}] {occ['title']}...", end=" ", flush=True)
 
         try:
             result = score_occupation(client, text, args.model)

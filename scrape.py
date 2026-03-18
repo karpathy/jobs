@@ -1,13 +1,15 @@
 """
-Scrape BLS Occupational Outlook Handbook detail pages (raw HTML).
+Scrape occupation detail pages as raw HTML.
+
+Currently configured for BLS OOH pages. Will be adapted to scrape
+Cyprus job board data (Ergodotisi, Carierista) and HRDA occupation pages.
 
 Saves raw HTML to html/<slug>.html as the source of truth.
-Run process.py afterwards to derive data/<slug>.json and pages/<slug>.md.
+Run process.py afterwards to derive pages/<slug>.md.
 
 Usage:
-    uv run python scrape.py                      # scrape all (0 to 342)
+    uv run python scrape.py                      # scrape all
     uv run python scrape.py --start 0 --end 5    # scrape first 5
-    uv run python scrape.py --start 10 --end 20  # scrape indices 10-19
     uv run python scrape.py --force               # re-scrape ignoring cache
 
 Caching: skips any occupation where html/<slug>.html already exists.
@@ -17,7 +19,9 @@ import argparse
 import json
 import os
 import time
+
 from playwright.sync_api import sync_playwright
+
 
 # ---------------------------------------------------------------------------
 # Main scraper
@@ -35,7 +39,7 @@ def main():
         occupations = json.load(f)
 
     end = args.end if args.end is not None else len(occupations)
-    subset = occupations[args.start:end]
+    subset = occupations[args.start : end]
 
     # Create output dirs
     os.makedirs("html", exist_ok=True)

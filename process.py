@@ -2,7 +2,7 @@
 Process scraped HTML files into Markdown.
 
 Reads from html/<slug>.html, writes to pages/<slug>.md.
-Reuses parse_detail.parse_ooh_page() which is already tested.
+Reuses parse_detail.parse_ooh_page() for HTML-to-Markdown conversion.
 
 Usage:
     uv run python process.py              # process all HTML files
@@ -12,6 +12,7 @@ Usage:
 import argparse
 import json
 import os
+
 from parse_detail import parse_ooh_page
 
 

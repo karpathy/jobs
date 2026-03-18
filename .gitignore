@@ -19,5 +19,10 @@ pages/
 embed.py
 embeddings.json
 
+# Test/coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
 # macOS
 .DS_Store
