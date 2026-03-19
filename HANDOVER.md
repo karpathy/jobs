@@ -1,6 +1,6 @@
 # Handover Document — JobsCY
 
-> **Last updated:** 2026-03-18 (PR 3: Cyprus Data Pipeline)
+> **Last updated:** 2026-03-18 (PR 4: Scoring Adaptation)
 > **Branch:** `claude/cyprus-job-market-adaptation-HX1xe`
 > **Repo:** https://github.com/alezenonos/jobscy
 
@@ -38,7 +38,7 @@ Legacy BLS pipeline (still works):
 | `parse_detail.py` | Convert HTML detail pages to Markdown | Needs Cyprus adaptation |
 | `process.py` | Batch HTML→Markdown conversion | Works as-is |
 | `make_csv.py` | Build `occupations.csv` from BLS HTML (legacy) | Superseded by `make_cy_csv.py` |
-| `score.py` | LLM-based AI exposure scoring via OpenRouter | Works, rubric needs Cyprus context |
+| `score.py` | LLM-based AI exposure scoring via OpenRouter | **Done (PR 4)** |
 | `build_site_data.py` | Merge CSV + scores → `site/data.json` | Works as-is |
 | `make_prompt.py` | Generate single-file LLM prompt | Updated for EUR/Cyprus |
 | `site/index.html` | Interactive treemap visualization | Needs EUR/Cyprus UI updates |
@@ -114,12 +114,17 @@ https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{DATASET}?ge
   - CLI args for explicit CSV/scores/output paths
 - 30 new tests across 3 test files (88 total)
 
-## Remaining work (roadmap)
+### PR 4: Scoring Adaptation ✅
+- `score.py` — fully adapted for Cyprus/EU labour market
+  - New `SYSTEM_PROMPT` with Cyprus/EU context (tourism, shipping, financial services, EU Digital Decade, public sector)
+  - ISCO-08 occupation examples as scoring anchors (replacing BLS examples)
+  - Extracted `parse_llm_response()` — robust JSON parsing with markdown fence stripping
+  - New `build_isco_prompt()` — constructs scoring prompts from ISCO-08 metadata when no markdown exists
+  - New `detect_occupation_format()` — auto-detects BLS vs Cyprus occupation lists
+  - Updated `main()` — auto-detects `occupations_cy.json` vs `occupations.json`
+- 12 new tests in `tests/test_score.py` (97 total)
 
-### PR 4: Scoring Adaptation
-- Update `score.py` system prompt for Cyprus/EU labour market context
-- Replace BLS-specific examples with Cyprus-relevant occupation examples
-- Adjust scoring anchors for EU digital economy context
+## Remaining work (roadmap)
 
 ### PR 5: Visualization + Site Update
 - Update `site/index.html`: EUR currency formatting, Cyprus occupation categories
