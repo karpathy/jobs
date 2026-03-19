@@ -1,6 +1,6 @@
 # Handover Document — JobsCY
 
-> **Last updated:** 2026-03-18 (PR 4: Scoring Adaptation)
+> **Last updated:** 2026-03-19 (PR 5: Visualization + Site Update)
 > **Branch:** `claude/cyprus-job-market-adaptation-HX1xe`
 > **Repo:** https://github.com/alezenonos/jobscy
 
@@ -41,7 +41,7 @@ Legacy BLS pipeline (still works):
 | `score.py` | LLM-based AI exposure scoring via OpenRouter | **Done (PR 4)** |
 | `build_site_data.py` | Merge CSV + scores → `site/data.json` | Works as-is |
 | `make_prompt.py` | Generate single-file LLM prompt | Updated for EUR/Cyprus |
-| `site/index.html` | Interactive treemap visualization | Needs EUR/Cyprus UI updates |
+| `site/index.html` | Interactive treemap visualization | **Done (PR 5)** |
 
 ## Data sources (Cyprus/EU)
 
@@ -124,12 +124,24 @@ https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{DATASET}?ge
   - Updated `main()` — auto-detects `occupations_cy.json` vs `occupations.json`
 - 12 new tests in `tests/test_score.py` (97 total)
 
-## Remaining work (roadmap)
+### PR 5: Visualization + Site Update ✅
+- `site/index.html` — fully adapted for Cyprus/EU
+  - Title, header, descriptions updated (removed all US/BLS/karpathy references)
+  - GitHub links point to `alezenonos/jobscy`
+  - Currency: USD ($) → EUR (€) throughout (formatPay, pay bands, wages, legend)
+  - Pay scales: $25K–$250K → €10K–€80K (appropriate for Cyprus wage levels)
+  - Pay bands: US ranges → EU/Cyprus ranges (<€20K through €75K+)
+  - Pay histogram buckets adjusted for Cyprus wage distribution
+  - Education levels: BLS (8 US levels) → ISCED-aligned (5 EU levels matching `make_cy_csv.py`)
+  - Education groups and short labels updated accordingly
+  - Total jobs display: uses formatNumber() instead of hardcoded "M" (Cyprus ~450K vs US 143M)
+  - Total wages: trillions → billions (€B)
+  - Scoring prompt in expandable section: updated to Cyprus/EU ISCO-08 version
+  - "BLS Outlook" button → "Growth Outlook"
+  - Tooltip: "Jobs (2024)" → "Employment"
+  - Click action: opens Eurostat ISCO-08 reference instead of BLS page
 
-### PR 5: Visualization + Site Update
-- Update `site/index.html`: EUR currency formatting, Cyprus occupation categories
-- Update treemap colour scales for EU wage ranges
-- Update UI text (remove all US/BLS references)
+## Remaining work (roadmap)
 
 ### PR 6: Documentation Final Pass
 - Architecture diagrams

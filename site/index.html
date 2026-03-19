@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>US Job Market Visualizer</title>
+<title>Cyprus Job Market Visualizer</title>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -209,32 +209,34 @@ canvas#canvas {
 <div id="wrapper">
 <div id="header">
   <div class="intro">
-    <h1>US Job Market Visualizer <a href="https://github.com/karpathy/jobs">GitHub</a></h1>
-    <p>This is a research tool that visualizes <b>342 occupations</b> from the <a href="https://www.bls.gov/ooh/">Bureau of Labor Statistics Occupational Outlook Handbook</a>, covering <b>143M jobs</b> across the US economy. Each rectangle's <b>area</b> is proportional to total employment. <b>Color</b> shows the selected metric &mdash; toggle between BLS projected growth outlook, median pay, education requirements, and AI exposure. Click any tile to view its full BLS page. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring BLS data visually.</p>
-    <p><b>LLM-powered coloring:</b> The <a href="https://github.com/karpathy/jobs">source code</a> includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and color occupations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colors accordingly. The "Digital AI Exposure" option is one example &mdash; it estimates how much current AI (which is primarily digital) will reshape each occupation. But you could write a different prompt for any question &mdash; e.g. exposure to humanoid robotics, offshoring risk, climate impact &mdash; and re-run the pipeline to get a different coloring.</p>
+    <h1>Cyprus Job Market Visualizer <a href="https://github.com/alezenonos/jobscy">GitHub</a></h1>
+    <p>This is a research tool that visualizes <b>39 ISCO-08 occupation groups</b> from <a href="https://ec.europa.eu/eurostat">Eurostat</a> and <a href="https://www.anad.org.cy">HRDA/AnAD</a> data, covering the <b>Cyprus labour market</b>. Each rectangle's <b>area</b> is proportional to total employment. <b>Color</b> shows the selected metric &mdash; toggle between projected growth outlook, median pay (EUR), education requirements, and AI exposure. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Cyprus employment data visually.</p>
+    <p><b>LLM-powered coloring:</b> The <a href="https://github.com/alezenonos/jobscy">source code</a> includes data pipelines, parsers, and a framework for writing custom LLM prompts to score and color occupations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colors accordingly. The "Digital AI Exposure" option is one example &mdash; it estimates how much current AI (which is primarily digital) will reshape each occupation. But you could write a different prompt for any question &mdash; e.g. exposure to humanoid robotics, offshoring risk, climate impact &mdash; and re-run the pipeline to get a different coloring.</p>
     <details>
       <summary>View the Digital AI Exposure scoring prompt (example)</summary>
-      <div class="prompt-box">You are an expert analyst evaluating how exposed different occupations are to AI. You will be given a detailed description of an occupation from the Bureau of Labor Statistics.
+      <div class="prompt-box">You are an expert labour market analyst evaluating how exposed different occupations are to AI. You will be given an occupation description based on the ISCO-08 international classification, in the context of the Cyprus and EU labour market.
 
 Rate the occupation's overall AI Exposure on a scale from 0 to 10.
 
 AI Exposure measures: how much will AI reshape this occupation? Consider both direct effects (AI automating tasks currently done by humans) and indirect effects (AI making each worker so productive that fewer are needed).
 
-A key signal is whether the job's work product is fundamentally digital. If the job can be done entirely from a home office on a computer — writing, coding, analyzing, communicating — then AI exposure is inherently high (7+), because AI capabilities in digital domains are advancing rapidly. Even if today's AI can't handle every aspect of such a job, the trajectory is steep and the ceiling is very high. Conversely, jobs requiring physical presence, manual skill, or real-time human interaction in the physical world have a natural barrier to AI exposure.
+A key signal is whether the job's work product is fundamentally digital. If the job can be done entirely from a home office on a computer — writing, coding, analysing, communicating — then AI exposure is inherently high (7+), because AI capabilities in digital domains are advancing rapidly. Conversely, jobs requiring physical presence, manual skill, or real-time human interaction in the physical world have a natural barrier to AI exposure.
+
+Consider the Cyprus/EU context: tourism and hospitality are major employers, financial services and shipping are key sectors, the EU Digital Decade targets drive digital skills demand, and the public sector is proportionally larger than in other economies.
 
 Use these anchors to calibrate your score:
 
-- 0–1: Minimal exposure. The work is almost entirely physical, hands-on, or requires real-time human presence in unpredictable environments. AI has essentially no impact on daily work. Examples: roofer, landscaper, commercial diver.
+- 0–1: Minimal exposure. Examples: agricultural labourer, construction labourer, commercial diver.
 
-- 2–3: Low exposure. Mostly physical or interpersonal work. AI might help with minor peripheral tasks (scheduling, paperwork) but doesn't touch the core job. Examples: electrician, plumber, firefighter, dental hygienist.
+- 2–3: Low exposure. Examples: electrician, plumber, firefighter, building trades worker.
 
-- 4–5: Moderate exposure. A mix of physical/interpersonal work and knowledge work. AI can meaningfully assist with the information-processing parts but a substantial share of the job still requires human presence. Examples: registered nurse, police officer, veterinarian.
+- 4–5: Moderate exposure. Examples: health associate professional, police officer, personal care worker.
 
-- 6–7: High exposure. Predominantly knowledge work with some need for human judgment, relationships, or physical presence. AI tools are already useful and workers using AI may be substantially more productive. Examples: teacher, manager, accountant, journalist.
+- 6–7: High exposure. Examples: teaching professional, manager, business administration professional.
 
-- 8–9: Very high exposure. The job is almost entirely done on a computer. All core tasks — writing, coding, analyzing, designing, communicating — are in domains where AI is rapidly improving. The occupation faces major restructuring. Examples: software developer, graphic designer, translator, data analyst, paralegal, copywriter.
+- 8–9: Very high exposure. Examples: ICT professional, legal professional, business/admin associate professional.
 
-- 10: Maximum exposure. Routine information processing, fully digital, with no physical component. AI can already do most of it today. Examples: data entry clerk, telemarketer.
+- 10: Maximum exposure. Examples: general clerk, numerical recording clerk, data entry operator.
 
 Respond with ONLY a JSON object in this exact format, no other text:
 {"exposure": &lt;0-10&gt;, "rationale": "&lt;2-3 sentences explaining the key factors&gt;"}</div>
@@ -246,7 +248,7 @@ Respond with ONLY a JSON object in this exact format, no other text:
     <div class="stat-section">
       <h3>Layer</h3>
       <div class="color-toggle" id="colorToggle">
-        <button data-mode="outlook" class="active">BLS Outlook</button>
+        <button data-mode="outlook" class="active">Growth Outlook</button>
         <button data-mode="pay">Median Pay</button>
         <button data-mode="education">Education</button>
         <button data-mode="exposure">Digital AI Exposure</button>
@@ -314,14 +316,11 @@ function greenRedCSS(t, alpha) {
 }
 
 const EDU_LEVELS = [
-  "No formal educational credential",
-  "High school diploma or equivalent",
-  "Postsecondary nondegree award",
-  "Some college, no degree",
-  "Associate's degree",
-  "Bachelor's degree",
-  "Master's degree",
-  "Doctoral or professional degree",
+  "Lower secondary or below",
+  "Upper secondary / Vocational",
+  "Short-cycle tertiary / Associate",
+  "Bachelor's degree or higher",
+  "Varies (military)",
 ];
 
 // Color for a normalized value (0=green, 1=red). Flip for "good=green" metrics.
@@ -331,7 +330,7 @@ function outlookColor(v, a) {
 }
 function payColor(v, a) {
   if (v == null) return `rgba(128,128,128,${a})`;
-  const t = 1 - (Math.log(Math.max(25000, Math.min(250000, v))) - Math.log(25000)) / (Math.log(250000) - Math.log(25000));
+  const t = 1 - (Math.log(Math.max(10000, Math.min(80000, v))) - Math.log(10000)) / (Math.log(80000) - Math.log(10000));
   return greenRedCSS(t, a);
 }
 function eduColor(idx, a) {
@@ -368,14 +367,11 @@ function tileSubInfo(r) {
   }
   if (colorMode === "education") {
     const short = {
-      "No formal educational credential": "No formal",
-      "High school diploma or equivalent": "HS diploma",
-      "Postsecondary nondegree award": "Postsecondary",
-      "Some college, no degree": "Some college",
-      "Associate's degree": "Associate's",
-      "Bachelor's degree": "Bachelor's",
-      "Master's degree": "Master's",
-      "Doctoral or professional degree": "Doctoral/Prof",
+      "Lower secondary or below": "Lower sec.",
+      "Upper secondary / Vocational": "Vocational",
+      "Short-cycle tertiary / Associate": "Associate",
+      "Bachelor's degree or higher": "Bachelor's+",
+      "Varies (military)": "Military",
     }[r.education] || "";
     return short + (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
   }
@@ -511,7 +507,7 @@ function formatNumber(n) {
   if (n >= 1e3) return Math.round(n / 1e3) + "K";
   return n.toLocaleString();
 }
-function formatPay(n) { return n == null ? "\u2014" : "$" + n.toLocaleString(); }
+function formatPay(n) { return n == null ? "\u2014" : "\u20AC" + n.toLocaleString(); }
 
 function tooltipHighlight(d) {
   if (colorMode === "exposure") {
@@ -535,7 +531,7 @@ function tooltipHighlight(d) {
     const color = payColor(v, 1);
     return `<span style="color:${color};font-weight:600;">Median Pay: ${formatPay(v)}</span>` +
       `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
-      `<div style="height:100%;width:${Math.min(100, v / 150000 * 100)}%;background:${color};border-radius:2px;"></div></div>`;
+      `<div style="height:100%;width:${Math.min(100, v / 80000 * 100)}%;background:${color};border-radius:2px;"></div></div>`;
   } else if (colorMode === "education") {
     const edu = d.education || "";
     const idx = EDU_LEVELS.indexOf(edu);
@@ -551,7 +547,7 @@ function showTooltip(d, mx, my) {
   tt.querySelector(".tt-exposure").innerHTML = tooltipHighlight(d);
   tt.querySelector(".tt-stats").innerHTML = `
     <span class="label">Median pay</span><span class="value">${formatPay(d.pay)}</span>
-    <span class="label">Jobs (2024)</span><span class="value">${formatNumber(d.jobs)}</span>
+    <span class="label">Employment</span><span class="value">${formatNumber(d.jobs)}</span>
     <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
   tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
@@ -567,19 +563,19 @@ function hideTooltip() { document.getElementById("tooltip").classList.remove("vi
 // ── Shared stat data ────────────────────────────────────────────────────
 
 const PAY_BANDS = [
-  { label: "<$35K", min: 0, max: 35000 },
-  { label: "$35\u201350K", min: 35000, max: 50000 },
-  { label: "$50\u201375K", min: 50000, max: 75000 },
-  { label: "$75\u2013100K", min: 75000, max: 100000 },
-  { label: "$100K+", min: 100000, max: Infinity },
+  { label: "<\u20AC20K", min: 0, max: 20000 },
+  { label: "\u20AC20\u201335K", min: 20000, max: 35000 },
+  { label: "\u20AC35\u201350K", min: 35000, max: 50000 },
+  { label: "\u20AC50\u201375K", min: 50000, max: 75000 },
+  { label: "\u20AC75K+", min: 75000, max: Infinity },
 ];
 
 const EDU_GROUPS = [
-  { label: "No degree/HS", match: ["No formal educational credential", "High school diploma or equivalent"] },
-  { label: "Postsec/Assoc", match: ["Postsecondary nondegree award", "Some college, no degree", "Associate's degree"] },
-  { label: "Bachelor's", match: ["Bachelor's degree"] },
-  { label: "Master's", match: ["Master's degree"] },
-  { label: "Doctoral/Prof", match: ["Doctoral or professional degree"] },
+  { label: "Lower sec.", match: ["Lower secondary or below"] },
+  { label: "Vocational", match: ["Upper secondary / Vocational"] },
+  { label: "Associate", match: ["Short-cycle tertiary / Associate"] },
+  { label: "Bachelor's+", match: ["Bachelor's degree or higher"] },
+  { label: "Military", match: ["Varies (military)"] },
 ];
 
 const OUTLOOK_TIERS = [
@@ -624,7 +620,7 @@ function renderHbars(items) {
 
 function updateStats() {
   const totalJobs = data.reduce((s, d) => s + (d.jobs || 0), 0);
-  document.getElementById("statTotalJobs").textContent = (totalJobs / 1e6).toFixed(0) + "M";
+  document.getElementById("statTotalJobs").textContent = formatNumber(totalJobs);
 
   if (colorMode === "outlook") updateOutlookStats(totalJobs);
   else if (colorMode === "pay") updatePayStats(totalJobs);
@@ -679,14 +675,14 @@ function updateOutlookStats(totalJobs) {
   let declining = 0;
   for (const d of data) { if (d.outlook != null && d.outlook < 0 && d.jobs) declining += d.jobs; }
   document.getElementById("block7").innerHTML = `<h3>Declining jobs</h3>
-    <div class="stat-big" style="color:${outlookColor(-5, 1)}">${(declining / 1e6).toFixed(1)}M</div>
+    <div class="stat-big" style="color:${outlookColor(-5, 1)}">${formatNumber(declining)}</div>
     <div class="stat-label">negative outlook</div>`;
 
   // Impact: growing jobs
   let growing = 0;
   for (const d of data) { if (d.outlook != null && d.outlook > 0 && d.jobs) growing += d.jobs; }
   document.getElementById("block8").innerHTML = `<h3>Growing jobs</h3>
-    <div class="stat-big" style="color:${outlookColor(10, 1)}">${(growing / 1e6).toFixed(1)}M</div>
+    <div class="stat-big" style="color:${outlookColor(10, 1)}">${formatNumber(growing)}</div>
     <div class="stat-label">positive outlook</div>`;
 }
 
@@ -695,20 +691,20 @@ function updatePayStats(totalJobs) {
   for (const d of data) { if (d.pay != null && d.jobs) { wS += d.pay * d.jobs; wC += d.jobs; } }
   const avg = wC > 0 ? wS / wC : 0;
   document.getElementById("block2").innerHTML = `<h3>Avg. pay</h3>
-    <div class="stat-big"><span style="color:${payColor(avg, 1)}">$${Math.round(avg / 1000)}K</span></div>
+    <div class="stat-big"><span style="color:${payColor(avg, 1)}">\u20AC${Math.round(avg / 1000)}K</span></div>
     <div class="stat-label">job-weighted</div>`;
 
   // Histogram
   const buckets = [
-    { lo: 0, hi: 30000, mid: 25000 }, { lo: 30000, hi: 40000, mid: 35000 }, { lo: 40000, hi: 55000, mid: 47000 },
-    { lo: 55000, hi: 75000, mid: 65000 }, { lo: 75000, hi: 100000, mid: 87000 }, { lo: 100000, hi: Infinity, mid: 130000 },
+    { lo: 0, hi: 15000, mid: 12000 }, { lo: 15000, hi: 25000, mid: 20000 }, { lo: 25000, hi: 35000, mid: 30000 },
+    { lo: 35000, hi: 50000, mid: 42000 }, { lo: 50000, hi: 75000, mid: 62000 }, { lo: 75000, hi: Infinity, mid: 90000 },
   ];
   const histJobs = buckets.map(() => 0);
   for (const d of data) { if (d.pay != null && d.jobs) { const i = buckets.findIndex(b => d.pay >= b.lo && d.pay < b.hi); if (i >= 0) histJobs[i] += d.jobs; } }
   const maxH = Math.max(...histJobs);
   document.getElementById("block3").innerHTML = `<h3>Jobs by pay</h3>
     <div class="histogram">${histJobs.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${payColor(buckets[i].mid, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>$30K</span><span>$65K</span><span>$100K+</span></div>`;
+    <div class="hist-labels"><span>\u20AC15K</span><span>\u20AC40K</span><span>\u20AC75K+</span></div>`;
 
   // Tiers
   const tiers = PAY_BANDS.map(t => {
@@ -721,16 +717,16 @@ function updatePayStats(totalJobs) {
   // Cross: pay by education
   const byEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.education), d => d.pay);
   document.getElementById("block5").innerHTML = `<h3>Pay by education</h3><div class="hbar-chart">${renderHbars(byEdu.map(g => ({
-    label: g.label, val: "$" + Math.round(g.avg / 1000) + "K",
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(25000, g.avg)) - Math.log(25000)) / (Math.log(250000) - Math.log(25000)) * 100)),
+    label: g.label, val: "\u20AC" + Math.round(g.avg / 1000) + "K",
+    pct: Math.max(0, Math.min(100, (Math.log(Math.max(10000, g.avg)) - Math.log(10000)) / (Math.log(80000) - Math.log(10000)) * 100)),
     color: payColor(g.avg, 0.8)
   })))}</div>`;
 
   // Cross: pay by outlook tier
   const byOl = weightedAvgByGroups(OUTLOOK_TIERS, (d, g) => d.outlook != null && d.outlook >= g.min && d.outlook <= g.max, d => d.pay);
   document.getElementById("block6").innerHTML = `<h3>Pay by outlook</h3><div class="hbar-chart">${renderHbars(byOl.map(g => ({
-    label: g.label.replace(/ \(.*/, ""), val: "$" + Math.round(g.avg / 1000) + "K",
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(25000, g.avg)) - Math.log(25000)) / (Math.log(250000) - Math.log(25000)) * 100)),
+    label: g.label.replace(/ \(.*/, ""), val: "\u20AC" + Math.round(g.avg / 1000) + "K",
+    pct: Math.max(0, Math.min(100, (Math.log(Math.max(10000, g.avg)) - Math.log(10000)) / (Math.log(80000) - Math.log(10000)) * 100)),
     color: payColor(g.avg, 0.8)
   })))}</div>`;
 
@@ -738,7 +734,7 @@ function updatePayStats(totalJobs) {
   let totalWages = 0;
   for (const d of data) { if (d.pay != null && d.jobs) totalWages += d.pay * d.jobs; }
   document.getElementById("block7").innerHTML = `<h3>Total wages</h3>
-    <div class="stat-big">$${(totalWages / 1e12).toFixed(1)}T</div>
+    <div class="stat-big">\u20AC${(totalWages / 1e9).toFixed(1)}B</div>
     <div class="stat-label">annual</div>`;
   document.getElementById("block8").innerHTML = "";
 }
@@ -747,10 +743,10 @@ function updateEducationStats(totalJobs) {
   // Headline: % Bachelor's+
   let bsJobs = 0;
   for (const d of data) {
-    if (d.jobs && ["Bachelor's degree", "Master's degree", "Doctoral or professional degree"].includes(d.education)) bsJobs += d.jobs;
+    if (d.jobs && ["Bachelor's degree or higher", "Short-cycle tertiary / Associate"].includes(d.education)) bsJobs += d.jobs;
   }
-  document.getElementById("block2").innerHTML = `<h3>Bachelor's+</h3>
-    <div class="stat-big"><span style="color:${eduColor(5, 1)}">${(bsJobs / totalJobs * 100).toFixed(0)}%</span></div>
+  document.getElementById("block2").innerHTML = `<h3>Tertiary+</h3>
+    <div class="stat-big"><span style="color:${eduColor(3, 1)}">${(bsJobs / totalJobs * 100).toFixed(0)}%</span></div>
     <div class="stat-label">of all jobs</div>`;
 
   // Histogram: jobs by education group
@@ -771,8 +767,8 @@ function updateEducationStats(totalJobs) {
   // Cross: avg pay by education
   const payByEdu = weightedAvgByGroups(EDU_GROUPS, (d, g) => g.match.includes(d.education), d => d.pay);
   document.getElementById("block5").innerHTML = `<h3>Avg pay by education</h3><div class="hbar-chart">${renderHbars(payByEdu.map(g => ({
-    label: g.label, val: "$" + Math.round(g.avg / 1000) + "K",
-    pct: Math.max(0, Math.min(100, (Math.log(Math.max(25000, g.avg)) - Math.log(25000)) / (Math.log(250000) - Math.log(25000)) * 100)),
+    label: g.label, val: "\u20AC" + Math.round(g.avg / 1000) + "K",
+    pct: Math.max(0, Math.min(100, (Math.log(Math.max(10000, g.avg)) - Math.log(10000)) / (Math.log(80000) - Math.log(10000)) * 100)),
     color: payColor(g.avg, 0.8)
   })))}</div>`;
 
@@ -784,13 +780,13 @@ function updateEducationStats(totalJobs) {
   })))}</div>`;
 
   // Impact: jobs with no formal degree
-  let noDeg = 0;
+  let lowEdu = 0;
   for (const d of data) {
-    if (d.jobs && ["No formal educational credential", "High school diploma or equivalent"].includes(d.education)) noDeg += d.jobs;
+    if (d.jobs && ["Lower secondary or below"].includes(d.education)) lowEdu += d.jobs;
   }
-  document.getElementById("block7").innerHTML = `<h3>No degree / HS</h3>
-    <div class="stat-big">${(noDeg / 1e6).toFixed(1)}M</div>
-    <div class="stat-label">jobs, no degree required</div>`;
+  document.getElementById("block7").innerHTML = `<h3>Lower secondary</h3>
+    <div class="stat-big">${formatNumber(lowEdu)}</div>
+    <div class="stat-label">jobs, lower secondary or below</div>`;
   document.getElementById("block8").innerHTML = "";
 }
 
@@ -841,7 +837,7 @@ function updateExposureStats(totalJobs) {
   let wagesExposed = 0;
   for (const d of data) { if (d.exposure != null && d.exposure >= 7 && d.jobs && d.pay) wagesExposed += d.jobs * d.pay; }
   document.getElementById("block7").innerHTML = `<h3>Wages exposed</h3>
-    <div class="stat-big" style="color:${exposureColor(8, 1)}">$${(wagesExposed / 1e12).toFixed(1)}T</div>
+    <div class="stat-big" style="color:${exposureColor(8, 1)}">\u20AC${(wagesExposed / 1e9).toFixed(1)}B</div>
     <div class="stat-label">annual, in jobs scoring 7+</div>`;
   document.getElementById("block8").innerHTML = "";
 }
@@ -854,7 +850,7 @@ canvas.addEventListener("mousemove", (e) => {
   if (hovered) { showTooltip(hovered, e.clientX, e.clientY); canvas.style.cursor = "pointer"; }
   else { hideTooltip(); canvas.style.cursor = "default"; }
 });
-canvas.addEventListener("click", (e) => { const hit = hitTest(e.clientX, e.clientY); if (hit && hit.url) window.open(hit.url, "_blank"); });
+canvas.addEventListener("click", (e) => { const hit = hitTest(e.clientX, e.clientY); if (hit && hit.isco_code) window.open("https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-002", "_blank"); });
 canvas.addEventListener("mouseleave", () => { hovered = null; hideTooltip(); draw(); });
 function resize() { dpr = window.devicePixelRatio || 1; layout(); draw(); }
 
@@ -863,7 +859,7 @@ function resize() { dpr = window.devicePixelRatio || 1; layout(); draw(); }
 const LEGEND_CONFIG = {
   exposure:  { low: "Low", high: "High" },
   outlook:   { low: "Declining", high: "Growing" },
-  pay:       { low: "$25K", high: "$250K" },
+  pay:       { low: "\u20AC10K", high: "\u20AC80K" },
   education: { low: "No degree", high: "Doctoral" },
 };
 
