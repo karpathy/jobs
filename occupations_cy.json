@@ -1,0 +1,314 @@
+[
+  {
+    "title": "Chief executives, senior officials and legislators",
+    "isco_code": "OC11",
+    "isco_parent": "OC1",
+    "category": "managers",
+    "category_label": "Managers",
+    "slug": "chief-executives-senior-officials-and-legislators"
+  },
+  {
+    "title": "Administrative and commercial managers",
+    "isco_code": "OC12",
+    "isco_parent": "OC1",
+    "category": "managers",
+    "category_label": "Managers",
+    "slug": "administrative-and-commercial-managers"
+  },
+  {
+    "title": "Production and specialised services managers",
+    "isco_code": "OC13",
+    "isco_parent": "OC1",
+    "category": "managers",
+    "category_label": "Managers",
+    "slug": "production-and-specialised-services-managers"
+  },
+  {
+    "title": "Hospitality, retail and other services managers",
+    "isco_code": "OC14",
+    "isco_parent": "OC1",
+    "category": "managers",
+    "category_label": "Managers",
+    "slug": "hospitality-retail-and-other-services-managers"
+  },
+  {
+    "title": "Science and engineering professionals",
+    "isco_code": "OC21",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "science-and-engineering-professionals"
+  },
+  {
+    "title": "Health professionals",
+    "isco_code": "OC22",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "health-professionals"
+  },
+  {
+    "title": "Teaching professionals",
+    "isco_code": "OC23",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "teaching-professionals"
+  },
+  {
+    "title": "Business and administration professionals",
+    "isco_code": "OC24",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "business-and-administration-professionals"
+  },
+  {
+    "title": "Information and communications technology professionals",
+    "isco_code": "OC25",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "information-and-communications-technology-professionals"
+  },
+  {
+    "title": "Legal, social and cultural professionals",
+    "isco_code": "OC26",
+    "isco_parent": "OC2",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "slug": "legal-social-and-cultural-professionals"
+  },
+  {
+    "title": "Science and engineering associate professionals",
+    "isco_code": "OC31",
+    "isco_parent": "OC3",
+    "category": "technicians-and-associate-professionals",
+    "category_label": "Technicians and associate professionals",
+    "slug": "science-and-engineering-associate-professionals"
+  },
+  {
+    "title": "Health associate professionals",
+    "isco_code": "OC32",
+    "isco_parent": "OC3",
+    "category": "technicians-and-associate-professionals",
+    "category_label": "Technicians and associate professionals",
+    "slug": "health-associate-professionals"
+  },
+  {
+    "title": "Business and administration associate professionals",
+    "isco_code": "OC33",
+    "isco_parent": "OC3",
+    "category": "technicians-and-associate-professionals",
+    "category_label": "Technicians and associate professionals",
+    "slug": "business-and-administration-associate-professionals"
+  },
+  {
+    "title": "Legal, social, cultural and related associate professionals",
+    "isco_code": "OC34",
+    "isco_parent": "OC3",
+    "category": "technicians-and-associate-professionals",
+    "category_label": "Technicians and associate professionals",
+    "slug": "legal-social-cultural-and-related-associate-professionals"
+  },
+  {
+    "title": "Information and communications technicians",
+    "isco_code": "OC35",
+    "isco_parent": "OC3",
+    "category": "technicians-and-associate-professionals",
+    "category_label": "Technicians and associate professionals",
+    "slug": "information-and-communications-technicians"
+  },
+  {
+    "title": "General and keyboard clerks",
+    "isco_code": "OC41",
+    "isco_parent": "OC4",
+    "category": "clerical-support-workers",
+    "category_label": "Clerical support workers",
+    "slug": "general-and-keyboard-clerks"
+  },
+  {
+    "title": "Customer services clerks",
+    "isco_code": "OC42",
+    "isco_parent": "OC4",
+    "category": "clerical-support-workers",
+    "category_label": "Clerical support workers",
+    "slug": "customer-services-clerks"
+  },
+  {
+    "title": "Numerical and material recording clerks",
+    "isco_code": "OC43",
+    "isco_parent": "OC4",
+    "category": "clerical-support-workers",
+    "category_label": "Clerical support workers",
+    "slug": "numerical-and-material-recording-clerks"
+  },
+  {
+    "title": "Other clerical support workers",
+    "isco_code": "OC44",
+    "isco_parent": "OC4",
+    "category": "clerical-support-workers",
+    "category_label": "Clerical support workers",
+    "slug": "other-clerical-support-workers"
+  },
+  {
+    "title": "Personal service workers",
+    "isco_code": "OC51",
+    "isco_parent": "OC5",
+    "category": "service-and-sales-workers",
+    "category_label": "Service and sales workers",
+    "slug": "personal-service-workers"
+  },
+  {
+    "title": "Sales workers",
+    "isco_code": "OC52",
+    "isco_parent": "OC5",
+    "category": "service-and-sales-workers",
+    "category_label": "Service and sales workers",
+    "slug": "sales-workers"
+  },
+  {
+    "title": "Personal care workers",
+    "isco_code": "OC53",
+    "isco_parent": "OC5",
+    "category": "service-and-sales-workers",
+    "category_label": "Service and sales workers",
+    "slug": "personal-care-workers"
+  },
+  {
+    "title": "Protective services workers",
+    "isco_code": "OC54",
+    "isco_parent": "OC5",
+    "category": "service-and-sales-workers",
+    "category_label": "Service and sales workers",
+    "slug": "protective-services-workers"
+  },
+  {
+    "title": "Market-oriented skilled agricultural workers",
+    "isco_code": "OC61",
+    "isco_parent": "OC6",
+    "category": "skilled-agriculture-forestry-fishery",
+    "category_label": "Skilled agricultural, forestry and fishery workers",
+    "slug": "market-oriented-skilled-agricultural-workers"
+  },
+  {
+    "title": "Market-oriented skilled forestry, fishery and hunting workers",
+    "isco_code": "OC62",
+    "isco_parent": "OC6",
+    "category": "skilled-agriculture-forestry-fishery",
+    "category_label": "Skilled agricultural, forestry and fishery workers",
+    "slug": "market-oriented-skilled-forestry-fishery-and-hunting-workers"
+  },
+  {
+    "title": "Building and related trades workers, excluding electricians",
+    "isco_code": "OC71",
+    "isco_parent": "OC7",
+    "category": "craft-and-related-trades",
+    "category_label": "Craft and related trades workers",
+    "slug": "building-and-related-trades-workers-excluding-electricians"
+  },
+  {
+    "title": "Metal, machinery and related trades workers",
+    "isco_code": "OC72",
+    "isco_parent": "OC7",
+    "category": "craft-and-related-trades",
+    "category_label": "Craft and related trades workers",
+    "slug": "metal-machinery-and-related-trades-workers"
+  },
+  {
+    "title": "Handicraft and printing workers",
+    "isco_code": "OC73",
+    "isco_parent": "OC7",
+    "category": "craft-and-related-trades",
+    "category_label": "Craft and related trades workers",
+    "slug": "handicraft-and-printing-workers"
+  },
+  {
+    "title": "Electrical and electronic trades workers",
+    "isco_code": "OC74",
+    "isco_parent": "OC7",
+    "category": "craft-and-related-trades",
+    "category_label": "Craft and related trades workers",
+    "slug": "electrical-and-electronic-trades-workers"
+  },
+  {
+    "title": "Food processing, wood working, garment and other craft and related trades workers",
+    "isco_code": "OC75",
+    "isco_parent": "OC7",
+    "category": "craft-and-related-trades",
+    "category_label": "Craft and related trades workers",
+    "slug": "food-processing-wood-working-garment-and-other-craft-and-related-trades-workers"
+  },
+  {
+    "title": "Stationary plant and machine operators",
+    "isco_code": "OC81",
+    "isco_parent": "OC8",
+    "category": "plant-and-machine-operators",
+    "category_label": "Plant and machine operators and assemblers",
+    "slug": "stationary-plant-and-machine-operators"
+  },
+  {
+    "title": "Assemblers",
+    "isco_code": "OC82",
+    "isco_parent": "OC8",
+    "category": "plant-and-machine-operators",
+    "category_label": "Plant and machine operators and assemblers",
+    "slug": "assemblers"
+  },
+  {
+    "title": "Drivers and mobile plant operators",
+    "isco_code": "OC83",
+    "isco_parent": "OC8",
+    "category": "plant-and-machine-operators",
+    "category_label": "Plant and machine operators and assemblers",
+    "slug": "drivers-and-mobile-plant-operators"
+  },
+  {
+    "title": "Cleaners and helpers",
+    "isco_code": "OC91",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "cleaners-and-helpers"
+  },
+  {
+    "title": "Agricultural, forestry and fishery labourers",
+    "isco_code": "OC92",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "agricultural-forestry-and-fishery-labourers"
+  },
+  {
+    "title": "Labourers in mining, construction, manufacturing and transport",
+    "isco_code": "OC93",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "labourers-in-mining-construction-manufacturing-and-transport"
+  },
+  {
+    "title": "Food preparation assistants",
+    "isco_code": "OC94",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "food-preparation-assistants"
+  },
+  {
+    "title": "Street and related sales and service workers",
+    "isco_code": "OC95",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "street-and-related-sales-and-service-workers"
+  },
+  {
+    "title": "Refuse workers and other elementary workers",
+    "isco_code": "OC96",
+    "isco_parent": "OC9",
+    "category": "elementary-occupations",
+    "category_label": "Elementary occupations",
+    "slug": "refuse-workers-and-other-elementary-workers"
+  }
+]
