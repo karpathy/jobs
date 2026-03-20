@@ -2050,5 +2050,240 @@
     "title": "Zoologists and wildlife biologists",
     "exposure": 5,
     "rationale": "This occupation is a hybrid of physical fieldwork and digital knowledge work. AI significantly impacts the data-heavy aspects of the job, such as analyzing GIS data, processing camera trap imagery, and modeling population dynamics, but it cannot replace the physical requirements of collecting biological specimens, handling wild animals, or navigating remote outdoor environments."
+  },
+  {
+    "slug": "chief-executives-senior-officials-and-legislators",
+    "title": "Chief executives, senior officials and legislators",
+    "exposure": 7,
+    "rationale": "This group performs high-level knowledge work involving strategic analysis, policy formulation, and complex communication, all of which are increasingly augmented by AI-driven data insights. While the core functions of leadership, ethical judgment, and political negotiation require human presence and accountability, the digital nature of their information processing and decision-support systems makes them highly exposed to AI restructuring."
+  },
+  {
+    "slug": "administrative-and-commercial-managers",
+    "title": "Administrative and commercial managers",
+    "exposure": 7,
+    "rationale": "These roles involve high-level knowledge work, strategic planning, and digital communication, all of which are highly susceptible to AI-driven productivity gains and data-driven decision-making. While the need for human leadership, negotiation, and complex stakeholder management in the Cyprus/EU corporate and public sectors provides a buffer, the core tasks of reporting, resource allocation, and administrative oversight are increasingly being automated or augmented by AI."
+  },
+  {
+    "slug": "production-and-specialised-services-managers",
+    "title": "Production and specialised services managers",
+    "exposure": 7,
+    "rationale": "These roles involve high-level knowledge work, strategic planning, and resource allocation, which are increasingly augmented by AI-driven analytics and forecasting tools. While the need for human leadership, physical site oversight, and complex stakeholder negotiation in sectors like Cyprus's shipping and construction provides a buffer, the core administrative and analytical functions are highly susceptible to AI-driven productivity gains."
+  },
+  {
+    "slug": "hospitality-retail-and-other-services-managers",
+    "title": "Hospitality, retail and other services managers",
+    "exposure": 6,
+    "rationale": "This role involves a significant amount of administrative and strategic knowledge work\u2014such as inventory management, financial planning, and marketing\u2014which is highly susceptible to AI optimization. However, the requirement for physical presence, real-time staff supervision, and high-touch customer service in the Cyprus tourism and retail sectors provides a buffer against full automation."
+  },
+  {
+    "slug": "science-and-engineering-professionals",
+    "title": "Science and engineering professionals",
+    "exposure": 8,
+    "rationale": "This group performs predominantly digital knowledge work involving complex data analysis, design, and technical documentation, all of which are highly susceptible to AI-driven productivity gains and automation. While some roles require physical site visits or laboratory work (especially in Cyprus's construction and shipping sectors), the core output is digital, placing it on a steep trajectory for AI integration and restructuring."
+  },
+  {
+    "slug": "health-professionals",
+    "title": "Health professionals",
+    "exposure": 5,
+    "rationale": "Health professionals perform a mix of high-level cognitive tasks, such as diagnostics and treatment planning, which are highly exposed to AI assistance, and physical, hands-on clinical care that requires human presence. While AI will significantly enhance medical imaging, data analysis, and administrative efficiency in the EU/Cyprus healthcare systems, the legal responsibility and the necessity for physical patient interaction provide a substantial buffer against full automation."
+  },
+  {
+    "slug": "teaching-professionals",
+    "title": "Teaching professionals",
+    "exposure": 7,
+    "rationale": "Teaching professionals are highly exposed because their core tasks\u2014lesson planning, content creation, and assessment\u2014are increasingly automated by generative AI. While the physical presence and social-emotional guidance required in Cyprus/EU classrooms provide a buffer, the digital nature of educational materials and administrative duties makes the profession ripe for significant AI-driven restructuring and productivity gains."
+  },
+  {
+    "slug": "business-and-administration-professionals",
+    "title": "Business and administration professionals",
+    "exposure": 8,
+    "rationale": "This group performs predominantly digital knowledge work involving data analysis, strategic planning, and complex communication, all of which are core strengths of generative AI. While high-level human judgment and stakeholder management in sectors like Cyprus's financial and shipping hubs provide some protection, the vast majority of their tasks are susceptible to significant automation and productivity restructuring."
+  },
+  {
+    "slug": "information-and-communications-technology-professionals",
+    "title": "Information and communications technology professionals",
+    "exposure": 9,
+    "rationale": "The work product of ICT professionals is entirely digital, consisting of code, architecture, and data analysis, which are domains where AI capabilities are advancing most rapidly. While these professionals are the primary adopters and creators of AI, the technology significantly automates core tasks like debugging, documentation, and routine coding, leading to massive productivity gains and structural shifts in the occupation."
+  },
+  {
+    "slug": "legal-social-and-cultural-professionals",
+    "title": "Legal, social and cultural professionals",
+    "exposure": 8,
+    "rationale": "This group consists of highly digital and knowledge-intensive roles such as lawyers, social scientists, and writers, whose core tasks involve processing, analyzing, and generating complex text and data. While high-level human judgment and cultural nuance remain critical, AI is rapidly automating legal research, document drafting, and content creation, significantly increasing productivity and restructuring traditional workflows."
+  },
+  {
+    "slug": "science-and-engineering-associate-professionals",
+    "title": "Science and engineering associate professionals",
+    "exposure": 7,
+    "rationale": "These roles involve a high degree of technical data analysis, CAD design, and laboratory reporting which are increasingly being automated or enhanced by AI-driven simulation and diagnostic tools. While some tasks require physical presence in labs or on-site inspections in sectors like Cyprus's construction and shipping industries, the core work product is digital and highly susceptible to AI-driven productivity gains."
+  },
+  {
+    "slug": "health-associate-professionals",
+    "title": "Health associate professionals",
+    "exposure": 4,
+    "rationale": "This group involves a significant amount of physical interaction, clinical procedures, and patient care that cannot be digitized. While AI will heavily assist in diagnostic support, medical imaging analysis, and administrative record-keeping, the core requirement for human presence and manual dexterity in a clinical setting provides a substantial buffer against full automation."
+  },
+  {
+    "slug": "business-and-administration-associate-professionals",
+    "title": "Business and administration associate professionals",
+    "exposure": 9,
+    "rationale": "This group performs tasks that are almost entirely digital and information-based, such as financial record-keeping, sales support, and administrative coordination. Because their work product is fundamentally digital and involves routine data processing and communication, it is highly susceptible to both automation and significant productivity shifts driven by generative AI and LLMs.",
+    "context": "In the Cyprus and EU context, these roles are central to the large financial services and shipping sectors, where AI-driven efficiency gains are currently a primary focus for digital transformation."
+  },
+  {
+    "slug": "legal-social-cultural-and-related-associate-professionals",
+    "title": "Legal, social, cultural and related associate professionals",
+    "exposure": 8,
+    "rationale": "The work product of this group is almost entirely digital and information-based, involving legal research, social assistance documentation, and cultural content creation. While some roles require interpersonal empathy, the core tasks of drafting, analyzing, and organizing information are highly susceptible to AI-driven automation and productivity gains."
+  },
+  {
+    "slug": "information-and-communications-technicians",
+    "title": "Information and communications technicians",
+    "exposure": 9,
+    "rationale": "This group performs almost entirely digital work, including system support, network administration, and web development, which are core domains for AI automation and augmentation. While some hardware-related tasks require physical presence, the vast majority of their output is code or digital configuration, making them highly susceptible to massive productivity gains and role restructuring as AI tools take over routine technical tasks."
+  },
+  {
+    "slug": "general-and-keyboard-clerks",
+    "title": "General and keyboard clerks",
+    "exposure": 10,
+    "rationale": "This occupation group consists of routine information processing, data entry, and document preparation that is entirely digital and structured. Current AI and RPA technologies can already automate the vast majority of these tasks, making this group highly susceptible to total displacement or radical restructuring in the Cyprus and EU administrative sectors."
+  },
+  {
+    "slug": "customer-services-clerks",
+    "title": "Customer services clerks",
+    "exposure": 9,
+    "rationale": "The work product of customer service clerks is almost entirely digital or communication-based, making it highly susceptible to automation via Large Language Models and AI agents. In the Cyprus and EU markets, routine inquiries, booking services, and information provision are rapidly being transitioned to AI-driven interfaces, significantly reducing the need for human intervention in these clerical roles."
+  },
+  {
+    "slug": "numerical-and-material-recording-clerks",
+    "title": "Numerical and material recording clerks",
+    "exposure": 9,
+    "rationale": "This group performs routine information processing, data entry, and record-keeping tasks that are almost entirely digital and rule-based. In the Cyprus and EU context, these functions are being rapidly automated by AI-driven accounting software, automated inventory systems, and OCR technologies, leading to significant workforce restructuring."
+  },
+  {
+    "slug": "other-clerical-support-workers",
+    "title": "Other clerical support workers",
+    "exposure": 9,
+    "rationale": "This group consists of routine digital and paper-based tasks such as filing, mail processing, and personnel record maintenance, which are highly susceptible to automation through LLMs and RPA. In the Cyprus and EU context, the push for e-government and digital transformation is rapidly replacing these manual clerical functions with automated workflows and AI-driven document management systems."
+  },
+  {
+    "slug": "personal-service-workers",
+    "title": "Personal service workers",
+    "exposure": 3,
+    "rationale": "This group includes travel attendants, cooks, and hairdressers, whose core duties require physical presence, manual dexterity, and real-time human interaction. While AI may streamline peripheral tasks like booking, inventory management, or menu planning, the fundamental service delivery remains resistant to automation due to the physical and sensory nature of the work."
+  },
+  {
+    "slug": "sales-workers",
+    "title": "Sales workers",
+    "exposure": 4,
+    "rationale": "While AI is rapidly automating digital sales, e-commerce, and customer analytics, a large portion of this group in Cyprus and the EU involves physical retail and face-to-face interaction. The core tasks of stocking shelves, handling physical goods, and providing in-person customer service in tourism-heavy economies provide a significant buffer against full AI displacement."
+  },
+  {
+    "slug": "personal-care-workers",
+    "title": "Personal care workers",
+    "exposure": 4,
+    "rationale": "The core duties involve physical assistance, emotional support, and real-time human interaction in healthcare and domestic settings, which are highly resistant to AI. However, exposure is moderate because AI is increasingly used for monitoring patient health, managing medication schedules, and automating the significant administrative and reporting requirements prevalent in the EU healthcare sector."
+  },
+  {
+    "slug": "protective-services-workers",
+    "title": "Protective services workers",
+    "exposure": 4,
+    "rationale": "While core duties like firefighting, policing, and physical security require real-time human presence and physical intervention, AI is increasingly used for surveillance, risk assessment, and report generation. In the Cyprus/EU context, the integration of smart city technologies and AI-driven monitoring enhances productivity but cannot replace the essential physical response and human judgment required in unpredictable public safety situations."
+  },
+  {
+    "slug": "market-oriented-skilled-agricultural-workers",
+    "title": "Market-oriented skilled agricultural workers",
+    "exposure": 2,
+    "rationale": "The core tasks involve physical labor, manual dexterity, and real-time management of biological systems in unpredictable outdoor environments, which are highly resistant to AI. While AI can optimize irrigation, pest control, and yield forecasting via precision agriculture, the fundamental work remains hands-on and requires a physical presence on the land."
+  },
+  {
+    "slug": "market-oriented-skilled-forestry-fishery-and-hunting-workers",
+    "title": "Market-oriented skilled forestry, fishery and hunting workers",
+    "exposure": 2,
+    "rationale": "The core tasks of this occupation group involve physical labor, manual dexterity, and real-time navigation of unpredictable natural environments like forests and seas. While AI may assist in peripheral areas such as satellite-based resource monitoring or administrative record-keeping, the fundamental work of harvesting, planting, and catching remains resistant to digital automation."
+  },
+  {
+    "slug": "building-and-related-trades-workers-excluding-electricians",
+    "title": "Building and related trades workers, excluding electricians",
+    "exposure": 2,
+    "rationale": "The core tasks of building trades workers involve physical labor, manual dexterity, and the use of tools in unpredictable, non-routine physical environments. While AI may optimize project management, logistics, or architectural planning at a higher level, the actual execution of construction and maintenance remains insulated from digital automation."
+  },
+  {
+    "slug": "metal-machinery-and-related-trades-workers",
+    "title": "Metal, machinery and related trades workers",
+    "exposure": 3,
+    "rationale": "The core tasks of this group involve physical manipulation of materials, machinery maintenance, and manual precision in non-standardized environments, which are highly resistant to AI. While AI can optimize predictive maintenance and diagnostic software used by these workers, the physical execution of repairs and metalwork remains a human-centric requirement in the Cyprus and EU industrial sectors."
+  },
+  {
+    "slug": "handicraft-and-printing-workers",
+    "title": "Handicraft and printing workers",
+    "exposure": 4,
+    "rationale": "This group combines physical craftsmanship with digital printing processes; while traditional handicraft remains low-exposure due to manual dexterity and physical materials, the printing sector is highly digitized and susceptible to AI-driven automation in layout and prepress. In the Cyprus/EU context, the shift toward digital manufacturing and automated printing offsets the more resilient, artisanal nature of traditional craft work."
+  },
+  {
+    "slug": "electrical-and-electronic-trades-workers",
+    "title": "Electrical and electronic trades workers",
+    "exposure": 2,
+    "rationale": "The core duties involve physical installation, maintenance, and repair of electrical systems and electronic equipment in diverse, unpredictable physical environments. While AI may assist with diagnostic software or administrative scheduling, the manual dexterity and on-site presence required for wiring and hardware manipulation provide a strong barrier to automation."
+  },
+  {
+    "slug": "food-processing-wood-working-garment-and-other-craft-and-related-trades-workers",
+    "title": "Food processing, wood working, garment and other craft and related trades workers",
+    "exposure": 2,
+    "rationale": "The core tasks of these trades involve physical manipulation of materials, manual dexterity, and sensory judgment in physical environments like kitchens, workshops, and factories. While AI may optimize supply chains or provide recipe/design suggestions, the fundamental work of cutting, sewing, baking, and crafting remains resistant to digital automation."
+  },
+  {
+    "slug": "stationary-plant-and-machine-operators",
+    "title": "Stationary plant and machine operators",
+    "exposure": 4,
+    "rationale": "While these roles involve physical machinery, the work is increasingly centered on monitoring digital control systems and optimizing processes, which are highly susceptible to AI-driven predictive maintenance and automated adjustments. However, the requirement for physical presence to handle mechanical failures, perform manual overrides, and conduct onsite inspections in industrial environments provides a significant buffer against full automation."
+  },
+  {
+    "slug": "assemblers",
+    "title": "Assemblers",
+    "exposure": 3,
+    "rationale": "Assemblers perform physical tasks in manufacturing environments that require manual dexterity and the handling of physical components, which provides a natural barrier to current AI capabilities. While AI-driven robotics and computer vision are advancing in factory settings, the core work remains physical; AI exposure is primarily limited to peripheral tasks like inventory tracking, quality control monitoring, and workflow optimization."
+  },
+  {
+    "slug": "drivers-and-mobile-plant-operators",
+    "title": "Drivers and mobile plant operators",
+    "exposure": 3,
+    "rationale": "The core tasks involve physical operation of vehicles and machinery in unpredictable real-world environments, which provides a natural barrier to current AI capabilities. While autonomous driving technology and AI-driven logistics optimization are advancing, the need for human oversight, manual loading/unloading, and navigating complex Mediterranean urban infrastructure keeps exposure low to moderate."
+  },
+  {
+    "slug": "cleaners-and-helpers",
+    "title": "Cleaners and helpers",
+    "exposure": 1,
+    "rationale": "The core tasks of cleaners and helpers are entirely physical, requiring manual dexterity and movement within unpredictable physical environments like hotels, offices, and private homes. While AI might marginally improve scheduling or inventory management at a supervisory level, the fundamental work product cannot be digitized or automated without advanced robotics that are currently cost-prohibitive and technically immature for these settings."
+  },
+  {
+    "slug": "agricultural-forestry-and-fishery-labourers",
+    "title": "Agricultural, forestry and fishery labourers",
+    "exposure": 1,
+    "rationale": "The core tasks of this group involve manual physical labor in unpredictable outdoor environments, such as harvesting, digging, and hauling, which are highly resistant to AI. While automation and robotics may impact large-scale industrial farming, the specific tasks of 'labourers' in the Cyprus and EU context remain fundamentally physical and non-digital."
+  },
+  {
+    "slug": "labourers-in-mining-construction-manufacturing-and-transport",
+    "title": "Labourers in mining, construction, manufacturing and transport",
+    "exposure": 1,
+    "rationale": "The core tasks of these occupations involve manual labor, physical strength, and the use of hand tools in unpredictable physical environments like construction sites and mines. AI has virtually no direct impact on these physical activities, and the work cannot be digitized or performed remotely."
+  },
+  {
+    "slug": "food-preparation-assistants",
+    "title": "Food preparation assistants",
+    "exposure": 2,
+    "rationale": "The core tasks of food preparation assistants involve physical manual labor, such as cleaning, peeling, and chopping ingredients in a fast-paced kitchen environment. While AI might optimize inventory management or scheduling at a managerial level, the physical nature of the work and the need for real-time sensory feedback provide a strong barrier against AI automation."
+  },
+  {
+    "slug": "street-and-related-sales-and-service-workers",
+    "title": "Street and related sales and service workers",
+    "exposure": 1,
+    "rationale": "This occupation group involves physical presence in public spaces for tasks like street vending, door-to-door sales, and providing services like shoe shining or car window cleaning. The work is fundamentally manual, interpersonal, and takes place in unpredictable outdoor environments where AI and robotics currently have negligible impact."
+  },
+  {
+    "slug": "refuse-workers-and-other-elementary-workers",
+    "title": "Refuse workers and other elementary workers",
+    "exposure": 1,
+    "rationale": "The core tasks of refuse collection and elementary labor are almost entirely physical, manual, and conducted in unpredictable outdoor environments. While AI might optimize collection routes at a management level, it has virtually no impact on the physical labor required for these roles in the current Cyprus and EU infrastructure."
   }
 ]
