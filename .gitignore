@@ -21,3 +21,4 @@ embeddings.json
 
 # macOS
 .DS_Store
+.vercel

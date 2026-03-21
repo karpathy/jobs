@@ -1414,6 +1414,2082 @@ def _race_gender_intersection(data, summary):
     }
 
 
+# ─── Template 37: Rio de Janeiro Deep Dive ─────────────────────────────────
+
+def _rio_de_janeiro_deep_dive(data, summary):
+    rj = summary["por_uf"].get("33", {})
+    total = rj.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = rj.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores no RJ — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(rj.get("avg_salary", 0)),
+            "avg_exposicao": str(rj.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 38: Minas Gerais Deep Dive ──────────────────────────────────
+
+def _minas_gerais_deep_dive(data, summary):
+    mg = summary["por_uf"].get("31", {})
+    total = mg.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = mg.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores em MG — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(mg.get("avg_salary", 0)),
+            "avg_exposicao": str(mg.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 39: Bahia Deep Dive ─────────────────────────────────────────
+
+def _bahia_deep_dive(data, summary):
+    ba = summary["por_uf"].get("29", {})
+    total = ba.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = ba.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores na BA — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(ba.get("avg_salary", 0)),
+            "avg_exposicao": str(ba.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 40: Rio Grande do Sul Deep Dive ─────────────────────────────
+
+def _rio_grande_sul_deep_dive(data, summary):
+    rs = summary["por_uf"].get("43", {})
+    total = rs.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = rs.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores no RS — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(rs.get("avg_salary", 0)),
+            "avg_exposicao": str(rs.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 41: Paraná Deep Dive ────────────────────────────────────────
+
+def _parana_deep_dive(data, summary):
+    pr = summary["por_uf"].get("41", {})
+    total = pr.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = pr.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores no PR — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(pr.get("avg_salary", 0)),
+            "avg_exposicao": str(pr.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 42: Distrito Federal Deep Dive ──────────────────────────────
+
+def _distrito_federal_deep_dive(data, summary):
+    df = summary["por_uf"].get("53", {})
+    total = df.get("total_workers", 0)
+    national = sum(v["total_workers"] for v in summary["por_uf"].values())
+    pct_national = round(total / national * 100, 1) if national else 0
+    top_occs = df.get("top_occupations", [])
+
+    return {
+        "headline_stat": _fmt_num(total),
+        "headline_label": f"trabalhadores no DF — {_fmt_pct(pct_national)} do total nacional",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["workers"], "formatted": _fmt_num(o["workers"])}
+            for o in top_occs[:8]
+        ],
+        "details": {
+            "total_workers": _fmt_num(total),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(df.get("avg_salary", 0)),
+            "avg_exposicao": str(df.get("avg_exposicao", 0)).replace(".", ","),
+            "top_occupations": [{"titulo": o["titulo"], "workers": _fmt_num(o["workers"])} for o in top_occs],
+        },
+    }
+
+
+# ─── Template 43: Nordeste Workforce ──────────────────────────────────────
+
+def _nordeste_workforce(data, summary):
+    ne_codes = ["21", "22", "23", "24", "25", "26", "27", "28", "29"]
+    por_uf = summary["por_uf"]
+    national = sum(v["total_workers"] for v in por_uf.values())
+
+    states = []
+    total_ne = 0
+    salaries = []
+    exposicoes = []
+    for code in ne_codes:
+        info = por_uf.get(code, {})
+        w = info.get("total_workers", 0)
+        total_ne += w
+        if info.get("avg_salary"):
+            salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            exposicoes.append(info["avg_exposicao"])
+        states.append({"uf": info.get("nome", code), "workers": w,
+                        "avg_salary": info.get("avg_salary", 0),
+                        "avg_exposicao": info.get("avg_exposicao", 0)})
+    states.sort(key=lambda s: s["workers"], reverse=True)
+    pct_national = round(total_ne / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_num(total_ne),
+        "headline_label": f"trabalhadores no Nordeste — {_fmt_pct(pct_national)} do Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["workers"], "formatted": _fmt_num(s["workers"])}
+            for s in states
+        ],
+        "details": {
+            "total_workers": _fmt_num(total_ne),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(round(_safe_avg(salaries))),
+            "avg_exposicao": str(round(_safe_avg(exposicoes), 1)).replace(".", ","),
+            "states": [{"uf": s["uf"], "workers": _fmt_num(s["workers"]),
+                        "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                        "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 44: Amazônia States ─────────────────────────────────────────
+
+def _amazonia_states(data, summary):
+    n_codes = ["11", "12", "13", "14", "15", "16", "17"]
+    por_uf = summary["por_uf"]
+    national = sum(v["total_workers"] for v in por_uf.values())
+
+    states = []
+    total_n = 0
+    salaries = []
+    exposicoes = []
+    for code in n_codes:
+        info = por_uf.get(code, {})
+        w = info.get("total_workers", 0)
+        total_n += w
+        if info.get("avg_salary"):
+            salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            exposicoes.append(info["avg_exposicao"])
+        states.append({"uf": info.get("nome", code), "workers": w,
+                        "avg_salary": info.get("avg_salary", 0),
+                        "avg_exposicao": info.get("avg_exposicao", 0)})
+    states.sort(key=lambda s: s["workers"], reverse=True)
+    pct_national = round(total_n / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_num(total_n),
+        "headline_label": f"trabalhadores na Amazônia Legal — {_fmt_pct(pct_national)} do Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["workers"], "formatted": _fmt_num(s["workers"])}
+            for s in states
+        ],
+        "details": {
+            "total_workers": _fmt_num(total_n),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(round(_safe_avg(salaries))),
+            "avg_exposicao": str(round(_safe_avg(exposicoes), 1)).replace(".", ","),
+            "states": [{"uf": s["uf"], "workers": _fmt_num(s["workers"]),
+                        "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                        "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 45: Financial Sector ────────────────────────────────────────
+
+def _financial_sector(data, summary):
+    keywords = ["contab", "financ", "banc", "audit", "segur"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média no setor financeiro — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 46: Legal Sector ────────────────────────────────────────────
+
+def _legal_sector(data, summary):
+    keywords = ["advogad", "jurídic", "juiz", "cartorár", "tabeliã"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média no setor jurídico — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 47: Engineering Sector ──────────────────────────────────────
+
+def _engineering_sector(data, summary):
+    keywords = ["engenheir"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs if o.get("salario")]))
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média em engenharia — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0),
+                       "salario": "R$ " + _fmt_num(round(o["salario"])) if o.get("salario") else "N/D"}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 48: Construction Sector ─────────────────────────────────────
+
+def _construction_sector(data, summary):
+    keywords = ["constru", "pedreiro", "eletricist", "encanad", "pintor de obra"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média na construção — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 49: Transport & Logistics ───────────────────────────────────
+
+def _transport_logistics(data, summary):
+    keywords = ["motorist", "transport", "logístic", "caminhoneir"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média em transporte/logística — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 50: Tourism & Hospitality ───────────────────────────────────
+
+def _tourism_hospitality(data, summary):
+    keywords = ["hotel", "turism", "cozinheir", "garçon", "recepcion", "camareira"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média em turismo/hotelaria — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 51: Creative Industries ─────────────────────────────────────
+
+def _creative_industries(data, summary):
+    keywords = ["artist", "design", "músic", "cinema", "jornalist", "fotógraf", "publicit"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média nas indústrias criativas — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 52: Security Sector ─────────────────────────────────────────
+
+def _security_sector(data, summary):
+    keywords = ["vigilant", "seguranç", "polici", "bombeir", "guarda"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média em segurança — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 53: Manufacturing Detailed ──────────────────────────────────
+
+def _manufacturing_detailed(data, summary):
+    occs = [o for o in data
+            if o.get("grande_grupo", "").startswith("TRABALHADORES DA PRODUÇÃO")
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: (o.get("empregados") or 0), reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs if o.get("salario")]))
+    total_saldo = sum(o.get("saldo") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": _fmt_num(total_w),
+        "headline_label": f"trabalhadores na produção industrial — exposição média {str(avg_exp).replace('.', ',')}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "total_workers": _fmt_num(total_w),
+            "total_saldo": _fmt_num(total_saldo),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 54: Commerce & Retail ───────────────────────────────────────
+
+def _commerce_retail(data, summary):
+    occs = [o for o in data
+            if o.get("grande_grupo", "").startswith("TRABALHADORES DOS SERVIÇOS, VENDEDORES")
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: (o.get("empregados") or 0), reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs if o.get("salario")]))
+    total_saldo = sum(o.get("saldo") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": _fmt_num(total_w),
+        "headline_label": f"trabalhadores em comércio/serviços — exposição média {str(avg_exp).replace('.', ',')}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "total_workers": _fmt_num(total_w),
+            "total_saldo": _fmt_num(total_saldo),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 55: Care Economy ────────────────────────────────────────────
+
+def _care_economy(data, summary):
+    keywords = ["cuidador", "assistência social", "doméstic", "babá", "diarist"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs if o.get("salario")]))
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média na economia do cuidado — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 56: Food Industry ───────────────────────────────────────────
+
+def _food_industry(data, summary):
+    keywords = ["aliment", "açougueir", "padeiro", "confeit", "frigoríf"]
+    occs = [o for o in data if any(k in o.get("titulo", "").lower() for k in keywords)
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(avg_exp).replace(".", ","),
+        "headline_label": f"exposição média na indústria alimentícia — {len(occs)} ocupações",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "workers": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 57: Exposure 10 Spotlight ───────────────────────────────────
+
+def _exposure_10_spotlight(data, summary):
+    max_exp = [o for o in data if o.get("exposicao") == 10]
+    max_exp.sort(key=lambda o: (o.get("empregados") or 0), reverse=True)
+
+    total_w = sum(o.get("empregados") or 0 for o in max_exp)
+    avg_sal = round(_safe_avg([o["salario"] for o in max_exp if o.get("salario")]))
+    top10 = max_exp[:10]
+
+    return {
+        "headline_stat": str(len(max_exp)),
+        "headline_label": "ocupações com exposição máxima (10) à IA",
+        "chart_data": [
+            {"label": o["titulo"], "value": o.get("empregados") or 0,
+             "formatted": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(max_exp),
+            "total_workers": _fmt_num(total_w),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "top10": [{"titulo": o["titulo"], "empregados": _fmt_num(o.get("empregados") or 0),
+                       "salario": "R$ " + _fmt_num(round(o["salario"])) if o.get("salario") else "N/D"}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 58: Exposure 1 Spotlight ────────────────────────────────────
+
+def _exposure_1_spotlight(data, summary):
+    low_exp = [o for o in data if o.get("exposicao") is not None and o["exposicao"] <= 2]
+    low_exp.sort(key=lambda o: (o.get("empregados") or 0), reverse=True)
+
+    total_w = sum(o.get("empregados") or 0 for o in low_exp)
+    avg_sal = round(_safe_avg([o["salario"] for o in low_exp if o.get("salario")]))
+    top10 = low_exp[:10]
+
+    return {
+        "headline_stat": str(len(low_exp)),
+        "headline_label": "ocupações com exposição mínima (≤2) à IA",
+        "chart_data": [
+            {"label": o["titulo"], "value": o.get("empregados") or 0,
+             "formatted": _fmt_num(o.get("empregados") or 0)}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(low_exp),
+            "total_workers": _fmt_num(total_w),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "top10": [{"titulo": o["titulo"], "empregados": _fmt_num(o.get("empregados") or 0),
+                       "exposicao": o["exposicao"],
+                       "salario": "R$ " + _fmt_num(round(o["salario"])) if o.get("salario") else "N/D"}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 59: Largest Occupations ─────────────────────────────────────
+
+def _largest_occupations(data, summary):
+    valid = [o for o in data if o.get("empregados") and o["empregados"] > 0]
+    valid.sort(key=lambda o: o["empregados"], reverse=True)
+    top10 = valid[:10]
+
+    total_top10 = sum(o["empregados"] for o in top10)
+    total_all = sum(o.get("empregados") or 0 for o in data)
+    pct = round(total_top10 / total_all * 100, 1) if total_all else 0
+
+    return {
+        "headline_stat": _fmt_num(total_top10),
+        "headline_label": f"trabalhadores nas 10 maiores ocupações — {_fmt_pct(pct)} do total",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["empregados"],
+             "formatted": _fmt_num(o["empregados"]),
+             "exposicao": o.get("exposicao")}
+            for o in top10
+        ],
+        "details": {
+            "total_top10": _fmt_num(total_top10),
+            "pct_total": _fmt_pct(pct),
+            "top10": [{"titulo": o["titulo"], "empregados": _fmt_num(o["empregados"]),
+                       "exposicao": o.get("exposicao"),
+                       "salario": "R$ " + _fmt_num(round(o["salario"])) if o.get("salario") else "N/D"}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 60: Highest Paid Top 10 ─────────────────────────────────────
+
+def _highest_paid_top10(data, summary):
+    valid = [o for o in data if o.get("salario") and o.get("empregados") and o["empregados"] > 0]
+    valid.sort(key=lambda o: o["salario"], reverse=True)
+    top10 = valid[:10]
+
+    avg_exp = round(_safe_avg([o["exposicao"] for o in top10 if o.get("exposicao") is not None]), 1)
+
+    return {
+        "headline_stat": "R$ " + _fmt_num(round(top10[0]["salario"])),
+        "headline_label": f"salário médio mais alto — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": round(o["salario"]),
+             "formatted": "R$ " + _fmt_num(round(o["salario"])),
+             "workers": _fmt_num(o["empregados"])}
+            for o in top10
+        ],
+        "details": {
+            "avg_exposicao_top10": str(avg_exp).replace(".", ","),
+            "top10": [{"titulo": o["titulo"], "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "empregados": _fmt_num(o["empregados"]),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 61: Gender Imbalance Top ────────────────────────────────────
+
+def _gender_imbalance_top(data, summary):
+    results = []
+    for o in data:
+        dem = o.get("demographics")
+        if not dem:
+            continue
+        tf = dem.get("total_feminino", 0)
+        tm = dem.get("total_masculino", 0)
+        total = tf + tm
+        if total < 500:
+            continue
+        pct_f = round(tf / total * 100, 1)
+        ratio = max(pct_f, 100 - pct_f)
+        results.append({
+            "titulo": o["titulo"],
+            "pct_feminino": pct_f,
+            "pct_masculino": round(100 - pct_f, 1),
+            "dominant": "Feminino" if pct_f > 50 else "Masculino",
+            "ratio": ratio,
+            "total_workers": total,
+            "exposicao": o.get("exposicao"),
+        })
+    results.sort(key=lambda r: r["ratio"], reverse=True)
+    top10 = results[:10]
+
+    return {
+        "headline_stat": _fmt_pct(top10[0]["ratio"]),
+        "headline_label": f"concentração de gênero mais extrema — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": r["titulo"], "value": r["ratio"],
+             "formatted": _fmt_pct(r["ratio"]),
+             "dominant": r["dominant"]}
+            for r in top10
+        ],
+        "details": {
+            "top10": [{"titulo": r["titulo"], "pct_feminino": _fmt_pct(r["pct_feminino"]),
+                       "pct_masculino": _fmt_pct(r["pct_masculino"]),
+                       "dominant": r["dominant"], "workers": _fmt_num(r["total_workers"]),
+                       "exposicao": r["exposicao"]}
+                      for r in top10],
+        },
+    }
+
+
+# ─── Template 62: Salary Progression Ratio ────────────────────────────────
+
+def _salary_progression_ratio(data, summary):
+    valid = [o for o in data if o.get("salario") and o.get("salario_admissao")
+             and o["salario_admissao"] > 0]
+    for o in valid:
+        o["_ratio"] = round(o["salario"] / o["salario_admissao"], 2)
+    valid.sort(key=lambda o: o["_ratio"], reverse=True)
+    top10 = valid[:10]
+
+    return {
+        "headline_stat": str(top10[0]["_ratio"]).replace(".", ",") + "x",
+        "headline_label": f"maior progressão salarial — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["_ratio"],
+             "formatted": str(o["_ratio"]).replace(".", ",") + "x"}
+            for o in top10
+        ],
+        "details": {
+            "top10": [{"titulo": o["titulo"],
+                       "ratio": str(o["_ratio"]).replace(".", ",") + "x",
+                       "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "salario_admissao": "R$ " + _fmt_num(round(o["salario_admissao"])),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 63: High Growth + High Exposure ─────────────────────────────
+
+def _high_growth_high_exposure(data, summary):
+    occs = [o for o in data if o.get("crescimento") is not None and o.get("exposicao") is not None
+            and o["crescimento"] >= 7 and o["exposicao"] >= 7]
+    occs.sort(key=lambda o: (o.get("empregados") or 0), reverse=True)
+
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": "ocupações com alto crescimento E alta exposição à IA",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "crescimento": o["crescimento"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "crescimento": o["crescimento"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 64: Low Vantagem + High Workers ─────────────────────────────
+
+def _low_vantagem_high_workers(data, summary):
+    occs = [o for o in data if o.get("vantagem") is not None and o["vantagem"] <= 3
+            and o.get("empregados") and o["empregados"] > 0]
+    occs.sort(key=lambda o: o["empregados"], reverse=True)
+
+    total_w = sum(o["empregados"] for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": _fmt_num(total_w),
+        "headline_label": f"trabalhadores em ocupações com baixa vantagem (≤3) da IA",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["empregados"],
+             "formatted": _fmt_num(o["empregados"]),
+             "vantagem": o["vantagem"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "empregados": _fmt_num(o["empregados"]),
+                       "vantagem": o["vantagem"], "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 65: Balanced Risk ───────────────────────────────────────────
+
+def _balanced_risk(data, summary):
+    occs = [o for o in data if o.get("exposicao") is not None
+            and 4 <= o["exposicao"] <= 6
+            and o.get("empregados") and o["empregados"] > 0]
+    occs.sort(key=lambda o: o["empregados"], reverse=True)
+
+    total_w = sum(o["empregados"] for o in occs)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações na faixa média de exposição (4-6) — {_fmt_num(total_w)} trabalhadores",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["empregados"],
+             "formatted": _fmt_num(o["empregados"]),
+             "exposicao": o["exposicao"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "empregados": _fmt_num(o["empregados"]),
+                       "exposicao": o["exposicao"],
+                       "salario": "R$ " + _fmt_num(round(o["salario"])) if o.get("salario") else "N/D"}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 66: Extreme Divergence ──────────────────────────────────────
+
+def _extreme_divergence(data, summary):
+    occs = [o for o in data if o.get("exposicao") is not None and o.get("vantagem") is not None
+            and abs(o["exposicao"] - o["vantagem"]) >= 5]
+    occs.sort(key=lambda o: abs(o["exposicao"] - o["vantagem"]), reverse=True)
+
+    top10 = occs[:10]
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": "ocupações com divergência extrema entre exposição e vantagem",
+        "chart_data": [
+            {"label": o["titulo"], "value": abs(o["exposicao"] - o["vantagem"]),
+             "formatted": str(abs(o["exposicao"] - o["vantagem"])),
+             "exposicao": o["exposicao"], "vantagem": o["vantagem"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "vantagem": o["vantagem"],
+                       "diferenca": abs(o["exposicao"] - o["vantagem"]),
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 67: Declining Well-Paid ─────────────────────────────────────
+
+def _declining_well_paid(data, summary):
+    occs = [o for o in data if o.get("saldo") is not None and o["saldo"] < 0
+            and o.get("salario") and o["salario"] >= 5000]
+    occs.sort(key=lambda o: o["saldo"])
+    top10 = occs[:10]
+
+    total_saldo = sum(o["saldo"] for o in occs)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs]))
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações bem pagas (≥R$5k) em declínio — saldo total {_fmt_num(total_saldo)}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["saldo"],
+             "formatted": _fmt_num(o["saldo"]),
+             "salary": "R$ " + _fmt_num(round(o["salario"]))}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_saldo": _fmt_num(total_saldo),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "top10": [{"titulo": o["titulo"], "saldo": _fmt_num(o["saldo"]),
+                       "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 68: Growing Low-Paid ────────────────────────────────────────
+
+def _growing_low_paid(data, summary):
+    occs = [o for o in data if o.get("saldo") is not None and o["saldo"] > 0
+            and o.get("salario") and o["salario"] < 2000]
+    occs.sort(key=lambda o: o["saldo"], reverse=True)
+    top10 = occs[:10]
+
+    total_saldo = sum(o["saldo"] for o in occs)
+    avg_sal = round(_safe_avg([o["salario"] for o in occs]))
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações de baixo salário (<R$2k) em crescimento",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["saldo"],
+             "formatted": "+" + _fmt_num(o["saldo"]),
+             "salary": "R$ " + _fmt_num(round(o["salario"]))}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_saldo": "+" + _fmt_num(total_saldo),
+            "avg_salario": "R$ " + _fmt_num(avg_sal),
+            "top10": [{"titulo": o["titulo"], "saldo": "+" + _fmt_num(o["saldo"]),
+                       "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 69: Minimum Wage Exposure ───────────────────────────────────
+
+def _minimum_wage_exposure(data, summary):
+    occs = [o for o in data if o.get("salario") and o["salario"] < 1800
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["exposicao"], reverse=True)
+
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    high_risk = [o for o in occs if o["exposicao"] >= 7]
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações próximas ao salário mínimo (<R$1.800) — {_fmt_num(total_w)} trabalhadores",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["exposicao"],
+             "formatted": str(o["exposicao"]).replace(".", ","),
+             "salary": "R$ " + _fmt_num(round(o["salario"]))}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "n_high_risk": len(high_risk),
+            "top10": [{"titulo": o["titulo"], "exposicao": o["exposicao"],
+                       "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 70: Salary Above 10k ───────────────────────────────────────
+
+def _salary_above_10k(data, summary):
+    occs = [o for o in data if o.get("salario") and o["salario"] >= 10000
+            and o.get("exposicao") is not None]
+    occs.sort(key=lambda o: o["salario"], reverse=True)
+
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+    avg_exp = round(_safe_avg([o["exposicao"] for o in occs]), 1)
+    top10 = occs[:10]
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações com salário ≥R$10k — exposição média {str(avg_exp).replace('.', ',')}",
+        "chart_data": [
+            {"label": o["titulo"], "value": round(o["salario"]),
+             "formatted": "R$ " + _fmt_num(round(o["salario"])),
+             "exposicao": o["exposicao"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "avg_exposicao": str(avg_exp).replace(".", ","),
+            "top10": [{"titulo": o["titulo"], "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "exposicao": o["exposicao"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 71: Net Job Creation ────────────────────────────────────────
+
+def _net_job_creation(data, summary):
+    with_saldo = [o for o in data if o.get("saldo") is not None]
+    total_saldo = sum(o["saldo"] for o in with_saldo)
+    positive = [o for o in with_saldo if o["saldo"] > 0]
+    negative = [o for o in with_saldo if o["saldo"] < 0]
+    sum_pos = sum(o["saldo"] for o in positive)
+    sum_neg = sum(o["saldo"] for o in negative)
+
+    positive.sort(key=lambda o: o["saldo"], reverse=True)
+    negative.sort(key=lambda o: o["saldo"])
+    top5_pos = positive[:5]
+    top5_neg = negative[:5]
+
+    return {
+        "headline_stat": ("+" if total_saldo >= 0 else "") + _fmt_num(total_saldo),
+        "headline_label": "saldo líquido de empregos em todas as ocupações analisadas",
+        "chart_data": [
+            {"label": "Criação", "value": sum_pos, "formatted": "+" + _fmt_num(sum_pos)},
+            {"label": "Destruição", "value": sum_neg, "formatted": _fmt_num(sum_neg)},
+        ],
+        "details": {
+            "total_saldo": ("+" if total_saldo >= 0 else "") + _fmt_num(total_saldo),
+            "n_positive": len(positive),
+            "n_negative": len(negative),
+            "sum_positive": "+" + _fmt_num(sum_pos),
+            "sum_negative": _fmt_num(sum_neg),
+            "top5_creators": [{"titulo": o["titulo"], "saldo": "+" + _fmt_num(o["saldo"])}
+                              for o in top5_pos],
+            "top5_destroyers": [{"titulo": o["titulo"], "saldo": _fmt_num(o["saldo"])}
+                                for o in top5_neg],
+        },
+    }
+
+
+# ─── Template 72: Salary Quintile Exposure ────────────────────────────────
+
+def _salary_quintile_exposure(data, summary):
+    valid = [o for o in data if o.get("salario") and o.get("exposicao") is not None]
+    valid.sort(key=lambda o: o["salario"])
+    n = len(valid)
+    quintile_size = n // 5
+
+    quintiles = []
+    labels = ["Q1 (menor salário)", "Q2", "Q3", "Q4", "Q5 (maior salário)"]
+    for i in range(5):
+        start = i * quintile_size
+        end = (i + 1) * quintile_size if i < 4 else n
+        group = valid[start:end]
+        avg_exp = round(_safe_avg([o["exposicao"] for o in group]), 1)
+        avg_sal = round(_safe_avg([o["salario"] for o in group]))
+        quintiles.append({"label": labels[i], "avg_exposicao": avg_exp,
+                          "avg_salario": avg_sal, "n": len(group)})
+
+    return {
+        "headline_stat": str(quintiles[4]["avg_exposicao"]).replace(".", ","),
+        "headline_label": "exposição média no quintil mais rico vs " + str(quintiles[0]["avg_exposicao"]).replace(".", ",") + " no mais pobre",
+        "chart_data": [
+            {"label": q["label"], "value": q["avg_exposicao"],
+             "formatted": str(q["avg_exposicao"]).replace(".", ",")}
+            for q in quintiles
+        ],
+        "details": {
+            "quintiles": [{"label": q["label"],
+                           "avg_exposicao": str(q["avg_exposicao"]).replace(".", ","),
+                           "avg_salario": "R$ " + _fmt_num(q["avg_salario"]),
+                           "n_occupations": q["n"]}
+                          for q in quintiles],
+        },
+    }
+
+
+# ─── Template 73: Exposure Impact Index ───────────────────────────────────
+
+def _exposure_impact_index(data, summary):
+    valid = [o for o in data if o.get("exposicao") is not None
+             and o.get("empregados") and o["empregados"] > 0]
+    for o in valid:
+        o["_impact"] = o["empregados"] * o["exposicao"]
+    valid.sort(key=lambda o: o["_impact"], reverse=True)
+    top10 = valid[:10]
+
+    return {
+        "headline_stat": _fmt_num(top10[0]["_impact"]),
+        "headline_label": f"índice de impacto máximo — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["_impact"],
+             "formatted": _fmt_num(o["_impact"])}
+            for o in top10
+        ],
+        "details": {
+            "top10": [{"titulo": o["titulo"],
+                       "impact_index": _fmt_num(o["_impact"]),
+                       "empregados": _fmt_num(o["empregados"]),
+                       "exposicao": o["exposicao"]}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 74: Median Salary by Tier ───────────────────────────────────
+
+def _median_salary_by_tier(data, summary):
+    tiers = {"Baixa (0-3)": [], "Média (4-6)": [], "Alta (7-10)": []}
+    for o in data:
+        if o.get("exposicao") is None or not o.get("salario"):
+            continue
+        if o["exposicao"] <= 3:
+            tiers["Baixa (0-3)"].append(o["salario"])
+        elif o["exposicao"] <= 6:
+            tiers["Média (4-6)"].append(o["salario"])
+        else:
+            tiers["Alta (7-10)"].append(o["salario"])
+
+    results = []
+    for label, sals in tiers.items():
+        median = round(statistics.median(sals)) if sals else 0
+        results.append({"label": label, "median": median, "n": len(sals)})
+
+    return {
+        "headline_stat": "R$ " + _fmt_num(results[2]["median"]),
+        "headline_label": "salário mediano em ocupações de alta exposição",
+        "chart_data": [
+            {"label": r["label"], "value": r["median"],
+             "formatted": "R$ " + _fmt_num(r["median"])}
+            for r in results
+        ],
+        "details": {
+            "tiers": [{"tier": r["label"], "median_salary": "R$ " + _fmt_num(r["median"]),
+                       "n_occupations": r["n"]}
+                      for r in results],
+        },
+    }
+
+
+# ─── Template 75: Entry Salary vs Median ──────────────────────────────────
+
+def _entry_salary_vs_median(data, summary):
+    tiers = {"Baixa (0-3)": [], "Média (4-6)": [], "Alta (7-10)": []}
+    for o in data:
+        if o.get("exposicao") is None or not o.get("salario") or not o.get("salario_admissao"):
+            continue
+        ratio = round(o["salario_admissao"] / o["salario"] * 100, 1)
+        if o["exposicao"] <= 3:
+            tiers["Baixa (0-3)"].append(ratio)
+        elif o["exposicao"] <= 6:
+            tiers["Média (4-6)"].append(ratio)
+        else:
+            tiers["Alta (7-10)"].append(ratio)
+
+    results = []
+    for label, ratios in tiers.items():
+        avg = round(_safe_avg(ratios), 1)
+        results.append({"label": label, "avg_pct": avg, "n": len(ratios)})
+
+    return {
+        "headline_stat": _fmt_pct(results[2]["avg_pct"]),
+        "headline_label": "salário de admissão vs mediano em ocupações de alta exposição",
+        "chart_data": [
+            {"label": r["label"], "value": r["avg_pct"],
+             "formatted": _fmt_pct(r["avg_pct"])}
+            for r in results
+        ],
+        "details": {
+            "tiers": [{"tier": r["label"],
+                       "avg_entry_pct": _fmt_pct(r["avg_pct"]),
+                       "n_occupations": r["n"]}
+                      for r in results],
+        },
+    }
+
+
+# ─── Template 76: High Hiring Low Pay ─────────────────────────────────────
+
+def _high_hiring_low_pay(data, summary):
+    occs = [o for o in data if o.get("admissoes") and o["admissoes"] > 1000
+            and o.get("salario_admissao") and o["salario_admissao"] < 1800]
+    occs.sort(key=lambda o: o["admissoes"], reverse=True)
+    top10 = occs[:10]
+
+    total_admissoes = sum(o["admissoes"] for o in occs)
+
+    return {
+        "headline_stat": _fmt_num(total_admissoes),
+        "headline_label": f"admissões em {len(occs)} ocupações de alta contratação e baixo salário",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["admissoes"],
+             "formatted": _fmt_num(o["admissoes"]),
+             "salary": "R$ " + _fmt_num(round(o["salario_admissao"]))}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_admissoes": _fmt_num(total_admissoes),
+            "top10": [{"titulo": o["titulo"], "admissoes": _fmt_num(o["admissoes"]),
+                       "salario_admissao": "R$ " + _fmt_num(round(o["salario_admissao"])),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 77: Turnover Proxy ──────────────────────────────────────────
+
+def _turnover_proxy(data, summary):
+    valid = [o for o in data if o.get("admissoes") and o.get("empregados")
+             and o["empregados"] > 100]
+    for o in valid:
+        o["_turnover"] = round(o["admissoes"] / o["empregados"] * 100, 1)
+    valid.sort(key=lambda o: o["_turnover"], reverse=True)
+    top10 = valid[:10]
+
+    return {
+        "headline_stat": _fmt_pct(top10[0]["_turnover"]),
+        "headline_label": f"taxa de rotatividade mais alta — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["_turnover"],
+             "formatted": _fmt_pct(o["_turnover"])}
+            for o in top10
+        ],
+        "details": {
+            "top10": [{"titulo": o["titulo"],
+                       "turnover_pct": _fmt_pct(o["_turnover"]),
+                       "admissoes": _fmt_num(o["admissoes"]),
+                       "empregados": _fmt_num(o["empregados"]),
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 78: Automation Risk Composite ───────────────────────────────
+
+def _automation_risk_composite(data, summary):
+    valid = [o for o in data if o.get("exposicao") is not None
+             and o.get("vantagem") is not None and o.get("crescimento") is not None]
+    for o in valid:
+        o["_risk_score"] = round(o["exposicao"] + (10 - o["vantagem"]) + (10 - o["crescimento"]), 1)
+    valid.sort(key=lambda o: o["_risk_score"], reverse=True)
+    top10 = valid[:10]
+
+    total_w = sum(o.get("empregados") or 0 for o in top10)
+
+    return {
+        "headline_stat": str(top10[0]["_risk_score"]).replace(".", ","),
+        "headline_label": f"score composto de risco máximo — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["_risk_score"],
+             "formatted": str(o["_risk_score"]).replace(".", ",")}
+            for o in top10
+        ],
+        "details": {
+            "total_workers_top10": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"],
+                       "risk_score": str(o["_risk_score"]).replace(".", ","),
+                       "exposicao": o["exposicao"], "vantagem": o["vantagem"],
+                       "crescimento": o["crescimento"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 79: Future-Proof Composite ──────────────────────────────────
+
+def _future_proof_composite(data, summary):
+    valid = [o for o in data if o.get("exposicao") is not None
+             and o.get("vantagem") is not None and o.get("crescimento") is not None]
+    for o in valid:
+        o["_future_score"] = round((10 - o["exposicao"]) + o["vantagem"] + o["crescimento"], 1)
+    valid.sort(key=lambda o: o["_future_score"], reverse=True)
+    top10 = valid[:10]
+
+    total_w = sum(o.get("empregados") or 0 for o in top10)
+
+    return {
+        "headline_stat": str(top10[0]["_future_score"]).replace(".", ","),
+        "headline_label": f"score 'à prova de futuro' máximo — {top10[0]['titulo']}",
+        "chart_data": [
+            {"label": o["titulo"], "value": o["_future_score"],
+             "formatted": str(o["_future_score"]).replace(".", ",")}
+            for o in top10
+        ],
+        "details": {
+            "total_workers_top10": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"],
+                       "future_score": str(o["_future_score"]).replace(".", ","),
+                       "exposicao": o["exposicao"], "vantagem": o["vantagem"],
+                       "crescimento": o["crescimento"],
+                       "empregados": _fmt_num(o.get("empregados") or 0)}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 80: Salary Variance by Grupo ────────────────────────────────
+
+def _salary_variance_by_grupo(data, summary):
+    grupos = {}
+    for occ in data:
+        gg = occ.get("grande_grupo")
+        if not gg or not occ.get("salario"):
+            continue
+        if gg not in grupos:
+            grupos[gg] = []
+        grupos[gg].append(occ["salario"])
+
+    short_names = {
+        "MEMBROS SUPERIORES DO PODER PÚBLICO, DIRIGENTES DE ORGANIZAÇÕES DE INTERESSE PÚBLICO E DE EMPRESAS, GERENTES": "Dirigentes e Gerentes",
+        "PROFISSIONAIS DAS CIÊNCIAS E DAS ARTES": "Profissionais das Ciências",
+        "TÉCNICOS DE NIVEL MÉDIO": "Técnicos de Nível Médio",
+        "TRABALHADORES DE SERVIÇOS ADMINISTRATIVOS": "Serviços Administrativos",
+        "TRABALHADORES DOS SERVIÇOS, VENDEDORES DO COMÉRCIO EM LOJAS E MERCADOS": "Serviços e Comércio",
+        "TRABALHADORES AGROPECUÁRIOS, FLORESTAIS E DA PESCA": "Agropecuária e Pesca",
+        "TRABALHADORES DA PRODUÇÃO DE BENS E SERVIÇOS INDUSTRIAIS": "Produção Industrial",
+        "TRABALHADORES EM SERVIÇOS DE REPARAÇÃO E MANUTENÇÃO": "Reparação e Manutenção",
+        "MEMBROS DAS FORÇAS ARMADAS, POLICIAIS E BOMBEIROS MILITARES": "Forças Armadas e Polícia",
+    }
+
+    results = []
+    for gg, sals in grupos.items():
+        if len(sals) < 2:
+            continue
+        std = round(statistics.stdev(sals))
+        avg = round(_safe_avg(sals))
+        results.append({"grupo": short_names.get(gg, gg), "std_dev": std,
+                        "avg_salary": avg, "n": len(sals)})
+    results.sort(key=lambda r: r["std_dev"], reverse=True)
+
+    return {
+        "headline_stat": "R$ " + _fmt_num(results[0]["std_dev"]),
+        "headline_label": f"maior desvio padrão salarial — {results[0]['grupo']}",
+        "chart_data": [
+            {"label": r["grupo"], "value": r["std_dev"],
+             "formatted": "R$ " + _fmt_num(r["std_dev"])}
+            for r in results
+        ],
+        "details": {
+            "grupos": [{"nome": r["grupo"], "std_dev": "R$ " + _fmt_num(r["std_dev"]),
+                        "avg_salary": "R$ " + _fmt_num(r["avg_salary"]),
+                        "n_occupations": r["n"]}
+                       for r in results],
+        },
+    }
+
+
+# ─── Template 81: Male Dominated High Risk ────────────────────────────────
+
+def _male_dominated_high_risk(data, summary):
+    results = []
+    for o in data:
+        dem = o.get("demographics")
+        if not dem or o.get("exposicao") is None or o["exposicao"] < 7:
+            continue
+        tf = dem.get("total_feminino", 0)
+        tm = dem.get("total_masculino", 0)
+        total = tf + tm
+        if total < 100:
+            continue
+        pct_m = round(tm / total * 100, 1)
+        if pct_m > 70:
+            results.append({
+                "titulo": o["titulo"],
+                "pct_masculino": pct_m,
+                "exposicao": o["exposicao"],
+                "total_workers": total,
+                "salario": o.get("salario"),
+            })
+    results.sort(key=lambda r: r["total_workers"], reverse=True)
+    top10 = results[:10]
+    total_workers = sum(r["total_workers"] for r in results)
+    total_masc = sum(round(r["total_workers"] * r["pct_masculino"] / 100) for r in results)
+
+    return {
+        "headline_stat": _fmt_num(total_masc),
+        "headline_label": "homens em ocupações masculinizadas de alto risco de IA",
+        "chart_data": [
+            {"label": r["titulo"], "value": r["pct_masculino"],
+             "formatted": _fmt_pct(r["pct_masculino"]),
+             "workers": _fmt_num(r["total_workers"])}
+            for r in top10
+        ],
+        "details": {
+            "total_occupations": len(results),
+            "total_workers": _fmt_num(total_workers),
+            "total_men": _fmt_num(total_masc),
+            "top10": [{"titulo": r["titulo"], "pct_masculino": _fmt_pct(r["pct_masculino"]),
+                       "exposicao": r["exposicao"], "workers": _fmt_num(r["total_workers"])}
+                      for r in top10],
+        },
+    }
+
+
+# ─── Template 82: Gender Balanced Occupations ─────────────────────────────
+
+def _gender_balanced_occupations(data, summary):
+    results = []
+    for o in data:
+        dem = o.get("demographics")
+        if not dem:
+            continue
+        tf = dem.get("total_feminino", 0)
+        tm = dem.get("total_masculino", 0)
+        total = tf + tm
+        if total < 100:
+            continue
+        pct_f = round(tf / total * 100, 1)
+        if 45 <= pct_f <= 55:
+            results.append({
+                "titulo": o["titulo"],
+                "pct_feminino": pct_f,
+                "total_workers": total,
+                "exposicao": o.get("exposicao"),
+                "salario": o.get("salario"),
+            })
+    results.sort(key=lambda r: r["total_workers"], reverse=True)
+    top10 = results[:10]
+    total_workers = sum(r["total_workers"] for r in results)
+
+    return {
+        "headline_stat": str(len(results)),
+        "headline_label": f"ocupações com equilíbrio de gênero (45-55%) — {_fmt_num(total_workers)} trabalhadores",
+        "chart_data": [
+            {"label": r["titulo"], "value": r["total_workers"],
+             "formatted": _fmt_num(r["total_workers"]),
+             "pct_fem": _fmt_pct(r["pct_feminino"])}
+            for r in top10
+        ],
+        "details": {
+            "n_occupations": len(results),
+            "total_workers": _fmt_num(total_workers),
+            "top10": [{"titulo": r["titulo"], "pct_feminino": _fmt_pct(r["pct_feminino"]),
+                       "workers": _fmt_num(r["total_workers"]),
+                       "exposicao": r["exposicao"]}
+                      for r in top10],
+        },
+    }
+
+
+# ─── Template 83: Race Gap by Grupo ───────────────────────────────────────
+
+def _race_gap_by_grupo(data, summary):
+    grupos = {}
+    for o in data:
+        gg = o.get("grande_grupo")
+        dem = o.get("demographics")
+        if not gg or not dem or o.get("exposicao") is None:
+            continue
+        if gg not in grupos:
+            grupos[gg] = {"branca": 0, "negra": 0, "hr_branca": 0, "hr_negra": 0}
+        b = dem.get("total_branca", 0)
+        n = dem.get("total_negra", 0)
+        grupos[gg]["branca"] += b
+        grupos[gg]["negra"] += n
+        if o["exposicao"] >= 7:
+            grupos[gg]["hr_branca"] += b
+            grupos[gg]["hr_negra"] += n
+
+    short_names = {
+        "MEMBROS SUPERIORES DO PODER PÚBLICO, DIRIGENTES DE ORGANIZAÇÕES DE INTERESSE PÚBLICO E DE EMPRESAS, GERENTES": "Dirigentes e Gerentes",
+        "PROFISSIONAIS DAS CIÊNCIAS E DAS ARTES": "Profissionais das Ciências",
+        "TÉCNICOS DE NIVEL MÉDIO": "Técnicos de Nível Médio",
+        "TRABALHADORES DE SERVIÇOS ADMINISTRATIVOS": "Serviços Administrativos",
+        "TRABALHADORES DOS SERVIÇOS, VENDEDORES DO COMÉRCIO EM LOJAS E MERCADOS": "Serviços e Comércio",
+        "TRABALHADORES AGROPECUÁRIOS, FLORESTAIS E DA PESCA": "Agropecuária e Pesca",
+        "TRABALHADORES DA PRODUÇÃO DE BENS E SERVIÇOS INDUSTRIAIS": "Produção Industrial",
+        "TRABALHADORES EM SERVIÇOS DE REPARAÇÃO E MANUTENÇÃO": "Reparação e Manutenção",
+        "MEMBROS DAS FORÇAS ARMADAS, POLICIAIS E BOMBEIROS MILITARES": "Forças Armadas e Polícia",
+    }
+
+    results = []
+    for gg, vals in grupos.items():
+        pct_b = round(vals["hr_branca"] / vals["branca"] * 100, 1) if vals["branca"] else 0
+        pct_n = round(vals["hr_negra"] / vals["negra"] * 100, 1) if vals["negra"] else 0
+        gap = round(pct_b - pct_n, 1)
+        results.append({"grupo": short_names.get(gg, gg), "pct_branca": pct_b,
+                        "pct_negra": pct_n, "gap": gap})
+    results.sort(key=lambda r: abs(r["gap"]), reverse=True)
+
+    return {
+        "headline_stat": _fmt_pct(abs(results[0]["gap"])),
+        "headline_label": f"maior gap racial de risco — {results[0]['grupo']}",
+        "chart_data": [
+            {"label": r["grupo"], "value": abs(r["gap"]),
+             "formatted": _fmt_pct(abs(r["gap"]))}
+            for r in results
+        ],
+        "details": {
+            "grupos": [{"nome": r["grupo"], "pct_branca": _fmt_pct(r["pct_branca"]),
+                        "pct_negra": _fmt_pct(r["pct_negra"]),
+                        "gap_pp": _fmt_pct(r["gap"])}
+                       for r in results],
+        },
+    }
+
+
+# ─── Template 84: Women in Opportunity ────────────────────────────────────
+
+def _women_in_opportunity(data, summary):
+    high_opp = [o for o in data if o.get("oportunidade") is not None and o["oportunidade"] >= 7
+                and o.get("demographics")]
+    results = []
+    for o in high_opp:
+        dem = o["demographics"]
+        tf = dem.get("total_feminino", 0)
+        tm = dem.get("total_masculino", 0)
+        total = tf + tm
+        if total < 50:
+            continue
+        pct_f = round(tf / total * 100, 1)
+        results.append({"titulo": o["titulo"], "pct_feminino": pct_f,
+                        "oportunidade": o["oportunidade"], "total_workers": total})
+    results.sort(key=lambda r: r["total_workers"], reverse=True)
+    top10 = results[:10]
+
+    avg_pct_f = round(_safe_avg([r["pct_feminino"] for r in results]), 1)
+
+    return {
+        "headline_stat": _fmt_pct(avg_pct_f),
+        "headline_label": "participação feminina média em ocupações de alta oportunidade",
+        "chart_data": [
+            {"label": r["titulo"], "value": r["pct_feminino"],
+             "formatted": _fmt_pct(r["pct_feminino"])}
+            for r in top10
+        ],
+        "details": {
+            "n_occupations": len(results),
+            "avg_pct_feminino": _fmt_pct(avg_pct_f),
+            "top10": [{"titulo": r["titulo"], "pct_feminino": _fmt_pct(r["pct_feminino"]),
+                       "oportunidade": r["oportunidade"],
+                       "workers": _fmt_num(r["total_workers"])}
+                      for r in top10],
+        },
+    }
+
+
+# ─── Template 85: Education Salary Matrix ─────────────────────────────────
+
+def _education_salary_matrix(data, summary):
+    matrix = {}
+    for o in data:
+        esc = o.get("escolaridade")
+        exp = o.get("exposicao")
+        sal = o.get("salario")
+        if not esc or exp is None or not sal:
+            continue
+        if exp <= 3:
+            tier = "Baixa (0-3)"
+        elif exp <= 6:
+            tier = "Média (4-6)"
+        else:
+            tier = "Alta (7-10)"
+        key = (esc, tier)
+        if key not in matrix:
+            matrix[key] = []
+        matrix[key].append(sal)
+
+    results = []
+    for (esc, tier), sals in matrix.items():
+        results.append({"escolaridade": esc, "tier": tier,
+                        "avg_salary": round(_safe_avg(sals)),
+                        "n": len(sals)})
+    results.sort(key=lambda r: r["avg_salary"], reverse=True)
+    top10 = results[:10]
+
+    return {
+        "headline_stat": "R$ " + _fmt_num(top10[0]["avg_salary"]),
+        "headline_label": f"maior salário médio — {top10[0]['escolaridade']} + exposição {top10[0]['tier']}",
+        "chart_data": [
+            {"label": f"{r['escolaridade']} / {r['tier']}", "value": r["avg_salary"],
+             "formatted": "R$ " + _fmt_num(r["avg_salary"])}
+            for r in top10
+        ],
+        "details": {
+            "matrix": [{"escolaridade": r["escolaridade"], "tier": r["tier"],
+                        "avg_salary": "R$ " + _fmt_num(r["avg_salary"]),
+                        "n_occupations": r["n"]}
+                       for r in results],
+        },
+    }
+
+
+# ─── Template 86: High Education Low Salary ───────────────────────────────
+
+def _high_education_low_salary(data, summary):
+    high_edu = ["Superior Completo", "Mestrado", "Doutorado"]
+    occs = [o for o in data if o.get("escolaridade") in high_edu
+            and o.get("salario") and o["salario"] < 4000]
+    occs.sort(key=lambda o: o["salario"])
+    top10 = occs[:10]
+
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": f"ocupações de alta escolaridade com salário < R$4k",
+        "chart_data": [
+            {"label": o["titulo"], "value": round(o["salario"]),
+             "formatted": "R$ " + _fmt_num(round(o["salario"])),
+             "education": o["escolaridade"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "escolaridade": o["escolaridade"],
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 87: Low Education High Salary ───────────────────────────────
+
+def _low_education_high_salary(data, summary):
+    low_edu = ["Fundamental Incompleto", "Fundamental Completo", "Médio Incompleto"]
+    occs = [o for o in data if o.get("escolaridade") in low_edu
+            and o.get("salario") and o["salario"] > 5000]
+    occs.sort(key=lambda o: o["salario"], reverse=True)
+    top10 = occs[:10]
+
+    total_w = sum(o.get("empregados") or 0 for o in occs)
+
+    return {
+        "headline_stat": str(len(occs)),
+        "headline_label": "ocupações de baixa escolaridade com salário > R$5k",
+        "chart_data": [
+            {"label": o["titulo"], "value": round(o["salario"]),
+             "formatted": "R$ " + _fmt_num(round(o["salario"])),
+             "education": o["escolaridade"]}
+            for o in top10
+        ],
+        "details": {
+            "n_occupations": len(occs),
+            "total_workers": _fmt_num(total_w),
+            "top10": [{"titulo": o["titulo"], "salario": "R$ " + _fmt_num(round(o["salario"])),
+                       "escolaridade": o["escolaridade"],
+                       "exposicao": o.get("exposicao")}
+                      for o in top10],
+        },
+    }
+
+
+# ─── Template 88: Escolaridade Distribution ───────────────────────────────
+
+def _escolaridade_distribution(data, summary):
+    counts = {}
+    for o in data:
+        esc = o.get("escolaridade")
+        if not esc:
+            continue
+        counts[esc] = counts.get(esc, 0) + 1
+
+    total = sum(counts.values())
+    results = [{"level": k, "count": v, "pct": round(v / total * 100, 1)}
+               for k, v in counts.items()]
+    results.sort(key=lambda r: r["count"], reverse=True)
+
+    return {
+        "headline_stat": results[0]["level"],
+        "headline_label": f"escolaridade mais comum — {_fmt_pct(results[0]['pct'])} das ocupações",
+        "chart_data": [
+            {"label": r["level"], "value": r["count"],
+             "formatted": _fmt_pct(r["pct"])}
+            for r in results
+        ],
+        "details": {
+            "total_occupations": total,
+            "distribution": [{"escolaridade": r["level"], "count": r["count"],
+                              "pct": _fmt_pct(r["pct"])}
+                             for r in results],
+        },
+    }
+
+
+# ─── Template 89: State Salary Ranking ────────────────────────────────────
+
+def _state_salary_ranking(data, summary):
+    por_uf = summary["por_uf"]
+    states = []
+    for code, info in por_uf.items():
+        states.append({"uf": info["nome"], "avg_salary": info.get("avg_salary", 0),
+                       "total_workers": info.get("total_workers", 0)})
+    states.sort(key=lambda s: s["avg_salary"], reverse=True)
+
+    return {
+        "headline_stat": "R$ " + _fmt_num(round(states[0]["avg_salary"])),
+        "headline_label": f"maior salário médio — {states[0]['uf']}",
+        "chart_data": [
+            {"label": s["uf"], "value": round(s["avg_salary"]),
+             "formatted": "R$ " + _fmt_num(round(s["avg_salary"]))}
+            for s in states
+        ],
+        "details": {
+            "top_state": states[0]["uf"],
+            "top_salary": "R$ " + _fmt_num(round(states[0]["avg_salary"])),
+            "bottom_state": states[-1]["uf"],
+            "bottom_salary": "R$ " + _fmt_num(round(states[-1]["avg_salary"])),
+            "states": [{"uf": s["uf"], "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                        "workers": _fmt_num(s["total_workers"])}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 90: State Workforce Ranking ─────────────────────────────────
+
+def _state_workforce_ranking(data, summary):
+    por_uf = summary["por_uf"]
+    states = []
+    for code, info in por_uf.items():
+        states.append({"uf": info["nome"], "total_workers": info.get("total_workers", 0),
+                       "avg_salary": info.get("avg_salary", 0)})
+    states.sort(key=lambda s: s["total_workers"], reverse=True)
+    total = sum(s["total_workers"] for s in states)
+
+    return {
+        "headline_stat": _fmt_num(states[0]["total_workers"]),
+        "headline_label": f"maior força de trabalho — {states[0]['uf']}",
+        "chart_data": [
+            {"label": s["uf"], "value": s["total_workers"],
+             "formatted": _fmt_num(s["total_workers"])}
+            for s in states[:10]
+        ],
+        "details": {
+            "total_national": _fmt_num(total),
+            "states": [{"uf": s["uf"], "workers": _fmt_num(s["total_workers"]),
+                        "pct": _fmt_pct(round(s["total_workers"] / total * 100, 1)) if total else "0%"}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 91: State High Risk Workers ─────────────────────────────────
+
+def _state_high_risk_workers(data, summary):
+    por_uf = summary["por_uf"]
+    states = []
+    for code, info in por_uf.items():
+        total_w = info.get("total_workers", 0)
+        avg_exp = info.get("avg_exposicao", 0)
+        # Estimate: if avg exposure >= 7, all workers are "high risk"
+        # Otherwise, scale proportionally
+        hr_estimate = round(total_w * min(avg_exp / 10, 1))
+        states.append({"uf": info["nome"], "total_workers": total_w,
+                       "avg_exposicao": avg_exp, "hr_estimate": hr_estimate})
+    states.sort(key=lambda s: s["hr_estimate"], reverse=True)
+
+    total_hr = sum(s["hr_estimate"] for s in states)
+
+    return {
+        "headline_stat": _fmt_num(total_hr),
+        "headline_label": "trabalhadores em risco estimado em todo o Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["hr_estimate"],
+             "formatted": _fmt_num(s["hr_estimate"])}
+            for s in states[:10]
+        ],
+        "details": {
+            "total_high_risk": _fmt_num(total_hr),
+            "states": [{"uf": s["uf"], "hr_estimate": _fmt_num(s["hr_estimate"]),
+                        "total_workers": _fmt_num(s["total_workers"]),
+                        "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                       for s in states[:10]],
+        },
+    }
+
+
+# ─── Template 92: Southeast Dominance ─────────────────────────────────────
+
+def _southeast_dominance(data, summary):
+    se_codes = ["35", "33", "31", "32"]
+    por_uf = summary["por_uf"]
+    national = sum(v["total_workers"] for v in por_uf.values())
+
+    se_workers = 0
+    se_salaries = []
+    se_exposicoes = []
+    rest_workers = 0
+    rest_salaries = []
+    rest_exposicoes = []
+    for code, info in por_uf.items():
+        w = info.get("total_workers", 0)
+        if code in se_codes:
+            se_workers += w
+            if info.get("avg_salary"):
+                se_salaries.append(info["avg_salary"])
+            if info.get("avg_exposicao"):
+                se_exposicoes.append(info["avg_exposicao"])
+        else:
+            rest_workers += w
+            if info.get("avg_salary"):
+                rest_salaries.append(info["avg_salary"])
+            if info.get("avg_exposicao"):
+                rest_exposicoes.append(info["avg_exposicao"])
+
+    pct_se = round(se_workers / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_pct(pct_se),
+        "headline_label": "dos trabalhadores formais estão no Sudeste (SP+RJ+MG+ES)",
+        "chart_data": [
+            {"label": "Sudeste", "value": se_workers, "formatted": _fmt_num(se_workers)},
+            {"label": "Restante", "value": rest_workers, "formatted": _fmt_num(rest_workers)},
+        ],
+        "details": {
+            "se_workers": _fmt_num(se_workers),
+            "rest_workers": _fmt_num(rest_workers),
+            "pct_se": _fmt_pct(pct_se),
+            "se_avg_salary": "R$ " + _fmt_num(round(_safe_avg(se_salaries))),
+            "rest_avg_salary": "R$ " + _fmt_num(round(_safe_avg(rest_salaries))),
+            "se_avg_exposicao": str(round(_safe_avg(se_exposicoes), 1)).replace(".", ","),
+            "rest_avg_exposicao": str(round(_safe_avg(rest_exposicoes), 1)).replace(".", ","),
+        },
+    }
+
+
+# ─── Template 93: South Prosperity ────────────────────────────────────────
+
+def _south_prosperity(data, summary):
+    s_codes = ["42", "41", "43"]
+    por_uf = summary["por_uf"]
+    national = sum(v["total_workers"] for v in por_uf.values())
+
+    states = []
+    total_s = 0
+    salaries = []
+    exposicoes = []
+    for code in s_codes:
+        info = por_uf.get(code, {})
+        w = info.get("total_workers", 0)
+        total_s += w
+        if info.get("avg_salary"):
+            salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            exposicoes.append(info["avg_exposicao"])
+        states.append({"uf": info.get("nome", code), "workers": w,
+                        "avg_salary": info.get("avg_salary", 0),
+                        "avg_exposicao": info.get("avg_exposicao", 0)})
+    states.sort(key=lambda s: s["workers"], reverse=True)
+    pct_national = round(total_s / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_num(total_s),
+        "headline_label": f"trabalhadores no Sul — {_fmt_pct(pct_national)} do Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["workers"], "formatted": _fmt_num(s["workers"])}
+            for s in states
+        ],
+        "details": {
+            "total_workers": _fmt_num(total_s),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(round(_safe_avg(salaries))),
+            "avg_exposicao": str(round(_safe_avg(exposicoes), 1)).replace(".", ","),
+            "states": [{"uf": s["uf"], "workers": _fmt_num(s["workers"]),
+                        "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                        "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 94: Northeast Tech Hubs ─────────────────────────────────────
+
+def _northeast_tech_hubs(data, summary):
+    hub_codes = ["23", "26"]  # CE, PE
+    ne_other_codes = ["21", "22", "24", "25", "27", "28", "29"]
+    por_uf = summary["por_uf"]
+
+    hubs_workers = 0
+    hubs_salaries = []
+    hubs_exposicoes = []
+    other_workers = 0
+    other_salaries = []
+    other_exposicoes = []
+    for code in hub_codes:
+        info = por_uf.get(code, {})
+        hubs_workers += info.get("total_workers", 0)
+        if info.get("avg_salary"):
+            hubs_salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            hubs_exposicoes.append(info["avg_exposicao"])
+    for code in ne_other_codes:
+        info = por_uf.get(code, {})
+        other_workers += info.get("total_workers", 0)
+        if info.get("avg_salary"):
+            other_salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            other_exposicoes.append(info["avg_exposicao"])
+
+    return {
+        "headline_stat": _fmt_num(hubs_workers),
+        "headline_label": "trabalhadores em CE+PE — os hubs tech do Nordeste",
+        "chart_data": [
+            {"label": "CE + PE (hubs)", "value": hubs_workers, "formatted": _fmt_num(hubs_workers)},
+            {"label": "Restante do NE", "value": other_workers, "formatted": _fmt_num(other_workers)},
+        ],
+        "details": {
+            "hubs_workers": _fmt_num(hubs_workers),
+            "other_ne_workers": _fmt_num(other_workers),
+            "hubs_avg_salary": "R$ " + _fmt_num(round(_safe_avg(hubs_salaries))),
+            "other_avg_salary": "R$ " + _fmt_num(round(_safe_avg(other_salaries))),
+            "hubs_avg_exposicao": str(round(_safe_avg(hubs_exposicoes), 1)).replace(".", ","),
+            "other_avg_exposicao": str(round(_safe_avg(other_exposicoes), 1)).replace(".", ","),
+        },
+    }
+
+
+# ─── Template 95: Frontier States ─────────────────────────────────────────
+
+def _frontier_states(data, summary):
+    f_codes = ["51", "50", "52"]  # MT, MS, GO
+    por_uf = summary["por_uf"]
+    national = sum(v["total_workers"] for v in por_uf.values())
+
+    states = []
+    total_f = 0
+    salaries = []
+    exposicoes = []
+    for code in f_codes:
+        info = por_uf.get(code, {})
+        w = info.get("total_workers", 0)
+        total_f += w
+        if info.get("avg_salary"):
+            salaries.append(info["avg_salary"])
+        if info.get("avg_exposicao"):
+            exposicoes.append(info["avg_exposicao"])
+        states.append({"uf": info.get("nome", code), "workers": w,
+                        "avg_salary": info.get("avg_salary", 0),
+                        "avg_exposicao": info.get("avg_exposicao", 0)})
+    states.sort(key=lambda s: s["workers"], reverse=True)
+    pct_national = round(total_f / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_num(total_f),
+        "headline_label": f"trabalhadores na fronteira agrícola (MT+MS+GO) — {_fmt_pct(pct_national)} do Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["workers"], "formatted": _fmt_num(s["workers"])}
+            for s in states
+        ],
+        "details": {
+            "total_workers": _fmt_num(total_f),
+            "pct_national": _fmt_pct(pct_national),
+            "avg_salary": "R$ " + _fmt_num(round(_safe_avg(salaries))),
+            "avg_exposicao": str(round(_safe_avg(exposicoes), 1)).replace(".", ","),
+            "states": [{"uf": s["uf"], "workers": _fmt_num(s["workers"]),
+                        "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                        "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                       for s in states],
+        },
+    }
+
+
+# ─── Template 96: Smallest Workforce States ───────────────────────────────
+
+def _smallest_workforce_states(data, summary):
+    por_uf = summary["por_uf"]
+    states = []
+    for code, info in por_uf.items():
+        states.append({"uf": info["nome"], "total_workers": info.get("total_workers", 0),
+                       "avg_salary": info.get("avg_salary", 0),
+                       "avg_exposicao": info.get("avg_exposicao", 0)})
+    states.sort(key=lambda s: s["total_workers"])
+    bottom5 = states[:5]
+    total_b5 = sum(s["total_workers"] for s in bottom5)
+    national = sum(s["total_workers"] for s in states)
+    pct = round(total_b5 / national * 100, 1) if national else 0
+
+    return {
+        "headline_stat": _fmt_num(total_b5),
+        "headline_label": f"trabalhadores nos 5 menores estados — {_fmt_pct(pct)} do Brasil",
+        "chart_data": [
+            {"label": s["uf"], "value": s["total_workers"],
+             "formatted": _fmt_num(s["total_workers"])}
+            for s in bottom5
+        ],
+        "details": {
+            "total_workers": _fmt_num(total_b5),
+            "pct_national": _fmt_pct(pct),
+            "bottom5": [{"uf": s["uf"], "workers": _fmt_num(s["total_workers"]),
+                         "avg_salary": "R$ " + _fmt_num(round(s["avg_salary"])),
+                         "avg_exposicao": str(round(s["avg_exposicao"], 1)).replace(".", ",")}
+                        for s in bottom5],
+        },
+    }
+
+
 # ─── Template Registry ──────────────────────────────────────────────────────
 
 TEMPLATES = [
@@ -2079,9 +4155,1127 @@ DADOS (use APENAS estes números, não invente dados):
 Retorne JSON com exatamente estes campos:
 {{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
     },
+    {
+        "id": "rio-de-janeiro-deep-dive",
+        "category": "Regional",
+        "tags": ["Rio de Janeiro", "RJ", "metrópole"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _rio_de_janeiro_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no Rio de Janeiro, o segundo maior mercado de trabalho do Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no RJ: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "minas-gerais-deep-dive",
+        "category": "Regional",
+        "tags": ["Minas Gerais", "MG", "interior"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _minas_gerais_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA em Minas Gerais, terceiro estado em força de trabalho.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores em MG: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "bahia-deep-dive",
+        "category": "Regional",
+        "tags": ["Bahia", "BA", "Nordeste"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _bahia_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA na Bahia, o maior mercado de trabalho do Nordeste.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores na BA: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "rio-grande-sul-deep-dive",
+        "category": "Regional",
+        "tags": ["Rio Grande do Sul", "RS", "Sul"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _rio_grande_sul_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no Rio Grande do Sul.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no RS: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "parana-deep-dive",
+        "category": "Regional",
+        "tags": ["Paraná", "PR", "Sul"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _parana_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no Paraná.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no PR: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "distrito-federal-deep-dive",
+        "category": "Regional",
+        "tags": ["Distrito Federal", "DF", "Brasília"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _distrito_federal_deep_dive,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no Distrito Federal, a capital com forte presença do setor público.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no DF: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Top ocupações: {top_occupations}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "nordeste-workforce",
+        "category": "Regional",
+        "tags": ["Nordeste", "regional", "desigualdade"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _nordeste_workforce,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a força de trabalho do Nordeste e sua exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no Nordeste: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "amazonia-states",
+        "category": "Regional",
+        "tags": ["Amazônia", "Norte", "regional"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _amazonia_states,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a força de trabalho da Amazônia Legal e sua exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores na Amazônia: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "financial-sector",
+        "category": "Setores",
+        "tags": ["financeiro", "bancos", "contabilidade"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _financial_sector,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no setor financeiro brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações financeiras analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "legal-sector",
+        "category": "Setores",
+        "tags": ["jurídico", "advocacia", "direito"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _legal_sector,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no setor jurídico brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações jurídicas analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "engineering-sector",
+        "category": "Setores",
+        "tags": ["engenharia", "infraestrutura", "técnico"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _engineering_sector,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA nas engenharias brasileiras.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de engenharia analisadas
+- Exposição média: {avg_exposicao}
+- Salário médio: {avg_salario}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "construction-sector",
+        "category": "Setores",
+        "tags": ["construção civil", "pedreiro", "obras"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _construction_sector,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA na construção civil brasileira.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações da construção analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "transport-logistics",
+        "category": "Setores",
+        "tags": ["transporte", "logística", "motoristas"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _transport_logistics,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no setor de transporte e logística brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de transporte/logística analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "tourism-hospitality",
+        "category": "Setores",
+        "tags": ["turismo", "hotelaria", "gastronomia"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _tourism_hospitality,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no turismo e hotelaria brasileira.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de turismo/hotelaria analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "creative-industries",
+        "category": "Setores",
+        "tags": ["criativo", "arte", "mídia", "design"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _creative_industries,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA nas indústrias criativas brasileiras.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações criativas analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "security-sector",
+        "category": "Setores",
+        "tags": ["segurança", "vigilância", "defesa"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _security_sector,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no setor de segurança brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de segurança analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "manufacturing-detailed",
+        "category": "Setores",
+        "tags": ["produção industrial", "fábrica", "manufatura"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _manufacturing_detailed,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA na produção industrial brasileira.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações industriais
+- {total_workers} trabalhadores
+- Exposição média: {avg_exposicao}
+- Salário médio: {avg_salario}
+- Saldo CAGED total: {total_saldo}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "commerce-retail",
+        "category": "Setores",
+        "tags": ["comércio", "varejo", "vendas"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _commerce_retail,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA no comércio e serviços brasileiros.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de comércio/serviços
+- {total_workers} trabalhadores
+- Exposição média: {avg_exposicao}
+- Salário médio: {avg_salario}
+- Saldo CAGED total: {total_saldo}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "care-economy",
+        "category": "Setores",
+        "tags": ["cuidado", "assistência", "doméstico"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _care_economy,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA na economia do cuidado no Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de cuidado analisadas
+- Exposição média: {avg_exposicao}
+- Salário médio: {avg_salario}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "food-industry",
+        "category": "Setores",
+        "tags": ["alimentos", "gastronomia", "frigorífico"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _food_industry,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o impacto da IA na indústria alimentícia brasileira.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações alimentícias analisadas
+- Exposição média: {avg_exposicao}
+- Total de trabalhadores: {total_workers}
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "exposure-10-spotlight",
+        "category": "Ocupações",
+        "tags": ["exposição máxima", "risco extremo", "IA"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _exposure_10_spotlight,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com exposição máxima (10/10) à IA no Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com exposição 10
+- Total de trabalhadores: {total_workers}
+- Salário médio: {avg_salario}
+- Top 10 por empregados: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "exposure-1-spotlight",
+        "category": "Ocupações",
+        "tags": ["exposição mínima", "baixo risco", "IA"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _exposure_1_spotlight,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações praticamente imunes (exposição ≤2) à IA no Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com exposição ≤2
+- Total de trabalhadores: {total_workers}
+- Salário médio: {avg_salario}
+- Top 10 por empregados: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "largest-occupations",
+        "category": "Ocupações",
+        "tags": ["maiores", "empregados", "ranking"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _largest_occupations,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as 10 maiores ocupações do Brasil em número de trabalhadores.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total nas 10 maiores: {total_top10} ({pct_total} do total)
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "highest-paid-top10",
+        "category": "Ocupações",
+        "tags": ["salário", "remuneração", "ranking"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _highest_paid_top10,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as 10 ocupações mais bem pagas do Brasil e sua exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Exposição média das top 10: {avg_exposicao_top10}
+- Top 10 por salário: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "gender-imbalance-top",
+        "category": "Demografia",
+        "tags": ["gênero", "desigualdade", "concentração"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _gender_imbalance_top,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com maior desequilíbrio de gênero no Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- Top 10 com maior concentração de gênero: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "salary-progression-ratio",
+        "category": "Mercado",
+        "tags": ["salário", "progressão", "admissão"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _salary_progression_ratio,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com maior progressão salarial (razão entre salário mediano e salário de admissão).
+
+DADOS (use APENAS estes números, não invente dados):
+- Top 10 por progressão: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "high-growth-high-exposure",
+        "category": "Ocupações",
+        "tags": ["crescimento", "exposição", "paradoxo"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _high_growth_high_exposure,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações que crescem rapidamente MAS também têm alta exposição à IA — um paradoxo.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com crescimento ≥7 E exposição ≥7
+- Total de trabalhadores: {total_workers}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "low-vantagem-high-workers",
+        "category": "Ocupações",
+        "tags": ["vantagem", "risco", "trabalhadores"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _low_vantagem_high_workers,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações que têm pouca vantagem da IA (≤3) — aquelas que a IA mais ameaça sem beneficiar.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com vantagem ≤3
+- Total de trabalhadores: {total_workers}
+- Top 10 por empregados: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "balanced-risk",
+        "category": "Ocupações",
+        "tags": ["exposição média", "risco moderado", "transição"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _balanced_risk,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações na faixa média de exposição (4-6) — a "zona cinzenta" da IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações na faixa média
+- Total de trabalhadores: {total_workers}
+- Top 10 por empregados: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "extreme-divergence",
+        "category": "Ocupações",
+        "tags": ["divergência", "exposição", "vantagem"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _extreme_divergence,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações onde a exposição à IA e a vantagem da IA divergem radicalmente (diferença ≥5 pontos).
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com divergência extrema
+- Total de trabalhadores: {total_workers}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "declining-well-paid",
+        "category": "Mercado",
+        "tags": ["declínio", "salário alto", "perda de emprego"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _declining_well_paid,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações bem pagas (≥R$5k) que estão perdendo vagas — a "fuga de cérebros" do emprego formal.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações bem pagas em declínio
+- Saldo total: {total_saldo}
+- Salário médio: {avg_salario}
+- Top 10 por saldo negativo: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "growing-low-paid",
+        "category": "Mercado",
+        "tags": ["crescimento", "baixo salário", "precarização"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _growing_low_paid,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações de baixo salário (<R$2k) que estão crescendo — o fenômeno da precarização.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de baixo salário em crescimento
+- Saldo total: {total_saldo}
+- Salário médio: {avg_salario}
+- Top 10 por saldo positivo: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "minimum-wage-exposure",
+        "category": "Mercado",
+        "tags": ["salário mínimo", "vulnerabilidade", "risco"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _minimum_wage_exposure,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a exposição à IA entre trabalhadores próximos ao salário mínimo.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com salário < R$1.800
+- Total de trabalhadores: {total_workers}
+- Exposição média: {avg_exposicao}
+- {n_high_risk} em alto risco (exposição ≥7)
+- Top 10 por exposição: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "salary-above-10k",
+        "category": "Mercado",
+        "tags": ["alta renda", "exposição", "elite"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _salary_above_10k,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a exposição à IA entre as ocupações mais bem pagas (≥R$10k) do Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com salário ≥R$10k
+- Total de trabalhadores: {total_workers}
+- Exposição média: {avg_exposicao}
+- Top 10 por salário: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "net-job-creation",
+        "category": "Mercado",
+        "tags": ["saldo", "CAGED", "criação de emprego"],
+        "chart_type": "comparison_pair",
+        "analysis_fn": _net_job_creation,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o saldo líquido de criação de empregos em todas as ocupações analisadas.
+
+DADOS (use APENAS estes números, não invente dados):
+- Saldo líquido total: {total_saldo}
+- {n_positive} ocupações com saldo positivo (total: {sum_positive})
+- {n_negative} ocupações com saldo negativo (total: {sum_negative})
+- Top 5 criadoras: {top5_creators}
+- Top 5 destruidoras: {top5_destroyers}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "salary-quintile-exposure",
+        "category": "Mercado",
+        "tags": ["salário", "quintil", "desigualdade"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _salary_quintile_exposure,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre como a exposição à IA varia entre faixas salariais (quintis).
+
+DADOS (use APENAS estes números, não invente dados):
+- Quintis salariais: {quintiles}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "exposure-impact-index",
+        "category": "Mercado",
+        "tags": ["impacto", "exposição", "trabalhadores"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _exposure_impact_index,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com maior índice de impacto da IA (empregados × exposição).
+
+DADOS (use APENAS estes números, não invente dados):
+- Top 10 por índice de impacto: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "median-salary-by-tier",
+        "category": "Mercado",
+        "tags": ["salário", "exposição", "mediana"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _median_salary_by_tier,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre como o salário mediano varia conforme o nível de exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Salário mediano por faixa de exposição: {tiers}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "entry-salary-vs-median",
+        "category": "Mercado",
+        "tags": ["admissão", "salário", "progressão"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _entry_salary_vs_median,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a relação entre salário de admissão e salário mediano nas diferentes faixas de exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Razão salário admissão / mediano por faixa: {tiers}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "high-hiring-low-pay",
+        "category": "Mercado",
+        "tags": ["contratação", "baixo salário", "precarização"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _high_hiring_low_pay,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações que contratam muito (>1000 admissões) mas pagam pouco (<R$1.800).
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de alta contratação e baixo salário
+- Total de admissões: {total_admissoes}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "turnover-proxy",
+        "category": "Mercado",
+        "tags": ["rotatividade", "admissões", "empregados"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _turnover_proxy,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com maior taxa de rotatividade (admissões/empregados) no Brasil.
+
+DADOS (use APENAS estes números, não invente dados):
+- Top 10 por rotatividade: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "automation-risk-composite",
+        "category": "Mercado",
+        "tags": ["automação", "risco composto", "vulnerabilidade"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _automation_risk_composite,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações com maior risco composto de automação (alta exposição + baixa vantagem + baixo crescimento).
+
+DADOS (use APENAS estes números, não invente dados):
+- Trabalhadores nas top 10: {total_workers_top10}
+- Top 10 por score de risco: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "future-proof-composite",
+        "category": "Mercado",
+        "tags": ["futuro", "resiliência", "oportunidade"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _future_proof_composite,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre as ocupações mais "à prova de futuro" (baixa exposição + alta vantagem + alto crescimento).
+
+DADOS (use APENAS estes números, não invente dados):
+- Trabalhadores nas top 10: {total_workers_top10}
+- Top 10 por score de resiliência: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "salary-variance-by-grupo",
+        "category": "Mercado",
+        "tags": ["salário", "variância", "grande grupo"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _salary_variance_by_grupo,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a desigualdade salarial dentro de cada grande grupo ocupacional.
+
+DADOS (use APENAS estes números, não invente dados):
+- Desvio padrão salarial por grupo: {grupos}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "male-dominated-high-risk",
+        "category": "Demografia",
+        "tags": ["gênero", "masculino", "alto risco"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _male_dominated_high_risk,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações predominantemente masculinas (>70%) com alto risco de IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- {total_occupations} ocupações masculinizadas de alto risco
+- Total de trabalhadores: {total_workers}
+- Total de homens: {total_men}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "gender-balanced-occupations",
+        "category": "Demografia",
+        "tags": ["gênero", "equilíbrio", "paridade"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _gender_balanced_occupations,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações com equilíbrio de gênero (45-55% feminino) e sua exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações com equilíbrio de gênero
+- Total de trabalhadores: {total_workers}
+- Top 10 por empregados: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "race-gap-by-grupo",
+        "category": "Demografia",
+        "tags": ["raça", "grande grupo", "desigualdade"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _race_gap_by_grupo,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a diferença racial na exposição à IA em cada grande grupo ocupacional.
+
+DADOS (use APENAS estes números, não invente dados):
+- Gap racial por grupo: {grupos}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "women-in-opportunity",
+        "category": "Demografia",
+        "tags": ["mulheres", "oportunidade", "IA"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _women_in_opportunity,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a presença feminina em ocupações de alta oportunidade com IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de alta oportunidade (≥7)
+- Participação feminina média: {avg_pct_feminino}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "education-salary-matrix",
+        "category": "Educação",
+        "tags": ["escolaridade", "salário", "exposição"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _education_salary_matrix,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a relação entre escolaridade, exposição à IA e salário.
+
+DADOS (use APENAS estes números, não invente dados):
+- Matriz escolaridade × exposição × salário: {matrix}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "high-education-low-salary",
+        "category": "Educação",
+        "tags": ["superior completo", "baixo salário", "desvalorização"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _high_education_low_salary,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações que exigem ensino superior mas pagam menos de R$4k.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de alta escolaridade e baixo salário
+- Total de trabalhadores: {total_workers}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "low-education-high-salary",
+        "category": "Educação",
+        "tags": ["baixa escolaridade", "alto salário", "anomalia"],
+        "chart_type": "ranking_table",
+        "analysis_fn": _low_education_high_salary,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre ocupações de baixa escolaridade que pagam mais de R$5k — exceções no mercado.
+
+DADOS (use APENAS estes números, não invente dados):
+- {n_occupations} ocupações de baixa escolaridade e alto salário
+- Total de trabalhadores: {total_workers}
+- Top 10: {top10}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "escolaridade-distribution",
+        "category": "Educação",
+        "tags": ["escolaridade", "distribuição", "perfil"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _escolaridade_distribution,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a distribuição de escolaridade entre as ocupações brasileiras.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de ocupações: {total_occupations}
+- Distribuição: {distribution}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "state-salary-ranking",
+        "category": "Regional",
+        "tags": ["estados", "salário", "ranking"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _state_salary_ranking,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o ranking de salários médios por estado brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- Líder: {top_state} com {top_salary}
+- Último: {bottom_state} com {bottom_salary}
+- Todos os estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "state-workforce-ranking",
+        "category": "Regional",
+        "tags": ["estados", "trabalhadores", "ranking"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _state_workforce_ranking,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o ranking de estados por força de trabalho formal.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total nacional: {total_national}
+- Estados por trabalhadores: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "state-high-risk-workers",
+        "category": "Regional",
+        "tags": ["estados", "alto risco", "estimativa"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _state_high_risk_workers,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a estimativa de trabalhadores em risco de IA por estado.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total estimado em risco: {total_high_risk}
+- Top 10 estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "southeast-dominance",
+        "category": "Regional",
+        "tags": ["Sudeste", "concentração", "desigualdade"],
+        "chart_type": "comparison_pair",
+        "analysis_fn": _southeast_dominance,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre a dominância do Sudeste (SP+RJ+MG+ES) no mercado de trabalho brasileiro.
+
+DADOS (use APENAS estes números, não invente dados):
+- Sudeste: {se_workers} trabalhadores ({pct_se})
+- Restante: {rest_workers} trabalhadores
+- Salário médio Sudeste: {se_avg_salary} vs Restante: {rest_avg_salary}
+- Exposição Sudeste: {se_avg_exposicao} vs Restante: {rest_avg_exposicao}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "south-prosperity",
+        "category": "Regional",
+        "tags": ["Sul", "prosperidade", "regional"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _south_prosperity,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre o mercado de trabalho do Sul do Brasil (SC+PR+RS) e a exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores no Sul: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "northeast-tech-hubs",
+        "category": "Regional",
+        "tags": ["Nordeste", "tech hubs", "CE", "PE"],
+        "chart_type": "comparison_pair",
+        "analysis_fn": _northeast_tech_hubs,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre Ceará e Pernambuco como hubs tecnológicos do Nordeste.
+
+DADOS (use APENAS estes números, não invente dados):
+- CE + PE: {hubs_workers} trabalhadores
+- Restante do Nordeste: {other_ne_workers}
+- Salário médio hubs: {hubs_avg_salary} vs restante: {other_avg_salary}
+- Exposição hubs: {hubs_avg_exposicao} vs restante: {other_avg_exposicao}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "frontier-states",
+        "category": "Regional",
+        "tags": ["fronteira agrícola", "Centro-Oeste", "agronegócio"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _frontier_states,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre os estados da fronteira agrícola (MT+MS+GO) e o impacto da IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total de trabalhadores: {total_workers}
+- Participação nacional: {pct_national}
+- Salário médio: {avg_salary}
+- Exposição média: {avg_exposicao}
+- Estados: {states}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
+    {
+        "id": "smallest-workforce-states",
+        "category": "Regional",
+        "tags": ["menores estados", "periferia", "escala"],
+        "chart_type": "horizontal_bar",
+        "analysis_fn": _smallest_workforce_states,
+        "prompt_template": """Você é um jornalista de dados escrevendo para uma publicação como The Economist ou Folha de S.Paulo.
+
+Escreva um artigo curto (150-200 palavras) sobre os 5 estados com menor força de trabalho formal e sua exposição à IA.
+
+DADOS (use APENAS estes números, não invente dados):
+- Total nos 5 menores: {total_workers} ({pct_national})
+- Estados: {bottom5}
+
+Retorne JSON com exatamente estes campos:
+{{"title": "título impactante (máx 10 palavras)", "subtitle": "subtítulo explicativo (máx 15 palavras)", "body": "texto do artigo em HTML com <p> tags"}}""",
+    },
 ]
 
 
 def get_templates():
     """Return the list of story templates."""
-    return TEMPLATES
+    from insight_templates_batch_a import get_templates_batch_a
+    from insight_templates_batch_b1 import get_templates_batch_b1
+    from insight_templates_batch_b2 import get_templates_batch_b2
+    from insight_templates_batch_c1 import get_templates_batch_c1
+    from insight_templates_batch_c2 import get_templates_batch_c2
+    from insight_templates_batch_d1 import get_templates_batch_d1
+    from insight_templates_batch_d2 import get_templates_batch_d2
+    return (
+        TEMPLATES
+        + get_templates_batch_a()
+        + get_templates_batch_b1()
+        + get_templates_batch_b2()
+        + get_templates_batch_c1()
+        + get_templates_batch_c2()
+        + get_templates_batch_d1()
+        + get_templates_batch_d2()
+    )
