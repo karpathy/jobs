@@ -5269,6 +5269,7 @@ def get_templates():
     from insight_templates_batch_c2 import get_templates_batch_c2
     from insight_templates_batch_d1 import get_templates_batch_d1
     from insight_templates_batch_d2 import get_templates_batch_d2
+    from insight_templates_batch_women import get_templates_batch_women
     return (
         TEMPLATES
         + get_templates_batch_a()
@@ -5278,4 +5279,5 @@ def get_templates():
         + get_templates_batch_c2()
         + get_templates_batch_d1()
         + get_templates_batch_d2()
+        + get_templates_batch_women()
     )

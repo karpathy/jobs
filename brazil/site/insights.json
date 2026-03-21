@@ -5437,9 +5437,9 @@
   {
     "id": "women-in-opportunity",
     "category": "Demografia",
-    "title": "Insight: 37,8%",
-    "subtitle": "participação feminina média em ocupações de alta oportunidade",
-    "body_html": "<p>Artigo será gerado quando a chave de API estiver configurada.</p>",
+    "title": "Mulheres e IA: Desafios na Alta Oportunidade",
+    "subtitle": "Apesar de avanços, presença feminina em IA ainda é desigual em setores-chave.",
+    "body_html": "<p>A participação feminina em 124 ocupações de alta oportunidade, aquelas com pontuação de oportunidade igual ou superior a 7, apresenta uma média de 37,8%. No entanto, uma análise mais detalhada revela disparidades significativas, especialmente em áreas cruciais para o avanço da inteligência artificial.</p><p>Entre as dez principais ocupações de alta oportunidade, a presença feminina se destaca em setores como educação, com 80,8% de mulheres entre os professores de nível superior do ensino fundamental (primeira a quarta séries) e 82,1% entre programadores, avaliadores e orientadores de ensino. Em contraste, na área de Analistas de Tecnologia da Informação, que emprega quase 450 mil trabalhadores e possui uma alta oportunidade (9.0), a participação feminina é de apenas 21,8%. Gerentes de comercialização, marketing e comunicação (48,7%) e gerentes administrativos, financeiros, de riscos e afins (51,4%) mostram um equilíbrio maior. Esses dados sublinham a necessidade de políticas que incentivem a inclusão feminina em campos tecnológicos de ponta.</p>",
     "headline_stat": "37,8%",
     "headline_label": "participação feminina média em ocupações de alta oportunidade",
     "chart": {
@@ -5497,7 +5497,7 @@
         }
       ]
     },
-    "generated_at": "2026-03-19",
+    "generated_at": "2026-03-21",
     "tags": [
       "mulheres",
       "oportunidade",
@@ -8911,9 +8911,9 @@
   {
     "id": "women-high-salary",
     "category": "Demografia",
-    "title": "Insight: 34,9%",
-    "subtitle": "de mulheres nas ocupações com salário acima de R$ 8.000",
-    "body_html": "<p>Artigo será gerado quando a chave de API estiver configurada.</p>",
+    "title": "Mulheres ainda são minoria em altos salários",
+    "subtitle": "Apesar dos avanços, a disparidade de gênero persiste em ocupações de maior remuneração.",
+    "body_html": "<p>A participação feminina em ocupações com salários acima de R$ 8.000 ainda é significativamente menor do que a masculina. Em um universo de 63 ocupações analisadas, as mulheres representam apenas 34,9% do total de profissionais com essa faixa salarial, somando 520.276 indivíduos.</p><p>Em contraste, os homens ocupam a maioria dessas posições de maior remuneração, totalizando 970.371. Essa diferença numérica evidencia um desafio persistente na busca por equidade de gênero no mercado de trabalho, especialmente em cargos que oferecem maior retorno financeiro.</p><p>Os dados revelam que, embora as mulheres estejam presentes em diversas áreas, a ascensão a posições de maior destaque e remuneração ainda é um obstáculo. A análise das 63 ocupações de alto salário reforça a necessidade de políticas e iniciativas que promovam a igualdade de oportunidades e combatam as barreiras que impedem a plena participação feminina em todos os níveis do mercado de trabalho.</p>",
     "headline_stat": "34,9%",
     "headline_label": "de mulheres nas ocupações com salário acima de R$ 8.000",
     "chart": {
@@ -9078,9 +9078,9 @@
   {
     "id": "women-growing-vs-declining",
     "category": "Demografia",
-    "title": "Insight: 46,1%",
-    "subtitle": "de mulheres em ocupações em crescimento vs 42,3% em declínio",
-    "body_html": "<p>Artigo será gerado quando a chave de API estiver configurada.</p>",
+    "title": "Mulheres e o Futuro do Trabalho: Uma Análise",
+    "subtitle": "Presença feminina é maior em profissões em ascensão, mas a diferença é sutil.",
+    "body_html": "<p>A participação feminina no mercado de trabalho revela nuances importantes ao analisarmos ocupações em crescimento e em declínio. Dados recentes indicam que as mulheres representam 46,1% das 295 ocupações que estão em expansão. Em contraste, nas 304 ocupações que enfrentam um declínio, a presença feminina é ligeiramente menor, atingindo 42,3%.</p><p>Essa diferença, de 3,8 pontos percentuais, sugere que as mulheres estão, em média, um pouco mais representadas nos setores que se expandem. Embora a disparidade não seja drástica, ela aponta para uma tendência positiva de inserção feminina em novas áreas do mercado. Contudo, a proximidade dos percentuais em ambos os cenários ressalta que a luta por uma equidade de gênero mais robusta e por oportunidades iguais em todos os setores ainda persiste.</p>",
     "headline_stat": "46,1%",
     "headline_label": "de mulheres em ocupações em crescimento vs 42,3% em declínio",
     "chart": {
@@ -14641,9 +14641,9 @@
   {
     "id": "women-salary-structure",
     "category": "Demografia",
-    "title": "Insight: 33,6%",
-    "subtitle": "diferença salarial entre ocupações femininas e masculinas",
-    "body_html": "<p>Artigo será gerado quando a chave de API estiver configurada.</p>",
+    "title": "A Persistente Lacuna Salarial de Gênero no Brasil",
+    "subtitle": "Ocupações dominadas por mulheres pagam um terço a menos que as masculinas.",
+    "body_html": "<p>Apesar dos avanços sociais, a disparidade salarial entre gêneros permanece uma realidade marcante no mercado de trabalho brasileiro. Uma análise dos salários médios em ocupações predominantemente femininas e masculinas revela uma diferença substancial, evidenciando a persistência de desigualdades estruturais.</p><p>Em 98 ocupações onde mais de 60% dos trabalhadores são mulheres, o salário médio registrado é de R$ 3.246. Em contraste, nas 399 ocupações com mais de 60% de homens, a média salarial atinge R$ 4.885. Essa comparação direta aponta para uma diferença de 33,6% no rendimento médio, com as ocupações femininas pagando significativamente menos.</p><p>Os dados sublinham que a segregação ocupacional por gênero não se traduz apenas em diferentes perfis de trabalho, mas também em remunerações desiguais. Essa lacuna salarial não apenas afeta a autonomia financeira das mulheres, mas também reflete um desafio contínuo para a equidade e o desenvolvimento socioeconômico do país.</p>",
     "headline_stat": "33,6%",
     "headline_label": "diferença salarial entre ocupações femininas e masculinas",
     "chart": {
@@ -16782,5 +16782,1338 @@
       "categorias"
     ],
     "data_hash": "e4621d5621d598aaf350a566aa0847e7"
+  },
+  {
+    "id": "women-total-workforce",
+    "category": "Demografia",
+    "title": "Mulheres e IA: O Futuro do Trabalho no Brasil",
+    "subtitle": "A participação feminina na força de trabalho formal e os desafios da automação.",
+    "body_html": "<p>A força de trabalho formal brasileira é composta por 55.146.180 indivíduos, dos quais 24.821.302 são mulheres, representando 45,0% do total. Os homens, por sua vez, somam 30.324.878, ou 55,0%.</p><p>Esses números revelam uma participação feminina robusta, mas ainda minoritária, no mercado de trabalho formal. Diante da crescente revolução da inteligência artificial, a análise desses dados se torna crucial. A IA promete transformar diversas profissões, automatizando tarefas repetitivas e criando novas demandas por habilidades.</p><p>A forma como essa transição impactará a força de trabalho feminina é uma questão central. Será que as mulheres estão nas profissões mais vulneráveis à automação ou nas que mais se beneficiarão das novas oportunidades? Garantir que a revolução da IA seja inclusiva e equitativa é essencial para o desenvolvimento socioeconômico do Brasil, evitando o aprofundamento de desigualdades de gênero no futuro do trabalho.</p>",
+    "headline_stat": "24.821.302",
+    "headline_label": "mulheres na força de trabalho formal analisada",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 24821302,
+          "formatted": "24.821.302"
+        },
+        {
+          "label": "Homens",
+          "value": 30324878,
+          "formatted": "30.324.878"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "gênero",
+      "força de trabalho"
+    ],
+    "data_hash": "cadabe57043f91419c45006e3f6600a4"
+  },
+  {
+    "id": "women-high-risk-total",
+    "category": "Demografia",
+    "title": "IA e o Futuro do Trabalho Feminino no Brasil",
+    "subtitle": "Quase 10 milhões de mulheres em ocupações de alto risco de disrupção por IA.",
+    "body_html": "<p>A ascensão da Inteligência Artificial (IA) projeta uma reconfiguração significativa do mercado de trabalho brasileiro, com um impacto desproporcional sobre as mulheres. Dados recentes revelam que 9.366.100 mulheres estão empregadas em ocupações consideradas de alto risco de disrupção pela IA. Este número representa 37,7% do total de 24.821.302 mulheres empregadas no país.</p><p>Em comparação, 6.746.290 homens estão em ocupações de alto risco, o que corresponde a 22,2% do total de homens empregados. A diferença percentual é notável, indicando que as mulheres estão significativamente mais expostas à automação e às mudanças impulsionadas pela IA. Essa disparidade levanta preocupações sobre a equidade de gênero no futuro do trabalho e a necessidade de políticas públicas e iniciativas de requalificação profissional para mitigar os impactos negativos e garantir uma transição justa para todos os trabalhadores.</p>",
+    "headline_stat": "9.366.100",
+    "headline_label": "mulheres em ocupações de alto risco de IA",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres em alto risco",
+          "value": 9366100,
+          "formatted": "9.366.100"
+        },
+        {
+          "label": "Mulheres fora de risco",
+          "value": 15455202,
+          "formatted": "15.455.202"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "alto risco",
+      "exposição"
+    ],
+    "data_hash": "d3b9ffd6e2dfa3825e2bfe98de1bad41"
+  },
+  {
+    "id": "women-vs-men-high-risk-ratio",
+    "category": "Demografia",
+    "title": "IA e o Gênero do Risco",
+    "subtitle": "Mulheres mais expostas a automação por IA",
+    "body_html": "<p>A ascensão da inteligência artificial (IA) promete transformar o mercado de trabalho, mas a análise de dados revela uma disparidade de gênero preocupante nas ocupações de alto risco de automação. Para cada 100 homens em posições consideradas de alto risco, há 139 mulheres na mesma situação.</p><p>Em números absolutos, 9.366.100 mulheres estão em ocupações com alta probabilidade de serem impactadas pela IA, em comparação com 6.746.290 homens. Isso significa que 37,7% das mulheres estão em alto risco, enquanto a porcentagem para homens é significativamente menor, em 22,2%.</p><p>Esses dados sublinham a necessidade de políticas e programas que abordem as implicações de gênero da automação, garantindo uma transição justa e equitativa para todos os trabalhadores.</p>",
+    "headline_stat": "139",
+    "headline_label": "mulheres em alto risco para cada 100 homens",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres em alto risco",
+          "value": 9366100,
+          "formatted": "9.366.100"
+        },
+        {
+          "label": "Homens em alto risco",
+          "value": 6746290,
+          "formatted": "6.746.290"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "homens",
+      "razão",
+      "alto risco"
+    ],
+    "data_hash": "ff2505f5c7a005d61481e8b682224399"
+  },
+  {
+    "id": "women-top10-exposed-occupations",
+    "category": "Ocupações",
+    "title": "IA e o Futuro do Trabalho Feminino",
+    "subtitle": "Mulheres em ocupações de alta exposição à IA: um alerta para o mercado.",
+    "body_html": "<p>A ascensão da Inteligência Artificial (IA) levanta questões cruciais sobre o futuro do trabalho, especialmente para as mulheres. Das 75 ocupações com exposição à IA igual ou superior a 8, um padrão preocupante emerge ao analisar as profissões com maior presença feminina. No total, 5.124.367 mulheres estão empregadas nas 10 ocupações mais expostas.</p><p>Entre as profissões mais afetadas, destacam-se 'Agentes, assistentes e auxiliares administrativos', com 3.037.406 mulheres (64,4% do total), e 'Caixas e bilheteiros (exceto caixa de banco)', com 876.989 mulheres (83,2%). 'Operadores de telemarketing e afins' (345.238 mulheres, 72,8%) e 'Auxiliares de contabilidade' (218.849 mulheres, 70,5%) também apresentam alta concentração feminina e exposição significativa à IA.</p><p>Esses dados revelam que as mulheres estão predominantemente em funções administrativas, de atendimento e suporte, áreas historicamente mais suscetíveis à automação. Embora 'Analistas de tecnologia da informação' (98.298 mulheres, 21,8%) e 'Advogados' (76.977 mulheres, 60,0%) também apareçam na lista, a concentração em funções de menor autonomia e maior rotina sugere que a transição para uma economia impulsionada pela IA pode impactar desproporcionalmente o emprego feminino, exigindo atenção urgente para requalificação e novas oportunidades.</p>",
+    "headline_stat": "5.124.367",
+    "headline_label": "mulheres nas 10 ocupações mais expostas à IA",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Agentes, assistentes e auxiliares administrativos",
+          "value": 3037406,
+          "formatted": "3.037.406"
+        },
+        {
+          "label": "Caixas e bilheteiros (exceto caixa de banco)",
+          "value": 876989,
+          "formatted": "876.989"
+        },
+        {
+          "label": "Operadores de telemarketing e afins",
+          "value": 345238,
+          "formatted": "345.238"
+        },
+        {
+          "label": "Auxiliares de contabilidade",
+          "value": 218849,
+          "formatted": "218.849"
+        },
+        {
+          "label": "Escriturários de serviços bancários",
+          "value": 149626,
+          "formatted": "149.626"
+        },
+        {
+          "label": "Secretárias(os) executivas(os) e afins",
+          "value": 145508,
+          "formatted": "145.508"
+        },
+        {
+          "label": "Contadores e afins",
+          "value": 103539,
+          "formatted": "103.539"
+        },
+        {
+          "label": "Analistas de tecnologia da informação",
+          "value": 98298,
+          "formatted": "98.298"
+        },
+        {
+          "label": "Advogados",
+          "value": 76977,
+          "formatted": "76.977"
+        },
+        {
+          "label": "Profissionais de administração ecônomico-financeira",
+          "value": 71937,
+          "formatted": "71.937"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "exposição alta",
+      "ranking"
+    ],
+    "data_hash": "ac883df3011a5711b1c011e9e719e67c"
+  },
+  {
+    "id": "women-safest-occupations",
+    "category": "Ocupações",
+    "title": "Mulheres e IA: onde a automação ainda não ameaça",
+    "subtitle": "Análise revela as ocupações mais seguras para mulheres contra a automação.",
+    "body_html": "<p>A ascensão da inteligência artificial (IA) levanta preocupações sobre o futuro do trabalho. No entanto, uma análise das ocupações com baixa exposição à IA (exposição <=3) revela que as mulheres ainda encontram refúgio em setores específicos.</p><p>Das 249 ocupações com baixa exposição, as dez principais empregam 6.997.006 mulheres. Entre elas, destacam-se as 'Operadoras do comércio em lojas e mercados', com 2.192.989 mulheres (52,7% do total da ocupação) e exposição 3. Os 'Trabalhadores nos serviços de manutenção de edificações' empregam 1.609.816 mulheres (64,9%) com exposição 2, indicando maior segurança.</p><p>Outras áreas com forte presença feminina e baixa exposição incluem 'Cozinheiros', com 480.624 mulheres (78,6%), e 'Professores de nível médio na educação infantil', com 473.101 mulheres (94,2%), ambos com exposição 3. 'Trabalhadores nos serviços de coleta de resíduos, de limpeza e conservação de áreas públicas' também se destacam, com 447.472 mulheres (53,6%) e a menor exposição, nível 1. Estes dados sugerem que a IA ainda não representa uma ameaça iminente para milhões de trabalhadoras brasileiras.</p>",
+    "headline_stat": "6.997.006",
+    "headline_label": "mulheres nas 10 ocupações mais seguras da IA",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Operadores do comércio em lojas e mercados",
+          "value": 2192989,
+          "formatted": "2.192.989"
+        },
+        {
+          "label": "Trabalhadores nos  serviços de manutenção de edificações",
+          "value": 1609816,
+          "formatted": "1.609.816"
+        },
+        {
+          "label": "Trabalhadores no atendimento em estabelecimentos de serviços de alimentação, bebidas e hotelaria",
+          "value": 497325,
+          "formatted": "497.325"
+        },
+        {
+          "label": "Cozinheiros",
+          "value": 480624,
+          "formatted": "480.624"
+        },
+        {
+          "label": "Professores de nível médio na educação infantil",
+          "value": 473101,
+          "formatted": "473.101"
+        },
+        {
+          "label": "Trabalhadores nos serviços de coleta de resíduos, de limpeza e conservação de áreas públicas",
+          "value": 447472,
+          "formatted": "447.472"
+        },
+        {
+          "label": "Alimentadores de linhas de produção",
+          "value": 447413,
+          "formatted": "447.413"
+        },
+        {
+          "label": "Trabalhadores auxiliares nos serviços de alimentação",
+          "value": 353677,
+          "formatted": "353.677"
+        },
+        {
+          "label": "Trabalhadores em serviços de promoção e apoio à saúde",
+          "value": 280564,
+          "formatted": "280.564"
+        },
+        {
+          "label": "Operadores de máquinas para costura de peças do vestuário",
+          "value": 214025,
+          "formatted": "214.025"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "baixa exposição",
+      "segurança"
+    ],
+    "data_hash": "e2810bf0aa9765566b35aa528e5abb57"
+  },
+  {
+    "id": "women-salary-gap-high-risk",
+    "category": "Mercado",
+    "title": "IA e o abismo salarial de gênero",
+    "subtitle": "Mulheres ganham menos, mesmo em empregos de alto risco de IA.",
+    "body_html": "<p>A ascensão da inteligência artificial (IA) promete transformar o mercado de trabalho, mas uma análise dos dados revela uma preocupante disparidade de gênero, especialmente em ocupações de alto risco de automação. Empregos feminizados, definidos como aqueles com mais de 60% de mulheres, apresentam um salário médio de R$ 3.852. Em contraste, ocupações masculinizadas (mais de 60% de homens) registram um salário médio de R$ 10.070. Essa diferença salarial é gritante: R$ 6.218, ou 61,7% a menos para as mulheres.</p><p>A disparidade se aprofunda quando consideramos o risco de automação por IA. Existem 34 ocupações feminizadas em alto risco de serem impactadas pela IA, enquanto o número de ocupações masculinizadas nessa mesma categoria é de 75. Isso sugere que, além de já receberem salários significativamente menores, as mulheres em ocupações feminizadas enfrentam um risco substancial de disrupção em seus meios de subsistência. A questão central permanece: as mulheres não apenas ganham menos, mas também estão mais vulneráveis à transformação impulsionada pela IA?</p>",
+    "headline_stat": "R$ 6.218",
+    "headline_label": "diferença salarial em ocupações de alto risco por gênero",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Ocupações feminizadas (>60% mulheres)",
+          "value": 3852,
+          "formatted": "R$ 3.852"
+        },
+        {
+          "label": "Ocupações masculinizadas (>60% homens)",
+          "value": 10070,
+          "formatted": "R$ 10.070"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "salário",
+      "gap",
+      "alto risco"
+    ],
+    "data_hash": "45aad2c1317adb213ffa74f77da65d73"
+  },
+  {
+    "id": "women-opportunity-gap",
+    "category": "Mercado",
+    "title": "IA e Gênero: Oportunidades Desiguais?",
+    "subtitle": "Mulheres em ocupações feminizadas têm ligeira vantagem na IA.",
+    "body_html": "<p>A ascensão da Inteligência Artificial (IA) levanta questões cruciais sobre a equidade de oportunidades no mercado de trabalho. Uma análise recente revela uma diferença sutil, mas notável, na oportunidade de se beneficiar da IA entre ocupações predominantemente femininas e masculinas.</p><p>Em média, ocupações feminizadas (com mais de 55% de mulheres) apresentam uma pontuação de oportunidade de IA de 5,5. Por outro lado, as ocupações masculinizadas (com mais de 55% de homens) registram uma pontuação média de 4,9. Isso representa uma diferença de 0,6 a favor das ocupações feminizadas.</p><p>É importante notar que, embora a diferença seja positiva para as mulheres, o universo de ocupações é desproporcional. Existem 123 ocupações classificadas como feminizadas, em contraste com 429 ocupações masculinizadas. Essa disparidade no número de ocupações pode influenciar a percepção geral de oportunidades.</p><p>Apesar da ligeira vantagem em termos de pontuação média, a menor quantidade de ocupações feminizadas sugere que a discussão sobre igualdade de oportunidades na era da IA é mais complexa do que uma simples comparação de médias.</p>",
+    "headline_stat": "5,5",
+    "headline_label": "oportunidade média em ocupações feminizadas vs 4,9 nas masculinizadas",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Ocupações feminizadas (>55% mulheres)",
+          "value": 5.5,
+          "formatted": "5,5"
+        },
+        {
+          "label": "Ocupações masculinizadas (>55% homens)",
+          "value": 4.9,
+          "formatted": "4,9"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "oportunidade",
+      "gap"
+    ],
+    "data_hash": "19d618391dea88192a51533c48093e25"
+  },
+  {
+    "id": "women-secretarias-risk",
+    "category": "Ocupações",
+    "title": "Secretárias: Profissão em Risco com a IA",
+    "subtitle": "Mulheres dominam área vulnerável à automação no Brasil.",
+    "body_html": "<p>A profissão de secretária no Brasil, historicamente feminina, enfrenta um futuro incerto diante do avanço da inteligência artificial. Dos 201.207 trabalhadores na área, 145.508 (72,3%) são mulheres, consolidando a ocupação como um bastião feminino no mercado de trabalho.</p><p>No entanto, a categoria, predominantemente de 'Secretárias(os) executivas(os) e afins', apresenta uma exposição média à IA de 8 em uma escala de 0 a 10. Este índice elevado sugere que grande parte das tarefas desempenhadas pode ser automatizada, colocando em xeque a relevância e a demanda por esses profissionais.</p><p>Com um salário médio de R$ 2.655, a transição para um cenário dominado pela IA pode ter impactos significativos na renda e na empregabilidade de milhares de brasileiras. A discussão sobre requalificação e adaptação a novas funções torna-se urgente para mitigar os efeitos dessa transformação tecnológica.</p>",
+    "headline_stat": "72,3%",
+    "headline_label": "de mulheres entre secretári@s — exposição 8",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Secretárias(os) executivas(os) e afins",
+          "value": 8,
+          "formatted": "8"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "secretárias",
+      "exposição"
+    ],
+    "data_hash": "7360e5938d8f182b16ee7d1d9a98edc6"
+  },
+  {
+    "id": "women-telemarketing-gender",
+    "category": "Ocupações",
+    "title": "Telemarketing: Ameaça da IA para Mulheres",
+    "subtitle": "Profissão feminina em risco de automação no Brasil.",
+    "body_html": "<p>A ascensão da inteligência artificial (IA) projeta uma sombra sobre o futuro de diversas profissões, e o telemarketing no Brasil emerge como um dos setores mais vulneráveis. Com uma exposição média à IA de 10 (em uma escala de 0 a 10), esta única ocupação, que emprega 474.153 trabalhadores, enfrenta um cenário de profunda transformação.</p><p>A vulnerabilidade é ainda mais acentuada pela sua composição demográfica. Das centenas de milhares de profissionais, 345.238 são mulheres, representando impressionantes 72,8% da força de trabalho. Isso significa que a automação impulsionada pela IA pode impactar desproporcionalmente a empregabilidade feminina, levantando questões importantes sobre equidade de gênero e requalificação profissional.</p><p>O Brasil, ao lado de outros países, precisa urgentemente debater políticas públicas que mitiguem os efeitos dessa transição tecnológica, garantindo que a inovação não se traduza em um aumento do desemprego, especialmente entre as mulheres que dominam este setor.</p>",
+    "headline_stat": "72,8%",
+    "headline_label": "de mulheres no telemarketing — exposição 10",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 345238,
+          "formatted": "345.238"
+        },
+        {
+          "label": "Homens",
+          "value": 128915,
+          "formatted": "128.915"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "telemarketing",
+      "exposição"
+    ],
+    "data_hash": "b164373b8f19020f2f879ab9703ed16a"
+  },
+  {
+    "id": "women-professoras-profile",
+    "category": "Ocupações",
+    "title": "IA e o Futuro das Professoras no Brasil",
+    "subtitle": "Setor predominantemente feminino enfrenta desafios e oportunidades com a tecnologia.",
+    "body_html": "<p>O setor de ensino no Brasil é marcadamente feminino, com 75,0% dos 4.141.436 trabalhadores sendo mulheres, totalizando 3.105.782 professoras. A chegada da Inteligência Artificial (IA) levanta questões sobre o impacto nessas profissionais.</p><p>A exposição média à IA para os trabalhadores do ensino é de 6,2 em uma escala de 0 a 10. Dentre as 21 ocupações analisadas, algumas das maiores categorias, como 'Professores de nível superior do ensino fundamental (primeira a quarta séries)', com 1.020.157 trabalhadores, e 'Professores de nível médio no ensino fundamental', com 904.009 trabalhadores, apresentam uma exposição de 6. Já 'Professores do ensino médio' (433.598 trabalhadores) e 'Professores na área de formação pedagógica do ensino superior' (350.886 trabalhadores) registram exposição de 7. Em contraste, 'Professores de nível médio na educação infantil' (502.163 trabalhadores) e 'Professores de nível superior na educação infantil' (268.032 trabalhadores) têm exposições menores, de 3 e 4, respectivamente. A IA pode redefinir papéis, exigindo novas habilidades e adaptabilidade por parte dessas profissionais.</p>",
+    "headline_stat": "3.105.782",
+    "headline_label": "professoras no ensino formal — 75,0% mulheres",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Professores de nível superior do ensino fundamental (primeira a quarta séries)",
+          "value": 1020157,
+          "formatted": "1.020.157"
+        },
+        {
+          "label": "Professores de nível médio no ensino fundamental",
+          "value": 904009,
+          "formatted": "904.009"
+        },
+        {
+          "label": "Professores de nível médio na educação infantil",
+          "value": 502163,
+          "formatted": "502.163"
+        },
+        {
+          "label": "Professores do ensino médio",
+          "value": 433598,
+          "formatted": "433.598"
+        },
+        {
+          "label": "Professores na área de formação pedagógica do ensino superior",
+          "value": 350886,
+          "formatted": "350.886"
+        },
+        {
+          "label": "Professores de nível superior na educação infantil",
+          "value": 268032,
+          "formatted": "268.032"
+        },
+        {
+          "label": "Professores de nível superior no ensino fundamental de quinta a oitava série",
+          "value": 249707,
+          "formatted": "249.707"
+        },
+        {
+          "label": "Instrutores e professores de cursos livres",
+          "value": 122041,
+          "formatted": "122.041"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "professoras",
+      "educação"
+    ],
+    "data_hash": "63939206eb4e0c4ba3fb5e061f0420ab"
+  },
+  {
+    "id": "women-enfermeiras-profile",
+    "category": "Ocupações",
+    "title": "Enfermagem no Brasil: Gênero, Salário e o Futuro da IA",
+    "subtitle": "Profissão majoritariamente feminina enfrenta desafios e a crescente influência da inteligência artificial.",
+    "body_html": "<p>A enfermagem no Brasil é uma profissão notavelmente feminizada, com 84,3% de seus 443.869 trabalhadores sendo mulheres. Isso representa um contingente de 374.229 profissionais que desempenham um papel crucial na saúde do país.</p><p>Apesar da importância e da dedicação, a categoria, que se concentra em uma única ocupação, enfrenta um cenário salarial modesto. O salário médio dos enfermeiros no Brasil é de R$ 5.284.</p><p>Com o avanço tecnológico, a inteligência artificial (IA) começa a se fazer presente em diversas áreas. Para a enfermagem, a exposição média à IA é avaliada em 4, em uma escala de 0 a 10. Este índice sugere que, embora a IA já tenha alguma relevância, a profissão ainda não está entre as mais diretamente impactadas ou substituíveis por essa tecnologia, indicando um potencial para integração e aprimoramento, mas também a necessidade de adaptação e qualificação para as futuras demandas.</p>",
+    "headline_stat": "84,3%",
+    "headline_label": "de mulheres na enfermagem — exposição 4",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 374229,
+          "formatted": "374.229"
+        },
+        {
+          "label": "Homens",
+          "value": 69640,
+          "formatted": "69.640"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "enfermagem",
+      "saúde"
+    ],
+    "data_hash": "eb0fa56db515bb5a01dc93d767f6f1c3"
+  },
+  {
+    "id": "women-caixas-profile",
+    "category": "Ocupações",
+    "title": "Caixas: Mulheres na Linha de Frente da Automação",
+    "subtitle": "Ocupação majoritariamente feminina enfrenta alta exposição à IA no varejo.",
+    "body_html": "<p>A profissão de operador de caixa no Brasil é um universo predominantemente feminino, com 83,2% dos trabalhadores sendo mulheres. Dos 1.053.578 profissionais nesta única ocupação, impressionantes 876.989 são mulheres, consolidando sua presença na linha de frente do varejo nacional.</p><p>Contudo, essa força de trabalho enfrenta um cenário de crescente automação. A exposição média à Inteligência Artificial (IA) para esta função é de 8, em uma escala de 0 a 10. Este índice elevado sugere que as operadoras de caixa estão particularmente suscetíveis às transformações tecnológicas, com a IA remodelando as operações de varejo e, consequentemente, o futuro de suas atividades.</p>",
+    "headline_stat": "876.989",
+    "headline_label": "mulheres operadoras de caixa — exposição 8",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 876989,
+          "formatted": "876.989"
+        },
+        {
+          "label": "Homens",
+          "value": 176589,
+          "formatted": "176.589"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "caixas",
+      "varejo"
+    ],
+    "data_hash": "ef023a6e4053e0f0a317dcbf6361c095"
+  },
+  {
+    "id": "women-admin-crisis",
+    "category": "Setores",
+    "title": "Mulheres na linha de frente da automação por IA",
+    "subtitle": "Setor administrativo, predominantemente feminino, enfrenta alta exposição à inteligência artificial.",
+    "body_html": "<p>As mulheres representam 60,4% dos 10.216.015 trabalhadores em serviços administrativos, totalizando 6.172.834 profissionais. Este grupo, abrangendo 22 ocupações, enfrenta uma exposição média à inteligência artificial de 7,6 em uma escala de 0 a 10, indicando um risco considerável de automação.</p><p>Entre as ocupações mais impactadas, destacam-se 'Agentes, assistentes e auxiliares administrativos', com 4.719.388 trabalhadores e exposição 9, e 'Operadores de telemarketing e afins', com 474.153 profissionais e a maior exposição, 10. Outras áreas de alta exposição incluem 'Caixas e bilheteiros (exceto caixa de banco)' (exposição 8) e 'Auxiliares de contabilidade' e 'Escriturários de serviços bancários' (ambos com exposição 9).</p><p>Esses dados sugerem que a transição para um futuro com maior automação por IA terá um impacto desproporcional sobre as mulheres, que já constituem a maioria da força de trabalho neste setor. A necessidade de requalificação e adaptação profissional torna-se um desafio premente para milhões de trabalhadoras.</p>",
+    "headline_stat": "60,4%",
+    "headline_label": "de mulheres nos serviços administrativos — exposição 7,6",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Agentes, assistentes e auxiliares administrativos",
+          "value": 9,
+          "formatted": "9"
+        },
+        {
+          "label": "Almoxarifes e armazenistas",
+          "value": 5,
+          "formatted": "5"
+        },
+        {
+          "label": "Caixas e bilheteiros (exceto caixa de banco)",
+          "value": 8,
+          "formatted": "8"
+        },
+        {
+          "label": "Recepcionistas",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Supervisores administrativos",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Operadores de telemarketing e afins",
+          "value": 10,
+          "formatted": "10"
+        },
+        {
+          "label": "Auxiliares de contabilidade",
+          "value": 9,
+          "formatted": "9"
+        },
+        {
+          "label": "Escriturários de serviços bancários",
+          "value": 9,
+          "formatted": "9"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "administrativo",
+      "automação"
+    ],
+    "data_hash": "adb2058c3cfd228dcb32af9a87d5742c"
+  },
+  {
+    "id": "women-services-commerce",
+    "category": "Setores",
+    "title": "IA e o Futuro do Trabalho Feminino no Comércio",
+    "subtitle": "Mulheres em serviços: baixa exposição à IA, mas atenção necessária.",
+    "body_html": "<p>As mulheres representam 50,0% da força de trabalho em serviços e comércio no Brasil, totalizando 6.924.257 dos 13.857.335 trabalhadores do setor. Este segmento, vital para a economia, emprega mulheres em 44 ocupações distintas.</p><p>A exposição média à inteligência artificial (IA) nessas funções é de 3,2 em uma escala de 0 a 10, indicando um impacto inicial relativamente baixo. Entre as principais ocupações, 'Operadores do comércio em lojas e mercados', que emprega 4.164.273 pessoas, apresenta exposição 3. 'Trabalhadores nos serviços de manutenção de edificações' (2.481.149 trabalhadores) e 'Trabalhadores auxiliares nos serviços de alimentação' (517.270 trabalhadores) têm exposição 2. A maior exposição entre as listadas é de 'Porteiros, vigias e afins' (1.159.565 trabalhadores), com índice 4.</p><p>Embora a exposição atual seja modesta, a evolução da IA exige monitoramento contínuo. A compreensão desses dados é crucial para planejar políticas de requalificação e garantir que a transição tecnológica seja justa e inclusiva para as milhões de mulheres que dependem desses setores.</p>",
+    "headline_stat": "6.924.257",
+    "headline_label": "mulheres em serviços e comércio — 50,0% do total",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Operadores do comércio em lojas e mercados",
+          "value": 4164273,
+          "formatted": "4.164.273"
+        },
+        {
+          "label": "Trabalhadores nos  serviços de manutenção de edificações",
+          "value": 2481149,
+          "formatted": "2.481.149"
+        },
+        {
+          "label": "Porteiros, vigias e afins",
+          "value": 1159565,
+          "formatted": "1.159.565"
+        },
+        {
+          "label": "Trabalhadores no atendimento em estabelecimentos de serviços de alimentação, bebidas e hotelaria",
+          "value": 857728,
+          "formatted": "857.728"
+        },
+        {
+          "label": "Trabalhadores nos serviços de coleta de resíduos, de limpeza e conservação de áreas públicas",
+          "value": 834691,
+          "formatted": "834.691"
+        },
+        {
+          "label": "Vigilantes e guardas de segurança",
+          "value": 776712,
+          "formatted": "776.712"
+        },
+        {
+          "label": "Cozinheiros",
+          "value": 611541,
+          "formatted": "611.541"
+        },
+        {
+          "label": "Trabalhadores auxiliares nos serviços de alimentação",
+          "value": 517270,
+          "formatted": "517.270"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "serviços",
+      "comércio"
+    ],
+    "data_hash": "0d7b16060d971a235010cc050d526fb7"
+  },
+  {
+    "id": "women-production-underrepresented",
+    "category": "Setores",
+    "title": "Mulheres na Indústria: Uma Proteção Inesperada?",
+    "subtitle": "Segregação ocupacional pode blindar empregos femininos da IA, mas a um custo.",
+    "body_html": "<p>A participação feminina na produção industrial brasileira é notavelmente baixa, com apenas 15,5% dos postos ocupados por mulheres. Dos 11.405.784 trabalhadores do setor, 1.767.122 são mulheres, contra 9.638.662 homens. Essa disparidade levanta questões sobre a segregação ocupacional e suas implicações em um cenário de crescente automação.</p><p>Curiosamente, a baixa exposição à Inteligência Artificial (IA) é uma característica marcante desses empregos. A exposição média à IA na produção é de 3,3 em uma escala de 0 a 10, abrangendo 190 ocupações. Isso sugere que, embora a sub-representação feminina na indústria seja um problema de equidade, ela pode, paradoxalmente, oferecer uma proteção contra a substituição por IA, ao menos no curto prazo. A questão que permanece é se essa 'proteção' compensa a falta de oportunidades e a concentração em setores de menor valor agregado.</p>",
+    "headline_stat": "15,5%",
+    "headline_label": "de mulheres na produção industrial — exposição média 3,3",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 1767122,
+          "formatted": "1.767.122"
+        },
+        {
+          "label": "Homens",
+          "value": 9638662,
+          "formatted": "9.638.662"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "produção",
+      "industrial"
+    ],
+    "data_hash": "065e3e73b271a0cd9aab9657af0dbf57"
+  },
+  {
+    "id": "women-leadership-exposure",
+    "category": "Ocupações",
+    "title": "Mulheres na Liderança e IA: Desafios e Oportunidades",
+    "subtitle": "O teto de vidro encontra a inteligência artificial no mercado de trabalho.",
+    "body_html": "<p>A participação feminina em cargos de liderança atinge 47,4% do total, com 1.351.479 mulheres em um universo de 2.848.385 trabalhadores. Este dado, que se aproxima da paridade, sugere um avanço na representatividade feminina em posições de destaque. No entanto, a ascensão da inteligência artificial (IA) adiciona uma nova camada de complexidade a este cenário.</p><p>A exposição média à IA em 43 ocupações analisadas é de 6,4 (em uma escala de 0 a 10). As ocupações de liderança mais expostas incluem “Gerentes de comercialização, marketing e comunicação” e “Gerentes administrativos, financeiros, de riscos e afins”, ambas com exposição 7. “Gerentes de tecnologia da informação” lideram com exposição 8. A forma como a IA será integrada e como as mulheres serão preparadas para essas novas demandas determinará se a tecnologia será uma ferramenta para quebrar o teto de vidro ou se criará novas barreiras.</p>",
+    "headline_stat": "47,4%",
+    "headline_label": "de mulheres em cargos de liderança — exposição 6,4",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Dirigentes do serviço público",
+          "value": 6,
+          "formatted": "6"
+        },
+        {
+          "label": "Gerentes de comercialização, marketing e comunicação",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Gerentes administrativos, financeiros, de riscos e afins",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Gerentes de operações comerciais e de assistência técnica",
+          "value": 6,
+          "formatted": "6"
+        },
+        {
+          "label": "Gerentes de produção e operações em empresa da indústria extrativa, de transformação e de serviços de utilidade pública",
+          "value": 6,
+          "formatted": "6"
+        },
+        {
+          "label": "Diretores administrativos e financeiros",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Gerentes de operações de serviços em empresa de turismo, de alojamento e alimentação",
+          "value": 6,
+          "formatted": "6"
+        },
+        {
+          "label": "Gerentes de tecnologia da informação",
+          "value": 8,
+          "formatted": "8"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "liderança",
+      "teto de vidro"
+    ],
+    "data_hash": "9f8d89556c31826765ff28fc625c6d8b"
+  },
+  {
+    "id": "women-tech-representation",
+    "category": "Setores",
+    "title": "Mulheres na Tecnologia: Desafios e Oportunidades na Era da IA",
+    "subtitle": "Representação feminina em tech ainda é minoria, apesar do potencial da IA.",
+    "body_html": "<p>Apesar do avanço tecnológico, a representação feminina no setor de tecnologia permanece um desafio. Das 1.720.473 pessoas empregadas em ocupações de tecnologia, apenas 522.560 são mulheres, o que corresponde a 30,4% do total. Este cenário é particularmente preocupante considerando que a exposição média à Inteligência Artificial (IA) nessas profissões é de 6,4 (em uma escala de 0 a 10), com uma oportunidade média de 7,0.</p><p>As ocupações com maior oportunidade, como 'Analistas de tecnologia da informação' e 'Gerentes de tecnologia da informação', ambas com 9,0 de oportunidade, somam quase 527.636 trabalhadores. Outras áreas de alta oportunidade incluem 'Programadores, avaliadores e orientadores de ensino' (7,5 de oportunidade) e 'Técnicos de desenvolvimento de sistemas e aplicações' (8,5 de oportunidade). A baixa participação feminina nessas 21 ocupações de alto potencial sugere uma lacuna significativa na inclusão de mulheres nas carreiras que moldarão o futuro impulsionado pela IA.</p>",
+    "headline_stat": "30,4%",
+    "headline_label": "de mulheres em tecnologia — oportunidade média 7,0",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Analistas de tecnologia da informação",
+          "value": 9.0,
+          "formatted": "9,0"
+        },
+        {
+          "label": "Programadores, avaliadores e orientadores de ensino",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Planejadores, programadores e controladores de produção e manutenção",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Instaladores e reparadores de linhas e cabos elétricos, telefônicos e de comunicação de dados",
+          "value": 5.0,
+          "formatted": "5,0"
+        },
+        {
+          "label": "Técnicos de suporte e monitoração ao usuário de tecnologia da informação.",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Técnicos de desenvolvimento de sistemas e aplicações",
+          "value": 8.5,
+          "formatted": "8,5"
+        },
+        {
+          "label": "Técnicos mecânicos na fabricação e montagem de máquinas, sistemas e instrumentos",
+          "value": 6.0,
+          "formatted": "6,0"
+        },
+        {
+          "label": "Gerentes de tecnologia da informação",
+          "value": 9.0,
+          "formatted": "9,0"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "tecnologia",
+      "oportunidade"
+    ],
+    "data_hash": "c98d852ad777243241aa9a2079146df2"
+  },
+  {
+    "id": "women-high-salary-access",
+    "category": "Mercado",
+    "title": "Mulheres: Menos no Topo, Mais na Base",
+    "subtitle": "Análise revela disparidade de gênero em salários altos e baixos no mercado de trabalho.",
+    "body_html": "<p>A participação feminina no mercado de trabalho brasileiro ainda reflete uma profunda desigualdade, especialmente quando se observa a distribuição por faixas salariais. Dados recentes indicam que, em ocupações com remuneração igual ou superior a R$ 8.000, a média de mulheres é de apenas 29,9%.</p><p>Em contraste, nas ocupações com salário inferior a R$ 2.000, a presença feminina sobe para 39,2%. Essa diferença de 9,3 pontos percentuais sugere que a desigualdade de gênero se acentua nas posições de maior remuneração.</p><p>O levantamento abrangeu 63 ocupações de alto salário e 129 de baixo salário, evidenciando que as mulheres estão significativamente sub-representadas onde os ganhos são maiores e mais presentes onde os salários são menores. Este cenário aponta para desafios persistentes na busca por equidade de gênero no ambiente profissional, com barreiras que parecem se intensificar à medida que se ascende na escala salarial.</p>",
+    "headline_stat": "29,9%",
+    "headline_label": "de mulheres em ocupações com salário acima de R$ 8.000",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Salário >= R$ 8.000",
+          "value": 29.9,
+          "formatted": "29,9%"
+        },
+        {
+          "label": "Salário < R$ 2.000",
+          "value": 39.2,
+          "formatted": "39,2%"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "salário alto",
+      "acesso"
+    ],
+    "data_hash": "f1b940c84ce463c60f68cc3b7d826636"
+  },
+  {
+    "id": "women-entry-salary-penalty",
+    "category": "Mercado",
+    "title": "Mulheres Começam Ganhando Menos",
+    "subtitle": "Salário inicial feminino é 19,5% inferior ao masculino, revelam dados.",
+    "body_html": "<p>A desigualdade salarial de gênero não é apenas um problema de progressão de carreira, mas uma realidade que se manifesta desde o primeiro emprego. Dados recentes mostram que mulheres já iniciam suas jornadas profissionais com uma desvantagem significativa em comparação aos homens.</p><p>Em ocupações predominantemente femininas (com mais de 60% de mulheres), o salário médio de admissão é de R$ 2.836. Por outro lado, em ocupações masculinizadas (com mais de 60% de homens), o salário inicial médio atinge R$ 3.525. Essa diferença representa R$ 689, ou 19,5% a menos para as mulheres.</p><p>A análise abrange 96 ocupações feminizadas e 397 ocupações masculinizadas, evidenciando que essa disparidade não é um caso isolado, mas uma tendência generalizada no mercado de trabalho. A persistência dessa lacuna salarial inicial reforça a necessidade de políticas e ações que promovam a equidade desde o ponto de partida profissional.</p>",
+    "headline_stat": "R$ 689",
+    "headline_label": "diferença no salário de admissão entre ocupações feminizadas e masculinizadas",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Ocupações feminizadas (>60% mulheres)",
+          "value": 2836,
+          "formatted": "R$ 2.836"
+        },
+        {
+          "label": "Ocupações masculinizadas (>60% homens)",
+          "value": 3525,
+          "formatted": "R$ 3.525"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "salário admissão",
+      "penalidade"
+    ],
+    "data_hash": "243543466eb284e2a020c1888876d0e8"
+  },
+  {
+    "id": "women-growing-declining-jobs",
+    "category": "Mercado",
+    "title": "Mulheres no Mercado de Trabalho: Crescimento e Desafios",
+    "subtitle": "Análise da presença feminina em setores em expansão e retração.",
+    "body_html": "<p>O cenário do emprego feminino no Brasil apresenta nuances importantes. Embora a participação das mulheres seja maior em ocupações em crescimento, a disparidade ainda é notável.</p><p>Em 295 ocupações que registraram expansão, a média de participação feminina é de 33,7%. Isso se traduz em um total de 18.506.398 mulheres empregadas nesses setores. Por outro lado, nas 304 ocupações que experimentaram declínio, a média de presença feminina é de 28,7%, totalizando 6.310.371 mulheres.</p><p>Os dados indicam que, enquanto as mulheres estão mais presentes nos setores em ascensão, a proporção ainda está aquém da igualdade. A diferença de cinco pontos percentuais na média de participação entre os grupos de ocupações sugere que, embora haja um movimento positivo, a jornada para uma representação equitativa no mercado de trabalho ainda enfrenta desafios significativos, especialmente em setores que perdem relevância.</p>",
+    "headline_stat": "33,7%",
+    "headline_label": "de mulheres em ocupações em crescimento vs 28,7% nas em declínio",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Ocupações em crescimento (saldo > 0)",
+          "value": 33.7,
+          "formatted": "33,7%"
+        },
+        {
+          "label": "Ocupações em declínio (saldo < 0)",
+          "value": 28.7,
+          "formatted": "28,7%"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "crescimento",
+      "declínio"
+    ],
+    "data_hash": "dfa8a8641959bcfcaba21aab22621bf0"
+  },
+  {
+    "id": "women-education-paradox",
+    "category": "Educação",
+    "title": "Mulheres Educadas e a IA: Um Paradoxo",
+    "subtitle": "Mais educação, maior exposição à IA para mulheres. Seria um risco?",
+    "body_html": "<p>A ascensão da inteligência artificial (IA) redefine o mercado de trabalho, e um dado surpreendente emerge: mulheres com ensino superior completo parecem estar na linha de frente dessa transformação, ou, para alguns, desse risco. Com um total de 7.481.182 mulheres com diploma universitário, superando os 5.006.228 homens na mesma condição, a presença feminina em ocupações de nível superior é notável, representando uma média de 45,8%.</p><p>No entanto, essa maior participação vem acompanhada de uma exposição média à IA de 6,5 (em uma escala de 0 a 10), considerando as 182 ocupações analisadas. Isso sugere que, embora a educação seja tradicionalmente vista como um escudo contra a obsolescência, para mulheres com ensino superior, ela pode significar uma maior proximidade com funções suscetíveis à automação ou reconfiguração pela IA. O paradoxo é claro: a mesma qualificação que impulsiona a ascensão profissional pode, agora, expor a um novo conjunto de desafios no cenário da IA.</p>",
+    "headline_stat": "45,8%",
+    "headline_label": "de mulheres em ocupações de nível superior — exposição média 6,5",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres (superior completo)",
+          "value": 7481182,
+          "formatted": "7.481.182"
+        },
+        {
+          "label": "Homens (superior completo)",
+          "value": 5006228,
+          "formatted": "5.006.228"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "educação",
+      "superior",
+      "paradoxo"
+    ],
+    "data_hash": "a08f20f109ad5c5a2db3cadba1006305"
+  },
+  {
+    "id": "women-automation-vulnerability",
+    "category": "Mercado",
+    "title": "Automação Ameaça Quase 900 Mil Mulheres no Brasil",
+    "subtitle": "Mulheres representam 83,2% dos trabalhadores em ocupações de alto risco de automação.",
+    "body_html": "<p>A automação representa um risco significativo para o mercado de trabalho brasileiro, com as mulheres sendo desproporcionalmente afetadas. Dados recentes revelam que 897.482 mulheres estão empregadas em ocupações com alta exposição à automação e baixa vantagem competitiva, ou seja, empregos com maior probabilidade de serem substituídos por máquinas. Este número contrasta com os 181.427 homens na mesma situação, evidenciando que as mulheres representam 83,2% do total de trabalhadores vulneráveis.</p><p>As três ocupações mais impactadas concentram a maior parte dessas trabalhadoras. A categoria de 'Caixas e bilheteiros (exceto caixa de banco)' lidera com 876.989 mulheres, apresentando exposição 8 e vantagem 3. Em seguida, 'Coletadores de apostas e de jogos' empregam 18.954 mulheres, com os mesmos índices de exposição e vantagem. Por fim, 'Trabalhadores de laboratório fotográfico e radiológico' somam 1.539 mulheres, com exposição 8 e vantagem 4. Esses números sublinham a urgência de políticas públicas e programas de requalificação profissional focados na transição dessas trabalhadoras para novas áreas.</p>",
+    "headline_stat": "897.482",
+    "headline_label": "mulheres em ocupações altamente automatizáveis",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Caixas e bilheteiros (exceto caixa de banco)",
+          "value": 876989,
+          "formatted": "876.989"
+        },
+        {
+          "label": "Coletadores de apostas e de jogos",
+          "value": 18954,
+          "formatted": "18.954"
+        },
+        {
+          "label": "Trabalhadores de laboratório fotográfico e radiológico",
+          "value": 1539,
+          "formatted": "1.539"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "automação",
+      "vulnerabilidade"
+    ],
+    "data_hash": "db7ef53f6731f8709c8c78f53af85192"
+  },
+  {
+    "id": "women-ai-augmentation",
+    "category": "Mercado",
+    "title": "IA e Mulheres: Uma Vantagem Desigual?",
+    "subtitle": "Mulheres lideram em ocupações de aumentação, mas desafios persistem.",
+    "body_html": "<p>A inteligência artificial (IA) surge como uma ferramenta de aumentação, prometendo transformar diversas profissões. No Brasil, um olhar sobre as ocupações com alta vantagem (>=7) e exposição (>=6) à IA revela um cenário notável: as mulheres representam 57,1% do total de trabalhadores nessas áreas, somando 10.385.996, contra 7.813.416 homens. Isso ocorre em 194 ocupações analisadas.</p><p>Entre as principais ocupações femininas com alto potencial de aumentação pela IA, destacam-se 'Agentes, assistentes e auxiliares administrativos', com 3.037.406 mulheres, apresentando alta vantagem (9) e exposição (9). Outras áreas relevantes incluem 'Professores de nível superior do ensino fundamental' (824.522 mulheres) e 'Operadores de telemarketing e afins' (345.238 mulheres), esta última com vantagem 9 e exposição 10.</p><p>Apesar da liderança numérica, a questão central permanece: essa predominância feminina se traduz em um aproveitamento equitativo da IA? A concentração em certas funções pode indicar tanto uma oportunidade para as mulheres impulsionarem suas carreiras com a IA, quanto um risco de automação em setores já majoritariamente femininos. A análise aprofundada é crucial para garantir que a IA seja uma ferramenta de empoderamento, e não de exclusão.</p>",
+    "headline_stat": "10.385.996",
+    "headline_label": "mulheres em ocupações com alto potencial de aumentação por IA",
+    "chart": {
+      "type": "comparison_pair",
+      "data": [
+        {
+          "label": "Mulheres",
+          "value": 10385996,
+          "formatted": "10.385.996"
+        },
+        {
+          "label": "Homens",
+          "value": 7813416,
+          "formatted": "7.813.416"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "aumentação",
+      "vantagem"
+    ],
+    "data_hash": "52fa6188ff97fc9ae8cbb339edff9aa2"
+  },
+  {
+    "id": "women-by-exposure-tier",
+    "category": "Demografia",
+    "title": "IA e Gênero: Mulheres em Maior Risco?",
+    "subtitle": "Análise revela concentração feminina em ocupações de alta exposição à IA.",
+    "body_html": "<p>A ascensão da Inteligência Artificial (IA) remodela o mercado de trabalho, e dados recentes indicam uma distribuição de gênero notável entre os níveis de exposição a essa tecnologia. Em ocupações de baixa exposição (0-3), as mulheres representam 35,0% do total, somando 9.218.588 indivíduos, contra 17.100.747 homens. Esta faixa abrange 249 ocupações.</p><p>No nível de exposição média (4-6), a proporção se equilibra, com 49,1% de mulheres (6.236.614) e 6.477.841 homens, distribuídos em 203 ocupações. Contudo, o cenário se inverte drasticamente nas ocupações de alta exposição à IA (7-10). Aqui, as mulheres constituem 58,1% da força de trabalho, totalizando 9.366.100 indivíduos, enquanto os homens somam 6.746.290. Esta categoria engloba 158 ocupações.</p><p>Os números sugerem que as mulheres estão desproporcionalmente representadas nas faixas de maior risco ou transformação pela IA, levantando questões importantes sobre equidade e o futuro do trabalho.</p>",
+    "headline_stat": "58,1%",
+    "headline_label": "de mulheres na faixa de alta exposição à IA",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Baixa (0-3)",
+          "value": 35.0,
+          "formatted": "35,0%"
+        },
+        {
+          "label": "Média (4-6)",
+          "value": 49.1,
+          "formatted": "49,1%"
+        },
+        {
+          "label": "Alta (7-10)",
+          "value": 58.1,
+          "formatted": "58,1%"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "faixas de exposição",
+      "distribuição"
+    ],
+    "data_hash": "d78d7ed71cc2e051570626c53745d29d"
+  },
+  {
+    "id": "women-care-economy-safety",
+    "category": "Setores",
+    "title": "Cuidado Humano: O Refúgio Feminino Contra a IA",
+    "subtitle": "Mulheres dominam profissões de cuidado, menos expostas à automação.",
+    "body_html": "<p>A ascensão da Inteligência Artificial (IA) remodela o mercado de trabalho, mas um setor parece oferecer um refúgio, especialmente para mulheres: o da economia do cuidado. Em seis ocupações analisadas, que empregam 749.671 trabalhadores, a presença feminina é esmagadora, totalizando 628.046 mulheres, ou 83,8% do total.</p><p>Essas profissões, que incluem enfermeiros e cuidadores, apresentam uma exposição média à IA de apenas 3 em uma escala de 0 a 10. As ocupações com maior número de trabalhadores são 'Enfermeiros e afins', com 443.869 pessoas e exposição à IA de 4, e 'Cuidadores de crianças, jovens, adultos e idosos', com 129.814 trabalhadores e exposição de 2. 'Trabalhadores dos serviços domésticos em geral', com 27.734 pessoas, registram a menor exposição, com um índice de 1. Em contraste, 'Assistentes sociais e economistas domésticos', com 106.100 trabalhadores, apresentam a maior exposição entre as ocupações listadas, atingindo 5. Este cenário sugere que as habilidades interpessoais e emocionais, centrais para o cuidado, permanecem insubstituíveis pela automação.</p>",
+    "headline_stat": "83,8%",
+    "headline_label": "de mulheres na economia do cuidado — exposição 3",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Enfermeiros e afins",
+          "value": 4,
+          "formatted": "4"
+        },
+        {
+          "label": "Cuidadores de crianças, jovens, adultos e idosos",
+          "value": 2,
+          "formatted": "2"
+        },
+        {
+          "label": "Assistentes sociais e economistas domésticos",
+          "value": 5,
+          "formatted": "5"
+        },
+        {
+          "label": "Trabalhadores de serviços veterinários, de higiene e estética de animais domésticos",
+          "value": 3,
+          "formatted": "3"
+        },
+        {
+          "label": "Trabalhadores dos serviços domésticos em geral",
+          "value": 1,
+          "formatted": "1"
+        },
+        {
+          "label": "Reparadores de aparelhos eletrodomésticos",
+          "value": 3,
+          "formatted": "3"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "economia do cuidado",
+      "proteção"
+    ],
+    "data_hash": "a43af6f01808d42658f5d23437f67fd7"
+  },
+  {
+    "id": "women-creative-sector",
+    "category": "Setores",
+    "title": "Mulheres e IA: O Futuro do Setor Criativo",
+    "subtitle": "IA generativa desafia e transforma o trabalho feminino em áreas criativas.",
+    "body_html": "<p>O setor criativo, que abrange áreas como design, jornalismo, publicidade e fotografia, conta com uma significativa presença feminina. Das 16.037 pessoas empregadas nessas profissões, 8.388 são mulheres, representando 52,3% da força de trabalho. Esse dado sublinha a importância das mulheres na construção e inovação dessas indústrias.</p><p>No entanto, a ascensão da inteligência artificial generativa apresenta um novo cenário. As três ocupações analisadas – Designers de interiores, de vitrines e visual merchandiser e afins (nível médio), Fotógrafos profissionais e Designer de interiores de nível superior – demonstram uma exposição média à IA de 7 em uma escala de 0 a 10. Isso indica que a IA já impacta ou tem potencial para impactar consideravelmente as atividades diárias desses profissionais.</p><p>Com 11.449 trabalhadores, a maior ocupação é a de Designers de interiores, de vitrines e visual merchandiser e afins (nível médio), seguida por Fotógrafos profissionais, com 3.979, e Designer de interiores de nível superior, com 609. Todas essas áreas enfrentam o desafio e a oportunidade de integrar as novas ferramentas de IA. A adaptação e a requalificação serão cruciais para que as mulheres, maioria nesse setor, continuem a prosperar em um ambiente de trabalho em constante evolução.</p>",
+    "headline_stat": "52,3%",
+    "headline_label": "de mulheres no setor criativo — exposição 7",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Designers de interiores, de vitrines e visual merchandiser e afins (nível médio)",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Fotógrafos profissionais",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Designer de interiores de nível superior",
+          "value": 7,
+          "formatted": "7"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "setor criativo",
+      "exposição"
+    ],
+    "data_hash": "33a342694501fc78d6a4cab8183d1fe7"
+  },
+  {
+    "id": "women-financial-sector",
+    "category": "Setores",
+    "title": "Mulheres no setor financeiro: IA e o futuro do trabalho",
+    "subtitle": "Exposição à inteligência artificial é alta em funções dominadas por mulheres.",
+    "body_html": "<p>As mulheres representam uma parcela significativa da força de trabalho no setor financeiro, compreendendo 66,4% do total de 2.697.708 trabalhadores, somando 1.792.233 profissionais. Este grupo, com um salário médio de R$ 8.385, atua em 18 ocupações distintas, e enfrenta uma exposição média à inteligência artificial (IA) de 7,4 em uma escala de 0 a 10.</p><p>Analisando as ocupações com maior número de mulheres, a exposição à IA é notavelmente elevada. Caixas e bilheteiros (exceto caixa de banco), com 1.053.578 trabalhadores, apresentam exposição 8. Auxiliares de contabilidade (310.568 trabalhadores) e escriturários de serviços bancários (295.091 trabalhadores) registram exposição 9. Profissionais de administração econômico-financeira (117.114 trabalhadores) também têm exposição 9. Gerentes administrativos, financeiros, de riscos e afins (452.213 trabalhadores), supervisores de serviços financeiros, de câmbio e de controle (116.701 trabalhadores) e profissionais de comercialização e consultoria de serviços bancários (104.735 trabalhadores) têm exposição 7 ou 8. Diretores administrativos e financeiros (80.732 trabalhadores) também apresentam exposição 7. Estes dados sugerem que a automação via IA pode impactar substancialmente as carreiras femininas neste setor.</p>",
+    "headline_stat": "66,4%",
+    "headline_label": "de mulheres no setor financeiro — exposição 7,4",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Caixas e bilheteiros (exceto caixa de banco)",
+          "value": 8,
+          "formatted": "8"
+        },
+        {
+          "label": "Gerentes administrativos, financeiros, de riscos e afins",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Auxiliares de contabilidade",
+          "value": 9,
+          "formatted": "9"
+        },
+        {
+          "label": "Escriturários de serviços bancários",
+          "value": 9,
+          "formatted": "9"
+        },
+        {
+          "label": "Profissionais de administração ecônomico-financeira",
+          "value": 9,
+          "formatted": "9"
+        },
+        {
+          "label": "Supervisores de serviços financeiros, de câmbio e de controle",
+          "value": 8,
+          "formatted": "8"
+        },
+        {
+          "label": "Profissionais de comercializacão e consultoria de serviços bancários",
+          "value": 7,
+          "formatted": "7"
+        },
+        {
+          "label": "Diretores administrativos e financeiros",
+          "value": 7,
+          "formatted": "7"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "financeiro",
+      "contabilidade"
+    ],
+    "data_hash": "3a863468273b077a9f52fbc8c4a1574b"
+  },
+  {
+    "id": "women-health-sector-gender",
+    "category": "Setores",
+    "title": "Mulheres na Saúde: Desafios e IA",
+    "subtitle": "Maioria na enfermagem, minoria na medicina: como a IA molda o futuro.",
+    "body_html": "<p>O setor de saúde no Brasil é predominantemente feminino, com 69,8% dos 2.012.189 trabalhadores sendo mulheres, totalizando 1.404.953 profissionais. Essa presença é notável em 21 ocupações analisadas, mas com distribuição desigual e impacto variado da Inteligência Artificial (IA).</p><p>Enfermeiros e afins representam a maior parcela feminina, com 84,3% dos 443.869 profissionais, e enfrentam uma exposição à IA de 4 (em uma escala de 0 a 10). Em contraste, entre os 240.647 médicos clínicos, a participação feminina é de 50,3%, com uma exposição à IA ligeiramente maior, de 5. A exposição média à IA no setor é de 5,1.</p><p>Outras ocupações com alta presença feminina incluem Nutricionistas (93,0% dos 63.442 profissionais), com exposição à IA de 6, e Fisioterapeutas (77,0% dos 87.986), com exposição de 4. Essa heterogeneidade na exposição à IA sugere que os impactos da tecnologia serão distintos, exigindo atenção às especificidades de cada segmento profissional dentro do vasto universo da saúde.</p>",
+    "headline_stat": "69,8%",
+    "headline_label": "de mulheres no setor de saúde — 1.404.953 trabalhadoras",
+    "chart": {
+      "type": "horizontal_bar",
+      "data": [
+        {
+          "label": "Enfermeiros e afins",
+          "value": 443869,
+          "formatted": "443.869"
+        },
+        {
+          "label": "Trabalhadores em serviços de promoção e apoio à saúde",
+          "value": 415154,
+          "formatted": "415.154"
+        },
+        {
+          "label": "Médicos clínicos",
+          "value": 240647,
+          "formatted": "240.647"
+        },
+        {
+          "label": "Farmacêuticos",
+          "value": 188160,
+          "formatted": "188.160"
+        },
+        {
+          "label": "Agentes da saúde e do meio ambiente",
+          "value": 125461,
+          "formatted": "125.461"
+        },
+        {
+          "label": "Auxiliares de laboratório da saúde",
+          "value": 107649,
+          "formatted": "107.649"
+        },
+        {
+          "label": "Fisioterapeutas",
+          "value": 87986,
+          "formatted": "87.986"
+        },
+        {
+          "label": "Cirurgiões-dentistas",
+          "value": 72826,
+          "formatted": "72.826"
+        },
+        {
+          "label": "Nutricionistas",
+          "value": 63442,
+          "formatted": "63.442"
+        },
+        {
+          "label": "Técnicos de laboratórios de saúde e bancos de sangue",
+          "value": 59545,
+          "formatted": "59.545"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "saúde",
+      "gênero"
+    ],
+    "data_hash": "897b2d4be0e05abc71fb217ac069b9cb"
+  },
+  {
+    "id": "women-double-burden",
+    "category": "Demografia",
+    "title": "IA ameaça 2,2 milhões de mulheres em empregos precários",
+    "subtitle": "Nove ocupações femininas de baixo salário e alta exposição à IA sob risco no Brasil.",
+    "body_html": "<p>Avanços em inteligência artificial (IA) representam uma ameaça significativa para trabalhadoras brasileiras em nove ocupações. Estes postos de trabalho são caracterizados por uma tripla vulnerabilidade: são majoritariamente femininos (mais de 70% mulheres), altamente expostos à IA (exposição igual ou superior a 7) e mal remunerados (salário inferior a R$ 2.500).</p><p>No total, 2.225.696 mulheres estão empregadas nessas ocupações, em contraste com 571.699 homens. As caixas e bilheteiras (exceto caixa de banco) lideram a lista, com 876.989 mulheres (83,2% do total da categoria), exposição à IA de 8 e salário médio de R$ 1.764. Recepcionistas vêm em seguida, com 665.708 mulheres (81,9%), exposição 7 e salário de R$ 1.674.</p><p>Operadores de telemarketing e afins, com 345.238 mulheres (72,8%), enfrentam a maior exposição à IA (10) e um salário de R$ 1.424. Auxiliares de contabilidade (218.849 mulheres, 70,5%, exposição 9, salário R$ 2.473) e técnicos em secretariado (49.983 mulheres, 79,0%, exposição 9, salário R$ 2.166) também estão entre as categorias mais vulneráveis. A automação impulsionada pela IA pode aprofundar a precarização do trabalho feminino nessas áreas.</p>",
+    "headline_stat": "9",
+    "headline_label": "ocupações com tripla vulnerabilidade: feminizadas, expostas e mal pagas",
+    "chart": {
+      "type": "ranking_table",
+      "data": [
+        {
+          "label": "Caixas e bilheteiros (exceto caixa de banco)",
+          "value": 876989,
+          "formatted": "876.989"
+        },
+        {
+          "label": "Recepcionistas",
+          "value": 665708,
+          "formatted": "665.708"
+        },
+        {
+          "label": "Operadores de telemarketing e afins",
+          "value": 345238,
+          "formatted": "345.238"
+        },
+        {
+          "label": "Auxiliares de contabilidade",
+          "value": 218849,
+          "formatted": "218.849"
+        },
+        {
+          "label": "Técnicos em secretariado, taquígrafos e estenotipistas",
+          "value": 49983,
+          "formatted": "49.983"
+        },
+        {
+          "label": "Operadores de telefonia",
+          "value": 40534,
+          "formatted": "40.534"
+        },
+        {
+          "label": "Coletadores de apostas e de jogos",
+          "value": 18954,
+          "formatted": "18.954"
+        },
+        {
+          "label": "Técnicos em biblioteconomia",
+          "value": 9306,
+          "formatted": "9.306"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "tripla vulnerabilidade",
+      "desigualdade"
+    ],
+    "data_hash": "1fa7190fbedf05518b49c208fe539477"
+  },
+  {
+    "id": "women-bright-spots",
+    "category": "Ocupações",
+    "title": "IA: Aliada para Mulheres em Profissões Chave",
+    "subtitle": "Tecnologia pode impulsionar carreiras femininas em áreas com alta oportunidade.",
+    "body_html": "<p>A inteligência artificial (IA) emerge como uma ferramenta promissora para impulsionar a carreira de mulheres em diversas ocupações. Dados recentes revelam que 29 profissões predominantemente femininas (com mais de 55% de mulheres) apresentam alta oportunidade de integração da IA (com pontuação igual ou superior a 7). Essas ocupações empregam um total de 1.714.402 mulheres.</p><p>Entre as áreas com maior potencial, destacam-se 'Pesquisadores das ciências da saúde' (62,3% mulheres, oportunidade 8,5) e 'Profissionais de mídias digitais e afins' (63,8% mulheres, oportunidade 8,5). Outras profissões com alta oportunidade de IA incluem 'Profissionais de publicidade' (58,0% mulheres, oportunidade 8,0) e 'Programadores, avaliadores e orientadores de ensino' (82,1% mulheres, oportunidade 7,5), que emprega 242.621 mulheres. A IA pode otimizar tarefas, gerar insights e abrir novas frentes de trabalho, beneficiando diretamente essas profissionais.</p>",
+    "headline_stat": "29",
+    "headline_label": "ocupações feminizadas com alta oportunidade de IA",
+    "chart": {
+      "type": "ranking_table",
+      "data": [
+        {
+          "label": "Pesquisadores das ciências da saúde",
+          "value": 8.5,
+          "formatted": "8,5"
+        },
+        {
+          "label": "Profissionais de mídias digitais e afins",
+          "value": 8.5,
+          "formatted": "8,5"
+        },
+        {
+          "label": "Profissionais de publicidade",
+          "value": 8.0,
+          "formatted": "8,0"
+        },
+        {
+          "label": "Profissionais da informação",
+          "value": 8.0,
+          "formatted": "8,0"
+        },
+        {
+          "label": "Profissionais de direitos autorais e de avaliacão de produtos dos meios de comunicação",
+          "value": 8.0,
+          "formatted": "8,0"
+        },
+        {
+          "label": "Trabalhadores em registros e informações em saúde",
+          "value": 8.0,
+          "formatted": "8,0"
+        },
+        {
+          "label": "Pesquisadores das ciências sociais e humanas",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Programadores, avaliadores e orientadores de ensino",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Economistas",
+          "value": 7.5,
+          "formatted": "7,5"
+        },
+        {
+          "label": "Profissionais de administração ecônomico-financeira",
+          "value": 7.5,
+          "formatted": "7,5"
+        }
+      ]
+    },
+    "generated_at": "2026-03-21",
+    "tags": [
+      "mulheres",
+      "oportunidade",
+      "pontos positivos"
+    ],
+    "data_hash": "c67a6ebb65976c2543be6b2a8efc7683"
   }
 ]
