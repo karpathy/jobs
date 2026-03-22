@@ -84,13 +84,14 @@ ISCO08_2DIGIT = {
 }
 
 
-def fetch_sdmx_csv(dataset, params=None, client=None):
+def fetch_sdmx_csv(dataset, params=None, client=None, verbose=False):
     """Fetch data from Eurostat SDMX 2.1 API in CSV format.
 
     Args:
         dataset: Eurostat dataset code (e.g. 'LFSA_EGAI2D').
         params: Dict of query parameters to filter the data.
         client: Optional httpx.Client for connection reuse.
+        verbose: Print request URL and response info for debugging.
 
     Returns:
         List of dicts, one per row in the CSV response.
@@ -105,6 +106,10 @@ def fetch_sdmx_csv(dataset, params=None, client=None):
             response = c.get(url, params=query)
     else:
         response = client.get(url, params=query)
+
+    if verbose:
+        print(f"  [eurostat] GET {response.url}")
+        print(f"  [eurostat] Status: {response.status_code}, bytes: {len(response.text)}")
 
     response.raise_for_status()
 
@@ -136,7 +141,7 @@ def fetch_json_stat(dataset, params=None, client=None):
     return response.json()
 
 
-def fetch_employment_by_occupation(geo="CY", sex="T", age="Y_GE15", last_n=1, client=None):
+def fetch_employment_by_occupation(geo="CY", sex="T", age="Y_GE15", last_n=1, client=None, verbose=False):
     """Fetch employment counts by ISCO-08 2-digit occupation for a country.
 
     Args:
@@ -145,6 +150,7 @@ def fetch_employment_by_occupation(geo="CY", sex="T", age="Y_GE15", last_n=1, cl
         age: Age group filter (default 'Y_GE15' = 15+).
         last_n: Number of most recent periods to fetch.
         client: Optional httpx.Client.
+        verbose: Print debug info.
 
     Returns:
         List of dicts with keys: isco_code, isco_label, employment_thousands, year.
@@ -157,7 +163,7 @@ def fetch_employment_by_occupation(geo="CY", sex="T", age="Y_GE15", last_n=1, cl
         "lastNPeriods": str(last_n),
     }
 
-    rows = fetch_sdmx_csv("LFSA_EGAI2D", params=params, client=client)
+    rows = fetch_sdmx_csv("LFSA_EGAI2D", params=params, client=client, verbose=verbose)
 
     results = []
     for row in rows:
@@ -182,8 +188,8 @@ def fetch_employment_by_occupation(geo="CY", sex="T", age="Y_GE15", last_n=1, cl
     return results
 
 
-def fetch_earnings_by_occupation(geo="CY", last_n=1, client=None):
-    """Fetch median gross hourly earnings by ISCO-08 1-digit occupation.
+def fetch_earnings_by_occupation(geo="CY", last_n=1, client=None, verbose=False):
+    """Fetch mean gross hourly earnings by ISCO-08 1-digit occupation.
 
     Uses the Structure of Earnings Survey (SES) dataset. Note: SES data
     is only published every 4 years (latest available: 2022).
@@ -192,6 +198,7 @@ def fetch_earnings_by_occupation(geo="CY", last_n=1, client=None):
         geo: Country code (default 'CY' for Cyprus).
         last_n: Number of most recent periods to fetch.
         client: Optional httpx.Client.
+        verbose: Print debug info.
 
     Returns:
         List of dicts with keys: isco_code, isco_label, hourly_earnings_eur, year.
@@ -205,7 +212,10 @@ def fetch_earnings_by_occupation(geo="CY", last_n=1, client=None):
         "lastNPeriods": str(last_n),
     }
 
-    rows = fetch_sdmx_csv("earn_ses_pub1s", params=params, client=client)
+    rows = fetch_sdmx_csv("earn_ses_pub1s", params=params, client=client, verbose=verbose)
+
+    if not rows and verbose:
+        print(f"  [eurostat] WARNING: No earnings data returned for {geo}. Run diagnose_eurostat.py for details.")
 
     results = []
     for row in rows:

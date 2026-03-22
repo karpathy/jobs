@@ -164,6 +164,7 @@ def main():
     parser.add_argument("--cached", help="Directory with cached employment.json and earnings.json")
     parser.add_argument("--save-cache", help="Save fetched data to this directory for future use")
     parser.add_argument("--geo", default="CY", help="Country code (default: CY)")
+    parser.add_argument("--verbose", action="store_true", help="Print API URLs and debug info")
     args = parser.parse_args()
 
     # Load master occupation list
@@ -176,6 +177,10 @@ def main():
     else:
         print(f"Fetching data from Eurostat for {args.geo}...")
         employment, earnings = fetch_eurostat_data(geo=args.geo)
+
+    if not earnings:
+        print("WARNING: No earnings data returned from Eurostat.")
+        print("  Run 'uv run python diagnose_eurostat.py' to investigate.")
 
     if args.save_cache:
         save_cached_data(employment, earnings, args.save_cache)
