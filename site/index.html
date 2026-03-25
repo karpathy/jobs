@@ -556,7 +556,6 @@ function showTooltip(d, mx, my) {
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
   tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
 
-  // Temporarily position to measure height
   tt.style.left = "0px";
   tt.style.top = "0px";
   tt.classList.add("visible");
@@ -566,12 +565,9 @@ function showTooltip(d, mx, my) {
   let tx = mx + 16, ty = my - 16;
   if (tx + 340 > window.innerWidth) tx = mx - 356;
 
-  // Position vertically to avoid going off-screen
   if (ty + tooltipHeight > window.innerHeight) {
-    // Try positioning below the mouse
     ty = my + 16;
     if (ty + tooltipHeight > window.innerHeight) {
-      // Position at bottom of screen with margin
       ty = window.innerHeight - tooltipHeight - 10;
     }
   }
