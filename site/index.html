@@ -555,10 +555,24 @@ function showTooltip(d, mx, my) {
     <span class="label">Outlook</span><span class="value">${d.outlook != null ? d.outlook + '%' : '\u2014'} ${d.outlook_desc ? '(' + d.outlook_desc + ')' : ''}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>`;
   tt.querySelector(".tt-rationale").textContent = colorMode === "exposure" ? (d.exposure_rationale || "") : "";
+
+  tt.style.left = "0px";
+  tt.style.top = "0px";
+  tt.classList.add("visible");
+  const tooltipHeight = tt.offsetHeight;
+  tt.classList.remove("visible");
+
   let tx = mx + 16, ty = my - 16;
   if (tx + 340 > window.innerWidth) tx = mx - 356;
-  if (ty < 10) ty = my + 16;
-  if (ty + 200 > window.innerHeight) ty = my - 200;
+
+  if (ty + tooltipHeight > window.innerHeight) {
+    ty = my + 16;
+    if (ty + tooltipHeight > window.innerHeight) {
+      ty = window.innerHeight - tooltipHeight - 10;
+    }
+  }
+  if (ty < 10) ty = 10;
+
   tt.style.left = tx + "px"; tt.style.top = ty + "px";
   tt.classList.add("visible");
 }
