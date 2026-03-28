@@ -5,10 +5,11 @@ Saves raw HTML to html/<slug>.html as the source of truth.
 Run process.py afterwards to derive data/<slug>.json and pages/<slug>.md.
 
 Usage:
-    uv run python scrape.py                      # scrape all (0 to 342)
+    uv run python scrape.py                       # scrape all (0 to 342)
     uv run python scrape.py --start 0 --end 5    # scrape first 5
     uv run python scrape.py --start 10 --end 20  # scrape indices 10-19
-    uv run python scrape.py --force               # re-scrape ignoring cache
+    uv run python scrape.py --force              # re-scrape ignoring cache
+    uv run python scrape.py --headless           # opt into headless Chromium
 
 Caching: skips any occupation where html/<slug>.html already exists.
 """
@@ -28,6 +29,7 @@ def main():
     parser.add_argument("--end", type=int, default=None, help="End index (exclusive)")
     parser.add_argument("--force", action="store_true", help="Re-scrape even if cached")
     parser.add_argument("--delay", type=float, default=1.0, help="Seconds between requests")
+    parser.add_argument("--headless", action="store_true", help="Launch Chromium in headless mode (default: non-headless)")
     args = parser.parse_args()
 
     # Load master list
@@ -55,10 +57,11 @@ def main():
         print("Nothing to scrape — all cached.")
         return
 
-    print(f"\nScraping {len(to_scrape)} occupations (non-headless Chromium)...\n")
+    mode = "headless" if args.headless else "non-headless"
+    print(f"\nScraping {len(to_scrape)} occupations ({mode} Chromium)...\n")
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=args.headless)
         page = browser.new_page()
 
         for idx, (i, occ) in enumerate(to_scrape):

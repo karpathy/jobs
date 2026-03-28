@@ -19,7 +19,7 @@ The repo includes scrapers, parsers, and a pipeline for writing custom LLM promp
 
 ## Data pipeline
 
-1. **Scrape** (`scrape.py`) — Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
+1. **Scrape** (`scrape.py`) — Playwright downloads raw HTML for all 342 occupation pages into `html/`. By default it runs non-headless (BLS blocks bots more aggressively), with an optional `--headless` flag for testing/experimentation.
 2. **Parse** (`parse_detail.py`, `process.py`) — BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
 3. **Tabulate** (`make_csv.py`) — Extracts structured fields (pay, education, job count, growth outlook, SOC code) into `occupations.csv`.
 4. **Score** (`score.py`) — Sends each occupation's Markdown description to an LLM with a scoring rubric. Each occupation gets an AI Exposure score from 0-10 with a rationale. Results saved to `scores.json`. Fork this to write your own prompts.
@@ -59,6 +59,9 @@ OPENROUTER_API_KEY=your_key_here
 ```bash
 # Scrape BLS pages (only needed once, results are cached in html/)
 uv run python scrape.py
+
+# Optional: run Chromium headlessly for testing/experimentation
+uv run python scrape.py --headless
 
 # Generate Markdown from HTML
 uv run python process.py
